@@ -17,27 +17,27 @@ const Navbar = () => {
             {/* desktop menu */} 
             <ul className='hidden md:flex'>
                 <li>
-                    <Link to="top" smooth={true} duration={500}>
+                    <Link className='hover:bg-[#f36c3d] hover:border-[#f36c3d] border-2 px-4 py-2' to="top" smooth={true} duration={500}>
                         top
                     </Link>
                 </li>
                 <li>
-                    <Link to="me" smooth={true} duration={500}>
+                    <Link className='hover:bg-[#f36c3d] hover:border-[#f36c3d] border-2 px-4 py-2' to="me" smooth={true} duration={500}>
                         me
                     </Link>
                 </li>
                 <li>
-                    <Link to="coding" smooth={true} duration={500}>
+                    <Link className='hover:bg-[#f36c3d] hover:border-[#f36c3d] border-2 px-4 py-2' to="coding" smooth={true} duration={500}>
                         coding
                     </Link>
                 </li>
                 <li>
-                    <Link to="tv-video" smooth={true} duration={500}>
+                    <Link className='hover:bg-[#f36c3d] hover:border-[#f36c3d] border-2 px-4 py-2' to="tv-video" smooth={true} duration={500}>
                         tv-video
                     </Link>
                 </li>
                 <li>
-                    <Link to="contact" smooth={true} duration={500}>
+                    <Link className='hover:bg-[#f36c3d] hover:border-[#f36c3d] border-2 px-4 py-2' to="contact" smooth={true} duration={500}>
                         contact
                     </Link>
                 </li>
