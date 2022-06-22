@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700;900&display=swap');
+
+@layer base {
+  body {
+    @apply font-[Raleway];
+  }
+  p {
+    @apply font-[Raleway];
+  }
+  li {
+    @apply px-4;
+    @apply cursor-pointer;
+  }
+}
+
+html {
+  width: 100%;
+  height: 100%;
+  background-color: #15274c;
+}
+
+/**
+--off-white: #f5ead9; 
+--navy-blue: #15274c;
+--dark-blue: #007193;
+--light-blue: #008c9a;
+--yellow: #f2c35b;
+--orange: #f36c3d;
+--red: #eb3f28;
+*/
