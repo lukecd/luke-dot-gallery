@@ -6,7 +6,7 @@ const TvVideo = () => {
         <div className='flex flex-col justify-center items-center w-full h-full'>
             <div className='max-w-[1000px] w-full grid sm:grid-cols-2 gap-8'>
                 <div className='text-left pb-8 pl-4'>
-                    <p className='text-4xl font-bold inline border-b-4 border-[#f36c3d]'>tv / video production ...</p>
+                    <p className='text-4xl font-bold inline border-b-4 border-[#f36c3d]'>tv / video ...</p>
                     <p className='text-2xl'>
                         I've worked as a director, a producer, an editor and on-camera talent.
                         Here's some of the cooler stuff ...

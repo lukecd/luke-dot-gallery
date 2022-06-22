@@ -3,7 +3,7 @@ import RedEye from '../assets/images/red-eye.png';
 
 const About = () => {
   return (
-    <div name='me' className='w-full h-screen bg-[#15274c] text-[#f5ead9]'>
+    <div name='me' className='w-full h-screen bg-[#15274c] text-[#f5ead9] mt-20'>
         <div className='flex flex-col justify-center items-center w-full h-full'>
             <div className='max-w-[1000px] w-full grid grid-cols-2 gap-8'>
                 <div className='text-left pb-8 pl-4'>
