@@ -37,7 +37,7 @@ const TvVideo = () => {
                     <div class="aspect-w-16 aspect-h-9">
                         <iframe src="https://www.youtube.com/embed/fAD9ezTVGVM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
-                    <p className='mt-5 leading-7'>I cofounded a <a className="underline" target="_blank" href='https://youtube.com/picnicly'>Picnicly</a>, YouTube channel focused on telling upbeat and inspiring stories around topics like travel, culture and social issues. We grew the channel to over 650,000 subscribers.</p>
+                    <p className='mt-5 leading-7'>I cofounded <a className="underline" target="_blank" href='https://youtube.com/picnicly'>Picnicly</a>, YouTube channel focused on telling upbeat and inspiring stories around topics like travel, culture and social issues. We grew the channel to over 650,000 subscribers.</p>
                     
                 </div>
                 <div>
