@@ -3,7 +3,7 @@ import Social from '../components/Social';
 
 const Contact = () => {
   return (
-    <div name='contact' className='w-full h-screen bg-[#15274c] text-[#f5ead9] flex justify-center items-center p-4'>
+    <div name='contact' className='mt-20 md:mt-0 w-full h-screen bg-[#15274c] text-[#f5ead9] flex justify-center items-center p-4'>
         <form action='https://getform.io/f/19f5b563-72f2-49a9-a5a0-faa9d50c4b5e' method='post' className='flex flex-col max-w-[600px] w-full'>
             <div className='pb-8'>
                <p className='text-4xl font-bold inline border-b-4 border-[#f36c3d]'>contact ...</p>
