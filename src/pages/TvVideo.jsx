@@ -37,7 +37,7 @@ const TvVideo = () => {
                 />
             </div>
 
-            <div className='px-5 sm:px-0 mt-10 max-w-[1000px] w-full grid sm:grid-cols-2 gap-8'>
+            <div className='contentBody'>
                 <Video
                     url="https://www.youtube.com/embed/fAD9ezTVGVM"
                     description={<>
@@ -54,7 +54,7 @@ const TvVideo = () => {
                 />
             </div>
 
-            <div className='px-5 sm:px-0 mt-10 max-w-[1000px] w-full grid sm:grid-cols-2 gap-8'>
+            <div className='contentBody'>
                 <Video
                     url="https://player.vimeo.com/video/160713735?h=354e808d5d"
                     description={<>In working with coporate clients, I focused on projets where storytelling could be used to introduce a client's product,
