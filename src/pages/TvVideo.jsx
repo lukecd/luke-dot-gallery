@@ -35,9 +35,7 @@ const TvVideo = () => {
                     <p>In D-Dance Dreams I told the story of a group of backup dancers as they prepare for one of the year's biggest pop concerts. It's the story of a group of people who love their art, are willing to work tirelessly, and yet 
                     rarely get any credit as most people focus on the atists. </p></>}
                 />
-            </div>
 
-            <div className='contentBody'>
                 <Video
                     url="https://www.youtube.com/embed/fAD9ezTVGVM"
                     description={<>
@@ -52,9 +50,7 @@ const TvVideo = () => {
                     our commitment to using YouTube to create socially-conscious LBGTQIA+ stories.<br/>
                     We received a cash grant we then used to launch a series of workshops to train a new generation of LBGTQIA+ YouTubers."</>}
                 />
-            </div>
 
-            <div className='contentBody'>
                 <Video
                     url="https://player.vimeo.com/video/160713735?h=354e808d5d"
                     description={<>In working with coporate clients, I focused on projets where storytelling could be used to introduce a client's product,
@@ -62,13 +58,11 @@ const TvVideo = () => {
                     expand it to share his relationship with Thailand and finally we intoduce his product. A stunning table that mixes contempory
                     design with traditional Thai craftsmanship.</p> </>}
                 />                
-                <div>
-                    <Video
-                        url="https://www.youtube.com/embed/eFUn07piFdI"
-                        description={<>Before Thailand had miles of malls and movieplexes, traveling troups would crisscross the country with a portable screen and projector. In village after village they would setup camp, show the latest films and then narrate them in real-time for a captive audience. <p>I directed this short doc to tell the story of one of the last few remaining narrators and his humble museum dedicated to a dying craft.</p></>}
-                    />
-                        
-                </div>
+            
+                <Video
+                    url="https://www.youtube.com/embed/eFUn07piFdI"
+                    description={<>Before Thailand had miles of malls and movieplexes, traveling troups would crisscross the country with a portable screen and projector. In village after village they would setup camp, show the latest films and then narrate them in real-time for a captive audience. <p>I directed this short doc to tell the story of one of the last few remaining narrators and his humble museum dedicated to a dying craft.</p></>}
+                />
             </div>
 
         </div>
