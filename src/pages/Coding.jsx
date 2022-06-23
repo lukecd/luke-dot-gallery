@@ -11,6 +11,7 @@ const Coding = () => {
                     <p className='text-2xl'>
                         I've felt at home writing software since I first got my hands on an Apple IIc in 1994.
                         I took a break, but now I'm back at it again. Here's what I've been building.
+                        All code is opensource and on <a className="underline" href="https://github.com/lukecd" target="_blank" rel="noreferrer">GitHub</a>
                     </p>
                 </div>
                 <div>
