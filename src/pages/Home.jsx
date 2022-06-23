@@ -4,6 +4,10 @@ import Logo from '../assets/images/logo-sun.png';
 import BouncingBalls from '../processing/BouncingBalls';
 import { Link } from 'react-scroll';
 
+/**
+ * 
+ * @returns The initial page shown when someone visits https://luke.gallery
+ */
 const Home = () => {
   return (
     <div name='top' className='w-full h-screen bg-[#15274c] text-[#f5ead9]'>

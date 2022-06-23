@@ -1,6 +1,9 @@
 import React from 'react';
-import RedEye from '../assets/images/red-eye.png';
 
+/**
+ * 
+ * @returns An About page telling what I've been up to these past 20 years
+ */
 const About = () => {
   return (
     <div name='me' className='contentContainer'>

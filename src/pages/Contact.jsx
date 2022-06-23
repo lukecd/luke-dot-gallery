@@ -1,6 +1,10 @@
 import React from 'react';
 import Social from '../components/Social';
 
+/**
+ * 
+ * @returns A simple contact form
+ */
 const Contact = () => {
   return (
     <div name='contact' className='mt-20 md:mt-0 w-full h-screen bg-[#15274c] text-[#f5ead9] flex justify-center items-center p-4'>

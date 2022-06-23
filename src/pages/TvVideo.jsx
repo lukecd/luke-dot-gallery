@@ -1,6 +1,10 @@
 import React from 'react';
 import Video from '../components/Video';
 
+/**
+ * 
+ * @returns A styled grid of some TV / video production jobs I've worked on
+ */
 const TvVideo = () => {
   return (
     <div name='tv-video' className='mt-20 md:mt-0 w-full h-full overflow-visible bg-[#15274c] text-[#f5ead9]'>

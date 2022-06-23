@@ -1,6 +1,10 @@
 import React from 'react'
 import AdamsExchange from '../assets/images/42.png';
 
+/**
+ * 
+ * @returns A styled grid highlighting recent coding projects
+ */
 const Coding = () => {
   return (
     <div name='coding' className='contentContainer'>
