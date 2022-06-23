@@ -1,11 +1,10 @@
 import React from 'react'
 import {HiArrowNarrowRight} from 'react-icons/hi';
 import Logo from '../assets/images/logo-sun.png';
-import BouncingBalls from '../BouncingBalls';
+import BouncingBalls from '../processing/BouncingBalls';
 import { Link } from 'react-scroll';
 
 const Home = () => {
-
   return (
     <div name='top' className='w-full h-screen bg-[#15274c] text-[#f5ead9]'>
         <div className='max-w-[1000px] mx-auto  flex flex-col justify-end h-full z-0'>

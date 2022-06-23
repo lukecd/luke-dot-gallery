@@ -1,12 +1,13 @@
 import { useEffect, useRef } from 'react';
 import p5 from 'p5';
-import './index.css';
-import { clear } from '@testing-library/user-event/dist/clear';
 
-//https://p5js.org/examples/motion-bouncy-bubbles.html
+/**
+ * 
+ * A modified version of the code from https://p5js.org/examples/motion-bouncy-bubbles.html
+ */
 function sketch(p) {
     let numBalls = 30;
-    let maxBalls = 70;
+    let currentWidth = 0;
     let spring = .5;
     let gravity = 0.001;
     let friction = 2;
@@ -16,18 +17,16 @@ function sketch(p) {
 
 
     // p is a reference to the p5 instance this sketch is attached to
-    p.setup = function() {
+    p.setup = () => {
+      currentWidth = window.screen.width;
       p.background(backgroundColor);
 
       if(window.screen.width <= 600) {
         numBalls = 5;
-        maxBalls = 20;
       }
       else {
         numBalls = 30;
-        maxBalls = 70;
       }
-      console.log('setup called', numBalls);
       p.createCanvas(window.screen.width, window.screen.height);
         for (let i = 0; i < numBalls; i++) {
             balls[i] = new Ball(
@@ -40,32 +39,21 @@ function sketch(p) {
             );
         }
         p.noStroke();
-        
-        //p.fill();
     }
 
-    p.windowResized = function() {
-      p.setup();
+    // The number of balls we show is conditional based on the screen size.
+    // When resizing the screen, we need to force setup to be called to redo things....
+    p.windowResized = () => {
+      // ... BUT we only want to do it when the width changes
+      // Otherwise this will fire when scrolling.
+      if(currentWidth !== window.screen.width) {
+        currentWidth = window.screen.width;
+        p.setup();
+      }
     }
 
-    // draw is called 60x per sec
-    p.draw = function() {
-        // every so often add a new ball
-        /**
-        const rndCheck = p.random(100);
-        if(rndCheck > 90 && numBalls<maxBalls) {
-          numBalls++;
-          const newBall = new Ball(
-            p.random(p.width),
-            p.random(p.height),
-            p.random(30, 70),
-            balls.length,
-            balls,
-            colors[Math.floor(p.random(colors.length-1))]
-          );
-          balls.push(newBall);
-        }
-        */
+    // draw is called 60x (generally) per sec
+    p.draw = () => {
         p.background(backgroundColor);
         balls.forEach(ball => {
           ball.collide();
@@ -88,15 +76,12 @@ function sketch(p) {
       
         collide() {
           for (let i = this.id + 1; i < numBalls; i++) {
-            // console.log(others[i]);
             let dx = this.others[i].x - this.x;
             let dy = this.others[i].y - this.y;
             let distance = p.sqrt(dx * dx + dy * dy);
             let minDist = this.others[i].diameter / 2 + this.diameter / 2;
-            //   console.log(distance);
-            //console.log(minDist);
+
             if (distance < minDist) {
-              //console.log("2");
               let angle = p.atan2(dy, dx);
               let targetX = this.x + p.cos(angle) * minDist;
               let targetY = this.y + p.sin(angle) * minDist;

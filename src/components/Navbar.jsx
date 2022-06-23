@@ -5,6 +5,10 @@ import Logo from '../assets/images/logo-sun.png';
 import {FaBars, FaTimes} from 'react-icons/fa';
 import { Link } from 'react-scroll';
 
+
+/**
+ * @returns Top navigation bar
+ */
 const Navbar = () => {
     const [nav, setNav] = useState(false);
     const handleClick = () => setNav(!nav);

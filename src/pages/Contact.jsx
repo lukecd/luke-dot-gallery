@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import Social from '../components/Social';
 
 const Contact = () => {
   return (
@@ -8,10 +9,7 @@ const Contact = () => {
                <p className='text-4xl font-bold inline border-b-4 border-[#f36c3d]'>contact ...</p>
                <p className='py-4'>Working on something fun? use the form, or email me Luke AT SPstories.com.</p>
                <p className='py-4'>
-                <a className="underline" href="https://www.linkedin.com/in/lukecd/" target="_blank">LinkedIn</a> | 
-                <a className="underline" href="https://twitter.com/spaceagente" target="_blank">Twitter</a> | 
-                <a className="underline" href="https://www.instagram.com/lukecd/" target="_blank">Instagram</a> | 
-                <a className="underline" href="https://github.com/lukecd" target="_blank">GitHub</a>
+                <Social />
                </p>
             </div>
             <input className='p-2 text-black' type="text" placeholder='name' name='name' />

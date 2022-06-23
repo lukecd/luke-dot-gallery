@@ -1,11 +1,11 @@
 import './index.css';
 import Navbar from './components/Navbar';
-import Home from './components/Home';
-import About from './components/About';
-import BouncingBalls from './BouncingBalls';
-import TvVideo from './components/TvVideo';
-import Coding from './components/Coding';
-import Contact from './components/Contact';
+import Home from './pages/Home';
+import About from './pages/About';
+import BouncingBalls from './processing/BouncingBalls';
+import TvVideo from './pages/TvVideo';
+import Coding from './pages/Coding';
+import Contact from './pages/Contact';
 
 function App() {
   return (
