@@ -3,9 +3,9 @@ import Video from '../components/Video';
 
 const TvVideo = () => {
   return (
-    <div name='tv-video' className='w-full min-h-full overflow-visible bg-[#15274c] text-[#f5ead9] overflow-visible mt-10'>
+    <div name='tv-video' className='w-full min-h-full overflow-visible bg-[#15274c] text-[#f5ead9]'>
         <div className='flex flex-col justify-center items-center w-full h-full'>
-            <div className='max-w-[1000px] w-full grid sm:grid-cols-2 gap-8'>
+            <div className='max-w-[1000px] w-full grid grid-cols-1 gap-8'>
                 <div className='text-left pb-8 pl-4'>
                     <p className='text-4xl font-bold inline border-b-4 border-[#f36c3d]'>tv / video ...</p>
                     <p className='text-2xl'>

@@ -3,7 +3,7 @@ import AdamsExchange from '../assets/images/42.png';
 
 const Coding = () => {
   return (
-    <div name='coding' className='w-full h-screen overflow-visible bg-[#15274c] text-[#f5ead9] overflow-visible mt-20'>
+    <div name='coding' className='w-full h-screen overflow-visible bg-[#15274c] text-[#f5ead9]'>
         <div className='flex flex-col justify-center items-center w-full h-full'>
             <div className='max-w-[1000px] w-full grid grid-cols-1 gap-8'>
                 <div className='text-left pb-8 pl-4'>
