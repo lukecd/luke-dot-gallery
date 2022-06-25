@@ -22,7 +22,7 @@ const Navbar = () => {
             <ul className='hidden md:flex'>
                 <li>
                     <Link className='hover:bg-[#f36c3d] hover:border-[#f36c3d] border-2 px-4 py-2' to="top" smooth={true} duration={500}>
-                        top
+                        home
                     </Link>
                 </li>
                 <li>
@@ -37,7 +37,7 @@ const Navbar = () => {
                 </li>
                 <li>
                     <Link className='hover:bg-[#f36c3d] hover:border-[#f36c3d] border-2 px-4 py-2' to="tv-video" smooth={true} duration={500}>
-                        tv-video
+                        tv / video
                     </Link>
                 </li>
                 <li>

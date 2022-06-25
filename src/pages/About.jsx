@@ -21,7 +21,7 @@ const About = () => {
                     <p className='text-4xl my-5 px-4'>I'm currently focused on building with web3 technologies.</p>
                     <p className='my-5 px-2 leading-7'>
                         I've worked as a software engineer, I've been a CTO, a TV producer, a documentary director,
-                        a YouTuber. I've <a className="underline" href="https://www.amazon.com/s?k=luke+cassady-dorion&i=stripbooks&crid=287ICLAT11TVR&sprefix=luke+casssady-dorion%2Cstripbooks%2C284&ref=nb_sb_noss" target="_blank">written / contributed</a> to multiple books on software development., I've taught yoga and I've taught Pilates.
+                        a YouTuber. I've <a className="underline" href="https://www.amazon.com/s?k=luke+cassady-dorion&i=stripbooks&crid=287ICLAT11TVR&sprefix=luke+casssady-dorion%2Cstripbooks%2C284&ref=nb_sb_noss" target="_blank">written and contributed</a> to multiple books on software development. I've taught yoga and I've taught Pilates.
                         I have half a BS in Computer Science and a BA in Thai Language Studies.
                     </p>
                 </div>
