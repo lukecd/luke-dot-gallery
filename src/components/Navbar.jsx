@@ -31,17 +31,17 @@ const Navbar = () => {
                     </Link>
                 </li>
                 <li>
-                    <Link className='hover:bg-[#f36c3d] hover:border-[#f36c3d] border-2 px-4 py-2' to="coding" smooth={true} duration={500}>
+                    <Link className='hover:bg-[#f36c3d] hover:border-[#f36c3d] border-2 px-4 py-2' to="coding" smooth={true} offset={-100} duration={500}>
                         coding
                     </Link>
                 </li>
                 <li>
-                    <Link className='hover:bg-[#f36c3d] hover:border-[#f36c3d] border-2 px-4 py-2' to="tv-video" smooth={true} duration={500}>
+                    <Link className='hover:bg-[#f36c3d] hover:border-[#f36c3d] border-2 px-4 py-2' to="tv-video" smooth={true} offset={-100} duration={500}>
                         tv / video
                     </Link>
                 </li>
                 <li>
-                    <Link className='hover:bg-[#f36c3d] hover:border-[#f36c3d] border-2 px-4 py-2' to="contact" smooth={true} duration={500}>
+                    <Link className='hover:bg-[#f36c3d] hover:border-[#f36c3d] border-2 px-4 py-2' to="contact" smooth={true} offset={-50} duration={500}>
                         contact
                     </Link>
                 </li>
