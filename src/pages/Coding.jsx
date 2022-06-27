@@ -26,7 +26,7 @@ const Coding = () => {
                     <img src={AdamsExchange} alt="Adams Exchange" />
                     <p className='mt-5 leading-7'>
                         <a href="https://adams.exchange" target="_blank" className="underline">Adams Exchange</a> is a full-stack web3 app I built using Solidity, React, JavaScript and Rainbowkit.
-                        I first created ADAMS Coin as an ERC20 token with tokenomics that would appeal to gamlers. Each transfer is 
+                        I first created ADAMS Coin as an ERC20 token with tokenomics that would appeal to people who like games of chance. Each transfer is 
                         taxed 42% and then that tax is randomally given to a holder. 
                     </p>
                     <p className='mt-5 leading-7'>
