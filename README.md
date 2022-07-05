@@ -11,7 +11,7 @@ Pages and Components are all .jsx files, and the ball animation is a Processing 
 
 Speaking as someone who coded a lot, then took a big break ... I gotta say, it really is a lot of fun making stuff now. Between all the 3rd party libraries, all the free help online and just how advanced JavaScript is, it really is a joy to build things. 
 
-Back in 1996, I co-authored a book on JavaScript (https://www.amazon.com/Javascript-Example-Stephen-Feather/dp/0789708132/) and back then it was barely good for form validation. Now you can build who worlds with it. Far out.
+Back in 1996, I co-authored a book on JavaScript (https://www.amazon.com/Javascript-Example-Stephen-Feather/dp/0789708132/) and back then it was barely good for form validation. Now you can build whole worlds with it. Far out.
 
 Check it out my full portfolio at https://luke.gallery
 
