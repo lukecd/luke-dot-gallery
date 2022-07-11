@@ -43,7 +43,7 @@ const TvVideo = () => {
                 <Video
                     url="https://www.youtube.com/embed/fAD9ezTVGVM"
                     description={<>Soon after YouTube opened a Thailand office, I cofounded <a className='underline' target='_blank' rel='noreferrer' href='https://youtube.com/picnicly'>Picnicly,</a> 
-                    a channel focused on telling upbeat and inspiring stories. We designed the channel to be an oasis of positivity, 
+                    &nbsp;a channel focused on telling upbeat and inspiring stories. We designed the channel to be an oasis of positivity, 
                     an inclusive place that would entertain without alienating anyone. 
                     Our upbeat storytelling helped us build an audience over 650,000 subscribers in a few years.
                     </>}
@@ -51,14 +51,14 @@ const TvVideo = () => {
                 <Video
                     url="https://www.youtube.com/embed/g5cAohInNIc"
                     description={<>In 2018, our work with Picnicly was recognized by the <a className='underline' target='_blank' rel='noreferrer' href='https://blog.youtube/creator-and-artist-stories/meet-2018-creators-for-change-global/'>YouTube Creators for Change program</a> 
-                    for our commitment to using YouTube to create socially-conscious LBGTQIA+ stories. 
+                    &nbsp;for our commitment to using YouTube to create socially-conscious LBGTQIA+ stories. 
                     We received a cash grant that we used to launch a series of workshops to train a new generation of LBGTQIA+ YouTubers.
                     </>}
                 />
 
                 <Video
                     url="https://player.vimeo.com/video/160713735?h=354e808d5d"
-                    description={<>In working with corporate clients, I focus on projects where storytelling could be used to introduce 
+                    description={<>In working with corporate clients, I focus on projects where storytelling can be used to introduce 
                     a client's product, and then bond with the viewer as we drew them in. In this video produced for Lamont Design, 
                     we start with the story of the designer, expand it to share his relationship with Thailand, and finally we introduce his product. 
                     A stunning table that mixes contemporary design with traditional Thai craftsmanship.</>}
