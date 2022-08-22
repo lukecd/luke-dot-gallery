@@ -1,5 +1,6 @@
 import React from 'react'
 import AdamsExchange from '../assets/images/42.png';
+import InterdimensionalOne from '../assets/images/id-one.png';
 
 /**
  * 
@@ -32,7 +33,15 @@ const Coding = () => {
                     <p className='mt-5 leading-7'>
                         Running on the Goerli testnet, it allows anyone to claim 4200 free tokens, to swap them, to earn tax rewards and to stake them.
                     </p>
-                    
+                </div>
+                <div className=''>
+                    <img src={InterdimensionalOne} alt="Interdimensional One" />
+                    <p className='mt-5 leading-7'>
+                        <a href="https://interdimensional.one" target="_blank" className="underline">Interdimensional One</a> is a generative art and music experience that feeds off NFTs. It's portal from your monkey mind to a place of stillness. It's the first ever NFT marketplace for sound designers. It's a place you go to relax, you can watch the visuals or interact with them.  
+                    </p>
+                    <p className='mt-5 leading-7'>
+                        Currently running on the Mumbai testnet as an MVP, anyone can mint NFTs and create a generative soundtrack perfect for relaxing. 
+                    </p>
                 </div>
                 <div>
                 </div>
