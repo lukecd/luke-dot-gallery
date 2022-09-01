@@ -49,14 +49,16 @@ const About = () => {
 							dedicated to telling positive, uplifting stories.
 						</p>
 						<p className="text-4xl my-5 px-4">
-							And now I'm building using Solidity, JavaScript and React. Wanna{" "}
+							And now I'm building using Solidity, JavaScript and React.
+						</p>
+						<p className="text-2xl my-5 px-4">
 							<a
 								className="underline"
 								href="/resume/Luke-Cassady-Dorion-Resume-Builder.pdf"
 								target="_blank"
 								rel="noreferrer"
 							>
-								check out my resume?.
+								Lots more info in my resume.
 							</a>
 						</p>
 					</div>
