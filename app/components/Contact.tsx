@@ -14,7 +14,6 @@ const Contact: React.FC = () => {
 	}, []);
 
 	if (!hydrated) {
-		// This will prevent the component from rendering until the client-side hydration is complete
 		return null;
 	}
 
