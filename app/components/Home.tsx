@@ -1,18 +1,26 @@
-import React from "react";
+"use client";
+
+import React, { useState, useEffect } from "react";
 import { HiArrowNarrowRight } from "react-icons/hi";
 import Image from "next/image";
 import Link from "next/link";
-import BouncingBalls from "../processing/BouncingBalls";
+import DynamicBouncingBalls from "../processing/DynamicBouncingBalls";
 
 /**
  *
  * @returns The initial page shown when someone visits https://luke.gallery
  */
 const Home: React.FC = () => {
+	const [loaded, setLoaded] = useState(false);
+
+	useEffect(() => {
+		setLoaded(true);
+	}, []);
+
 	return (
 		<div id="top" className="w-full h-full bg-[#15274c] text-[#f5ead9]">
 			<div className="mx-auto h-screen flex flex-col justify-end z-0">
-				<BouncingBalls />
+				<DynamicBouncingBalls />
 				<div className="absolute top-20 right-10" style={{ width: "600px" }}>
 					<Image src="/images/logo-sun.png" alt="logo" layout="responsive" width={600} height={600} />
 				</div>
@@ -30,6 +38,7 @@ const Home: React.FC = () => {
 					</div>
 				</div>
 			</div>
+			*
 		</div>
 	);
 };

@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { FaBars, FaTimes } from "react-icons/fa";
@@ -16,7 +16,7 @@ const Navbar: React.FC = () => {
 			} else {
 				const element = document.querySelector(href);
 				if (element) {
-					const offset = window.pageYOffset + element.getBoundingClientRect().top - 80; // Adjust the 80 to match your navbar height
+					const offset = window.scrollY + element.getBoundingClientRect().top - 80; // Adjust the 80 to match your navbar height
 					window.scrollTo({ top: offset, behavior: "smooth" });
 				}
 			}
