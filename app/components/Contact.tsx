@@ -22,16 +22,16 @@ const Contact: React.FC = () => {
 			<form
 				action="https://getform.io/f/19f5b563-72f2-49a9-a5a0-faa9d50c4b5e"
 				method="post"
-				className="flex flex-col w-full px-20"
+				className="flex flex-col w-full md:px-20"
 			>
 				<div className="pb-8 text-start">
-					<p className="text-4xl font-bold inline border-b-4 border-[#f36c3d]">contact ...</p>
+					<p className="text-xl md:text-4xl font-bold inline border-[#f36c3d] border-b-4">contact ...</p>
 					<p className="text-2xl my-5 px-4">Working on something fun? Use the form, or email me Luke@SPstories.com.</p>
 					<p className="py-4 flex justify-center">
 						<Social />
 					</p>
 				</div>
-				<div className="flex flex-col px-20 justify-center">
+				<div className="flex flex-col px-2 md:px-20 justify-center">
 					<input className="p-2 text-black" type="text" placeholder="name" name="name" required />
 					<input className="my-4 p-2 text-black" type="email" placeholder="email" name="email" required />
 					<textarea className="p-2 text-black" name="message" rows={10} placeholder="message" required></textarea>

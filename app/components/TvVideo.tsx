@@ -11,16 +11,16 @@ const TvVideo: React.FC = () => {
 		<div id="tv-video" className="contentContainer min-h-screen bg-[#15274c] text-[#f5ead9] mt-[150px]">
 			<div className="flex flex-col justify-center items-center w-full h-full">
 				<div className="flex flex-col w-full justify-center items-center">
-					<div className="w-5/6 text-start">
-						<p className="text-4xl font-bold inline border-[#f36c3d] border-b-4">tv / video ...</p>
+					<div className="md:w-5/6 text-start">
+						<p className="text-xl md:text-4xl font-bold inline border-[#f36c3d] border-b-4">tv / video ...</p>
 					</div>
-					<div className="flex flex-col pl-10 w-full md:w-5/6">
+					<div className="flex flex-col md:pl-10 w-full md:w-5/6 px-2">
 						<p className="text-xl my-5 px-4">
 							I&apos;ve worked as a director, a producer, an editor, and on-camera talent. Here&apos;s some of the
 							cooler stuff ...
 						</p>
-						<div className="flex flex-row w-full justify-between gap-5">
-							<div className="mt-8 w-1/2">
+						<div className="flex flex-col md:flex-row w-full justify-between gap-5">
+							<div className="mt-8 md:w-1/2">
 								<Video
 									url="https://www.youtube.com/embed/F71UCJ-nd2U"
 									description={
@@ -34,7 +34,7 @@ const TvVideo: React.FC = () => {
 									}
 								/>
 							</div>
-							<div className="mt-8 w-1/2">
+							<div className="mt-8 md:w-1/2">
 								<Video
 									url="https://www.youtube.com/embed/JZyTts39O84"
 									description={
@@ -50,8 +50,8 @@ const TvVideo: React.FC = () => {
 								/>
 							</div>
 						</div>
-						<div className="flex flex-row w-full justify-between gap-5">
-							<div className="mt-8 w-1/2">
+						<div className="flex flex-col md:flex-row w-full justify-between gap-5">
+							<div className="mt-8 md:w-1/2">
 								<Video
 									url="https://www.youtube.com/embed/fAD9ezTVGVM"
 									description={
@@ -67,7 +67,7 @@ const TvVideo: React.FC = () => {
 									}
 								/>
 							</div>
-							<div className="mt-8 w-1/2">
+							<div className="mt-8 md:w-1/2">
 								<Video
 									url="https://player.vimeo.com/video/160713735?h=354e808d5d"
 									description={
@@ -82,8 +82,8 @@ const TvVideo: React.FC = () => {
 								/>
 							</div>
 						</div>
-						<div className="flex flex-row w-full justify-between gap-5">
-							<div className="mt-8 w-1/2">
+						<div className="flex flex-col md:flex-row w-full justify-between gap-5">
+							<div className="mt-8 md:w-1/2">
 								<Video
 									url="https://www.youtube.com/embed/eFUn07piFdI"
 									description={
@@ -97,7 +97,7 @@ const TvVideo: React.FC = () => {
 									}
 								/>
 							</div>
-							<div className="mt-8 w-1/2"></div>
+							<div className="mt-8 md:w-1/2"></div>
 						</div>
 					</div>
 				</div>

@@ -9,7 +9,7 @@ import Link from "next/link";
  */
 const Social: React.FC = () => {
 	return (
-		<div>
+		<div className="flex flex-row justify-between md:gap-3 text-sm md:text-base">
 			<Link className="underline" href="/resume/Luke-Cassady-Dorion-Resume.pdf" target="_blank" rel="noreferrer">
 				Resume
 			</Link>
