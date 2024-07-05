@@ -31,14 +31,13 @@ const Home: React.FC = () => {
 					<div>
 						<Link
 							className="hover:bg-[#f36c3d] hover:border-[#f36c3d] border-2 px-4 py-3 my-8 flex items-center"
-							href="/contact"
+							href="#contact"
 						>
 							contact <HiArrowNarrowRight className="ml-4" />
 						</Link>
 					</div>
 				</div>
 			</div>
-			*
 		</div>
 	);
 };
