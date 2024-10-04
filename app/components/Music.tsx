@@ -15,7 +15,7 @@ const Music: React.FC = () => {
 						<p className="text-xl md:text-4xl font-bold inline border-[#f36c3d] border-b-4">electronic music ...</p>
 					</div>
 					<div className="flex flex-col md:pl-10 w-full md:w-5/6 px-2">
-						<p className="text-xl my-5 px-4">Music = Math + Emotion ..</p>
+						<p className="text-xl my-5 px-4">Music = Math + Emotion</p>
 						<div className="flex flex-col md:flex-row w-full justify-between gap-5">
 							<div className="md:mt-8 md:w-1/2">
 								<Image className="" src="/images/id-one.png" alt="Interdimensional One" width={592} height={592} />

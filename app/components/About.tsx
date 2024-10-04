@@ -15,11 +15,7 @@ const About: FC = () => {
 					<div className="flex flex-col md:flex-row md:pl-10 w-full md:w-5/6 px-2">
 						<div className="w-full md:px-5">
 							<p className="text-2xl md:text-4xl my-5 md:px-4">
-								I work in Developer Relations at{" "}
-								<a className="underline" href="https://irys.xyz/" rel="noreferrer" target="_blank">
-									Irys
-								</a>
-								, & I love making docs.
+								I work in Developer Relations & I love making docs.
 							</p>
 							<p className="my-5 leading-7">
 								I&apos;ve worked as a software engineer, I&apos;ve been a CTO, a TV producer, a documentary director, a

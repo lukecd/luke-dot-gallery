@@ -22,14 +22,14 @@ const DevRel: React.FC = () => {
 						<div className="flex flex-col md:flex-row w-full justify-between gap-5">
 							<div className="md:w-1/2 mt-10 md:mt-0">
 								<Video
-									url="https://www.youtube.com/embed/CdWn9clSybM"
-									description={<>Everything devs need to know to build with the Irys SDK.</>}
+									url="https://www.youtube.com/embed/uNoG2_UzvA8"
+									description={<>This is Irys.</>}
 								/>
 							</div>
 							<div className="md:w-1/2 mt-10 md:mt-0">
 								<Video
-									url="https://www.youtube.com/embed/8CuS7aJJShU"
-									description={<>An introduction to Irys, our tech and the problems it solves.</>}
+									url="https://www.youtube.com/embed/6dZbV5HFK2M"
+									description={<>This is verifiability.</>}
 								/>
 							</div>
 						</div>
@@ -50,7 +50,7 @@ const DevRel: React.FC = () => {
 										Irys docs
 									</Link>{" "}
 									cover everything devs need to know about our protocol, including how to interact with it using our
-									SDKs and CLI. There is a protocol overview, API docs, guides, tutorials, and more.
+									SDKs and CLI. 
 								</p>
 							</div>
 							<div className="md:w-1/2 mt-10 md:mt-0">
@@ -72,8 +72,7 @@ const DevRel: React.FC = () => {
 									>
 										Irys Provenance Toolkit
 									</Link>{" "}
-									is an open-source UI library for interacting with our protocol. It is designed to both demonstrate
-									what can be built with Irys and also kickstart new projects.
+									is an open-source UI library for interacting with our protocol. 
 								</p>
 							</div>
 						</div>
