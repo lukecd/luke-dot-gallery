@@ -1,22 +1,12 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Social from "../components/Social";
 
 /**
  * @returns A simple contact form
  */
 const Contact: React.FC = () => {
-	const [hydrated, setHydrated] = useState(false);
-
-	useEffect(() => {
-		setHydrated(true);
-	}, []);
-
-	if (!hydrated) {
-		return null;
-	}
-
 	return (
 		<div id="contact" className="contentContainer min-h-screen w-full flex justify-center items-center p-4 mt-[100px] ">
 			<form

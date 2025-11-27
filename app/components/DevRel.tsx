@@ -22,6 +22,21 @@ const DevRel: React.FC = () => {
 						<div className="flex flex-col md:flex-row w-full justify-between gap-5">
 							<div className="md:w-1/2 mt-10 md:mt-0">
 								<Video
+									url="https://www.youtube.com/embed/9Y5rc8OC6yE"
+									description={<>Grok DAS in 5 minutes.</>}
+								/>
+							</div>
+							<div className="md:w-1/2 mt-10 md:mt-0">
+								<Video
+									url="https://www.youtube.com/embed/8gBjhHVw5mE"
+									description={<>Make your app verifiable in 5 mintues with Chopin.</>}
+								/>
+							</div>
+						</div>
+
+						<div className="flex flex-col md:mt-10 md:flex-row w-full justify-between gap-5">
+							<div className="md:w-1/2 mt-10 md:mt-0">
+								<Video
 									url="https://www.youtube.com/embed/uNoG2_UzvA8"
 									description={<>This is Irys.</>}
 								/>
@@ -40,39 +55,36 @@ const DevRel: React.FC = () => {
 									className="w-full"
 									src="/images/irys-docs.png"
 									alt="Irys Docs"
-									layout="responsive"
 									width={592}
 									height={399}
+									sizes="(max-width: 768px) 100vw, 50vw"
 								/>
 								<p className="mt-5 leading-7 self-end">
-									The{" "}
 									<Link href="https://docs.irys.xyz" className="underline" target="_blank" rel="noreferrer">
-										Irys docs
-									</Link>{" "}
-									cover everything devs need to know about our protocol, including how to interact with it using our
-									SDKs and CLI. 
+										Irys docs.
+									</Link>{" "} 
 								</p>
 							</div>
 							<div className="md:w-1/2 mt-10 md:mt-0">
 								<Image
 									className="w-full"
-									src="/images/provenance-toolkit.png"
+									src="/images/bonding-curve.png"
 									alt="Irys Provenance Toolkit"
-									layout="responsive"
 									width={592}
 									height={399}
+									sizes="(max-width: 768px) 100vw, 50vw"
 								/>
 								<p className="mt-5 leading-7">
 									The{" "}
 									<Link
-										href="https://provenance-toolkit.irys.xyz"
+										href="https://github.com/lukecd/token-examples"
 										className="underline"
 										target="_blank"
 										rel="noreferrer"
 									>
-										Irys Provenance Toolkit
+										Bonding Curve Tokens
 									</Link>{" "}
-									is an open-source UI library for interacting with our protocol. 
+									repo demonstrates how to create a bonding curve token, and interact with it using Next.js. It was part of a larger project that included a written tutorial and video. 
 								</p>
 							</div>
 						</div>
