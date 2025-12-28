@@ -1,0 +1,348 @@
+{
+  "k": {
+    "ipa": "k",
+    "characters": [
+      { "script": "Burmese", "character": "က", "place": "guttural", "manner": "stopped" },
+      { "script": "Thai", "character": "ก", "place": "guttural", "manner": "stopped" },
+      { "script": "Devanagari", "character": "क", "place": "guttural", "manner": "stopped" }
+    ]
+  },
+  "kʰ": {
+    "ipa": "kʰ",
+    "characters": [
+      { "script": "Burmese", "character": "ခ", "place": "guttural", "manner": "aspirated" },
+      { "script": "Thai", "character": "ข", "place": "guttural", "manner": "aspirated" },
+      { "script": "Thai", "character": "ฃ", "place": "guttural", "manner": "aspirated" },
+      { "script": "Thai", "character": "ค", "place": "guttural", "manner": "aspirated" },
+      { "script": "Thai", "character": "ฅ", "place": "guttural", "manner": "aspirated" },
+      { "script": "Thai", "character": "ฆ", "place": "guttural", "manner": "aspirated" },
+      { "script": "Devanagari", "character": "ख", "place": "guttural", "manner": "aspirated" }
+    ]
+  },
+  "g": {
+    "ipa": "g",
+    "characters": [
+      { "script": "Burmese", "character": "ဂ", "place": "guttural", "manner": "voiced" },
+      { "script": "Devanagari", "character": "ग", "place": "guttural", "manner": "voiced" }
+    ]
+  },
+  "gʰ": {
+    "ipa": "gʰ",
+    "characters": [
+      { "script": "Burmese", "character": "ဃ", "place": "guttural", "manner": "voiced-aspirated" },
+      { "script": "Devanagari", "character": "घ", "place": "guttural", "manner": "voiced-aspirated" }
+    ]
+  },
+  "ŋ": {
+    "ipa": "ŋ",
+    "characters": [
+      { "script": "Burmese", "character": "င", "place": "guttural", "manner": "nasal" },
+      { "script": "Thai", "character": "ง", "place": "guttural", "manner": "nasal" },
+      { "script": "Devanagari", "character": "ङ", "place": "guttural", "manner": "nasal" }
+    ]
+  },
+  "s": {
+    "ipa": "s",
+    "characters": [
+      { "script": "Burmese", "character": "စ", "place": "palatal", "manner": "sibilant" },
+      { "script": "Thai", "character": "ซ", "place": "palatal", "manner": "sibilant" },
+      { "script": "Thai", "character": "ศ", "place": "palatal", "manner": "sibilant" },
+      { "script": "Thai", "character": "ษ", "place": "palatal", "manner": "sibilant" },
+      { "script": "Thai", "character": "ส", "place": "palatal", "manner": "sibilant" },
+      { "script": "Devanagari", "character": "स", "place": "dental", "manner": "sibilant" }
+    ]
+  },
+  "sʰ": {
+    "ipa": "sʰ",
+    "characters": [
+      { "script": "Burmese", "character": "ဆ", "place": "palatal", "manner": "sibilant" }
+    ]
+  },
+  "z": {
+    "ipa": "z",
+    "characters": [
+      { "script": "Burmese", "character": "ဇ", "place": "palatal", "manner": "voiced" }
+    ]
+  },
+  "zʰ": {
+    "ipa": "zʰ",
+    "characters": [
+      { "script": "Burmese", "character": "ဈ", "place": "palatal", "manner": "voiced-aspirated" }
+    ]
+  },
+  "ɲ": {
+    "ipa": "ɲ",
+    "characters": [
+      { "script": "Burmese", "character": "ဉ", "place": "palatal", "manner": "nasal" },
+      { "script": "Burmese", "character": "ည", "place": "palatal", "manner": "nasal" },
+      { "script": "Thai", "character": "ญ", "place": "palatal", "manner": "nasal" },
+      { "script": "Devanagari", "character": "ञ", "place": "palatal", "manner": "nasal" }
+    ]
+  },
+  "t": {
+    "ipa": "t",
+    "characters": [
+      { "script": "Burmese", "character": "ဋ", "place": "cerebral", "manner": "stopped" },
+      { "script": "Burmese", "character": "တ", "place": "dental", "manner": "stopped" },
+      { "script": "Thai", "character": "ฏ", "place": "cerebral", "manner": "stopped" },
+      { "script": "Thai", "character": "ต", "place": "dental", "manner": "stopped" }
+    ]
+  },
+  "tʰ": {
+    "ipa": "tʰ",
+    "characters": [
+      { "script": "Burmese", "character": "ဌ", "place": "cerebral", "manner": "aspirated" },
+      { "script": "Burmese", "character": "ထ", "place": "dental", "manner": "aspirated" },
+      { "script": "Thai", "character": "ฐ", "place": "cerebral", "manner": "aspirated" },
+      { "script": "Thai", "character": "ฑ", "place": "cerebral", "manner": "aspirated" },
+      { "script": "Thai", "character": "ฒ", "place": "cerebral", "manner": "aspirated" },
+      { "script": "Thai", "character": "ถ", "place": "dental", "manner": "aspirated" },
+      { "script": "Thai", "character": "ท", "place": "dental", "manner": "aspirated" },
+      { "script": "Thai", "character": "ธ", "place": "dental", "manner": "aspirated" }
+    ]
+  },
+  "d": {
+    "ipa": "d",
+    "characters": [
+      { "script": "Burmese", "character": "ဍ", "place": "cerebral", "manner": "voiced" },
+      { "script": "Burmese", "character": "ဒ", "place": "dental", "manner": "voiced" },
+      { "script": "Thai", "character": "ฎ", "place": "cerebral", "manner": "voiced" },
+      { "script": "Thai", "character": "ด", "place": "dental", "manner": "voiced" }
+    ]
+  },
+  "dʰ": {
+    "ipa": "dʰ",
+    "characters": [
+      { "script": "Burmese", "character": "ဎ", "place": "cerebral", "manner": "voiced-aspirated" },
+      { "script": "Burmese", "character": "ဓ", "place": "dental", "manner": "voiced-aspirated" }
+    ]
+  },
+  "n": {
+    "ipa": "n",
+    "characters": [
+      { "script": "Burmese", "character": "ဏ", "place": "cerebral", "manner": "nasal" },
+      { "script": "Burmese", "character": "န", "place": "dental", "manner": "nasal" },
+      { "script": "Thai", "character": "ณ", "place": "cerebral", "manner": "nasal" },
+      { "script": "Thai", "character": "น", "place": "dental", "manner": "nasal" },
+      { "script": "Devanagari", "character": "न", "place": "dental", "manner": "nasal" }
+    ]
+  },
+  "l": {
+    "ipa": "l",
+    "characters": [
+      { "script": "Burmese", "character": "လ", "place": "dental", "manner": "semivowel" },
+      { "script": "Burmese", "character": "ဠ", "place": "cerebral", "manner": "others" },
+      { "script": "Thai", "character": "ล", "place": "dental", "manner": "semivowel" },
+      { "script": "Thai", "character": "ฬ", "place": "cerebral", "manner": "others" },
+      { "script": "Devanagari", "character": "ल", "place": "dental", "manner": "semivowel" }
+    ]
+  },
+  "θ": {
+    "ipa": "θ",
+    "characters": [
+      { "script": "Burmese", "character": "သ", "place": "dental", "manner": "sibilant" }
+    ]
+  },
+  "p": {
+    "ipa": "p",
+    "characters": [
+      { "script": "Burmese", "character": "ပ", "place": "labial", "manner": "stopped" },
+      { "script": "Thai", "character": "ป", "place": "labial", "manner": "stopped" },
+      { "script": "Devanagari", "character": "प", "place": "labial", "manner": "stopped" }
+    ]
+  },
+  "pʰ": {
+    "ipa": "pʰ",
+    "characters": [
+      { "script": "Burmese", "character": "ဖ", "place": "labial", "manner": "aspirated" },
+      { "script": "Thai", "character": "ผ", "place": "labial", "manner": "aspirated" },
+      { "script": "Thai", "character": "พ", "place": "labial", "manner": "aspirated" },
+      { "script": "Thai", "character": "ภ", "place": "labial", "manner": "aspirated" },
+      { "script": "Devanagari", "character": "फ", "place": "labial", "manner": "aspirated" }
+    ]
+  },
+  "b": {
+    "ipa": "b",
+    "characters": [
+      { "script": "Burmese", "character": "ဗ", "place": "labial", "manner": "voiced" },
+      { "script": "Thai", "character": "บ", "place": "labial", "manner": "voiced" },
+      { "script": "Devanagari", "character": "ब", "place": "labial", "manner": "voiced" }
+    ]
+  },
+  "bʰ": {
+    "ipa": "bʰ",
+    "characters": [
+      { "script": "Burmese", "character": "ဘ", "place": "labial", "manner": "voiced-aspirated" },
+      { "script": "Devanagari", "character": "भ", "place": "labial", "manner": "voiced-aspirated" }
+    ]
+  },
+  "m": {
+    "ipa": "m",
+    "characters": [
+      { "script": "Burmese", "character": "မ", "place": "labial", "manner": "nasal" },
+      { "script": "Thai", "character": "ม", "place": "labial", "manner": "nasal" },
+      { "script": "Devanagari", "character": "म", "place": "labial", "manner": "nasal" }
+    ]
+  },
+  "w": {
+    "ipa": "w",
+    "characters": [
+      { "script": "Burmese", "character": "၀", "place": "labial", "manner": "semivowel" },
+      { "script": "Thai", "character": "ว", "place": "labial", "manner": "semivowel" }
+    ]
+  },
+  "h": {
+    "ipa": "h",
+    "characters": [
+      { "script": "Burmese", "character": "ဟ", "place": "guttural", "manner": "H-aspirate" },
+      { "script": "Thai", "character": "ห", "place": "guttural", "manner": "H-aspirate" },
+      { "script": "Thai", "character": "ฮ", "place": "guttural", "manner": "H-aspirate" },
+      { "script": "Devanagari", "character": "ह", "place": "guttural", "manner": "H-aspirate" }
+    ]
+  },
+  "ʔ": {
+    "ipa": "ʔ",
+    "characters": [
+      { "script": "Burmese", "character": "အ", "place": "guttural", "manner": "throatBase" },
+      { "script": "Thai", "character": "อ", "place": "guttural", "manner": "throatBase" },
+      { "script": "Devanagari", "character": "अ", "place": "guttural", "manner": "throatBase" }
+    ]
+  },
+  "tɕ": {
+    "ipa": "tɕ",
+    "characters": [
+      { "script": "Thai", "character": "จ", "place": "palatal", "manner": "stopped" }
+    ]
+  },
+  "tɕʰ": {
+    "ipa": "tɕʰ",
+    "characters": [
+      { "script": "Thai", "character": "ฉ", "place": "palatal", "manner": "aspirated" },
+      { "script": "Thai", "character": "ช", "place": "palatal", "manner": "aspirated" },
+      { "script": "Thai", "character": "ฌ", "place": "palatal", "manner": "aspirated" }
+    ]
+  },
+  "j": {
+    "ipa": "j",
+    "characters": [
+      { "script": "Thai", "character": "ย", "place": "palatal", "manner": "semivowel" },
+      { "script": "Devanagari", "character": "य", "place": "palatal", "manner": "semivowel" }
+    ]
+  },
+  "r": {
+    "ipa": "r",
+    "characters": [
+      { "script": "Thai", "character": "ร", "place": "cerebral", "manner": "semivowel" },
+      { "script": "Devanagari", "character": "र", "place": "cerebral", "manner": "semivowel" }
+    ]
+  },
+  "f": {
+    "ipa": "f",
+    "characters": [
+      { "script": "Thai", "character": "ฝ", "place": "labial", "manner": "aspirated" },
+      { "script": "Thai", "character": "ฟ", "place": "labial", "manner": "aspirated" }
+    ]
+  },
+  "tʃ": {
+    "ipa": "tʃ",
+    "characters": [
+      { "script": "Devanagari", "character": "च", "place": "palatal", "manner": "stopped" }
+    ]
+  },
+  "tʃʰ": {
+    "ipa": "tʃʰ",
+    "characters": [
+      { "script": "Devanagari", "character": "छ", "place": "palatal", "manner": "aspirated" }
+    ]
+  },
+  "dʒ": {
+    "ipa": "dʒ",
+    "characters": [
+      { "script": "Devanagari", "character": "ज", "place": "palatal", "manner": "voiced" }
+    ]
+  },
+  "dʒʰ": {
+    "ipa": "dʒʰ",
+    "characters": [
+      { "script": "Devanagari", "character": "झ", "place": "palatal", "manner": "voiced-aspirated" }
+    ]
+  },
+  "ʃ": {
+    "ipa": "ʃ",
+    "characters": [
+      { "script": "Devanagari", "character": "श", "place": "palatal", "manner": "sibilant" }
+    ]
+  },
+  "ʈ": {
+    "ipa": "ʈ",
+    "characters": [
+      { "script": "Devanagari", "character": "ट", "place": "cerebral", "manner": "stopped" }
+    ]
+  },
+  "ʈʰ": {
+    "ipa": "ʈʰ",
+    "characters": [
+      { "script": "Devanagari", "character": "ठ", "place": "cerebral", "manner": "aspirated" }
+    ]
+  },
+  "ɖ": {
+    "ipa": "ɖ",
+    "characters": [
+      { "script": "Devanagari", "character": "ड", "place": "cerebral", "manner": "voiced" }
+    ]
+  },
+  "ɖʰ": {
+    "ipa": "ɖʰ",
+    "characters": [
+      { "script": "Devanagari", "character": "ढ", "place": "cerebral", "manner": "voiced-aspirated" }
+    ]
+  },
+  "ɳ": {
+    "ipa": "ɳ",
+    "characters": [
+      { "script": "Devanagari", "character": "ण", "place": "cerebral", "manner": "nasal" }
+    ]
+  },
+  "ʂ": {
+    "ipa": "ʂ",
+    "characters": [
+      { "script": "Devanagari", "character": "ष", "place": "cerebral", "manner": "sibilant" }
+    ]
+  },
+  "t̪": {
+    "ipa": "t̪",
+    "characters": [
+      { "script": "Devanagari", "character": "त", "place": "dental", "manner": "stopped" }
+    ]
+  },
+  "t̪ʰ": {
+    "ipa": "t̪ʰ",
+    "characters": [
+      { "script": "Devanagari", "character": "थ", "place": "dental", "manner": "aspirated" }
+    ]
+  },
+  "d̪": {
+    "ipa": "d̪",
+    "characters": [
+      { "script": "Devanagari", "character": "द", "place": "dental", "manner": "voiced" }
+    ]
+  },
+  "d̪ʰ": {
+    "ipa": "d̪ʰ",
+    "characters": [
+      { "script": "Devanagari", "character": "ध", "place": "dental", "manner": "voiced-aspirated" }
+    ]
+  },
+  "v": {
+    "ipa": "v",
+    "characters": [
+      { "script": "Devanagari", "character": "व", "place": "labial", "manner": "semivowel" }
+    ]
+  },
+  "ɭ": {
+    "ipa": "ɭ",
+    "characters": [
+      { "script": "Devanagari", "character": "ळ", "place": "cerebral", "manner": "others" }
+    ]
+  }
+}
