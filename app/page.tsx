@@ -1,18 +1,21 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import LivingMachine from "./components/LivingMachine";
 
-const signals = [
-  { x: "64%", y: "18%", delay: "0s", size: "7px" },
-  { x: "78%", y: "31%", delay: "1.1s", size: "4px" },
-  { x: "58%", y: "48%", delay: "2.4s", size: "5px" },
-  { x: "87%", y: "58%", delay: "3.2s", size: "4px" },
-  { x: "69%", y: "76%", delay: "1.8s", size: "6px" },
-];
+type SignalState = "hero" | "sow" | "garden" | "technical" | "creative" | "contact";
+
+function JourneySignal({ state }: { state: SignalState }) {
+  return (
+    <div className={`journey-signal journey-${state}`} aria-hidden="true">
+      <span className="journey-object"><i /><b /></span>
+    </div>
+  );
+}
 
 export default function Home() {
   const heroRef = useRef<HTMLElement>(null);
+  const [signalState, setSignalState] = useState<SignalState>("hero");
 
   useEffect(() => {
     const hero = heroRef.current;
@@ -29,6 +32,21 @@ export default function Home() {
     const handleScroll = () => {
       const scrollable = document.documentElement.scrollHeight - window.innerHeight;
       document.documentElement.style.setProperty("--page-progress", String(scrollable > 0 ? window.scrollY / scrollable : 0));
+      const focus = window.innerHeight * 0.48;
+      const sections: Array<[string, SignalState]> = [
+        ["work", "sow"],
+        ["ai-garden", "garden"],
+        ["devrel", "technical"],
+        ["docs", "technical"],
+        ["creative-work", "creative"],
+        ["contact", "contact"],
+      ];
+      let next: SignalState = "hero";
+      for (const [id, state] of sections) {
+        const section = document.getElementById(id);
+        if (section && section.getBoundingClientRect().top <= focus) next = state;
+      }
+      setSignalState((current) => current === next ? current : next);
     };
 
     hero.addEventListener("pointermove", handlePointer);
@@ -42,27 +60,12 @@ export default function Home() {
 
   return (
     <main>
-      <div className="page-signal" aria-hidden="true"><i /></div>
+      <div className="page-signal" aria-hidden="true" />
+      <JourneySignal state={signalState} />
       <section className="hero" ref={heroRef} id="top">
         <div className="hero-art" aria-hidden="true">
-          <div className="hero-image" />
           <LivingMachine />
           <div className="hero-vignette" />
-          <div className="orbit orbit-one" />
-          <div className="orbit orbit-two" />
-          {signals.map((signal, index) => (
-            <span
-              className="signal"
-              key={index}
-              style={{
-                left: signal.x,
-                top: signal.y,
-                animationDelay: signal.delay,
-                width: signal.size,
-                height: signal.size,
-              }}
-            />
-          ))}
         </div>
 
         <header className="nav shell">
@@ -112,7 +115,7 @@ export default function Home() {
             <h2>Sow</h2>
             <h3>A garden journal that listens.</h3>
             <p>
-              An iPhone and iPad app that turns a short garden walk into a lasting memory—using voice,
+              An iPhone and iPad app that turns a short garden walk into a lasting memory... using voice,
               photographs, weather, and the rhythms of the natural world.
             </p>
             <div className="project-tags" aria-label="Project disciplines">
@@ -137,9 +140,9 @@ export default function Home() {
       <section className="ai-project project-section" id="ai-garden">
         <div className="shell project-section-grid">
           <div className="project-section-copy">
-            <p className="eyebrow dark"><span>02</span> Creative AI · Shopify</p>
+            <p className="eyebrow dark"><span>02</span> Creative AI · Shopify · Made by me</p>
             <h2>AI Garden<br /><em>Designer</em></h2>
-            <p>A tool for turning a conversation, a photograph, and a patch of earth into a garden you can imagine—and build.</p>
+            <p>Describe your space, share a photograph, and turn an idea into a garden you can plan and build.</p>
           </div>
           <div className="ai-canvas" aria-label="AI Garden Designer project placeholder">
             <div className="plan-grid" />
@@ -157,10 +160,10 @@ export default function Home() {
       <section className="devrel project-section" id="devrel">
         <div className="shell devrel-heading">
           <p className="eyebrow"><span>03</span> Developer relations</p>
-          <h2>Helping developers<br /><em>get it—and build it.</em></h2>
+          <h2>Helping developers<br /><em>understand and build.</em></h2>
           <p>
-            Developer Relations is my full-time craft. I turn unfamiliar infrastructure into clear stories,
-            useful documentation, and working examples—so developers can move from “what is this?” to shipping.
+            I work in Developer Relations full time. I make technical systems easier to understand through
+            documentation, examples, demos, and video.
           </p>
         </div>
         <div className="shell feature-video">
@@ -177,8 +180,8 @@ export default function Home() {
             <p className="project-kind">Technical explainer</p>
             <h3>Grok DAS in five minutes.</h3>
             <p>
-              A compact visual explanation of a complex data-availability system—designed to give developers
-              the mental model they need before the details arrive.
+              A five-minute explanation of a data availability system, focused on the concepts developers need
+              before they start building.
             </p>
             <a href="https://www.youtube.com/watch?v=9Y5rc8OC6yE" target="_blank" rel="noreferrer">Watch on YouTube ↗</a>
           </div>
@@ -191,17 +194,14 @@ export default function Home() {
             <p className="eyebrow"><span>04</span> Documentation systems</p>
             <h2>DFlow<br /><em>Docs</em></h2>
             <p>
-              Documentation for a unified trading API on Solana: information architecture, conceptual guides,
-              integration paths, examples, and reference material built to help developers find momentum quickly.
+              Documentation for a unified trading API on Solana... concepts, integration guides, examples,
+              troubleshooting, and API reference.
             </p>
             <a href="https://pond.dflow.net/" target="_blank" rel="noreferrer">Explore the docs ↗</a>
           </div>
           <a className="docs-window" href="https://pond.dflow.net/" target="_blank" rel="noreferrer" aria-label="Open the DFlow documentation">
             <div className="window-bar"><i /><i /><i /><span>pond.dflow.net</span></div>
-            <div className="docs-interface">
-              <aside><b>DFlow</b><span>Welcome</span><span>Get Started</span><span>Spot Trading</span><span>AI</span><span>APIs</span></aside>
-              <div className="docs-content"><small>WELCOME TO DFLOW</small><h3>Build on DFlow.</h3><p>Integrate spot trading into your app with one unified API.</p><div className="code-lines"><i /><i /><i /><i /></div></div>
-            </div>
+            <img className="docs-screenshot" src="/images/dflow-docs.png" alt="DFlow documentation homepage" />
           </a>
         </div>
       </section>
@@ -214,7 +214,7 @@ export default function Home() {
         <div className="shell creative-grid">
           <article className="album-card">
             <img src="/images/travel-back-to-the-now.png" alt="Travel Back to the Now album cover" />
-            <div><p className="project-kind">Album</p><h3>Travel Back to the Now</h3><p>Traditional Thai sounds, psychedelic noise, and dance-music grooves—made to quiet the mind and return the listener to the present.</p><div className="media-links"><a href="https://music.apple.com/us/album/travel-back-to-the-now-ep/1519280723" target="_blank" rel="noreferrer">Apple Music ↗</a><a href="https://open.spotify.com/artist/2t2qaObfUFyPorEkNyo0jt" target="_blank" rel="noreferrer">Spotify ↗</a></div></div>
+            <div><p className="project-kind">Album</p><h3>Travel Back to the Now</h3><p>Traditional Thai sounds, psychedelic noise, and dance music grooves... made to quiet the mind and return the listener to the present.</p><div className="media-links"><a href="https://music.apple.com/us/album/travel-back-to-the-now-ep/1519280723" target="_blank" rel="noreferrer">Apple Music ↗</a><a href="https://open.spotify.com/artist/2t2qaObfUFyPorEkNyo0jt" target="_blank" rel="noreferrer">Spotify ↗</a></div></div>
           </article>
           <article className="film-card cheer-film">
             <div className="film-frame"><iframe src="https://www.youtube-nocookie.com/embed/F71UCJ-nd2U?rel=0" title="The Cheer Ambassadors" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen /></div>
