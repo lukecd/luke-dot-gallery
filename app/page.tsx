@@ -1,9 +1,39 @@
 "use client";
 /* eslint-disable @next/next/no-img-element */
 
-import { lazy, Suspense } from "react";
+import { lazy, Suspense, useState } from "react";
 
 const ScrollWorld = lazy(() => import("./components/ScrollWorld"));
+
+function VideoFacade({
+  embedUrl,
+  poster,
+  title,
+}: {
+  embedUrl: string;
+  poster: string;
+  title: string;
+}) {
+  const [active, setActive] = useState(false);
+
+  if (active) {
+    return (
+      <iframe
+        src={embedUrl}
+        title={title}
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"
+        allowFullScreen
+      />
+    );
+  }
+
+  return (
+    <button className="video-facade" type="button" onClick={() => setActive(true)} aria-label={`Play ${title}`}>
+      <img src={poster} alt="" loading="lazy" decoding="async" />
+      <span>Play video <i aria-hidden="true">▶</i></span>
+    </button>
+  );
+}
 
 export default function Home() {
   return (
@@ -118,12 +148,10 @@ export default function Home() {
         </div>
         <div className="shell feature-video">
           <div className="video-frame">
-            <iframe
-              src="https://www.youtube-nocookie.com/embed/9Y5rc8OC6yE?rel=0"
+            <VideoFacade
+              embedUrl="https://www.youtube-nocookie.com/embed/9Y5rc8OC6yE?rel=0&autoplay=1"
+              poster="/images/devrel-das-poster.webp"
               title="Grok DAS in 5 minutes"
-              loading="lazy"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowFullScreen
             />
           </div>
           <div className="video-copy">
@@ -167,11 +195,11 @@ export default function Home() {
             <div><p className="project-kind">Album</p><h3>Travel Back to the Now</h3><p>Traditional Thai sounds, psychedelic noise, and dance music grooves... made to quiet the mind and return the listener to the present.</p><div className="media-links"><a href="https://music.apple.com/us/album/travel-back-to-the-now-ep/1519280723" target="_blank" rel="noreferrer">Apple Music ↗</a><a href="https://open.spotify.com/artist/2t2qaObfUFyPorEkNyo0jt" target="_blank" rel="noreferrer">Spotify ↗</a></div></div>
           </article>
           <article className="film-card cheer-film">
-            <div className="film-frame"><iframe src="https://www.youtube-nocookie.com/embed/F71UCJ-nd2U?rel=0" title="The Cheer Ambassadors" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen /></div>
+            <div className="film-frame"><VideoFacade embedUrl="https://www.youtube-nocookie.com/embed/F71UCJ-nd2U?rel=0&autoplay=1" poster="/images/cheer-ambassadors-poster.webp" title="The Cheer Ambassadors" /></div>
             <p className="project-kind">Documentary · Director</p><h3>The Cheer Ambassadors</h3><p>An award-winning underdog story about Thailand’s self-taught national cheerleading team, seen by festival audiences in more than ten countries.</p>
           </article>
           <article className="film-card lamont-film">
-            <div className="film-frame"><iframe src="https://player.vimeo.com/video/160713735?h=354e808d5d" title="Lamont Design" loading="lazy" allow="autoplay; fullscreen; picture-in-picture" allowFullScreen /></div>
+            <div className="film-frame"><VideoFacade embedUrl="https://player.vimeo.com/video/160713735?h=354e808d5d&autoplay=1" poster="/images/lamont-design-poster.webp" title="Lamont Design" /></div>
             <p className="project-kind">Brand film · Producer</p><h3>Lamont Design</h3><p>A portrait of a designer, his relationship with Thailand, and a contemporary table made through traditional Thai craftsmanship.</p>
           </article>
         </div>
