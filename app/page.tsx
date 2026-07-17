@@ -1,72 +1,26 @@
 "use client";
+/* eslint-disable @next/next/no-img-element */
 
-import { useEffect, useRef, useState } from "react";
-import LivingMachine from "./components/LivingMachine";
+import { lazy, Suspense } from "react";
 
-type SignalState = "hero" | "sow" | "garden" | "technical" | "creative" | "contact";
-
-function JourneySignal({ state }: { state: SignalState }) {
-  return (
-    <div className={`journey-signal journey-${state}`} aria-hidden="true">
-      <span className="journey-object"><i /><b /></span>
-    </div>
-  );
-}
+const ScrollWorld = lazy(() => import("./components/ScrollWorld"));
 
 export default function Home() {
-  const heroRef = useRef<HTMLElement>(null);
-  const [signalState, setSignalState] = useState<SignalState>("hero");
-
-  useEffect(() => {
-    const hero = heroRef.current;
-    if (!hero || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
-
-    const handlePointer = (event: PointerEvent) => {
-      const rect = hero.getBoundingClientRect();
-      const x = (event.clientX - rect.left) / rect.width - 0.5;
-      const y = (event.clientY - rect.top) / rect.height - 0.5;
-      hero.style.setProperty("--pointer-x", `${x * 18}px`);
-      hero.style.setProperty("--pointer-y", `${y * 12}px`);
-    };
-
-    const handleScroll = () => {
-      const scrollable = document.documentElement.scrollHeight - window.innerHeight;
-      document.documentElement.style.setProperty("--page-progress", String(scrollable > 0 ? window.scrollY / scrollable : 0));
-      const focus = window.innerHeight * 0.48;
-      const sections: Array<[string, SignalState]> = [
-        ["work", "sow"],
-        ["ai-garden", "garden"],
-        ["devrel", "technical"],
-        ["docs", "technical"],
-        ["creative-work", "creative"],
-        ["contact", "contact"],
-      ];
-      let next: SignalState = "hero";
-      for (const [id, state] of sections) {
-        const section = document.getElementById(id);
-        if (section && section.getBoundingClientRect().top <= focus) next = state;
-      }
-      setSignalState((current) => current === next ? current : next);
-    };
-
-    hero.addEventListener("pointermove", handlePointer);
-    window.addEventListener("scroll", handleScroll, { passive: true });
-    handleScroll();
-    return () => {
-      hero.removeEventListener("pointermove", handlePointer);
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
   return (
     <main>
-      <div className="page-signal" aria-hidden="true" />
-      <JourneySignal state={signalState} />
-      <section className="hero" ref={heroRef} id="top">
-        <div className="hero-art" aria-hidden="true">
-          <LivingMachine />
-          <div className="hero-vignette" />
-        </div>
+      <Suspense fallback={null}>
+        <ScrollWorld />
+      </Suspense>
+      <section className="hero" id="top" data-scene="hero">
+        <img
+          className="hero-machine-plate"
+          src="/images/living-machine-plate.webp"
+          alt=""
+          aria-hidden="true"
+          fetchPriority="high"
+          decoding="async"
+        />
+        <div className="hero-vignette" aria-hidden="true" />
 
         <header className="nav shell">
           <a className="wordmark" href="#top" aria-label="Luke, home">
@@ -101,12 +55,8 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="work" id="work">
+      <section className="work" id="work" data-scene="work">
         <div className="work-glow" aria-hidden="true" />
-        <div className="shell section-heading">
-          <p className="eyebrow dark"><span>01</span> Selected work</p>
-          <p className="section-intro">A quiet place for noticing what grows.</p>
-        </div>
 
         <article className="sow-card shell">
           <div className="sow-copy">
@@ -125,19 +75,19 @@ export default function Home() {
             </div>
             <div className="project-actions">
               <a href="https://sow.garden" target="_blank" rel="noreferrer">Visit sow.garden ↗</a>
-              <a href="#app-store" onClick={(event) => event.preventDefault()}>Download on the App Store ↗</a>
+              <span className="disabled-action" aria-disabled="true">Download on the App Store</span>
             </div>
           </div>
 
           <div className="sow-gallery" aria-label="Selected Sow app screens">
             <figure className="sow-image sow-image-clear">
-              <img src="/images/sow/plants-and-walks.png" alt="Sow garden walks and plant memories across iPhone and iPad" />
+              <img src="/images/sow/plants-and-walks.webp" alt="Sow garden walks and plant memories across iPhone and iPad" loading="lazy" decoding="async" />
             </figure>
           </div>
         </article>
       </section>
 
-      <section className="ai-project project-section" id="ai-garden">
+      <section className="ai-project project-section" id="ai-garden" data-scene="garden">
         <div className="shell project-section-grid">
           <div className="project-section-copy">
             <p className="eyebrow dark"><span>02</span> Creative AI · Shopify · Made by me</p>
@@ -157,7 +107,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="devrel project-section" id="devrel">
+      <section className="devrel project-section" id="devrel" data-scene="devrel">
         <div className="shell devrel-heading">
           <p className="eyebrow"><span>03</span> Developer relations</p>
           <h2>Helping developers<br /><em>understand and build.</em></h2>
@@ -188,7 +138,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="docs project-section" id="docs">
+      <section className="docs project-section" id="docs" data-scene="docs">
         <div className="shell docs-grid">
           <div className="docs-copy">
             <p className="eyebrow"><span>04</span> Documentation systems</p>
@@ -201,19 +151,19 @@ export default function Home() {
           </div>
           <a className="docs-window" href="https://pond.dflow.net/" target="_blank" rel="noreferrer" aria-label="Open the DFlow documentation">
             <div className="window-bar"><i /><i /><i /><span>pond.dflow.net</span></div>
-            <img className="docs-screenshot" src="/images/dflow-docs.png" alt="DFlow documentation homepage" />
+            <img className="docs-screenshot" src="/images/dflow-docs.webp" alt="DFlow documentation homepage" loading="lazy" decoding="async" />
           </a>
         </div>
       </section>
 
-      <section className="creative-work project-section" id="creative-work">
+      <section className="creative-work project-section" id="creative-work" data-scene="creative">
         <div className="shell creative-heading">
           <p className="eyebrow dark"><span>05</span> Away from the keyboard</p>
           <h2>Music and moving images.</h2>
         </div>
         <div className="shell creative-grid">
           <article className="album-card">
-            <img src="/images/travel-back-to-the-now.png" alt="Travel Back to the Now album cover" />
+            <img src="/images/travel-back-to-the-now.webp" alt="Travel Back to the Now album cover" loading="lazy" decoding="async" />
             <div><p className="project-kind">Album</p><h3>Travel Back to the Now</h3><p>Traditional Thai sounds, psychedelic noise, and dance music grooves... made to quiet the mind and return the listener to the present.</p><div className="media-links"><a href="https://music.apple.com/us/album/travel-back-to-the-now-ep/1519280723" target="_blank" rel="noreferrer">Apple Music ↗</a><a href="https://open.spotify.com/artist/2t2qaObfUFyPorEkNyo0jt" target="_blank" rel="noreferrer">Spotify ↗</a></div></div>
           </article>
           <article className="film-card cheer-film">
@@ -227,7 +177,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="contact" id="contact">
+      <section className="contact" id="contact" data-scene="contact">
         <div className="contact-orbit" aria-hidden="true"><i /></div>
         <div className="shell contact-grid">
           <div className="contact-copy">

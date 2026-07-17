@@ -40,3 +40,6 @@ next-env.d.ts
 /.wrangler/
 /outputs/
 /work/
+
+# Source botanical cutouts are retained locally; the site ships optimized WebP copies.
+/public/images/botanical/*.png

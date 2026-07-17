@@ -16,16 +16,16 @@ const sans = Inter({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://luke.gallery"),
-  title: "Luke Cassady-Dorion — Developer, designer, maker",
+  title: "Luke Cassady-Dorion | Developer, designer, maker",
   description: "Apps, tools, explanations, music, and occasionally films.",
   openGraph: {
-    title: "Luke Cassady-Dorion — Developer, designer, maker",
+    title: "Luke Cassady-Dorion | Developer, designer, maker",
     description: "I make things for people... with computers.",
     images: [{ url: "/og.png", width: 1732, height: 908 }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Luke Cassady-Dorion — Developer, designer, maker",
+    title: "Luke Cassady-Dorion | Developer, designer, maker",
     description: "I make things for people... with computers.",
     images: ["/og.png"],
   },
