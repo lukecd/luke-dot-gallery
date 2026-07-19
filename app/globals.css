@@ -44,9 +44,17 @@ main { position: relative; isolation: isolate; }
 .shell { width: min(1460px, calc(100% - 96px)); margin-inline: auto; }
 .scroll-world { position: fixed; inset: 0; z-index: 1; width: 100vw; height: 100svh; pointer-events: none; }
 .scroll-world canvas { display: block; }
-.hero { height: 49.1svh; min-height: 340px; max-height: 540px; position: relative; overflow: visible; background: #050504; }
+.section-progress-rail { --rail-span: 132px; position: fixed; z-index: 2; top: 50%; right: 24px; width: 22px; height: var(--rail-span); transform: translateY(-50%); filter: drop-shadow(0 1px 2px rgba(0,0,0,.42)); opacity: .86; }
+.section-progress-rail__track { position: absolute; top: 0; bottom: 0; left: 50%; width: 1px; transform: translateX(-50%); background: linear-gradient(to bottom, rgba(255,101,68,.54), rgba(151,103,65,.42) 42%, rgba(86,71,52,.36)); box-shadow: 0 0 0 1px rgba(243,237,223,.08); }
+.section-progress-rail__markers { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: space-between; }
+.section-progress-rail__marker { display: block; width: 5px; height: 5px; border: 1px solid rgba(172,118,73,.88); border-radius: 50%; background: #17130f; box-shadow: 0 0 0 1px rgba(243,237,223,.22), 0 0 8px rgba(0,0,0,.25); transition: transform .28s ease, background-color .28s ease, box-shadow .28s ease; }
+.section-progress-rail__marker[data-passed="true"] { background: #9d6944; }
+.section-progress-rail__marker[data-active="true"] { transform: scale(1.65); background: #ff7651; box-shadow: 0 0 0 2px rgba(255,101,68,.14), 0 0 12px rgba(255,101,68,.5); }
+.section-progress-rail__bead { position: absolute; z-index: 2; top: 0; left: 50%; width: 9px; height: 9px; transform: translate3d(-50%, -2px, 0); border: 1px solid rgba(255,216,167,.86); border-radius: 50%; background: #ff6544; box-shadow: 0 0 6px 2px rgba(255,101,68,.42), 0 0 16px 5px rgba(255,101,68,.16); will-change: transform; }
+.section-progress-rail__bead i { position: absolute; inset: 2px; border-radius: inherit; background: #ffd0a3; }
+.hero { height: 55svh; min-height: 430px; max-height: 600px; position: relative; overflow: visible; background: #050504; }
 .hero .shell { width: min(1260px, calc(100% - 180px)); }
-.hero-machine-plate { position: absolute; z-index: 0; left: 31.2%; top: 5.5%; width: 43.5%; height: 91%; display: block; object-fit: fill; opacity: .52; filter: saturate(.7) contrast(1.06) brightness(.9); pointer-events: none; transform-origin: 50% 58%; -webkit-mask-image: radial-gradient(ellipse 72% 65% at 50% 40%, #000 0%, #000 58%, rgba(0,0,0,.9) 72%, transparent 100%); mask-image: radial-gradient(ellipse 72% 65% at 50% 40%, #000 0%, #000 58%, rgba(0,0,0,.9) 72%, transparent 100%); }
+.hero-machine-plate { position: absolute; z-index: 0; left: 31.2%; top: 5.5%; width: 43.5%; height: 91%; display: block; object-fit: fill; opacity: .52; filter: saturate(.7) contrast(1.06) brightness(.9); pointer-events: none; transform: scale(1.34); transform-origin: 50% 89%; -webkit-mask-image: radial-gradient(ellipse 72% 65% at 50% 40%, #000 0%, #000 58%, rgba(0,0,0,.9) 72%, transparent 100%); mask-image: radial-gradient(ellipse 72% 65% at 50% 40%, #000 0%, #000 58%, rgba(0,0,0,.9) 72%, transparent 100%); }
 .hero-vignette { position: absolute; inset: 0; z-index: 2; pointer-events: none; background: linear-gradient(90deg, #050504 0%, rgba(5,5,4,.99) 27%, rgba(5,5,4,.72) 37%, rgba(5,5,4,.12) 55%, transparent 72%), radial-gradient(circle at 50% 75%, rgba(174,135,78,.08), transparent 36%); }
 .nav { height: 70px; display: flex; align-items: center; justify-content: space-between; position: relative; z-index: 4; }
 .wordmark { font: 600 11px/1 var(--font-sans), sans-serif; letter-spacing: .42em; text-transform: uppercase; }
@@ -54,7 +62,7 @@ main { position: relative; isolation: isolate; }
 .nav nav { display: flex; gap: 38px; font-size: 10px; letter-spacing: .19em; text-transform: uppercase; }
 .nav nav a { color: rgba(243,237,223,.72); transition: color .25s ease; }
 .nav nav a:hover { color: var(--persimmon); }
-.hero-copy { position: absolute; z-index: 4; left: 50%; top: 118px; transform: translateX(-50%); display: flex; flex-direction: column; align-items: flex-start; }
+.hero-copy { position: absolute; z-index: 4; left: 50%; top: 148px; transform: translateX(-50%); display: flex; flex-direction: column; align-items: flex-start; }
 .eyebrow { margin: 0 0 18px; text-transform: uppercase; letter-spacing: .24em; font-size: 9px; font-weight: 600; color: rgba(243,237,223,.62); }
 .eyebrow span { color: var(--persimmon); margin-right: 18px; }
 .hero h1 { max-width: 380px; margin: 0; font: 400 clamp(40px, 3.2vw, 52px)/.92 var(--font-display), serif; letter-spacing: -.035em; text-wrap: balance; color: #e4d6bb; }
@@ -63,13 +71,11 @@ main { position: relative; isolation: isolate; }
 .text-link { display: inline-flex; gap: 52px; align-items: center; margin-top: 24px; padding-bottom: 7px; border-bottom: 1px solid rgba(243,237,223,.28); text-transform: uppercase; letter-spacing: .2em; font-size: 8px; }
 .text-link span { color: var(--persimmon); font-size: 17px; transition: transform .3s ease; }
 .text-link:hover span { transform: translate(5px, 5px); }
-.scroll-note { position: absolute; z-index: 4; left: 22px; bottom: 24px; display: flex; gap: 12px; align-items: center; writing-mode: vertical-rl; text-transform: uppercase; letter-spacing: .18em; font-size: 7px; color: rgba(243,237,223,.4); }
-.scroll-note span { height: 36px; width: 1px; background: linear-gradient(var(--persimmon), transparent); }
 .reveal { animation: rise .9s cubic-bezier(.2,.8,.2,1) both; }
 .reveal-one { animation-delay: .3s; }.reveal-two { animation-delay: .46s; }.reveal-three { animation-delay: .66s; }.reveal-four { animation-delay: .82s; }
-.work { position: relative; z-index: 0; overflow: hidden; color: var(--green); background: #ede6d8; padding: 85px 0 150px; }
+.work { position: relative; overflow: hidden; color: var(--green); background: #ede6d8; padding: 135px 0 150px; }
 .work::before { content: ""; position: absolute; inset: 0; opacity: .16; pointer-events: none; background-image: radial-gradient(#40543a 0.65px, transparent .65px); background-size: 8px 8px; mask-image: linear-gradient(to bottom, transparent, #000 20%, #000 85%, transparent); }
-.work-glow { position: absolute; z-index: 0; width: 46vw; height: 220px; top: -180px; left: 27vw; background: #f8eed9; border-radius: 50%; box-shadow: 0 0 95px 70px rgba(248,238,217,.72); }
+.work-glow { position: absolute; z-index: 0; width: min(48vw, 680px); height: 190px; top: -92px; left: 64%; transform: translateX(-50%); border-radius: 50%; opacity: .76; filter: blur(16px); background: radial-gradient(ellipse at center, rgba(255,166,94,.3) 0%, rgba(220,132,66,.16) 28%, rgba(248,238,217,.24) 51%, rgba(248,238,217,0) 74%); pointer-events: none; }
 .eyebrow.dark { color: rgba(64,84,58,.72); margin: 0; }
 .sow-card { width: min(1048px, calc(100% - 72px)); min-height: 700px; position: relative; z-index: 2; display: grid; grid-template-columns: .72fr 1.55fr; overflow: hidden; background: rgba(251,247,238,.93); border: 1px solid rgba(64,84,58,.17); border-radius: 24px; box-shadow: 0 32px 90px rgba(38,42,31,.14); }
 .sow-card::after { content: ""; position: absolute; width: 400px; height: 400px; left: -130px; bottom: -220px; border: 1px solid rgba(64,84,58,.14); border-radius: 50%; box-shadow: 0 0 0 65px rgba(64,84,58,.025), 0 0 0 130px rgba(64,84,58,.025); }
@@ -192,8 +198,9 @@ main { position: relative; isolation: isolate; }
   .hero-description { margin-top: 23px; font-size: 13px; max-width: 285px; }
   .hero-machine-plate { left: 12%; top: 0; width: 112%; height: 100%; opacity: .46; object-fit: fill; -webkit-mask-image: radial-gradient(ellipse 76% 64% at 52% 37%, #000 0%, #000 58%, rgba(0,0,0,.86) 74%, transparent 100%); mask-image: radial-gradient(ellipse 76% 64% at 52% 37%, #000 0%, #000 58%, rgba(0,0,0,.86) 74%, transparent 100%); }
   .hero-vignette { background: linear-gradient(90deg, rgba(5,6,4,.96), rgba(5,6,4,.68) 64%, rgba(5,6,4,.1)), linear-gradient(0deg, rgba(5,6,4,.82), transparent 52%); }
+  .work-glow { width: 105vw; left: 57%; opacity: .62; }
   .eyebrow { font-size: 9px; }
-  .scroll-note { display: none; }
+  .section-progress-rail { display: none; }
   .work { padding: 90px 0 100px; }
   .sow-card { min-height: auto; border-radius: 22px; }
   .sow-copy { padding: 42px 25px 10px; }

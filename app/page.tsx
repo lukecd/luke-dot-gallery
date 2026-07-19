@@ -42,14 +42,6 @@ export default function Home() {
         <ScrollWorld />
       </Suspense>
       <section className="hero" id="top" data-scene="hero">
-        <img
-          className="hero-machine-plate"
-          src="/images/living-machine-plate.webp"
-          alt=""
-          aria-hidden="true"
-          fetchPriority="high"
-          decoding="async"
-        />
         <div className="hero-vignette" aria-hidden="true" />
 
         <header className="nav shell">
@@ -80,9 +72,6 @@ export default function Home() {
           </a>
         </div>
 
-        <div className="scroll-note" aria-hidden="true">
-          <span /> Scroll to grow
-        </div>
       </section>
 
       <section className="work" id="work" data-scene="work">

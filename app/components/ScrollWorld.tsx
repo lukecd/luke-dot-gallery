@@ -1,17 +1,20 @@
 "use client";
 
 import { Canvas, useFrame, useThree } from "@react-three/fiber";
-import { Edges, Line, useTexture } from "@react-three/drei";
+import { Edges, Environment, Lightformer, Line, useTexture } from "@react-three/drei";
 import { Suspense, createContext, useCallback, useContext, useEffect, useLayoutEffect, useMemo, useRef } from "react";
 import * as THREE from "three";
+import { LivingMachineApparatus, LivingMachineJourneyState } from "./StudyWorld";
+import type { TransformationSlug } from "@/app/studies/study-data";
 
 const ORANGE = "#ff6544";
+const SHOW_JOURNEY_FORMS = false;
+const PROGRESS_STOP_COUNT = 6;
 
 type Timeline = {
   scrollY: number;
   visualScrollY: number;
   actorScrollY: number;
-  scrollSpringVelocity: number;
   previousScrollY: number;
   scrollVelocity: number;
   scrollEnergy: number;
@@ -33,25 +36,6 @@ const smoothstep = (from: number, to: number, value: number) => {
   if (from === to) return value < from ? 0 : 1;
   const t = clamp01((value - from) / (to - from));
   return t * t * (3 - 2 * t);
-};
-
-const criticalSpring = (
-  value: number,
-  velocity: number,
-  target: number,
-  delta: number,
-  frequency = 3.2,
-) => {
-  const dt = Math.min(delta, 0.05);
-  const omega = Math.PI * 2 * frequency;
-  const displacement = value - target;
-  const coefficient = velocity + omega * displacement;
-  const decay = Math.exp(-omega * dt);
-
-  return {
-    value: target + (displacement + coefficient * dt) * decay,
-    velocity: (velocity - omega * coefficient * dt) * decay,
-  };
 };
 
 const organicEllipse = (
@@ -97,6 +81,133 @@ function MotionEngine({ advance }: { advance: (delta: number, viewportHeight: nu
   }, -10);
 
   return null;
+}
+
+function SectionProgressRail() {
+  const rail = useRef<HTMLDivElement>(null);
+  const bead = useRef<HTMLSpanElement>(null);
+  const markerRefs = useRef<Array<HTMLSpanElement | null>>([]);
+
+  useEffect(() => {
+    const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+    let anchors: number[] = [];
+    let targetProgress = 0;
+    let renderedProgress = 0;
+    let activeMarker = -1;
+    let animationFrame = 0;
+    let previousTime = 0;
+    let initialized = false;
+
+    const render = (progress: number) => {
+      if (!rail.current) return;
+      const markerRadius = 2.5;
+      const travel = Math.max(rail.current.clientHeight - markerRadius * 2, 0);
+      bead.current?.style.setProperty(
+        "transform",
+        `translate3d(-50%, ${markerRadius + progress * travel - 4.5}px, 0)`,
+      );
+    };
+
+    const setMarkerState = (marker: number) => {
+      if (marker === activeMarker) return;
+      activeMarker = marker;
+      markerRefs.current.forEach((node, index) => {
+        if (!node) return;
+        node.dataset.active = String(index === marker);
+        node.dataset.passed = String(index <= marker);
+      });
+    };
+
+    const animate = (time: number) => {
+      const delta = previousTime === 0 ? 1 / 60 : Math.min((time - previousTime) / 1000, 0.05);
+      previousTime = time;
+      const follow = reducedMotion.matches ? 1 : 1 - Math.exp(-12 * delta);
+      renderedProgress = THREE.MathUtils.lerp(renderedProgress, targetProgress, follow);
+      render(renderedProgress);
+
+      if (Math.abs(renderedProgress - targetProgress) > 0.0002) {
+        animationFrame = requestAnimationFrame(animate);
+      } else {
+        renderedProgress = targetProgress;
+        render(renderedProgress);
+        animationFrame = 0;
+        previousTime = 0;
+      }
+    };
+
+    const requestAnimation = () => {
+      if (!animationFrame) animationFrame = requestAnimationFrame(animate);
+    };
+
+    const updateProgress = () => {
+      if (anchors.length !== PROGRESS_STOP_COUNT) return;
+      const scrollY = window.scrollY;
+      let markerPosition = 0;
+
+      if (scrollY >= anchors[anchors.length - 1]) {
+        markerPosition = PROGRESS_STOP_COUNT - 1;
+      } else if (scrollY > anchors[0]) {
+        for (let index = 0; index < anchors.length - 1; index += 1) {
+          if (scrollY > anchors[index + 1]) continue;
+          const distance = Math.max(anchors[index + 1] - anchors[index], 1);
+          const local = clamp01((scrollY - anchors[index]) / distance);
+          markerPosition = index + local * local * (3 - 2 * local);
+          break;
+        }
+      }
+
+      targetProgress = markerPosition / (PROGRESS_STOP_COUNT - 1);
+      setMarkerState(Math.round(markerPosition));
+
+      if (!initialized) {
+        initialized = true;
+        renderedProgress = targetProgress;
+        render(renderedProgress);
+        return;
+      }
+      requestAnimation();
+    };
+
+    const measure = () => {
+      anchors = Array.from(document.querySelectorAll<HTMLElement>("[data-scene]"))
+        .slice(1, PROGRESS_STOP_COUNT + 1)
+        .map((section) => section.getBoundingClientRect().top + window.scrollY - window.innerHeight * 0.38);
+      updateProgress();
+    };
+
+    const observer = new ResizeObserver(measure);
+    document.querySelectorAll<HTMLElement>("[data-scene]").forEach((scene) => observer.observe(scene));
+    measure();
+    window.addEventListener("scroll", updateProgress, { passive: true });
+    window.addEventListener("resize", measure, { passive: true });
+    reducedMotion.addEventListener("change", updateProgress);
+
+    return () => {
+      cancelAnimationFrame(animationFrame);
+      observer.disconnect();
+      window.removeEventListener("scroll", updateProgress);
+      window.removeEventListener("resize", measure);
+      reducedMotion.removeEventListener("change", updateProgress);
+    };
+  }, []);
+
+  return (
+    <div className="section-progress-rail" ref={rail} aria-hidden="true">
+      <span className="section-progress-rail__track" />
+      <span className="section-progress-rail__bead" ref={bead}><i /></span>
+      <span className="section-progress-rail__markers">
+        {Array.from({ length: PROGRESS_STOP_COUNT }, (_, index) => (
+          <span
+            className="section-progress-rail__marker"
+            data-active={index === 0}
+            data-passed={index === 0}
+            key={index}
+            ref={(node) => { markerRefs.current[index] = node; }}
+          />
+        ))}
+      </span>
+    </div>
+  );
 }
 
 function Tube({
@@ -905,9 +1016,18 @@ function OrganicBlob() {
   );
 }
 
-const sceneX = [0.532, 0.76, 0.84, 0.69, 0.72, 0.54, 0.55];
-const sceneY = [0.198, 0.35, 0.29, 0.23, 0.14, 0.34, 0.16];
+const sceneX = [0.515, 0.76, 0.84, 0.69, 0.72, 0.54, 0.55];
+const sceneY = [0.265, 0.35, 0.29, 0.23, 0.14, 0.34, 0.16];
 const shapeForScene = [0, 1, 2, 3, 4, 5, 0];
+const transitionStateSlugs: TransformationSlug[] = [
+  "living-core",
+  "zinnia",
+  "ai-garden",
+  "technical-cube",
+  "dflow",
+  "waveform",
+];
+const journeyStateScale = [0.16, 0.105, 0.1, 0.1, 0.11, 0.11];
 
 function JourneyActor({ timeline }: { timeline: React.MutableRefObject<Timeline> }) {
   const actor = useRef<THREE.Group>(null);
@@ -928,20 +1048,25 @@ function JourneyActor({ timeline }: { timeline: React.MutableRefObject<Timeline>
     actor.current.visible = true;
     const dt = Math.min(delta, 0.05);
     time.current += dt;
-    const tops = current.sceneTops.length >= 7 ? current.sceneTops : [0, size.height * 0.491, size.height * 1.9, size.height * 2.8, size.height * 3.7, size.height * 4.6, size.height * 6];
+    const tops = current.sceneTops.length >= 7 ? current.sceneTops : [0, size.height * 0.55, size.height * 1.9, size.height * 2.8, size.height * 3.7, size.height * 4.6, size.height * 6];
     const compact = size.width < 680;
+    const heroHeight = current.sceneHeights[0] || size.height * 0.55;
     const xStops = compact ? [0.74, 0.86, 0.86, 0.86, 0.86, 0.86, 0.76] : sceneX;
     const yStops = [...sceneY];
-    if (!compact) {
-      const heroHeight = current.sceneHeights[0] || size.height * 0.491;
-      const introTravel = THREE.MathUtils.clamp(size.height * 0.14, 90, 140);
-      yStops[1] = clamp01((heroHeight - introTravel) / Math.max(size.height, 1));
-    }
+    if (compact) yStops[0] = 0.49;
     const travelScroll = current.actorScrollY;
+    const portalDocumentY = heroHeight;
+    const portalCrossScroll = THREE.MathUtils.clamp(heroHeight * 0.38, 190, 240);
+    yStops[1] = clamp01((portalDocumentY - portalCrossScroll) / Math.max(size.height, 1));
     const firstCross = (tops[1] || size.height * 0.49) - yStops[1] * size.height;
-    const introEnd = Math.max(1, Math.min(size.height * 0.17, firstCross - 12));
-    const intro = smoothstep(0, introEnd, travelScroll);
-    const introY = THREE.MathUtils.lerp(yStops[0], yStops[1], intro);
+    // Move in screen space as the form enters the aperture. The old route
+    // interpolated a document-space point and then suddenly pinned it to the
+    // viewport, which changed velocity at the portal and read as a hitch.
+    const introY = THREE.MathUtils.lerp(
+      yStops[0],
+      yStops[1],
+      smoothstep(0, portalCrossScroll, travelScroll),
+    );
     const docY = travelScroll + introY * size.height;
 
     let scene = 0;
@@ -1004,13 +1129,26 @@ function JourneyActor({ timeline }: { timeline: React.MutableRefObject<Timeline>
       weights[shapeForScene[scene]] = 1;
     }
 
+    const journeyHandoff = smoothstep(0, heroHeight * 0.12, travelScroll);
     shapeRefs.current.forEach((shape, index) => {
       if (!shape) return;
       const weight = weights[index] || 0;
-      const growth = smoothstep(0.45, 0.75, weight);
-      const targetScale = 0.001 + 0.999 * growth;
+      // Preserve a continuous silhouette through a state handoff. Collapsing
+      // both forms around the midpoint made every transformation look like a
+      // dropped frame even when the route itself was moving smoothly.
+      const growth = smoothstep(0.04, 0.96, weight);
+      const handoffScale = index === 0 ? journeyHandoff : 1;
+      const visibleScale = growth * handoffScale;
+      const compactScale = compact ? 0.82 : 1;
+      const coreScale = THREE.MathUtils.lerp(
+        0.82,
+        journeyStateScale[0],
+        smoothstep(heroHeight * 0.035, portalCrossScroll * 0.82, travelScroll),
+      );
+      const stateScale = index === 0 ? coreScale : journeyStateScale[index];
+      const targetScale = 0.001 + stateScale * compactScale * visibleScale;
       shape.scale.setScalar(targetScale);
-      shape.visible = growth > 0.0005;
+      shape.visible = visibleScale > 0.0005;
     });
 
     const transitionGlow = 4 * transition * (1 - transition);
@@ -1018,9 +1156,9 @@ function JourneyActor({ timeline }: { timeline: React.MutableRefObject<Timeline>
       const pulse = 0.72 + Math.sin(time.current * 1.7) * 0.08 + transitionGlow * 0.55;
       flare.current.scale.setScalar(pulse);
       const material = flare.current.material as THREE.MeshBasicMaterial;
-      material.opacity = 0.012 + transitionGlow * 0.045;
+      material.opacity = 0.001 + transitionGlow * 0.005;
     }
-    if (point.current) point.current.intensity = 3.5 + transitionGlow * 7;
+    if (point.current) point.current.intensity = 0.9 + transitionGlow * 2.5;
     if (thread.current) thread.current.rotation.z = Math.sin(time.current * 0.12) * 0.005;
   });
 
@@ -1037,22 +1175,21 @@ function JourneyActor({ timeline }: { timeline: React.MutableRefObject<Timeline>
   return (
     <group ref={actor} position={[0, 0, 0.2]}>
       <group ref={thread} scale={size.width < 680 ? [0.72, 1, 0.72] : 1}>
-        <Line points={threadPoints} color="#b28a54" lineWidth={0.22} transparent opacity={0.2} />
-        <Line points={threadPointsEcho} color="#776c4e" lineWidth={0.16} transparent opacity={0.12} />
+        <Line points={threadPoints} color="#b28a54" lineWidth={0.18} transparent opacity={0.08} />
+        <Line points={threadPointsEcho} color="#776c4e" lineWidth={0.12} transparent opacity={0.04} />
         {[-3.1, -1.45, 1.28, 3.3].map((y, index) => (
-          <GlassNode key={y} position={[index % 2 ? 0.12 : -0.1, y, -0.62]} size={index % 2 ? 0.045 : 0.032} warm={index === 2} />
+          <GlassNode key={y} position={[index % 2 ? 0.08 : -0.07, y, -0.62]} size={index % 2 ? 0.024 : 0.017} warm={index === 2} />
         ))}
       </group>
-      <group scale={size.width < 680 ? 0.5 : 0.65}>
-        <group scale={0.001} ref={(node) => { shapeRefs.current[0] = node; }}><SignalCore /></group>
-        <group scale={0.001} ref={(node) => { shapeRefs.current[1] = node; }}><Tomato position={[0, 0, 0]} /></group>
-        <group scale={0.001} ref={(node) => { shapeRefs.current[2] = node; }}><SeedBud /></group>
-        <group scale={0.001} ref={(node) => { shapeRefs.current[3] = node; }}><TechCube /></group>
-        <group scale={0.001} ref={(node) => { shapeRefs.current[4] = node; }}><PageStack /></group>
-        <group scale={0.001} ref={(node) => { shapeRefs.current[5] = node; }}><OrganicBlob /></group>
+      <group>
+        {transitionStateSlugs.map((slug, index) => (
+          <group key={slug} scale={0.001} ref={(node) => { shapeRefs.current[index] = node; }}>
+            <LivingMachineJourneyState slug={slug} />
+          </group>
+        ))}
         <mesh ref={flare} position={[0, 0, -0.15]}>
-          <sphereGeometry args={[0.52, 20, 20]} />
-          <meshBasicMaterial color={ORANGE} transparent opacity={0.012} blending={THREE.AdditiveBlending} depthWrite={false} />
+          <sphereGeometry args={[0.32, 20, 20]} />
+          <meshBasicMaterial color={ORANGE} transparent opacity={0.001} blending={THREE.AdditiveBlending} depthWrite={false} />
         </mesh>
         <pointLight ref={point} color={ORANGE} intensity={4} distance={3.2} decay={2} />
       </group>
@@ -1092,16 +1229,9 @@ function TransitionFilaments() {
 
 function HeroAssembly() {
   return (
-    <group>
-      <Portal />
-      <PortalAura />
-      <OrbitalSystems />
-      <MechanicalSpine />
-      <BotanicalTwigs />
-      <GlassChambers />
-      <Suspense fallback={null}><BotanicalAssembly /></Suspense>
-      <TransitionFilaments />
-    </group>
+    <Suspense fallback={null}>
+      <LivingMachineApparatus activeSlug="living-core" heroComposition />
+    </Suspense>
   );
 }
 
@@ -1117,13 +1247,19 @@ function WorldRig({ timeline }: { timeline: React.MutableRefObject<Timeline> }) 
     const dt = Math.min(delta, 0.05);
     time.current += dt;
     const compact = size.width < 680;
-    const scale = viewport.height * (compact ? 0.07 : 0.093);
+    const scaleFactor = compact ? 0.0688 : 0.0912;
+    const scale = viewport.height * scaleFactor;
+    const scaleInPixels = size.height * scaleFactor;
     const pageOffset = timeline.current.scrollY * (viewport.height / Math.max(size.height, 1));
-    const targetX = ((compact ? 0.56 : 0.515) - 0.5) * viewport.width;
-    const heroHeight = timeline.current.sceneHeights[0] || size.height * 0.491;
-    const portalScreenY = Math.min(size.height * 0.92, heroHeight * 0.883);
-    const portalY = (0.5 - portalScreenY / Math.max(size.height, 1)) * viewport.height;
-    const baseTargetY = portalY + 2.1 * scale;
+    const targetX = ((compact ? 0.57 : 0.64) - 0.5) * viewport.width;
+    const heroHeight = timeline.current.sceneHeights[0] || size.height * 0.55;
+    const portalBoundaryGap = compact ? 24 : 20;
+    const portalBottomScreenY = Math.min(size.height - portalBoundaryGap, heroHeight - portalBoundaryGap);
+    // The lowest projected portal edge sits about 2.46 local units below the
+    // apparatus origin. Register that edge, rather than the portal center, so
+    // the complete glow remains inside the black hero at every viewport size.
+    const apparatusOriginScreenY = portalBottomScreenY - 2.46 * scaleInPixels;
+    const baseTargetY = (0.5 - apparatusOriginScreenY / Math.max(size.height, 1)) * viewport.height;
     baseY.current = baseY.current === null
       ? baseTargetY
       : THREE.MathUtils.damp(baseY.current, baseTargetY, 12, dt);
@@ -1162,7 +1298,7 @@ function RenderPolicy({ registerInvalidate }: { registerInvalidate: (invalidate?
     const reduced = window.matchMedia("(prefers-reduced-motion: reduce)");
     registerInvalidate(invalidate);
     const apply = () => {
-      setDpr(window.innerWidth < 680 ? 1 : Math.min(window.devicePixelRatio || 1, 1.35));
+      setDpr(window.innerWidth < 680 ? 1 : Math.min(window.devicePixelRatio || 1, 1.2));
       setFrameloop(reduced.matches || document.hidden ? "demand" : "always");
       invalidate();
     };
@@ -1192,7 +1328,6 @@ export default function ScrollWorld() {
     scrollY: 0,
     visualScrollY: 0,
     actorScrollY: 0,
-    scrollSpringVelocity: 0,
     previousScrollY: 0,
     scrollVelocity: 0,
     scrollEnergy: 0,
@@ -1215,7 +1350,6 @@ export default function ScrollWorld() {
     if (current.reduced) {
       current.visualScrollY = current.scrollY;
       current.actorScrollY = current.scrollY;
-      current.scrollSpringVelocity = 0;
       current.scrollVelocity = 0;
       current.scrollEnergy = 0;
       current.pointerX = 0;
@@ -1242,37 +1376,22 @@ export default function ScrollWorld() {
       dt,
     );
 
-    const heroHeight = current.sceneHeights[0] || viewportHeight * 0.491;
-    const frequency = THREE.MathUtils.lerp(
-      8.2,
-      3.35,
-      smoothstep(heroHeight * 0.8, heroHeight * 1.8, current.scrollY),
+    const heroHeight = current.sceneHeights[0] || viewportHeight * 0.55;
+    // One monotonic scroll clock now drives both the route and state changes.
+    // Previously the raw and spring-smoothed clocks were blended together;
+    // their changing offset produced visible catches during trackpad bursts.
+    const followRate = THREE.MathUtils.lerp(
+      13,
+      8.5,
+      smoothstep(heroHeight * 0.7, heroHeight * 1.8, current.scrollY),
     );
-    const spring = criticalSpring(
+    current.visualScrollY = THREE.MathUtils.damp(
       current.visualScrollY,
-      current.scrollSpringVelocity,
       current.scrollY,
+      followRate,
       dt,
-      frequency,
     );
-    current.visualScrollY = spring.value;
-    current.scrollSpringVelocity = spring.velocity;
-
-    // Keep the travelling form physically registered with the document-bound
-    // portal while it crosses the hero. Once it is safely inside the work
-    // sequence, introduce only a bounded amount of the softer spring motion.
-    // Bounding the correction prevents a fast flick from creating either a
-    // large portal miss or the non-monotonic crossfade that an unrestricted
-    // raw/spring blend can produce.
-    const actorHandoff = smoothstep(
-      heroHeight * 0.82,
-      heroHeight * 2.2,
-      current.scrollY,
-    );
-    const maxActorLag = THREE.MathUtils.clamp(viewportHeight * 0.035, 22, 34);
-    const rawActorLag = current.scrollY - current.visualScrollY;
-    const boundedActorLag = maxActorLag * Math.tanh(rawActorLag / maxActorLag);
-    current.actorScrollY = current.scrollY - boundedActorLag * actorHandoff;
+    current.actorScrollY = current.visualScrollY;
     current.pointerX = THREE.MathUtils.damp(current.pointerX, current.pointerTargetX, 5.2, dt);
     current.pointerY = THREE.MathUtils.damp(current.pointerY, current.pointerTargetY, 5.2, dt);
   }, []);
@@ -1309,7 +1428,6 @@ export default function ScrollWorld() {
       current.visualScrollY = current.scrollY;
       current.actorScrollY = current.scrollY;
       current.previousScrollY = current.scrollY;
-      current.scrollSpringVelocity = 0;
       current.scrollVelocity = 0;
       current.scrollEnergy = 0;
     };
@@ -1406,19 +1524,29 @@ export default function ScrollWorld() {
 
   return (
     <div className="scroll-world" aria-hidden="true">
+      <SectionProgressRail />
       <Canvas
         camera={{ position: [0, 0, 8.6], fov: 40 }}
-        dpr={[1, 1.35]}
+        dpr={[1, 1.2]}
         gl={{ antialias: true, alpha: true, powerPreference: "high-performance" }}
       >
-        <ambientLight intensity={0.12} color="#62664c" />
-        <directionalLight position={[4, 6, 6]} intensity={1.8} color="#d9c49d" />
-        <directionalLight position={[-4, 1, 4]} intensity={0.5} color="#526040" />
+        <ambientLight intensity={0.26} color="#817967" />
+        <directionalLight position={[5, 8, 7]} intensity={3.1} color="#e7c99f" />
+        <directionalLight position={[-5, 1, 3]} intensity={0.95} color="#66745e" />
+        <Suspense fallback={null}>
+          <Environment resolution={128}>
+            <Lightformer form="rect" intensity={2.05} color="#d9ad74" position={[4, 4, 7]} rotation={[0, Math.PI, 0]} scale={[3, 8, 1]} />
+            <Lightformer form="rect" intensity={0.92} color="#68725f" position={[-5, 1, 4]} rotation={[0, -0.6, 0]} scale={[2, 6, 1]} />
+            <Lightformer form="ring" intensity={1.25} color="#8f4b31" position={[0, -5, 2]} rotation={[Math.PI / 2, 0, 0]} scale={6} />
+          </Environment>
+        </Suspense>
         <MotionContext.Provider value={timeline}>
           <RenderPolicy registerInvalidate={registerInvalidate} />
           <MotionEngine advance={advanceMotion} />
           <WorldRig timeline={timeline} />
-          <JourneyActor timeline={timeline} />
+          {SHOW_JOURNEY_FORMS && <Suspense fallback={null}>
+            <JourneyActor timeline={timeline} />
+          </Suspense>}
         </MotionContext.Provider>
       </Canvas>
     </div>
