@@ -2206,6 +2206,45 @@ export function LivingMachineJourneyState({ slug }: { slug: TransformationSlug }
   );
 }
 
+export function LivingMachineContactPlanet() {
+  const spinRef = useRef<THREE.Group>(null);
+
+  useFrame((_, delta) => {
+    if (!spinRef.current) return;
+    const step = Math.min(delta, 0.05);
+    spinRef.current.rotation.y += step * 0.075;
+    spinRef.current.rotation.x += step * 0.018;
+  });
+
+  return (
+    <group ref={spinRef} rotation={[0.2, -0.3, -0.08]}>
+      <mesh>
+        <icosahedronGeometry args={[0.5, 3]} />
+        <AgedMetalMaterial
+          color="#8a4f31"
+          variant={3}
+          metalness={0.42}
+          roughness={0.72}
+          emissive="#68200f"
+          emissiveIntensity={0.2}
+        />
+      </mesh>
+      <mesh rotation={[0.84, 0.24, 0.18]}>
+        <torusGeometry args={[0.72, 0.052, 10, 84]} />
+        <AgedMetalMaterial color="#9c6742" variant={1} roughness={0.76} />
+      </mesh>
+      <mesh rotation={[-0.34, 0.72, -0.28]}>
+        <torusGeometry args={[0.58, 0.025, 8, 72]} />
+        <AgedMetalMaterial color="#70442f" variant={2} roughness={0.82} />
+      </mesh>
+      <mesh>
+        <sphereGeometry args={[0.16, 24, 18]} />
+        <meshBasicMaterial color="#ff9a55" toneMapped={false} />
+      </mesh>
+    </group>
+  );
+}
+
 export function LivingMachineApparatus({
   activeSlug,
   heroComposition = false,

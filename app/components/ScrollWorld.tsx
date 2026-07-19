@@ -4,7 +4,11 @@ import { Canvas, useFrame, useThree } from "@react-three/fiber";
 import { Edges, Environment, Lightformer, Line, useTexture } from "@react-three/drei";
 import { Suspense, createContext, useCallback, useContext, useEffect, useLayoutEffect, useMemo, useRef } from "react";
 import * as THREE from "three";
-import { LivingMachineApparatus, LivingMachineJourneyState } from "./StudyWorld";
+import {
+  LivingMachineApparatus,
+  LivingMachineContactPlanet,
+  LivingMachineJourneyState,
+} from "./StudyWorld";
 import type { TransformationSlug } from "@/app/studies/study-data";
 
 const ORANGE = "#ff6544";
@@ -102,6 +106,7 @@ function SectionProgressRail() {
       if (!rail.current) return;
       const markerRadius = 2.5;
       const travel = Math.max(rail.current.clientHeight - markerRadius * 2, 0);
+      rail.current.style.setProperty("--rail-progress", `${progress * 100}%`);
       bead.current?.style.setProperty(
         "transform",
         `translate3d(-50%, ${markerRadius + progress * travel - 4.5}px, 0)`,
@@ -1289,6 +1294,88 @@ function WorldRig({ timeline }: { timeline: React.MutableRefObject<Timeline> }) 
   return <group ref={assembly}><group ref={livingLayer}><HeroAssembly /></group></group>;
 }
 
+function ContactPlanetOrbit({ timeline }: { timeline: React.MutableRefObject<Timeline> }) {
+  const root = useRef<THREE.Group>(null);
+  const planet = useRef<THREE.Group>(null);
+  const phase = useRef(THREE.MathUtils.degToRad(235));
+  const { viewport, size } = useThree();
+  const xRadius = viewport.width * 0.4;
+  // Keep the contact orbit visibly elliptical in portrait layouts. A pure
+  // viewport-height radius becomes taller than it is wide on phones/tablets.
+  const yRadius = Math.min(viewport.height * 0.28, xRadius * 0.58);
+  const orbitPosition = useCallback((angle: number): [number, number, number] => {
+    const ellipseX = Math.cos(angle) * xRadius;
+    const ellipseY = Math.sin(angle) * yRadius;
+    const tiltCosine = Math.cos(0.05);
+    const tiltSine = Math.sin(0.05);
+    return [
+      ellipseX * tiltCosine - ellipseY * tiltSine,
+      ellipseX * tiltSine + ellipseY * tiltCosine,
+      -0.32 + Math.sin(angle) * 0.21,
+    ];
+  }, [xRadius, yRadius]);
+  const initialPosition = useMemo(
+    () => orbitPosition(THREE.MathUtils.degToRad(235)),
+    [orbitPosition],
+  );
+  const { points, colors } = useMemo(() => {
+    const orbitPoints: [number, number, number][] = [];
+    const orbitColors: [number, number, number, number][] = [];
+    const warm = new THREE.Color("#b76f43");
+    const dim = new THREE.Color("#6c432d");
+    const segments = 180;
+
+    for (let index = 0; index <= segments; index += 1) {
+      const angle = (index / segments) * Math.PI * 2;
+      const cameraFacing = (Math.sin(angle) + 1) * 0.5;
+      const color = dim.clone().lerp(warm, cameraFacing);
+      orbitPoints.push(orbitPosition(angle));
+      orbitColors.push([color.r, color.g, color.b, 0.25 + cameraFacing * 0.34]);
+    }
+    return { points: orbitPoints, colors: orbitColors };
+  }, [orbitPosition]);
+
+  useFrame((_, delta) => {
+    if (!root.current || !planet.current) return;
+    const current = timeline.current;
+    const contactTop = current.sceneTops[6];
+    const contactHeight = current.sceneHeights[6] || size.height;
+    if (!current.ready || contactTop === undefined) {
+      root.current.visible = false;
+      return;
+    }
+
+    const centerScreenY = contactTop + contactHeight * 0.48 - current.scrollY;
+    root.current.visible = centerScreenY > -size.height * 0.7 && centerScreenY < size.height * 1.7;
+    root.current.position.set(
+      0,
+      (0.5 - centerScreenY / Math.max(size.height, 1)) * viewport.height,
+      -0.42,
+    );
+
+    if (!current.reduced) {
+      phase.current -= Math.min(delta, 0.05) * (Math.PI * 2 / 138);
+    }
+    planet.current.position.set(...orbitPosition(phase.current));
+  });
+
+  return (
+    <group ref={root} visible={false}>
+      <Line
+        points={points}
+        vertexColors={colors}
+        lineWidth={0.84}
+        opacity={0.9}
+        depthWrite={false}
+        toneMapped={false}
+      />
+      <group ref={planet} position={initialPosition} scale={size.width < 680 ? 0.26 : 0.34}>
+        <LivingMachineContactPlanet />
+      </group>
+    </group>
+  );
+}
+
 function RenderPolicy({ registerInvalidate }: { registerInvalidate: (invalidate?: () => void) => void }) {
   const invalidate = useThree((state) => state.invalidate);
   const setDpr = useThree((state) => state.setDpr);
@@ -1544,6 +1631,9 @@ export default function ScrollWorld() {
           <RenderPolicy registerInvalidate={registerInvalidate} />
           <MotionEngine advance={advanceMotion} />
           <WorldRig timeline={timeline} />
+          <Suspense fallback={null}>
+            <ContactPlanetOrbit timeline={timeline} />
+          </Suspense>
           {SHOW_JOURNEY_FORMS && <Suspense fallback={null}>
             <JourneyActor timeline={timeline} />
           </Suspense>}

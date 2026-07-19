@@ -1,9 +1,67 @@
 "use client";
 /* eslint-disable @next/next/no-img-element */
 
-import { lazy, Suspense, useState } from "react";
+import { lazy, Suspense, useEffect, useState } from "react";
 
 const ScrollWorld = lazy(() => import("./components/ScrollWorld"));
+
+type ProjectOrbitVariant = "sow" | "garden" | "devrel" | "docs" | "creative";
+
+function ProjectOrbitLines({
+  variant,
+  dark = false,
+}: {
+  variant: ProjectOrbitVariant;
+  dark?: boolean;
+}) {
+  return (
+    <div
+      className={`project-orbit-lines project-orbit-lines--${variant}${dark ? " is-dark" : ""}`}
+      aria-hidden="true"
+    >
+      <span className="project-orbit-lines__field">
+        <i />
+        <i />
+        <i />
+      </span>
+    </div>
+  );
+}
+
+function OrbitalNumber({ value, phase = 0 }: { value: string; phase?: number }) {
+  const [reducedMotion, setReducedMotion] = useState(false);
+
+  useEffect(() => {
+    const preference = window.matchMedia("(prefers-reduced-motion: reduce)");
+    const update = () => setReducedMotion(preference.matches);
+    update();
+    preference.addEventListener("change", update);
+    return () => preference.removeEventListener("change", update);
+  }, []);
+
+  return (
+    <span className="orbital-number">
+      <span className="orbital-number__value">{value}</span>
+      <svg className="orbital-number__orbit" viewBox="0 0 64 34" aria-hidden="true">
+        <g transform="rotate(-17 32 17)">
+          <ellipse cx="32" cy="17" rx="28" ry="11" />
+          {reducedMotion ? (
+            <circle className="orbital-number__node" cx="60" cy="17" r="2.6" />
+          ) : (
+            <circle className="orbital-number__node" r="2.6">
+              <animateMotion
+                dur="86s"
+                begin={`-${phase}s`}
+                repeatCount="indefinite"
+                path="M 60 17 A 28 11 0 1 1 4 17 A 28 11 0 1 1 60 17"
+              />
+            </circle>
+          )}
+        </g>
+      </svg>
+    </span>
+  );
+}
 
 function VideoFacade({
   embedUrl,
@@ -76,10 +134,11 @@ export default function Home() {
 
       <section className="work" id="work" data-scene="work">
         <div className="work-glow" aria-hidden="true" />
+        <ProjectOrbitLines variant="sow" />
 
         <article className="sow-card shell">
           <div className="sow-copy">
-            <span className="project-number">01</span>
+            <span className="project-number"><OrbitalNumber value="01" /></span>
             <p className="project-kind">Independent product · 2026</p>
             <h2>Sow</h2>
             <h3>A garden journal that listens.</h3>
@@ -107,9 +166,10 @@ export default function Home() {
       </section>
 
       <section className="ai-project project-section" id="ai-garden" data-scene="garden">
+        <ProjectOrbitLines variant="garden" />
         <div className="shell project-section-grid">
           <div className="project-section-copy">
-            <p className="eyebrow dark"><span>02</span> Creative AI · Shopify · Made by me</p>
+            <p className="eyebrow dark"><OrbitalNumber value="02" phase={14} /> Creative AI · Shopify</p>
             <h2>AI Garden<br /><em>Designer</em></h2>
             <p>Describe your space, share a photograph, and turn an idea into a garden you can plan and build.</p>
           </div>
@@ -127,8 +187,9 @@ export default function Home() {
       </section>
 
       <section className="devrel project-section" id="devrel" data-scene="devrel">
+        <ProjectOrbitLines variant="devrel" dark />
         <div className="shell devrel-heading">
-          <p className="eyebrow"><span>03</span> Developer relations</p>
+          <p className="eyebrow"><OrbitalNumber value="03" phase={28} /> Developer relations</p>
           <h2>Helping developers<br /><em>understand and build.</em></h2>
           <p>
             I work in Developer Relations full time. I make technical systems easier to understand through
@@ -147,8 +208,8 @@ export default function Home() {
             <p className="project-kind">Technical explainer</p>
             <h3>Grok DAS in five minutes.</h3>
             <p>
-              A five-minute explanation of a data availability system, focused on the concepts developers need
-              before they start building.
+              A five-minute explanation of Data Availability Sampling, giving people everything they need to
+              understand the complex topic quickly.
             </p>
             <a href="https://www.youtube.com/watch?v=9Y5rc8OC6yE" target="_blank" rel="noreferrer">Watch on YouTube ↗</a>
           </div>
@@ -156,9 +217,10 @@ export default function Home() {
       </section>
 
       <section className="docs project-section" id="docs" data-scene="docs">
+        <ProjectOrbitLines variant="docs" dark />
         <div className="shell docs-grid">
           <div className="docs-copy">
-            <p className="eyebrow"><span>04</span> Documentation systems</p>
+            <p className="eyebrow"><OrbitalNumber value="04" phase={42} /> Documentation systems</p>
             <h2>DFlow<br /><em>Docs</em></h2>
             <p>
               Documentation for a unified trading API on Solana... concepts, integration guides, examples,
@@ -174,8 +236,9 @@ export default function Home() {
       </section>
 
       <section className="creative-work project-section" id="creative-work" data-scene="creative">
+        <ProjectOrbitLines variant="creative" />
         <div className="shell creative-heading">
-          <p className="eyebrow dark"><span>05</span> Away from the keyboard</p>
+          <p className="eyebrow dark"><OrbitalNumber value="05" phase={56} /> Away from the keyboard</p>
           <h2>Music and moving images.</h2>
         </div>
         <div className="shell creative-grid">
@@ -195,10 +258,9 @@ export default function Home() {
       </section>
 
       <section className="contact" id="contact" data-scene="contact">
-        <div className="contact-orbit" aria-hidden="true"><i /></div>
         <div className="shell contact-grid">
           <div className="contact-copy">
-            <p className="eyebrow"><span>06</span> Say hello</p>
+            <p className="eyebrow"><OrbitalNumber value="06" phase={70} /> Say hello</p>
             <h2>Working on something <em>interesting?</em></h2>
             <div className="contact-links">
               <a href="/resume/Luke-Cassady-Dorion-Resume.pdf" target="_blank" rel="noreferrer">View résumé ↗</a>
