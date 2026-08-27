@@ -116,14 +116,12 @@ export default function Home() {
         </header>
 
         <div className="hero-copy shell">
-          <p className="eyebrow reveal reveal-one">Developer · designer · maker</p>
+          <p className="eyebrow reveal reveal-one">Independent work · Developer relations · Film</p>
           <h1 className="reveal reveal-two">
-            I make things for people<span className="accent">...</span>
-            <br />
-            <em>with computers.</em>
+            I build apps, tools, technical explanations, and films.
           </h1>
           <p className="hero-description reveal reveal-three">
-            Apps, tools, explanations, music, and occasionally films.
+            Selected work in software, developer relations, and film.
           </p>
           <a className="text-link reveal reveal-four" href="#work">
             Explore selected work <span aria-hidden="true">↘</span>
@@ -143,7 +141,7 @@ export default function Home() {
             <h2>Sow</h2>
             <h3>A garden journal that listens.</h3>
             <p>
-              An iPhone and iPad app that turns a short garden walk into a lasting memory... using voice,
+              An iPhone and iPad app that turns a short garden walk into a lasting memory through voice,
               photographs, weather, and the rhythms of the natural world.
             </p>
             <div className="project-tags" aria-label="Project disciplines">
@@ -192,7 +190,7 @@ export default function Home() {
           <p className="eyebrow"><OrbitalNumber value="03" phase={28} /> Developer relations</p>
           <h2>Helping developers<br /><em>understand and build.</em></h2>
           <p>
-            I work in Developer Relations full time. I make technical systems easier to understand through
+            I work in Developer Relations full time. I make technical systems easier to understand with
             documentation, examples, demos, and video.
           </p>
         </div>
@@ -223,7 +221,7 @@ export default function Home() {
             <p className="eyebrow"><OrbitalNumber value="04" phase={42} /> Documentation systems</p>
             <h2>DFlow<br /><em>Docs</em></h2>
             <p>
-              Documentation for a unified trading API on Solana... concepts, integration guides, examples,
+              Documentation for a unified trading API on Solana: concepts, integration guides, examples,
               troubleshooting, and API reference.
             </p>
             <a href="https://pond.dflow.net/" target="_blank" rel="noreferrer">Explore the docs ↗</a>

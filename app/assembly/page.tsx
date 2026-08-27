@@ -1,6 +1,11 @@
 import Link from "next/link";
+import type { Metadata } from "next";
 import AssemblyViewer from "@/app/components/AssemblyViewer";
 import styles from "./page.module.css";
+
+export const metadata: Metadata = {
+  robots: { index: false, follow: false },
+};
 
 export default function AssemblyPage() {
   return (

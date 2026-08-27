@@ -66,7 +66,7 @@ main { position: relative; isolation: isolate; }
 .hero-copy { position: absolute; z-index: 4; left: 50%; top: 148px; transform: translateX(-50%); display: flex; flex-direction: column; align-items: flex-start; }
 .eyebrow { margin: 0 0 18px; text-transform: uppercase; letter-spacing: .24em; font-size: 9px; font-weight: 600; color: rgba(243,237,223,.62); }
 .eyebrow > span { color: var(--persimmon); margin-right: 18px; }
-.hero h1 { max-width: 380px; margin: 0; font: 400 clamp(40px, 3.2vw, 52px)/.92 var(--font-display), serif; letter-spacing: -.035em; text-wrap: balance; color: #e4d6bb; }
+.hero h1 { max-width: 480px; margin: 0; font: 400 clamp(40px, 3.2vw, 52px)/.96 var(--font-display), serif; letter-spacing: -.035em; text-wrap: balance; color: #e4d6bb; }
 .hero h1 em { color: rgba(228,214,187,.6); font-weight: 400; }
 .hero-description { max-width: 285px; margin: 20px 0 0; font-size: 12px; line-height: 1.58; color: rgba(243,237,223,.58); }
 .text-link { display: inline-flex; gap: 52px; align-items: center; margin-top: 24px; padding-bottom: 7px; border-bottom: 1px solid rgba(243,237,223,.28); text-transform: uppercase; letter-spacing: .2em; font-size: 8px; }

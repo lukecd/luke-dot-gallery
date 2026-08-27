@@ -1,8 +1,13 @@
 import Link from "next/link";
+import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import StudyWorld from "@/app/components/StudyWorld";
 import { STUDIES, isStudySlug } from "@/app/studies/study-data";
 import styles from "./page.module.css";
+
+export const metadata: Metadata = {
+  robots: { index: false, follow: false },
+};
 
 export function generateStaticParams() {
   return STUDIES.map(({ slug }) => ({ slug }));

@@ -8,9 +8,10 @@ async function render() {
 
 test("server-renders the portfolio and its primary work", async () => {
   const html = await render();
-  assert.match(html, /<title>Luke Cassady-Dorion \| Developer, designer, maker<\/title>/i);
-  assert.match(html, /I make things for people/);
-  assert.match(html, /with computers/);
+  assert.match(html, /<title>Luke Cassady-Dorion \| Apps, tools, technical explanations, and films<\/title>/i);
+  assert.match(html, /I build apps, tools, technical explanations, and films/);
+  assert.match(html, /rel="canonical" href="https:\/\/luke\.gallery"/i);
+  assert.match(html, /application\/ld\+json/);
   assert.match(html, /A garden journal that listens/);
   assert.match(html, /Helping developers/);
   assert.match(html, /DFlow/);
