@@ -44,7 +44,7 @@ function RocketLaunch() {
 }
 
 function ForegroundFoliage() {
-  return <div className="foliage-anchor" aria-hidden="true"><div className="foliage-content"><HeroLayer src="/assets/hero/10-left-foliage.png" className="foliage-left" sizes="65vw" /><HeroLayer src="/assets/hero/11-center-foliage.png" className="foliage-center" sizes="88vw" /><HeroLayer src="/assets/hero/12-right-foliage.png" className="foliage-right" sizes="70vw" /></div></div>;
+  return <div className="foliage-anchor" aria-hidden="true"><div className="foliage-content"><HeroLayer src="/assets/hero/10-left-foliage.png" className="foliage-left" sizes="65vw" /><HeroLayer src="/assets/hero/11-center-foliage.png" className="foliage-center" priority sizes="88vw" /><HeroLayer src="/assets/hero/12-right-foliage.png" className="foliage-right" sizes="70vw" /></div></div>;
 }
 
 export function HeroScene() {
