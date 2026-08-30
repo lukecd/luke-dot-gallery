@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Barlow_Condensed, DM_Mono } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
 import { GA_MEASUREMENT_ID } from "./lib/analytics";
@@ -8,11 +9,25 @@ export const metadata: Metadata = {
   description: "A personal transmission from Luke.",
 };
 
+const barlowCondensed = Barlow_Condensed({
+  subsets: ["latin"],
+  weight: ["500", "600", "700"],
+  variable: "--font-barlow-condensed",
+  display: "swap",
+});
+
+const dmMono = DM_Mono({
+  subsets: ["latin"],
+  weight: ["400", "500"],
+  variable: "--font-dm-mono",
+  display: "swap",
+});
+
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   const isProduction = process.env.NODE_ENV === "production";
 
   return (
-    <html lang="en">
+    <html lang="en" className={`${barlowCondensed.variable} ${dmMono.variable}`}>
       <body>
         {children}
         {isProduction && (
