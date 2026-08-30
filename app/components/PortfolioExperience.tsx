@@ -21,7 +21,6 @@ const projectScenes = [
   { id: "music", Component: MusicProject },
   { id: "cheer", Component: CheerAmbassadorsProject },
   { id: "lamont", Component: LamontDesignProject },
-  { id: "contact", Component: ContactScene },
 ] as const;
 
 function PortfolioScrollExperience() {
@@ -43,6 +42,9 @@ function PortfolioScrollExperience() {
             <Component />
           </div>
         ))}
+        {mountedSceneIds.includes("contact") && (
+          <ContactScene isActive={activeSceneId === "contact"} />
+        )}
       </main>
       <div className="scroll-runway" aria-hidden="true" />
     </>

@@ -4,7 +4,6 @@ import { useEffect, useRef, useState } from "react";
 import {
   getActiveProjectSceneId,
   getMountedProjectSceneIds,
-  projectSceneIds,
   type ProjectSceneId,
 } from "../data/projectScenes";
 import { trackSectionView } from "../lib/analytics";
@@ -13,7 +12,6 @@ export function usePortfolioScroll() {
   const portfolioRef = useRef<HTMLElement>(null);
   const [mountedSceneIds, setMountedSceneIds] = useState<ProjectSceneId[]>([]);
   const [activeSceneId, setActiveSceneId] = useState<ProjectSceneId | null>(null);
-  const [allScenesWarmed, setAllScenesWarmed] = useState(false);
   const lastTrackedSectionId = useRef<ProjectSceneId | "launch" | null>(null);
 
   useEffect(() => {
@@ -25,29 +23,12 @@ export function usePortfolioScroll() {
   }, [activeSceneId]);
 
   useEffect(() => {
-    const warmScenes = () => setAllScenesWarmed(true);
-    const idleWindow = window as Window & {
-      requestIdleCallback?: (callback: () => void, options?: { timeout: number }) => number;
-      cancelIdleCallback?: (handle: number) => void;
-    };
-    const idleHandle = idleWindow.requestIdleCallback?.(warmScenes, { timeout: 1800 });
-    const timeoutHandle = idleHandle === undefined ? window.setTimeout(warmScenes, 900) : undefined;
-
-    return () => {
-      if (idleHandle !== undefined) idleWindow.cancelIdleCallback?.(idleHandle);
-      if (timeoutHandle !== undefined) window.clearTimeout(timeoutHandle);
-    };
-  }, []);
-
-  useEffect(() => {
     const updateScrollState = () => {
       const portfolio = portfolioRef.current;
       if (!portfolio) return;
 
       const progress = Math.min(Math.max(window.scrollY / window.innerHeight, 0), 8);
-      // Warm every scene after the initial view is usable so media is ready for
-      // both normal scrolling and future menu jumps, without delaying first paint.
-      const nextMountedSceneIds = allScenesWarmed ? [...projectSceneIds] : getMountedProjectSceneIds(progress);
+      const nextMountedSceneIds = getMountedProjectSceneIds(progress);
       const nextActiveSceneId = getActiveProjectSceneId(progress);
 
       setMountedSceneIds((currentSceneIds) =>
@@ -156,6 +137,12 @@ export function usePortfolioScroll() {
       portfolio.style.setProperty("--contact-smoke-column", String(contactSmokeSpriteFrame % 3));
       portfolio.style.setProperty("--contact-smoke-row", String(Math.floor(contactSmokeSpriteFrame / 3)));
       portfolio.style.setProperty("--contact-form-reveal", String(ease(contactOutroProgress)));
+      portfolio.style.setProperty(
+        "--smoke-image",
+        smokeFrame > 0 || contactSmokeFrame > 0
+          ? 'url("/assets/launch/rocket-smoke-sprite.png")'
+          : "none",
+      );
     };
 
     updateScrollState();
@@ -165,7 +152,7 @@ export function usePortfolioScroll() {
       window.removeEventListener("scroll", updateScrollState);
       window.removeEventListener("resize", updateScrollState);
     };
-  }, [allScenesWarmed]);
+  }, []);
 
   return { activeSceneId, mountedSceneIds, portfolioRef };
 }

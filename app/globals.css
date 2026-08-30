@@ -474,7 +474,7 @@ body { overflow-x: hidden; }
   width: 55vw;
   aspect-ratio: 5 / 4;
   opacity: var(--smoke-opacity);
-  background-image: url("/assets/launch/rocket-smoke-sprite.png");
+  background-image: var(--smoke-image, none);
   background-position: calc(var(--smoke-column) * 50%) calc(var(--smoke-row) * 100%);
   background-repeat: no-repeat;
   background-size: 300% 200%;
@@ -520,11 +520,12 @@ body { overflow-x: hidden; }
   width: min(38rem, calc(100vw - 2rem));
   max-height: calc(100dvh - 2rem);
   overflow: auto;
-  pointer-events: auto !important;
+  pointer-events: none;
   opacity: var(--contact-form-reveal);
   transform: translate(-50%, -50%) translateY(calc((1 - var(--contact-form-reveal)) * 1.5rem));
   transition: opacity 140ms linear, transform 140ms linear;
 }
+.contact-scene[data-active="true"] .contact-form-overlay { pointer-events: auto !important; }
 .contact-form {
   display: grid;
   gap: clamp(.65rem, 1.4vh, .95rem);

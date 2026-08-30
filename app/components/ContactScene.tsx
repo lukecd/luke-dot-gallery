@@ -68,9 +68,17 @@ function ContactGroundStage() {
  * live in a dedicated horizon coordinate system so resizing preserves their
  * relationship without scaling a finished background illustration.
  */
-export function ContactScene() {
+type ContactSceneProps = {
+  isActive: boolean;
+};
+
+export function ContactScene({ isActive }: ContactSceneProps) {
   return (
-    <section className="contact-scene" aria-label="Contact landing scene">
+    <section
+      className="contact-scene"
+      aria-label="Contact landing scene"
+      data-active={isActive}
+    >
       <ContactSkyAccents />
       <ContactGroundStage />
       <ContactForm />

@@ -30,6 +30,9 @@ it before changing public-facing copy or project positioning.
   “creative technologist,” “cutting-edge,” and “seamless.”
 - Keep internal/prototype surfaces such as Three.js studies and assembly pages
   out of public search indexing unless the task explicitly changes that choice.
+- Never merge a pull request, merge a branch into `main`, or promote a
+  deployment to production. Prepare and push a reviewable branch only; Luke
+  performs all merges and production promotions.
 
 ## Validation
 
