@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Space clip-art review</title>
+    <style>
+      :root {
+        color-scheme: dark;
+        --space: #061925;
+        --ink: #f2dba7;
+        --coral: #e96544;
+        --line: rgb(242 219 167 / 0.35);
+      }
+
+      * { box-sizing: border-box; }
+      body {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: clamp(1.25rem, 4vw, 4rem);
+        color: var(--ink);
+        background: var(--space);
+        font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      }
+
+      h1 { margin: 0; font-size: clamp(1.5rem, 4vw, 3rem); }
+      .intro { max-width: 74ch; margin: 1rem 0 3rem; line-height: 1.55; }
+      .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr)); gap: 1.5rem; }
+      article { overflow: hidden; border: 1px solid var(--line); background: rgb(3 17 25 / 0.72); }
+      header { display: flex; justify-content: space-between; gap: 1rem; padding: 1rem; border-bottom: 1px solid var(--line); }
+      h2 { margin: 0; font-size: 1rem; }
+      .status { color: var(--coral); font-size: .75rem; letter-spacing: .06em; }
+      .preview { display: grid; grid-template-columns: 1fr 1fr; min-height: 15rem; }
+      .panel { display: grid; min-height: 15rem; place-items: center; padding: 1rem; }
+      .checkerboard {
+        background-color: #cbd5d6;
+        background-image: linear-gradient(45deg, #829497 25%, transparent 25%), linear-gradient(-45deg, #829497 25%, transparent 25%), linear-gradient(45deg, transparent 75%, #829497 75%), linear-gradient(-45deg, transparent 75%, #829497 75%);
+        background-position: 0 0, 0 .75rem, .75rem -.75rem, -.75rem 0;
+        background-size: 1.5rem 1.5rem;
+      }
+      .space { background: radial-gradient(circle at 70% 30%, rgb(41 129 147 / 0.35), transparent 36%), var(--space); }
+      img { display: block; width: 100%; max-height: 14rem; object-fit: contain; }
+      dl { display: grid; grid-template-columns: max-content 1fr; gap: .55rem 1rem; margin: 0; padding: 1rem; border-top: 1px solid var(--line); font-size: .75rem; line-height: 1.4; }
+      dt { color: rgb(242 219 167 / 0.65); }
+      dd { margin: 0; }
+    </style>
+  </head>
+  <body>
+    <h1>Space clip-art review set 01</h1>
+    <p class="intro">Each candidate is shown against a checkerboard to verify alpha and against the portfolio’s dark-space treatment to judge depth and palette. These are review candidates only; none are integrated into the live scenes yet.</p>
+    <main class="grid">
+      <article>
+        <header><h2>Sow / eye planet</h2><span class="status">REVIEW CANDIDATE</span></header>
+        <div class="preview"><div class="panel checkerboard"><img src="assets/space-clip-art/sow-eye-planet-v3.png" alt="Sow eye planet" /></div><div class="panel space"><img src="assets/space-clip-art/sow-eye-planet-v3.png" alt="" /></div></div>
+        <dl><dt>Depth</dt><dd>Foreground</dd><dt>Proposed z-index</dt><dd>18</dd><dt>Scale</dt><dd>Medium</dd><dt>Review passes</dt><dd>0 / 3</dd></dl>
+      </article>
+      <article>
+        <header><h2>Sow / signal seed</h2><span class="status">REVIEW CANDIDATE</span></header>
+        <div class="preview"><div class="panel checkerboard"><img src="assets/space-clip-art/sow-signal-seed-v3.png" alt="Sow signal seed" /></div><div class="panel space"><img src="assets/space-clip-art/sow-signal-seed-v3.png" alt="" /></div></div>
+        <dl><dt>Depth</dt><dd>Middle</dd><dt>Proposed z-index</dt><dd>8</dd><dt>Scale</dt><dd>Small</dd><dt>Review passes</dt><dd>0 / 3</dd></dl>
+      </article>
+      <article>
+        <header><h2>Lazy / ring garden</h2><span class="status">REVIEW CANDIDATE</span></header>
+        <div class="preview"><div class="panel checkerboard"><img src="assets/space-clip-art/lazy-ring-garden-planet-v3.png" alt="Lazy ring garden planet" /></div><div class="panel space"><img src="assets/space-clip-art/lazy-ring-garden-planet-v3.png" alt="" /></div></div>
+        <dl><dt>Depth</dt><dd>Background</dd><dt>Proposed z-index</dt><dd>4</dd><dt>Scale</dt><dd>Large</dd><dt>Review passes</dt><dd>0 / 3</dd></dl>
+      </article>
+      <article>
+        <header><h2>Lazy / orbital pruner</h2><span class="status">REVIEW CANDIDATE</span></header>
+        <div class="preview"><div class="panel checkerboard"><img src="assets/space-clip-art/lazy-orbital-pruner-v2.png" alt="Lazy orbital pruner" /></div><div class="panel space"><img src="assets/space-clip-art/lazy-orbital-pruner-v2.png" alt="" /></div></div>
+        <dl><dt>Depth</dt><dd>Foreground</dd><dt>Proposed z-index</dt><dd>18</dd><dt>Scale</dt><dd>Small</dd><dt>Review passes</dt><dd>0 / 3</dd></dl>
+      </article>
+    </main>
+    <script>
+      const candidates = [
+        ["Grok / mind satellite", "grok-mind-satellite-v1.png", "Middle", "9", "Medium"],
+        ["Grok / thought orb", "grok-orbiting-thought-v1.png", "Foreground", "18", "Small"],
+        ["DFlow / interchange station", "dflow-interchange-station-v1.png", "Background", "5", "Large"],
+        ["DFlow / cargo comet", "dflow-cargo-comet-v1.png", "Foreground", "18", "Medium"],
+        ["Music / aurora saucer", "music-aurora-saucer-v1.png", "Middle", "10", "Large"],
+        ["Music / resonance orbs", "music-resonance-orbs-v1.png", "Foreground", "18", "Small"],
+        ["Cheer / bubble cruiser", "cheer-bubble-cruiser-v1.png", "Middle", "11", "Large"],
+        ["Cheer / hello satellite", "cheer-hello-satellite-v1.png", "Foreground", "18", "Small"],
+        ["Lamont / dawn planet", "lamont-dawn-planet-v1.png", "Background", "6", "Large"],
+        ["Lamont / landing beacon", "lamont-landing-beacon-v1.png", "Foreground", "18", "Medium"],
+      ];
+      const grid = document.querySelector(".grid");
+      candidates.forEach(([name, file, depth, zIndex, scale]) => {
+        const path = `assets/space-clip-art/${file}`;
+        grid.insertAdjacentHTML("beforeend", `<article><header><h2>${name}</h2><span class="status">REVIEW CANDIDATE</span></header><div class="preview"><div class="panel checkerboard"><img src="${path}" alt="${name}" /></div><div class="panel space"><img src="${path}" alt="" /></div></div><dl><dt>Depth</dt><dd>${depth}</dd><dt>Proposed z-index</dt><dd>${zIndex}</dd><dt>Scale</dt><dd>${scale}</dd><dt>Review passes</dt><dd>0 / 3</dd></dl></article>`);
+      });
+    </script>
+  </body>
+</html>
