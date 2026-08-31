@@ -55,7 +55,6 @@ export function HeroScene() {
     <OrbitalSystem />
     <header className="masthead"><MastheadHome /><span className="masthead-star" aria-hidden="true">✦</span></header>
     <SiteMenu />
-    <div className="foreground-stage"><Spaceport /><div className="title-anchor"><div className="title-content"><section className="title-zone"><HeroCategoryNavigation /><h1>LUKE</h1></section></div></div><RocketLaunch /><div className="dish-anchor" aria-hidden="true"><HeroLayer src="/assets/hero/08-observatory-dish.png" className="dish" sizes="22vw" /></div><ForegroundFoliage /></div>
-    <p className="launch">SCROLL TO LAUNCH <span aria-hidden="true">↓</span></p>
+    <div className="foreground-stage"><Spaceport /><div className="title-anchor"><div className="title-content"><section className="title-zone"><HeroCategoryNavigation /><h1>LUKE</h1></section><p className="launch">SCROLL TO LAUNCH <span aria-hidden="true">↓</span></p></div></div><RocketLaunch /><div className="dish-anchor" aria-hidden="true"><HeroLayer src="/assets/hero/08-observatory-dish.png" className="dish" sizes="22vw" /></div><ForegroundFoliage /></div>
   </>;
 }
