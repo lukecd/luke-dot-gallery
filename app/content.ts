@@ -1,26 +1,26 @@
 export const sowScreens = [
-  { label: "Morning", alt: "Sow Today screen showing a morning garden journal" },
-  { label: "Walks", alt: "Sow Walks archive showing garden entries" },
-  { label: "Plants", alt: "Sow plant memories screen" },
-  { label: "Memory", alt: "Sow field note showing an Orange Zinnia" },
+  { label: "Morning", src: "/assets/sow/today-botanical-ceremony-poster.webp", alt: "Sow Today screen showing a morning garden journal" },
+  { label: "Walks", src: "/assets/sow/website-walks-archive-landscape.webp", alt: "Sow Walks archive showing a June garden entry with red lettuce" },
+  { label: "Plants", src: "/assets/sow/website-plants-landscape.webp", alt: "Sow plant history showing Burgundy Okra photos and captions" },
+  { label: "Memory", src: "/assets/sow/website-zinnia-memory-landscape.webp", alt: "Sow Orange Zinnia memory with a photo, garden observation, location, and date" },
 ] as const;
 
 export const projects = {
   sow: {
     title: "Sow",
     tagline: "A voice-first garden journal for iPhone and iPad.",
-    description: "Tell Sow about your garden every morning. Share what bloomed, what’s growing, what needs work, and what you’re excited about. Sow turns those small observations into a structured garden journal you can return to anytime.",
-    link: { label: "VISIT SOW.GARDEN ↗", href: "https://www.sow.garden/" },
+    description: "Speak your daily observations. Sow turns what’s blooming, growing, and needing care into a garden journal you can return to.",
+    link: { label: "EXPLORE THE APP ↗", href: "https://www.sow.garden/" },
+  },
+  relaxationStation: {
+    title: "Relaxation Station",
+    description: "Animated landscapes and generative music for a little time with nothing to achieve. A relaxation app for iPhone and iPad, now inviting beta testers.",
+    link: { label: "EXPLORE THE APP ↗", href: "https://www.relaxation-station.xyz/" },
   },
   lazyDesigner: {
     title: "Lazy Designer",
-    tagline: "A custom Shopify app for an online garden store.",
-    paragraphs: [
-      "A customer uploads a photo of their space, then the app creates a garden designed to flourish in their USDA growing zone while reflecting their aesthetic preferences.",
-      "The challenge was building visually interesting gardens using only plants from the store’s live, in-stock catalogue.",
-      "The result is a garden plan that feels personal, practical, and ready to buy.",
-    ],
-    link: { label: "VISIT LAZY DESIGNER ↗", disabledLabel: "Visit Lazy Designer, coming soon" },
+    description: "A Shopify app that turns a photo of your space into a garden plan, using plants suited to your climate and available in the store.",
+    link: { label: "EXPLORE THE APP ↗", disabledLabel: "Explore the app, Lazy Designer coming soon" },
   },
   grokDas: {
     title: "Grok DAS in five minutes.",

@@ -1,17 +1,10 @@
+import type { ProjectSceneId } from "../data/projectScenes";
+
 export const GA_MEASUREMENT_ID = "G-Q5T874Q6XS";
 
-export type AnalyticsSectionId =
-  | "launch"
-  | "sow"
-  | "lazy"
-  | "grok"
-  | "dflow"
-  | "music"
-  | "cheer"
-  | "lamont"
-  | "contact";
+export type AnalyticsSectionId = "launch" | ProjectSceneId;
 
-export type NavigationMethod = "menu" | "hero_category" | "masthead";
+export type NavigationMethod = "menu" | "hero_category" | "hero_launch" | "masthead";
 
 declare global {
   interface Window {

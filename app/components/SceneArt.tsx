@@ -4,6 +4,7 @@ import { portfolioSceneArt } from "../data/portfolioSceneArt";
 import type { ProjectSceneId } from "../data/projectScenes";
 
 const sceneOpacity = {
+  relaxation: "var(--relaxation-reveal)",
   sow: "var(--sow-card-reveal)",
   lazy: "var(--lazy-reveal)",
   grok: "var(--tech-reveal)",

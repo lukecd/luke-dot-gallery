@@ -9,12 +9,13 @@ import { HeroScene } from "./HeroScene";
 import { LamontDesignProject } from "./LamontDesignProject";
 import { LazyDesignerProject } from "./LazyDesignerProject";
 import { MusicProject } from "./MusicProject";
-import { PortfolioSceneArt } from "./PortfolioSceneArt";
 import { SowProject } from "./SowProject";
+import { RelaxationStationProject } from "./RelaxationStationProject";
 import { TravelingRocket } from "./TravelingRocket";
 
 const projectScenes = [
   { id: "sow", Component: SowProject },
+  { id: "relaxation", Component: RelaxationStationProject },
   { id: "lazy", Component: LazyDesignerProject },
   { id: "grok", Component: GrokDasProject },
   { id: "dflow", Component: DflowDocsProject },
@@ -34,9 +35,8 @@ function PortfolioScrollExperience() {
         aria-label="Luke personal transmission"
         data-active-scene={activeSceneId ?? "launch"}
       >
-        <HeroScene />
+        <HeroScene isActive={activeSceneId === null} />
         <TravelingRocket />
-        <PortfolioSceneArt mountedSceneIds={mountedSceneIds} />
         {projectScenes.map(({ id, Component }) => mountedSceneIds.includes(id) && (
           <div key={id} inert={activeSceneId !== id}>
             <Component />

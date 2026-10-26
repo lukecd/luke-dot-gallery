@@ -1,5 +1,76 @@
 # Image Prompt Library
 
+## Selected hero — Launch Window refinement, 2026-10-26
+
+Reference: third displayed concept, `exec-6f63b39a-daf5-4fda-9c24-9b0e5be6fffd.png`.
+User approved lighter frame, stronger rocket, and a smaller or absent planet.
+
+```text
+Edit the attached selected website hero concept into its approved refinement. Output one finished 1440 x 900 landscape website hero, no browser chrome. Preserve centered composition, exact readable UI wording, retro matte cut-paper craftsmanship, navy/cream/rust/teal palette, distinctive cream-and-rust three-porthole rocket, and the feeling of looking from a hangar toward a launch apron. Changes: reduce the weight of the dark teal architectural frame by about half, making side strips narrow and the top rim exceptionally thin, an elegant theatrical paper proscenium rather than a device bezel. Remove the ringed planet entirely, leaving calm navy space. Make the rocket about 20 percent larger and unmistakably the protagonist, centered on a grounded low warm gray launch apron; rocket nose must have clear breathing space below the centered SCROLL TO LAUNCH button. Keep the LUKE wordmark large above it but slightly shorter if necessary to avoid crowding. Keep category text APPS ✱ TECH GUIDES ✱ MUSIC ✱ FILMS directly above LUKE and the small cream SCROLL TO LAUNCH ↓ action directly below. Header LUKE / PERSONAL TRANSMISSION and small menu remain. Keep distant terracotta terrain low, occupying only the lowest 15 percent of the scene, with floor below. Only three restrained cream stars positioned to the sides away from the text and rocket. No plants, trees, extra buildings, gantry, decorative interface, new text or panels. This is the coherent refined visual target for a layered responsive implementation.
+```
+
+Validation: centered readable type; clearly grounded rocket; thin framing;
+no planet or foliage; no collision between action and rocket; independently
+generated alpha-verified production layers rather than slicing this mockup.
+
+
+## Hero concept pitch — 2026-10-26
+
+### Purpose and references
+
+Three review-only hero directions. No production implementation until selection.
+References: `audit-output/consistent-projects/desktop-opening.png` and the user’s
+15:17:30 compact hero screenshot. Retain the existing rocket, typography and
+paper palette; replace the dense garden foreground with a coherent setting.
+
+### Shared ImageGen prompt
+
+```text
+Create a realistic, production-quality website hero design with clear hierarchy, strong typography, intentional imagery and purposeful spacing. This is the hero only for Luke Cassady-Dorion's personal portfolio. Target dimensions 1440 x 900, landscape desktop viewport. One design, edge-to-edge website content only, no browser chrome or presentation board. The attached screenshots show the existing site and are grounding for its exact paper-collage style, palette, rocket identity and typography; radically simplify the composition according to the direction below rather than reproduce its crowding.
+
+Preserve handmade mid-century retro science-fiction cut-paper art: matte worn printed paper, tactile grain, carefully cut silhouettes and restrained layered shadows. Ink navy #001b29, pale warm cream #f3dea2, rust/coral #c7603d and subdued teal. No photorealism, glossy 3D, neon, digital gradients, generic SaaS styling or plastic illustration. Preserve the recognizable cream rocket with rust-red nose and fins and three dark round portholes. No plants, leaves, flowers or jungle. No dense futuristic city or giant satellite dish. All ground-based objects must visibly connect to a platform or terrain; no inexplicable floating bases. Sparse stars, restrained planet scale, ample calm sky.
+
+Keep exact existing content: top thin cream header rule with small monospaced "LUKE / PERSONAL TRANSMISSION" at left, small outlined hamburger button at right. Main wordmark "LUKE" in huge bold tightly condensed cream capitals. Secondary line "APPS ✱ TECH GUIDES ✱ MUSIC ✱ FILMS" in condensed capitals, coral separators. One modest cream rectangular action labeled "SCROLL TO LAUNCH ↓" in dark monospaced letters. No additional titles, taglines, invented copy, labels, cards, tabs, metrics or controls. Only two font families, condensed display and readable monospace. Group using space and alignment. Intentional whitespace; readable text; no overlapping artwork with lettering, no clipped text. Design should read quickly at reduced viewport sizes. Date context 2026-10-26, but no visible dates.
+
+```
+
+### Quiet Spaceport
+
+Append to the shared prompt:
+
+```text
+Direction: QUIET SPACEPORT. Most restrained evolution of the existing hero. Strong asymmetrical composition: wordmark and category line left around x100 y320, large LUKE about 580px wide, CTA below. Right at x1080 a tall upright rocket rests on a low clearly visible cream launch pad at y760, with a slender rust gantry behind it. Rocket about 450px tall. Replace foliage with only two broad low cut-paper layers of dusty teal and warm gray lunar terrain occupying the bottom 15 percent; clean distant horizon. One tiny distant cream dome and antenna far on horizon, secondary enough to be almost a silhouette. A small rust ringed planet high right, separated from rocket, no collision. Vast uncluttered navy sky between groups. Barely a handful of cream stars. Quiet, sophisticated, tangible paper setting with strong focal hierarchy: LUKE first, rocket second, background distant. Do not place caption or concept name within the image.
+```
+
+### Launch Poster
+
+Append to the shared prompt:
+
+```text
+Direction: LAUNCH POSTER. A decisive graphic mid-century science-fiction travel-poster composition rendered as a functional website hero. Wordmark LUKE is a massive typographic anchor in the upper-left/middle-left, category line directly above it, CTA directly below it. The rocket is already lifting off on a diagonal from lower-center toward upper-right, about 380px long, recognizable cream body, coral nose and fins, three round windows. A single broad curved cream and faded teal cut-paper exhaust ribbon sweeps from the bottom edge to the rocket, with only a few scalloped paper smoke forms at the lowest edge, creating movement without many tiny pieces. A very shallow curved dark teal planetary horizon along the bottom establishes origin. No gantry, buildings, dish or large ringed planet. One tiny distant pale moon and just three star shapes in generous navy negative space. Keep the trajectory entirely right of the typography, never behind words. The diagonal motion and bold paper shapes must feel adventurous and simple, distinctly different from a parked-rocket landscape. No extra text or concept name.
+```
+
+### Launch Window
+
+Append to the shared prompt:
+
+```text
+Direction: LAUNCH WINDOW. A centered architectural composition, visibly different from a side-by-side hero. We are looking out from a quiet retro space hangar through one enormous rounded rectangular opening. The hangar is represented only by very broad dark teal layered cut-paper strips at the left and right edges and a subtle rounded top inner corner, not a detailed interior, no dashboard, rivets or switches. Opening fills almost entire hero below header. Center the oversized cream LUKE wordmark in the upper-middle of the open navy sky, about 600px wide. Place category line directly above the wordmark and the small SCROLL TO LAUNCH action centered immediately below it. Clear spacing below typography. In the lower third, a smaller upright cream and rust rocket sits centered on a broad simple warm gray launch apron extending all the way to the bottom, joined to dark teal side framing. Rocket approximately 220px tall, unmistakable silhouette, three round windows; no gantry needed. Distant low terracotta terrain is visible either side of the launch pad. A small ringed planet sits well off to the right within the sky, with only two or three stars. The full-width apron anchors the scene; no foliage, towers or dish. Broad graphic architectural framing must create depth without heavy visual clutter. Calm symmetrical anticipation of launch, paper theatrical set. Do not add concept names or any extra text.
+```
+
+### Validation criteria
+
+- Three distinct compositions, each a single hero at desktop proportions.
+- Existing header, wordmark, categories and launch action remain readable.
+- Rocket is recognizable, prominent and narratively connected to its setting.
+- Matte cut-paper texture and navy/cream/rust palette match the references.
+- No foliage; no isolated cut-off architecture or floating launch platform.
+- Generous space separates type and illustration; no new marketing claims.
+- These are art-direction references, not pre-separated production assets.
+- Responsive intent: preserve name and rocket; simplify/crop distant terrain or
+  hangar edges before shrinking typography. Test actual behavior after selection.
+
+
 Keep reusable ImageGen prompts, tested prompt patterns, and their validation
 criteria in this file. When a prompt is materially revised during image work,
 update the relevant entry here before using the revision again.
@@ -872,3 +943,123 @@ opening the application. It must include:
 
 The page is a review artifact, not a public portfolio route, and must not be
 used by the production app.
+
+
+## Selected hero production layers — 2026-10-26
+
+# Hangar frame asset — 2026-10-26
+
+## Exact prompt
+
+```text
+Create only the architectural foreground frame from this art direction as a separately designed production asset, no full scene. Landscape canvas target1536x1024. Very thin dark desaturated teal matte cut-paper hangar doorway: narrow gently curved vertical columns hugging extreme left and right edges, slender rounded upper corners, an exceptionally thin top rim; lower ends terminate flush at bottom. Center 90 percent entirely transparent alpha. Frame looks like layered handmade worn paper with subtle cream-teal edge highlights, no metal gloss, no details, no rivets. Broadest column occupies at most4 percent canvas width. No bottom crossbar or floor. No sky, stars, terrain, rocket, text, UI, planet, shadow across transparent opening or checkerboard pixels. Symmetrical frontal view, approved reference palette. Output real RGBA transparency.
+```
+
+## Validation criteria
+
+- Real RGBA transparency; alpha zero through the central opening.
+- Visible matte teal paper columns at both edges and a thin top rim.
+- No sky, foreground, text, UI, rocket, or embedded checkerboard.
+- Symmetrical framing, narrow enough not to compete with the central scene.
+
+## Generation
+
+- Tool: built-in ImageGen, transparent_background true.
+- Reference: approved refined Launch Window concept.
+
+## Result
+
+- Source: `/Users/luke/.codex/generated_images/01a1776a-6ae6-7ac0-82b8-844a1240c3c6/exec-b5368435-918a-47ba-bfd7-b8ff6883372d.png`.
+- Project asset: `public/assets/hero/hangar/frame.png`, copied unchanged.
+- Canvas 1536 × 1024, RGBA. 1,437,719 fully transparent pixels;
+  135,145 partial-alpha pixels; maximum alpha 254. Center alpha is 0.
+- Visible alpha bounds: x0–1535, y29–983. The bottom 40 pixels are transparent;
+  position the frame so its visible feet meet or pass behind the apron.
+- Inspected: narrow symmetrical teal paper arch, no embedded scene or text.
+- Provisional asset acceptance only; final acceptance depends on assembled hero.
+
+
+# Hangar terrain layer
+
+Reference: `exec-ef7e2b46-a3b7-42ff-98ee-de2ff83256f8.png`.
+
+```text
+Create an independent production background terrain layer inspired by this reference, not a whole scene. Wide landscape target 1536x384, panoramic horizontal band. Low distant terracotta lunar rocky hills formed from matte cut and folded paper, muted rust palette with subtle worn print texture. Hills tallest at extreme left and right, descend into a very low flat horizon in central half, perfectly open for foreground central rocket. The center horizon should occupy only bottom 12 percent of canvas, edge hills rise to 65 percent. Lower terrain connects continuously to bottom edge. Above hill silhouette fully transparent real alpha. No frame, floor, rocket, stars, sky, planet, gantry, plants, UI or text. Refined restrained handmade mid-century retro science fiction, not photorealistic rocks. Broad simple silhouettes, no noisy tiny stones.
+```
+
+Validation: real transparent alpha above silhouette; low center and higher side terrain; muted terracotta cut paper; no scene objects; continuous opaque lower terrain; retained original source and no creative postprocessing.
+
+## Output and validation
+
+- Built-in ImageGen original: `/Users/luke/.codex/generated_images/01a1776b-d678-7cc2-a465-eb8d51c13b78/exec-72dc5738-348f-4151-b1dd-9113e09dbd06.png`.
+- Project asset: `public/assets/hero/hangar/terrain.png` (unchanged copy).
+- Canvas 2172 × 724, RGBA, real transparency confirmed. 1,154,196 fully transparent pixels. Top center and canvas center alpha 0. Lower terrain alpha around 250–253.
+- Visual inspection: restrained paper hills rise at sides and fall to a flat low central horizon, with no extra objects. Ready for in-situ evaluation with apron/frame.
+
+
+# Hangar launch apron — 2026-10-26
+
+## Revision 2
+
+First output added a white top band; rejected for production. Exact repair:
+
+```text
+Correct only the composition of this paper launch apron asset. Remove ALL empty white area above the floor. Recompose so that the narrow cream far-edge step touches the absolute top edge of the exported image, x0 through full width. All pixels from top to bottom must depict the paper floor or step. Keep the same warm cream/gray matte textured paper, symmetric one-point perspective, paving slab seam layout and restrained dark teal side insets. Output a panoramic 3:1 full bleed opaque floor-only image. Do not add any blank margins, sky, white band, background, terrain, walls, frame, rocket, text, objects or UI. The entire exported canvas is the illustrated floor, with no empty background anywhere.
+```
+
+## Exact prompt
+
+```text
+Create only a separate wide horizontal launch-apron foreground plate, target1536x384 panoramic 4:1 aspect ratio. An empty warm gray/cream matte layered-paper spaceport floor seen from low frontal viewpoint, symmetrical one-point perspective center, like floor in reference. Floor fills entire canvas edge to edge, top horizontal edge is a slender cream paper step marking distant edge of apron, below it broad quiet rectangular paper paving slabs with subtle fine seams converging to center top and gentle print texture. Restrained darker teal inset seam near each far side; center clear to ground a separate rocket. No horizon landscape, sky, backdrop, walls, arch, frame, rocket, objects, plants, stars, people, text or UI. No glossy metal, no photorealistic concrete; tactile cut-paper collage with tiny edge shadows, elegant broad shapes, low detail. Full bleed opaque floor texture.
+```
+
+## Validation
+
+Accepted revision 2: `/Users/luke/.codex/generated_images/01a1776c-c932-7570-ae07-748f173d562e/exec-cd46f1bc-a3dc-46d5-8dac-b42ca5b5b252.png`.
+Copied without alteration to `public/assets/hero/hangar/apron.png`.
+Visual inspection confirms top step touches canvas edge, no white band, no objects,
+warm matte paper floor and centered perspective. Actual size 2172x724 (3:1).
+
+- Empty opaque paper apron fills entire canvas.
+- No sky, text, rocket, terrain or other baked-in objects.
+- Symmetric perspective and clear center support separately animated rocket.
+- Cream/warm gray matte paper matches refined hero.
+- Preserve generated file unchanged; report actual dimensions.
+
+
+
+
+# Hero rocket — 2026-10-26
+
+## Exact prompt
+
+```text
+Create one isolated upright retro paper rocket for approved hangar hero, front view, canvas1024x1536 transparent. Preserve identity cream body, rust-red conical nose, three vertically aligned dark teal round portholes, rust side fins and central fin, charcoal engine. Match the BROADER silhouette in approved hero reference rather than tall thin source: opaque rocket height1360px, opaque width740px, centered with generous alpha margin all sides. Substantial cream body, broad triangular side fins spreading symmetrically; matte tactile layered mid-century paper, subtle worn print, no glossy metal or photographic lighting, no glow. Flat foot/engine baseline near bottom, front fin may extend very slightly below. No ground, shadow, sky, gantry, smoke, stars, text or UI. True alpha transparency outside crisp illustrated silhouette.
+```
+
+## Validation criteria
+
+- True alpha transparency and crisp silhouette without rendered background.
+- Recognizable cream/rust rocket, three dark round portholes and charcoal engine.
+- Broad silhouette approximating width/height 0.55, without stretching an existing image.
+- Matte tactile cut-paper appearance; no glow, smoke, ground or cast shadow.
+
+## References
+
+- Approved refined Launch Window concept, exec-ef7e2b46-a3b7-42ff-98ee-de2ff83256f8.png.
+- Existing identity reference: public/assets/hero/15-rocket-body.png.
+
+## Result and validation
+
+- Source: `/Users/luke/.codex/generated_images/01a1776a-6ae6-7ac0-82b8-844a1240c3c6/exec-7bcd76c4-c12e-44f8-b8c7-048c8f974b4f.png`.
+- Project asset: `public/assets/hero/hangar/rocket.png`, copied unchanged.
+- Canvas: 1024 × 1536 RGBA. Maximum alpha254. 994,606 fully transparent pixels.
+- Alpha >=128 silhouette bounds: x73–948, y21–1514, 876 × 1494;
+  silhouette width/height0.586, substantially broader than original.
+- Any-alpha bounds: x21–1009, y18–1518; extremely faint fringe is outside
+  the main silhouette. Sampled apparent preview glow beside nose/body has alpha0.
+- Inspected: cream body, three dark teal round windows, rust nose and broad
+  symmetric side fins; charcoal engine; no embedded scene, smoke or text.
+- Fin tip reaches y1514; 21 transparent pixels below it. Main engine baseline
+  is above the pointed central fin, as in the reference.
+- Asset is provisional pending inspection within the assembled hero.

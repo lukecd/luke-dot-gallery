@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import {
   getActiveProjectSceneId,
+  getProjectSceneProgress,
   getMountedProjectSceneIds,
   type ProjectSceneId,
 } from "../data/projectScenes";
@@ -27,7 +28,7 @@ export function usePortfolioScroll() {
       const portfolio = portfolioRef.current;
       if (!portfolio) return;
 
-      const progress = Math.min(Math.max(window.scrollY / window.innerHeight, 0), 8);
+      const progress = Math.min(Math.max(window.scrollY / window.innerHeight, 0), 9);
       const nextMountedSceneIds = getMountedProjectSceneIds(progress);
       const nextActiveSceneId = getActiveProjectSceneId(progress);
 
@@ -39,28 +40,22 @@ export function usePortfolioScroll() {
       setActiveSceneId((currentSceneId) => currentSceneId === nextActiveSceneId ? currentSceneId : nextActiveSceneId);
       const heroProgress = Math.min(progress, 1);
       const ease = (value: number) => value * value * (3 - 2 * value);
-      const sowProgress = Math.min(Math.max((heroProgress - 0.64) / 0.36, 0), 1);
-      const sowExitProgress = Math.min(Math.max((progress - 1.14) / 0.32, 0), 1);
-      const lazyProgress = Math.min(Math.max((progress - 1.38) / 0.48, 0), 1);
-      const lazyExitProgress = Math.min(Math.max((progress - 2.06) / 0.3, 0), 1);
-      const techProgress = Math.min(Math.max((progress - 2.32) / 0.46, 0), 1);
-      const techExitProgress = Math.min(Math.max((progress - 3.1) / 0.3, 0), 1);
-      const dflowProgress = Math.min(Math.max((progress - 3.32) / 0.46, 0), 1);
-      const dflowExitProgress = Math.min(Math.max((progress - 4.1) / 0.3, 0), 1);
-      const musicProgress = Math.min(Math.max((progress - 4.32) / 0.46, 0), 1);
-      const musicExitProgress = Math.min(Math.max((progress - 5.1) / 0.3, 0), 1);
-      const cheerProgress = Math.min(Math.max((progress - 5.32) / 0.46, 0), 1);
-      const cheerExitProgress = Math.min(Math.max((progress - 6.1) / 0.3, 0), 1);
-      const lamontProgress = Math.min(Math.max((progress - 6.32) / 0.46, 0), 1);
-      const lamontExitProgress = Math.min(Math.max((progress - 7.18) / 0.3, 0), 1);
-      const lamontBeaconExitProgress = Math.min(Math.max((progress - 7.02) / 0.2, 0), 1);
-      const contactSkyProgress = Math.min(Math.max((progress - 7.0) / 0.4, 0), 1);
-      const contactPlainProgress = Math.min(Math.max((progress - 7.1) / 0.24, 0), 1);
-      const contactTerrainProgress = Math.min(Math.max((progress - 7.22) / 0.3, 0), 1);
-      const contactPadProgress = Math.min(Math.max((progress - 7.4) / 0.22, 0), 1);
-      const contactRocksProgress = Math.min(Math.max((progress - 7.38) / 0.24, 0), 1);
-      const contactRocketProgress = Math.min(Math.max((progress - 7.48) / 0.42, 0), 1);
-      const contactOutroProgress = Math.min(Math.max((progress - 7.9) / 0.1, 0), 1);
+      const { reveal: sowProgress, exit: sowExitProgress } = getProjectSceneProgress("sow", progress);
+      const { reveal: relaxationProgress, exit: relaxationExitProgress } = getProjectSceneProgress("relaxation", progress);
+      const { reveal: lazyProgress, exit: lazyExitProgress } = getProjectSceneProgress("lazy", progress);
+      const { reveal: techProgress, exit: techExitProgress } = getProjectSceneProgress("grok", progress);
+      const { reveal: dflowProgress, exit: dflowExitProgress } = getProjectSceneProgress("dflow", progress);
+      const { reveal: musicProgress, exit: musicExitProgress } = getProjectSceneProgress("music", progress);
+      const { reveal: cheerProgress, exit: cheerExitProgress } = getProjectSceneProgress("cheer", progress);
+      const { reveal: lamontProgress, exit: lamontExitProgress } = getProjectSceneProgress("lamont", progress);
+      const lamontBeaconExitProgress = Math.min(Math.max((progress - 8.02) / 0.2, 0), 1);
+      const contactSkyProgress = Math.min(Math.max((progress - 8) / 0.4, 0), 1);
+      const contactPlainProgress = Math.min(Math.max((progress - 8.1) / 0.24, 0), 1);
+      const contactTerrainProgress = Math.min(Math.max((progress - 8.22) / 0.3, 0), 1);
+      const contactPadProgress = Math.min(Math.max((progress - 8.4) / 0.22, 0), 1);
+      const contactRocksProgress = Math.min(Math.max((progress - 8.38) / 0.24, 0), 1);
+      const contactRocketProgress = Math.min(Math.max((progress - 8.48) / 0.42, 0), 1);
+      const contactOutroProgress = Math.min(Math.max((progress - 8.9) / 0.1, 0), 1);
       const contactSmokeBuildFrame =
         contactRocketProgress < 0.72
           ? 0
@@ -69,20 +64,18 @@ export function usePortfolioScroll() {
         ? Math.max(0, 6 - Math.ceil(contactOutroProgress * 6))
         : contactSmokeBuildFrame;
       const contactSmokeSpriteFrame = Math.max(contactSmokeFrame - 1, 0);
-      const travelRocketProgress = Math.min(Math.max((progress - 0.55) / 6.25, 0), 1);
+      const travelRocketProgress = Math.min(Math.max((progress - 0.55) / 7.25, 0), 1);
       const travelRocketReveal = Math.min(Math.max((progress - 0.55) / 0.15, 0), 1);
-      const travelRocketExit = Math.min(Math.max((progress - 7.1) / 0.22, 0), 1);
+      const travelRocketExit = Math.min(Math.max((progress - 8.1) / 0.22, 0), 1);
       const easedSowProgress = ease(sowProgress);
       const easedSowExit = ease(sowExitProgress);
       const ignitionStart = .22;
       const rocketLiftStart = .42;
-      const gantryExitStart = .62;
-      const foliageExitProgress = Math.min(Math.max((heroProgress - 0.5) / 0.2, 0), 1);
+      const smokeExitStart = .62;
       const rocketLaunchProgress = Math.min(Math.max((heroProgress - rocketLiftStart) / .20, 0), 1);
       const heroRocketExitProgress = Math.min(Math.max((progress - .72) / .22, 0), 1);
-      const gantryExitProgress = Math.min(Math.max((heroProgress - gantryExitStart) / .28, 0), 1);
       const smokeFrame =
-        heroProgress < ignitionStart || heroProgress >= gantryExitStart
+        heroProgress < ignitionStart || heroProgress >= smokeExitStart
           ? 0
           : heroProgress < 0.45
             ? 1
@@ -97,23 +90,20 @@ export function usePortfolioScroll() {
                     : 6;
       const spriteFrame = Math.max(smokeFrame - 1, 0);
 
-      portfolio.style.setProperty("--scroll-step-progress", String(heroProgress));
+      portfolio.style.setProperty("--hangar-opacity", String(1 - ease(Math.min(Math.max((heroProgress - .62) / .18, 0), 1))));
+      portfolio.style.setProperty("--hero-title-opacity", String(1 - ease(Math.min(Math.max((heroProgress - .04) / .24, 0), 1))));
       portfolio.style.setProperty("--smoke-opacity", smokeFrame === 0 ? "0" : "1");
       portfolio.style.setProperty("--smoke-column", String(spriteFrame % 3));
       portfolio.style.setProperty("--smoke-row", String(Math.floor(spriteFrame / 3)));
       portfolio.style.setProperty("--rocket-lift", `${Math.round(rocketLaunchProgress * -118)}svh`);
       portfolio.style.setProperty("--hero-rocket-opacity", String(1 - ease(heroRocketExitProgress)));
-      portfolio.style.setProperty("--title-descent", `${Math.round(heroProgress * 105)}svh`);
-      portfolio.style.setProperty("--spaceport-descent", `${Math.round(heroProgress * 112)}svh`);
-      portfolio.style.setProperty("--gantry-descent", `${Math.round(gantryExitProgress * 118)}svh`);
-      portfolio.style.setProperty("--foliage-exit", `${Math.round(foliageExitProgress * 115)}svh`);
-      portfolio.style.setProperty("--dish-descent", `${Math.round(heroProgress * 100)}svh`);
       portfolio.style.setProperty("--travel-rocket-x", `${Math.round((-5 + travelRocketProgress * 101) * 100) / 100}vw`);
       portfolio.style.setProperty("--travel-rocket-opacity", String(ease(travelRocketReveal) * (1 - ease(travelRocketExit))));
-      portfolio.style.setProperty("--planet-opacity", String(1 - easedSowProgress));
       portfolio.style.setProperty("--sow-card-reveal", String(easedSowProgress * (1 - easedSowExit)));
       portfolio.style.setProperty("--sow-preview-reveal", String(ease(Math.min(Math.max((sowProgress - 0.12) / 0.88, 0), 1)) * (1 - easedSowExit)));
       portfolio.style.setProperty("--sow-exit", String(easedSowExit));
+      portfolio.style.setProperty("--relaxation-reveal", String(ease(relaxationProgress) * (1 - ease(relaxationExitProgress))));
+      portfolio.style.setProperty("--relaxation-exit", String(ease(relaxationExitProgress)));
       portfolio.style.setProperty("--lazy-reveal", String(ease(lazyProgress) * (1 - ease(lazyExitProgress))));
       portfolio.style.setProperty("--lazy-exit", String(ease(lazyExitProgress)));
       portfolio.style.setProperty("--tech-reveal", String(ease(techProgress) * (1 - ease(techExitProgress))));

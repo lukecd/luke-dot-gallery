@@ -2,7 +2,7 @@ import Image from "next/image";
 
 /**
  * The in-flight rocket that travels with the project sequence after it leaves
- * the launch gantry. Its position is derived from portfolio scroll progress.
+ * the launch apron. Its position is derived from portfolio scroll progress.
  */
 export function TravelingRocket() {
   return (
