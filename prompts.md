@@ -1,5 +1,58 @@
 # Image Prompt Library
 
+## Social preview concepts — 2026-10-26
+
+Selected by Luke: option 2, Liftoff. Delivery export:
+`public/assets/social/liftoff-card.jpg` (1200×630 JPEG). No creative changes;
+only proportional downsampling and minimal center crop to the delivery ratio.
+
+Displayed result order (authoritative for the user's next selection):
+1. Name First — `exec-82f48b7c-13ad-48c8-8f29-a68ae46f0118.png`
+2. Liftoff — `exec-a9429da5-974f-4ca6-afbe-dfb0a0b5421f.png`
+3. Launch Window — `exec-8eb38487-72f4-452a-b157-e17c8ca9d39d.png`
+
+All originals are retained in
+`/Users/luke/.codex/generated_images/01a176b7-7a96-7832-bb5e-b84cf98c2b55/`.
+Inspected all three: correct wording, recognizable paper rocket, coherent
+brand palette, distinct compositions, no website controls. Preview only;
+final export dimensions and metadata integration follow selection.
+
+Three review-only Open Graph directions; no metadata or published site change before selection.
+References: current hero screenshot `audit-output/hangar-hero/pass-1-desktop.png`
+and production rocket `public/assets/hero/hangar/rocket.png`.
+
+### Shared prompt
+
+```text
+Use case: ads-marketing, reference-grounded recomposition.
+Create a polished Open Graph social sharing image for Luke's personal portfolio, using the attached current homepage and rocket as exact brand/art references. Target 1200 x 630 pixels, horizontal 1.905:1 aspect ratio. Output only the finished flat card, full bleed; no browser, phone, social platform mockup, multiple panels or surrounding presentation border. This is a share image, NOT a webpage: remove all header navigation, menu button, buttons and SCROLL TO LAUNCH wording.
+Use clear hierarchy, strong typography, intentional imagery and purposeful spacing. At a small chat-preview size the word LUKE and the rocket must remain immediately recognizable. Maintain at least 60px safe margins around text. Only two type families: very heavy condensed uppercase similar to Barlow Condensed for LUKE and work categories, clean monospace for the domain.
+Preserve handmade mid-century retro science fiction cut-paper collage: tactile matte paper grain, crisp cut silhouettes, subtle layered-paper depth. Ink navy sky, warm cream lettering, rust-red/cream rocket with three dark teal round windows and broad red fins, subdued teal accents. No garden foliage, ringed planet, glossy 3D, neon or photorealism. Only two or three simple star accents, generous quiet space. Text permitted verbatim: "LUKE", "APPS · TECH GUIDES · MUSIC · FILMS", and "luke.gallery". No invented tagline, title, credentials, extra copy or concept label. Preserve rocket identity; do not reproduce any black transparency preview or glow from the isolated asset reference. Recompose rather than crop the existing site screenshot.
+```
+
+### Name First
+
+```text
+Direction NAME FIRST: A bold typographic calling card. Huge LUKE occupying left two-thirds, approximately x75 to730 and y155 to415. Work categories on one clear line beneath in cream condensed type around28px. Small but legible domain below, aligned left. Upright paper rocket on the right, approximately height440px, with its feet clearly touching a very shallow cream launch apron along the bottom edge. Low distant terracotta strip only on right, no hangar frame or city. Two tiny star accents in otherwise quiet navy. Clear separation between lettering and rocket; no overlap. Make LUKE the dominant recognition cue, rocket second.
+```
+
+### Liftoff
+
+```text
+Direction LIFTOFF: A dynamic graphic space travel poster as a social card. Rocket on the left half, rising diagonally toward upper middle, nose roughly x480 y75, tail toward x290 y385. A single simple sweeping layered cream/teal paper exhaust trail curves from lower-left edge toward its engine. No floor, architecture or landscape; dark navy open space. On right half, large LUKE at x630 to1130 y190 to380; two short supporting rows beneath reading "APPS · TECH GUIDES" then "MUSIC · FILMS"; domain "luke.gallery" below. Work categories legible but clearly secondary. Keep clean separation between trajectory and text. Energetic, minimal, strong silhouette at thumbnail size.
+```
+
+### Launch Window
+
+```text
+Direction LAUNCH WINDOW: Calm symmetrical miniature of the new homepage hero, carefully recomposed for a short wide social card. Very thin dark teal paper hangar arch hugs outer edges, leaving almost entire canvas open. Center a very large LUKE across the upper center, width480px and cap height195px starting aroundy75. Category line small but legible directly below at y285. A centered upright rocket occupies lower center, nose at y340 and feet touching apron at y535, about195px tall. A low simple cream paper apron spans bottom 95px, with shallow terracotta terrain on distant edge at sides. Domain "luke.gallery" in dark navy monospace centered on apron below rocket with baseline at y570, a 60px safe margin from bottom. Only two cream stars, off to either side. Keep about30px separation between category line and rocket nose. Architecture feels like a theatrical set, not a device bezel; spacious, centered, deliberate. No header or UI.
+```
+
+Validation: one horizontal card per result; brand/art fidelity; readable LUKE and rocket
+at thumbnail size; correct text; no website controls; safe text margins. Final selected
+asset will be exported to exact 1200×630 and wired into metadata in a later implementation.
+
+
 ## Selected hero — Launch Window refinement, 2026-10-26
 
 Reference: third displayed concept, `exec-6f63b39a-daf5-4fda-9c24-9b0e5be6fffd.png`.
