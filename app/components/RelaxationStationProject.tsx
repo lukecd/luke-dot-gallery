@@ -4,9 +4,11 @@ import { ExternalLink } from "./ExternalLink";
 import { ShowcaseCard } from "./ShowcaseCard";
 
 const screens: AppScreen[] = [
-  { label: "Website", src: "/assets/relaxation-station/homepage.png", alt: "Relaxation Station homepage, with its paper landscape, resting cat, and iPhone app preview", frame: "website" },
-  { label: "Stories", src: "/assets/relaxation-station/stories.webp", alt: "Relaxation Station on iPad, showing Autumn, Rain, and Space stories" },
-  { label: "Autumn", src: "/assets/relaxation-station/autumn.webp", alt: "Relaxation Station’s Autumn landscape, with a maple tree above a lake and distant mountains" },
+  { label: "Splash", src: "/assets/relaxation-station/capture-27/splash.webp", alt: "Relaxation Station logo and ‘You’re allowed to do nothing’ above a mountain lake, with an orange cat resting on the shore" },
+  { label: "Tide", src: "/assets/relaxation-station/capture-27/tide.webp", alt: "Tide: a heron flying over a quiet bay at sunset, with an orange cat on the sandy shore" },
+  { label: "Rain", src: "/assets/relaxation-station/capture-27/rain.webp", alt: "Rain: a sheltered porch with wind chimes, a glowing lantern, and an orange cat overlooking a rainy mountain valley" },
+  { label: "Autumn", src: "/assets/relaxation-station/capture-27/autumn.webp", alt: "Autumn: falling maple leaves above a path overlooking a forest, lake, and small village at sunset" },
+  { label: "Space", src: "/assets/relaxation-station/capture-27/space.webp", alt: "Space: two astronauts and an orange cat resting beneath a colorful spiral in a star-filled sky" },
 ];
 
 export function RelaxationStationProject() {
