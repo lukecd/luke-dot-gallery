@@ -1,0 +1,15 @@
+.exhaust {
+  position: absolute;
+  left: 50%;
+  /* Two anchors: the moving engine and the ground cloud's shared baseline. */
+  top: calc(88% + var(--rocket-lift, 0svh));
+  bottom: calc(2% - var(--smoke-drift, 0svh));
+  width: 100%;
+  opacity: var(--exhaust-opacity, 0);
+  transform: translateX(-50%);
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .exhaust { display: none; }
+}

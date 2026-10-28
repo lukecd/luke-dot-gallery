@@ -1,5 +1,42 @@
 # Image Prompt Library
 
+## Launch exhaust extension — 2026-10-27
+
+Use case: style-transfer. Built-in ImageGen, transparent PNG output.
+Reference: `public/assets/launch/rocket-smoke-sprite.png` (texture and palette
+reference, not a sheet to reproduce). Existing ground-smoke artwork is retained.
+
+```text
+Create one isolated upright rocket exhaust plume as a separate animation layer.
+Use the attached approved smoke sprite as the exact material and color reference:
+fibrous crumpled handmade paper, warm ivory cream, dusty ochre/pale gold, muted
+blue-gray. Preserve the pronounced tactile fibers, irregular hand-cut/torn edges,
+overlapping opaque paper pieces and subtle shadows between pieces. It must look
+cut from the same sheets of paper as the reference, not smooth digital smoke.
+
+Output one portrait 1024×1536 transparent PNG, no sprite sheet. Center a continuous
+vertical plume, narrow at its top-center engine attachment, gently widening
+downward into a rounded, scalloped cluster of overlapping paper smoke curls.
+The illustrated plume should occupy roughly x280–744 and y90–1440. Its top neck
+is about 80px wide; its broad lower portion about 460px wide. Cream is dominant,
+with ochre and blue-gray side layers. Make an elegant, slightly irregular taper,
+with a few medium-sized curls rather than many tiny pieces. Entire silhouette
+fully within canvas with transparent padding. Flat frontal cut-paper collage,
+soft diffuse light, muted vintage palette matching reference exactly.
+
+Only the plume: no rocket, flames, glowing light, floor, horizon, scenery, text,
+border, shadow outside silhouette, smoke haze or painted background. Genuine
+alpha transparency, no checkerboard pixels. This hangs underneath a rocket;
+the narrow end must be at the TOP and the rounded wide end at the BOTTOM.
+```
+
+Validation: inspect texture and palette against existing smoke; verify genuine
+alpha and a narrow top attachment; preserve source PNG. Assess complete hero at
+rest, ignition, mid-lift, rocket exit and smoke dissipation, forward and reverse,
+at desktop and phone widths. Ground smoke remains anchored; plume attaches to
+engine; neither survives into the fully revealed Sow section. Respect reduced
+motion. Three clean browser passes are required unless access is blocked.
+
 ## Social preview concepts — 2026-10-26
 
 Selected by Luke: option 2, Liftoff. Delivery export:

@@ -24,7 +24,7 @@ export function AppScreenGallery({ name, screens }: { name: string; screens: rea
               <source src={screen.video} type="video/mp4" />
             </video>
           ) : (
-            <Image key={screen.src} src={screen.src} alt={screen.alt} fill sizes="(max-width: 600px) 88vw, (max-height: 800px) 70vh, 46rem" />
+            <Image key={screen.src} src={screen.src} alt={screen.alt} fill sizes="min(92vw, 60rem)" />
           )}
         </div>
       </div>

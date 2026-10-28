@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { ContactForm } from "./ContactForm";
 import { RocketSmokeSequence } from "./RocketSmokeSequence";
+import { LandingExhaust } from "./LandingExhaust";
 
 type ContactLayerProps = {
   className: string;
@@ -27,6 +28,7 @@ function ContactSkyAccents() {
 function ContactLandingRocket() {
   return (
     <div className="contact-landing-rocket" aria-hidden="true">
+      <LandingExhaust />
       <Image
         src="/assets/hero/15-rocket-body.png"
         alt=""

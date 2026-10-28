@@ -39,7 +39,11 @@ body { overflow-x: hidden; }
   --contact-pad-reveal: 0;
   --contact-rocks-reveal: 0;
   --contact-rocket-land: 0;
+  --contact-rocket-opacity: 0;
+  --contact-exhaust-opacity: 0;
+  --contact-exhaust-length: .55;
   --contact-smoke-opacity: 0;
+  --contact-smoke-scale: .65;
   --contact-smoke-column: 0;
   --contact-smoke-row: 0;
   --contact-form-reveal: 0;
@@ -300,40 +304,45 @@ body { overflow-x: hidden; }
   left: 50%;
   width: 35%;
   aspect-ratio: 2116 / 388;
-  opacity: var(--contact-pad-reveal);
-  transform: translateX(-50%) translateY(calc((1 - var(--contact-pad-reveal)) * 35%)) scale(calc(.92 + var(--contact-pad-reveal) * .08));
-  transform-origin: center bottom;
+  /* The rocket needs a fixed, fully opaque coordinate system during approach. */
+  transform: translateX(-50%);
 }
 .contact-landing-site > div { position: absolute; }
 .contact-landing-pad-rear,
 .contact-landing-pad-front {
   inset: 0;
   opacity: var(--contact-pad-reveal);
+  transform: translateY(calc((1 - var(--contact-pad-reveal)) * 35%)) scale(calc(.92 + var(--contact-pad-reveal) * .08));
+  transform-origin: center bottom;
 }
 .contact-landing-pad-rear { z-index: 1; }
 .contact-landing-pad-front { z-index: 4; }
 .contact-landing-rocket {
+  /* Start the entire rocket above the viewport, including on tall screens. */
+  --landing-altitude: calc((1 - var(--contact-rocket-land)) * 110dvh);
   position: absolute;
   z-index: 3;
   bottom: 18%;
   left: 50%;
   width: 29%;
   aspect-ratio: 2 / 3;
-  opacity: var(--contact-rocket-land);
-  transform: translateX(-50%) translateY(calc((1 - var(--contact-rocket-land)) * -165%));
+  opacity: var(--contact-rocket-opacity);
+  transform: translateX(-50%) translateY(calc(-1 * var(--landing-altitude)));
   transform-origin: center bottom;
   will-change: transform, opacity;
 }
 .contact-landing-rocket > img { z-index: 1; object-fit: contain; object-position: center bottom; filter: drop-shadow(0 .5rem .25rem rgba(1, 8, 13, .3)); }
 .contact-landing-smoke {
   z-index: 5;
-  bottom: 13%;
+  bottom: 18%;
   left: 50%;
-  width: 54%;
+  width: 38%;
   opacity: var(--contact-smoke-opacity);
   background-position: calc(var(--contact-smoke-column) * 50%) calc(var(--contact-smoke-row) * 100%);
-  transform: translateX(-50%) translateY(calc((1 - var(--contact-rocket-land)) * -166%));
-  transform-origin: center bottom;
+  /* Register the sprite's y=461/512 ground origin to the pad, independently
+     of the descending rocket. Scaling spreads the cloud along this baseline. */
+  transform: translate(-50%, 9.9609375%) scale(var(--contact-smoke-scale));
+  transform-origin: 50% 90.0390625%;
   will-change: transform, opacity;
 }
 .contact-foreground-left,
@@ -356,33 +365,45 @@ body { overflow-x: hidden; }
 @media (prefers-reduced-motion: reduce) {
   .star-field .star { animation: none; }
   .star-field .star { opacity: 1; }
+  .contact-landing-rocket { transform: translateX(-50%); }
+  .contact-landing-smoke { display: none; }
 }
 
 /* Every project follows the album's image, caption, and link rhythm. */
 .project-scene {
+  --media-ratio: calc(16 / 9);
+  --visual-max: 64rem;
+  --tablet-bezel: clamp(10px, 1.6vw, 18px);
   position: absolute;
   z-index: 16;
-  inset: 11% 0 5%;
-  width: min(88%, 72rem);
+  inset: 11% 0 2%;
+  width: min(92%, 80rem);
   margin-inline: auto;
-  display: grid;
-  grid-template-columns: minmax(0, 1fr);
-  grid-template-rows: auto auto;
-  align-content: center;
-  justify-items: center;
-  gap: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
   pointer-events: none;
 }
 .visual-art-anchor {
   position: relative;
-  grid-row: 1;
-  width: min(100%, 46rem, 78svh);
+  order: 0;
+  width: min(100%, var(--visual-max));
+  height: calc(min(92vw, var(--visual-max)) / var(--media-ratio));
+  flex: 0 1 auto;
   min-width: 0;
+  min-height: 0;
+  container-type: size;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
   pointer-events: auto;
 }
 .showcase-card {
-  grid-row: 2;
-  width: min(100%, 38rem);
+  order: 1;
+  flex: 0 0 auto;
+  width: min(100%, 44rem);
   min-width: 0;
   padding: 0;
   color: var(--cream);
@@ -402,7 +423,7 @@ body { overflow-x: hidden; }
   letter-spacing: -.035em;
 }
 .project-description {
-  max-width: 65ch;
+  max-width: 72ch;
   margin: 1rem auto 0;
   font: 600 14px/1.5 var(--font-dm-mono), monospace;
 }
@@ -426,22 +447,31 @@ body { overflow-x: hidden; }
 .lazy-visual, .docs-visual, .album-visual, .tech-visual, .film-visual {
   position: relative;
   display: block;
-  width: 100%;
+  width: min(100%, calc(100cqh * var(--media-ratio)));
+  flex: 0 0 auto;
   margin: 0;
   overflow: hidden;
   border: 1px solid rgb(241 219 168 / .45);
+  aspect-ratio: var(--media-ratio);
 }
-.lazy-visual { aspect-ratio: 1450 / 1023; }
-.docs-visual { aspect-ratio: 1393 / 965; }
-.album-visual { aspect-ratio: 1; }
-.tech-visual, .film-visual { aspect-ratio: 16 / 9; }
 .visual-art-anchor img { object-fit: contain; }
 .tech-visual iframe, .film-visual iframe { width: 100%; height: 100%; border: 0; background: #071923; }
-.music-scene .visual-art-anchor { width: min(100%, 34svh, 24rem); }
-.app-gallery { display: grid; gap: .6rem; }
+.lazy-scene { --media-ratio: calc(1450 / 1023); }
+.dflow-scene { --media-ratio: calc(1393 / 965); }
+.music-scene { --media-ratio: 1; --visual-max: 32rem; }
+.music-scene .visual-art-anchor { width: min(100%, 48svh, var(--visual-max)); height: min(92vw, 48svh, var(--visual-max)); }
+.app-gallery {
+  display: grid;
+  grid-template-rows: minmax(0, 1fr) var(--gallery-controls-height);
+  gap: var(--gallery-gap);
+  height: 100%;
+  /* Reserve the bezel and arrows before fitting the uncropped screen. */
+  width: min(100%, calc((100cqh - var(--gallery-gap) - var(--gallery-controls-height) - 2 * var(--frame-inset)) * var(--media-ratio) + 2 * var(--frame-inset)));
+  flex: 0 0 auto;
+}
 .screen-frame {
   position: relative;
-  padding: clamp(10px, 1.6vw, 18px);
+  padding: var(--tablet-bezel);
   border: 2px solid #677176;
   border-radius: clamp(18px, 2.5vw, 30px);
   background: #101719;
@@ -457,7 +487,7 @@ body { overflow-x: hidden; }
   border-radius: 50%;
   background: #435761;
 }
-.screen-frame__display { position: relative; aspect-ratio: 2360 / 1640; overflow: hidden; border-radius: 8px; background: #071d20; }
+.screen-frame__display { position: relative; height: 100%; aspect-ratio: 2360 / 1640; overflow: hidden; border-radius: 8px; background: #071d20; }
 .screen-frame__display img, .screen-frame__display video { width: 100%; height: 100%; object-fit: contain; }
 .screen-frame--website { padding: 0; border: 1px solid rgb(241 219 168 / .45); border-radius: 0; box-shadow: none; }
 .screen-frame--website .screen-frame__display { border-radius: 0; aspect-ratio: 1440 / 1000; }
@@ -478,7 +508,16 @@ body { overflow-x: hidden; }
 }
 .screen-navigation button:hover { color: #071d20; background: var(--cream); }
 .screen-position { min-width: 6ch; text-align: center; color: var(--cream); font: 500 11px/1.3 var(--font-dm-mono), monospace; }
-.sow-scene .visual-art-anchor, .relaxation-scene .visual-art-anchor { width: min(100%, 44rem, 68svh); }
+.sow-scene, .relaxation-scene {
+  --media-ratio: calc(2360 / 1640);
+  --visual-max: 60rem;
+  --gallery-gap: .6rem;
+  --gallery-controls-height: 44px;
+  --frame-inset: calc(var(--tablet-bezel) + 2px);
+}
+.sow-scene .visual-art-anchor, .relaxation-scene .visual-art-anchor {
+  height: calc((min(92vw, var(--visual-max)) - 2 * var(--frame-inset)) / var(--media-ratio) + 2 * var(--frame-inset) + var(--gallery-gap) + var(--gallery-controls-height));
+}
 .sow-scene .showcase-card { opacity: var(--sow-card-reveal); transform: translateY(calc((1 - var(--sow-card-reveal)) * 2rem - var(--sow-exit) * 110svh)); }
 .sow-scene .visual-art-anchor { opacity: var(--sow-preview-reveal); transform: translateY(calc((1 - var(--sow-preview-reveal)) * 2rem - var(--sow-exit) * 110svh)); }
 .relaxation-scene { --project-reveal: var(--relaxation-reveal); --project-exit: var(--relaxation-exit); }
@@ -493,13 +532,8 @@ body { overflow-x: hidden; }
   transform: translateY(calc((1 - var(--project-reveal)) * 3rem - var(--project-exit) * 110svh));
 }
 @media (max-width: 600px) {
-  .project-scene { inset: 12% 0 5%; }
+  .project-scene { inset: 12% 0 3%; }
   .showcase-card h2 { font-size: 32px; }
   .project-description { font-size: 13px; }
   .project-subtitle { font-size: 20px; }
-}
-
-/* Keep app previews comfortably sized in short desktop windows. */
-@media (min-width: 601px) and (max-height: 740px) {
-  .sow-scene .visual-art-anchor, .relaxation-scene .visual-art-anchor { width: min(100%, 44rem, 56svh); }
 }

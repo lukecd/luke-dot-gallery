@@ -5,10 +5,9 @@
   inset: 0;
   z-index: 3;
   pointer-events: none;
-  opacity: var(--hangar-opacity, 1);
 }
 
-.scenery { position: absolute; inset: 0; }
+.scenery { position: absolute; inset: 0; opacity: var(--hangar-opacity, 1); }
 .terrain { position: absolute; bottom: calc(var(--apron-height) - 1px); width: 100%; height: 21svh; }
 .terrain img { object-fit: fill; }
 .apron { position: absolute; inset: auto 0 0; height: var(--apron-height); }
@@ -79,11 +78,17 @@
   width: calc(var(--rocket-height) * 2 / 3);
   height: var(--rocket-height);
   transform: translateX(-50%);
-  opacity: var(--hero-rocket-opacity);
 }
-.flight { position: absolute; inset: 0; transform: translateY(var(--rocket-lift)); will-change: transform; }
-.flight img { object-fit: contain; object-position: center bottom; }
-.smoke { left: 50%; bottom: -8%; width: 190%; transform: translateX(-50%); }
+.flight { position: absolute; inset: 0; opacity: var(--hero-rocket-opacity); transform: translateY(var(--rocket-lift)); will-change: transform; }
+.flight > img { object-fit: contain; object-position: center bottom; }
+.smoke {
+  left: 50%;
+  bottom: -8%;
+  width: 190%;
+  /* The approved sprite's shared ground origin is y=461 in each 512px cell. */
+  transform-origin: 50% 90.0390625%;
+  transform: translate(-50%, var(--smoke-drift, 0svh)) scale(var(--smoke-scale, 1));
+}
 
 @media (max-width: 600px) {
   .scene { --apron-height: 15svh; --rocket-height: min(38svh, 64vw); }
@@ -101,6 +106,7 @@
 @media (prefers-reduced-motion: reduce) {
   .title, .flight { transform: none; }
   .title { translate: -50% 0; }
+  .smoke { display: none; }
 }
 
 @media (min-width: 601px) and (max-height: 740px) {

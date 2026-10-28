@@ -1,0 +1,13 @@
+.paper {
+  position: absolute;
+  left: 50%;
+  /* Visible alpha bounds: y=80–1491 in the original 1024×1536 artwork. */
+  top: calc(-100% * 80 / 1411);
+  height: calc(100% * 1536 / 1411);
+  aspect-ratio: 2 / 3;
+  transform: translateX(-50%);
+  mask-image: linear-gradient(to bottom, #000 70%, transparent 98%);
+  pointer-events: none;
+}
+
+.paper img { object-fit: contain; }

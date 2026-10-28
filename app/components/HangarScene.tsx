@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { HeroLaunchTitle } from "./HeroLaunchTitle";
 import { RocketSmokeSequence } from "./RocketSmokeSequence";
+import { RocketExhaust } from "./RocketExhaust";
 import styles from "./HangarScene.module.css";
 
 /** Each paper layer has its own anchor; the floor and rocket share a baseline. */
@@ -23,6 +24,7 @@ export function HangarScene({ isActive }: { isActive: boolean }) {
       </div>
       <HeroLaunchTitle />
       <div className={styles.rocketAnchor} aria-hidden="true">
+        <RocketExhaust />
         <RocketSmokeSequence className={styles.smoke} />
         <div className={styles.flight}>
           <Image src="/assets/hero/hangar/rocket.png" alt="" fill priority sizes="(max-width: 600px) 55vw, 30vh" />

@@ -8,6 +8,9 @@ import {
   type ProjectSceneId,
 } from "../data/projectScenes";
 import { trackSectionView } from "../lib/analytics";
+import { getLaunchMotion } from "../lib/launchMotion";
+import { getLandingMotion } from "../lib/landingMotion";
+import { smoothstep } from "../lib/scrollMotion";
 
 export function usePortfolioScroll() {
   const portfolioRef = useRef<HTMLElement>(null);
@@ -39,7 +42,7 @@ export function usePortfolioScroll() {
       );
       setActiveSceneId((currentSceneId) => currentSceneId === nextActiveSceneId ? currentSceneId : nextActiveSceneId);
       const heroProgress = Math.min(progress, 1);
-      const ease = (value: number) => value * value * (3 - 2 * value);
+      const ease = smoothstep;
       const { reveal: sowProgress, exit: sowExitProgress } = getProjectSceneProgress("sow", progress);
       const { reveal: relaxationProgress, exit: relaxationExitProgress } = getProjectSceneProgress("relaxation", progress);
       const { reveal: lazyProgress, exit: lazyExitProgress } = getProjectSceneProgress("lazy", progress);
@@ -54,49 +57,29 @@ export function usePortfolioScroll() {
       const contactTerrainProgress = Math.min(Math.max((progress - 8.22) / 0.3, 0), 1);
       const contactPadProgress = Math.min(Math.max((progress - 8.4) / 0.22, 0), 1);
       const contactRocksProgress = Math.min(Math.max((progress - 8.38) / 0.24, 0), 1);
-      const contactRocketProgress = Math.min(Math.max((progress - 8.48) / 0.42, 0), 1);
       const contactOutroProgress = Math.min(Math.max((progress - 8.9) / 0.1, 0), 1);
-      const contactSmokeBuildFrame =
-        contactRocketProgress < 0.72
-          ? 0
-          : Math.min(Math.floor((contactRocketProgress - 0.72) / 0.056) + 1, 6);
-      const contactSmokeFrame = contactOutroProgress > 0
-        ? Math.max(0, 6 - Math.ceil(contactOutroProgress * 6))
-        : contactSmokeBuildFrame;
+      const landing = getLandingMotion(progress - 8);
+      const contactSmokeFrame = landing.smokeFrame;
       const contactSmokeSpriteFrame = Math.max(contactSmokeFrame - 1, 0);
       const travelRocketProgress = Math.min(Math.max((progress - 0.55) / 7.25, 0), 1);
       const travelRocketReveal = Math.min(Math.max((progress - 0.55) / 0.15, 0), 1);
       const travelRocketExit = Math.min(Math.max((progress - 8.1) / 0.22, 0), 1);
       const easedSowProgress = ease(sowProgress);
       const easedSowExit = ease(sowExitProgress);
-      const ignitionStart = .22;
-      const rocketLiftStart = .42;
-      const smokeExitStart = .62;
-      const rocketLaunchProgress = Math.min(Math.max((heroProgress - rocketLiftStart) / .20, 0), 1);
-      const heroRocketExitProgress = Math.min(Math.max((progress - .72) / .22, 0), 1);
-      const smokeFrame =
-        heroProgress < ignitionStart || heroProgress >= smokeExitStart
-          ? 0
-          : heroProgress < 0.45
-            ? 1
-            : heroProgress < 0.48
-              ? 2
-              : heroProgress < 0.52
-                ? 3
-                : heroProgress < 0.56
-                  ? 4
-                  : heroProgress < 0.6
-                    ? 5
-                    : 6;
+      const launch = getLaunchMotion(heroProgress);
+      const { smokeFrame } = launch;
       const spriteFrame = Math.max(smokeFrame - 1, 0);
 
-      portfolio.style.setProperty("--hangar-opacity", String(1 - ease(Math.min(Math.max((heroProgress - .62) / .18, 0), 1))));
+      portfolio.style.setProperty("--hangar-opacity", String(launch.hangarOpacity));
       portfolio.style.setProperty("--hero-title-opacity", String(1 - ease(Math.min(Math.max((heroProgress - .04) / .24, 0), 1))));
-      portfolio.style.setProperty("--smoke-opacity", smokeFrame === 0 ? "0" : "1");
+      portfolio.style.setProperty("--smoke-opacity", String(launch.smokeOpacity));
+      portfolio.style.setProperty("--smoke-scale", String(launch.smokeScale));
+      portfolio.style.setProperty("--smoke-drift", `${launch.smokeDrift}svh`);
+      portfolio.style.setProperty("--exhaust-opacity", String(launch.exhaustOpacity));
       portfolio.style.setProperty("--smoke-column", String(spriteFrame % 3));
       portfolio.style.setProperty("--smoke-row", String(Math.floor(spriteFrame / 3)));
-      portfolio.style.setProperty("--rocket-lift", `${Math.round(rocketLaunchProgress * -118)}svh`);
-      portfolio.style.setProperty("--hero-rocket-opacity", String(1 - ease(heroRocketExitProgress)));
+      portfolio.style.setProperty("--rocket-lift", `${launch.rocketLift}svh`);
+      portfolio.style.setProperty("--hero-rocket-opacity", String(launch.rocketOpacity));
       portfolio.style.setProperty("--travel-rocket-x", `${Math.round((-5 + travelRocketProgress * 101) * 100) / 100}vw`);
       portfolio.style.setProperty("--travel-rocket-opacity", String(ease(travelRocketReveal) * (1 - ease(travelRocketExit))));
       portfolio.style.setProperty("--sow-card-reveal", String(easedSowProgress * (1 - easedSowExit)));
@@ -122,8 +105,12 @@ export function usePortfolioScroll() {
       portfolio.style.setProperty("--contact-plain-reveal", String(ease(contactPlainProgress)));
       portfolio.style.setProperty("--contact-pad-reveal", String(ease(contactPadProgress)));
       portfolio.style.setProperty("--contact-rocks-reveal", String(ease(contactRocksProgress)));
-      portfolio.style.setProperty("--contact-rocket-land", String(ease(contactRocketProgress)));
-      portfolio.style.setProperty("--contact-smoke-opacity", contactSmokeFrame === 0 ? "0" : "1");
+      portfolio.style.setProperty("--contact-rocket-land", String(landing.rocketLand));
+      portfolio.style.setProperty("--contact-rocket-opacity", String(landing.rocketOpacity));
+      portfolio.style.setProperty("--contact-exhaust-opacity", String(landing.exhaustOpacity));
+      portfolio.style.setProperty("--contact-exhaust-length", String(landing.exhaustLength));
+      portfolio.style.setProperty("--contact-smoke-opacity", String(landing.smokeOpacity));
+      portfolio.style.setProperty("--contact-smoke-scale", String(landing.smokeScale));
       portfolio.style.setProperty("--contact-smoke-column", String(contactSmokeSpriteFrame % 3));
       portfolio.style.setProperty("--contact-smoke-row", String(Math.floor(contactSmokeSpriteFrame / 3)));
       portfolio.style.setProperty("--contact-form-reveal", String(ease(contactOutroProgress)));
