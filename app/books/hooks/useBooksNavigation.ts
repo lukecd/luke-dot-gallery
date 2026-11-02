@@ -9,13 +9,9 @@ function subscribe(callback: () => void) {
   return () => { window.removeEventListener("popstate", callback); window.removeEventListener(changeEvent, callback); };
 }
 const snapshot = () => window.location.search;
-const serverSnapshot = () => "";
-const clientReady = () => true;
-const serverReady = () => false;
 
-export function useBooksNavigation() {
-  const ready = useSyncExternalStore(subscribe, clientReady, serverReady);
-  const search = useSyncExternalStore(subscribe, snapshot, serverSnapshot);
+export function useBooksNavigation(initialSearch: string) {
+  const search = useSyncExternalStore(subscribe, snapshot, () => initialSearch);
   const state = readBooksLocation(search);
   const searchEntry = useRef<string | null>(null);
   function navigate(patch: Partial<BooksLocation>, replace = false) {
@@ -34,5 +30,5 @@ export function useBooksNavigation() {
     navigate({ query, year: "all" }, replace);
     searchEntry.current = window.location.search;
   }
-  return { ready, state, navigate, changeQuery, finishQuery: () => { searchEntry.current = null; } };
+  return { state, navigate, changeQuery, finishQuery: () => { searchEntry.current = null; } };
 }

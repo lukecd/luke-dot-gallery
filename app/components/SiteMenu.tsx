@@ -3,14 +3,10 @@
 import { useState } from "react";
 import Link from "next/link";
 import { projectNavigationItems } from "../data/projectScenes";
-import { navigateToProject } from "../lib/projectNavigation";
+import { ProjectLink } from "./ProjectLink";
 
 export function SiteMenu() {
   const [open, setOpen] = useState(false);
-  const goTo = (id: (typeof projectNavigationItems)[number]["id"]) => {
-    navigateToProject(id, "menu");
-    setOpen(false);
-  };
 
   return (
     <>
@@ -19,9 +15,9 @@ export function SiteMenu() {
       </button>
       <nav className={`site-menu ${open ? "is-open" : ""}`} id="site-menu" aria-label="Site menu">
         {projectNavigationItems.map((item) => (
-          <button key={item.id} type="button" onClick={() => goTo(item.id)}>
+          <ProjectLink key={item.id} id={item.id} method="menu" onNavigate={() => setOpen(false)}>
             {item.label}
-          </button>
+          </ProjectLink>
         ))}
         <Link href="/books" onClick={() => setOpen(false)}>Library →</Link>
       </nav>

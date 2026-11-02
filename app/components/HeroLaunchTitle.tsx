@@ -1,17 +1,18 @@
 "use client";
 
-import { navigateToProject } from "../lib/projectNavigation";
+import { ProjectLink } from "./ProjectLink";
 import { HeroCategoryNavigation } from "./HeroCategoryNavigation";
 import styles from "./HangarScene.module.css";
 
 export function HeroLaunchTitle() {
   return (
-    <div className={styles.title}>
+    <div className={`${styles.title} portfolio-title`}>
       <HeroCategoryNavigation />
       <h1>LUKE</h1>
-      <button type="button" className={styles.launch} onClick={() => navigateToProject("sow", "hero_launch")}>
+      <p className={styles.identity}>Luke Cassady-Dorion</p>
+      <ProjectLink id="sow" method="hero_launch" className={styles.launch}>
         SCROLL TO LAUNCH <span aria-hidden="true">↓</span>
-      </button>
+      </ProjectLink>
     </div>
   );
 }

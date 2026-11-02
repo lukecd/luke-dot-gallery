@@ -18,7 +18,7 @@ function StarField() {
   return <div className="star-field" aria-hidden="true">{[["17-star-west-large.png", "star star-west-large"], ["18-star-center-large.png", "star star-center-large"], ["19-star-east-large.png", "star star-east-large"], ["20-star-west-mid.png", "star star-west-mid"], ["21-star-east-small.png", "star star-east-small"]].map(([file, className]) => <HeroLayer key={file} src={`/assets/hero/${file}`} className={className} sizes="7vw" />)}</div>;
 }
 
-export function HeroScene({ isActive }: { isActive: boolean }) {
+export function HeroScene({ isActive, showLaunchEffects }: { isActive: boolean; showLaunchEffects: boolean }) {
   return (
     <>
       <HeroLayer src="/assets/hero/01-sky-base.png" className="sky" priority />
@@ -26,7 +26,7 @@ export function HeroScene({ isActive }: { isActive: boolean }) {
       <StarField />
       <header className="masthead"><MastheadHome /><span className="masthead-star" aria-hidden="true">✦</span></header>
       <SiteMenu />
-      <HangarScene isActive={isActive} />
+      <HangarScene isActive={isActive} showLaunchEffects={showLaunchEffects} />
     </>
   );
 }

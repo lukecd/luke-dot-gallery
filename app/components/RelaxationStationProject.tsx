@@ -11,11 +11,11 @@ const screens: AppScreen[] = [
   { label: "Space", src: "/assets/relaxation-station/capture-27/space.webp", alt: "Space: two astronauts and an orange cat resting beneath a colorful spiral in a star-filled sky" },
 ];
 
-export function RelaxationStationProject() {
+export function RelaxationStationProject({ showMedia }: { showMedia: boolean }) {
   const project = projects.relaxationStation;
   return (
-    <section className="project-scene relaxation-scene" aria-label={project.title}>
-      <div className="visual-art-anchor"><AppScreenGallery name="Relaxation Station" screens={screens} /></div>
+    <section id="relaxation" className="project-scene relaxation-scene" aria-label={project.title}>
+      {showMedia && <div className="visual-art-anchor"><AppScreenGallery name="Relaxation Station" screens={screens} /></div>}
       <ShowcaseCard category="APPS · IN BETA" title={project.title} description={project.description}>
         <ExternalLink {...project.link} />
       </ShowcaseCard>

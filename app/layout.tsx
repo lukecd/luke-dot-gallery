@@ -2,10 +2,11 @@ import type { Metadata } from "next";
 import { Barlow_Condensed, DM_Mono } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
-import { GA_MEASUREMENT_ID } from "./lib/analytics";
+import { GA_MEASUREMENT_ID, GA_PRODUCTION_HOST } from "./lib/analytics";
+import { site } from "./lib/site";
+import { StructuredData } from "./components/StructuredData";
 
-const title = "Luke — Personal Transmission";
-const description = "Apps, tech guides, music, and films by Luke Cassady-Dorion.";
+const { title, description } = site;
 const shareImage = {
   url: "/assets/social/liftoff-card.jpg",
   width: 1200,
@@ -14,7 +15,7 @@ const shareImage = {
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://luke.gallery"),
+  metadataBase: new URL(site.url),
   title,
   description,
   openGraph: {
@@ -53,12 +54,18 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   return (
     <html lang="en" className={`${barlowCondensed.variable} ${dmMono.variable}`}>
       <body>
+        {/* eslint-disable-next-line @next/next/no-css-tags -- This fallback stylesheet must load only without JavaScript. */}
+        <noscript><link rel="stylesheet" href="/styles/portfolio-without-javascript.css" /></noscript>
+        <StructuredData data={{ "@context": "https://schema.org", "@graph": [
+          { "@type": "Person", "@id": `${site.url}/#person`, name: site.person, url: `${site.url}/` },
+          { "@type": "WebSite", "@id": `${site.url}/#website`, name: site.name, url: `${site.url}/`, author: { "@id": `${site.url}/#person` } },
+        ] }} />
         {children}
         {isProduction && (
           <>
             <Script src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`} strategy="lazyOnload" />
             <Script id="google-analytics" strategy="lazyOnload">
-              {`window.dataLayer = window.dataLayer || []; function gtag(){window.dataLayer.push(arguments);} window.gtag = gtag; gtag('js', new Date()); gtag('config', '${GA_MEASUREMENT_ID}');`}
+              {`if (window.location.hostname === '${GA_PRODUCTION_HOST}') { window.dataLayer = window.dataLayer || []; function gtag(){window.dataLayer.push(arguments);} window.gtag = gtag; gtag('js', new Date()); gtag('config', '${GA_MEASUREMENT_ID}'); }`}
             </Script>
           </>
         )}

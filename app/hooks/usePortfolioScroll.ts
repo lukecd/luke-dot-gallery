@@ -16,6 +16,7 @@ export function usePortfolioScroll() {
   const portfolioRef = useRef<HTMLElement>(null);
   const [mountedSceneIds, setMountedSceneIds] = useState<ProjectSceneId[]>([]);
   const [activeSceneId, setActiveSceneId] = useState<ProjectSceneId | null>(null);
+  const [showLaunchEffects, setShowLaunchEffects] = useState(false);
   const lastTrackedSectionId = useRef<ProjectSceneId | "launch" | null>(null);
 
   useEffect(() => {
@@ -32,6 +33,7 @@ export function usePortfolioScroll() {
       if (!portfolio) return;
 
       const progress = Math.min(Math.max(window.scrollY / window.innerHeight, 0), 9);
+      setShowLaunchEffects(progress > 0 && progress < 1.5);
       const nextMountedSceneIds = getMountedProjectSceneIds(progress);
       const nextActiveSceneId = getActiveProjectSceneId(progress);
 
@@ -131,5 +133,5 @@ export function usePortfolioScroll() {
     };
   }, []);
 
-  return { activeSceneId, mountedSceneIds, portfolioRef };
+  return { activeSceneId, mountedSceneIds, portfolioRef, showLaunchEffects };
 }

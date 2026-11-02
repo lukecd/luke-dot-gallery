@@ -110,8 +110,8 @@ body { overflow-x: hidden; }
 
 .title-category-links { pointer-events: auto; }
 .title-category-links p b { color: #e96544; font-size: .82em; vertical-align: 6%; margin: 0 .11em; }
-.title-category-links p button { display: inline; padding: 0; color: inherit; border: 0; background: transparent; font: inherit; letter-spacing: inherit; line-height: inherit; text-shadow: inherit; vertical-align: baseline; cursor: pointer; }
-.title-category-links p button:hover, .title-category-links p button:focus-visible { color: #fff0c9; outline: 0; text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: .12em; }
+.title-category-links p a { display: inline; padding: 0; color: inherit; border: 0; background: transparent; font: inherit; letter-spacing: inherit; line-height: inherit; text-shadow: inherit; text-decoration: none; vertical-align: baseline; cursor: pointer; }
+.title-category-links p a:hover, .title-category-links p a:focus-visible { color: #fff0c9; outline: 0; text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: .12em; }
 .traveling-rocket {
   position: absolute;
   z-index: 18;
@@ -143,8 +143,8 @@ body { overflow-x: hidden; }
 .menu-toggle:hover, .menu-toggle:focus-visible { color: #071923; background: var(--cream); outline: 0; }
 .site-menu { position: absolute; z-index: 22; top: calc(1.8% + clamp(2.6rem, 4vw, 3.25rem) + .55rem); right: 1.6%; display: grid; width: min(20rem, 88vw); max-height: calc(100dvh - 6rem); padding: .55rem; gap: .35rem; overflow-y: auto; background: #071923; border: 1px solid rgb(241 219 168 / .65); box-shadow: 0 .8rem 2rem rgb(1 8 13 / .42); opacity: 0; pointer-events: none; transform: translateY(-.6rem); transition: opacity 160ms ease, transform 160ms ease; }
 .site-menu.is-open { opacity: 1; pointer-events: auto; transform: translateY(0); }
-.site-menu button { display: flex; justify-content: space-between; width: 100%; padding: .8rem .9rem; color: var(--cream); border: 0; background: transparent; font: 600 13px/1 var(--font-dm-mono), monospace; letter-spacing: .08em; text-align: left; text-transform: uppercase; cursor: pointer; }
-.site-menu button:hover, .site-menu button:focus-visible { color: #071923; background: var(--cream); outline: 0; }
+.site-menu > a { display: flex; justify-content: space-between; width: 100%; padding: .8rem .9rem; color: var(--cream); border: 0; background: transparent; font: 600 13px/1 var(--font-dm-mono), monospace; letter-spacing: .08em; text-align: left; text-transform: uppercase; cursor: pointer; }
+.site-menu > a:hover, .site-menu > a:focus-visible { color: #071923; background: var(--cream); outline: 0; }
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
 
 @media (max-width: 600px) {
@@ -538,5 +538,6 @@ body { overflow-x: hidden; }
   .project-subtitle { font-size: 20px; }
 }
 
-.site-menu > a { display: block; color: inherit; font: inherit; padding: .65rem .8rem; text-decoration: none; border-top: 1px solid currentColor; }
+.site-menu > a { text-decoration: none; }
+.site-menu > a:last-child { border-top: 1px solid currentColor; }
 .site-menu > a:hover { text-decoration: underline; }
