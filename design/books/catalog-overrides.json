@@ -1323,5 +1323,18 @@
         "url": "https://us.macmillan.com/books/9781250380975/saltcrop/"
       }
     ]
+  },
+  "memory-dune-6": {
+    "cover": "/assets/books/covers/chapterhouse-dune-publisher.webp",
+    "sources": [
+      {
+        "label": "Open Library",
+        "url": "https://openlibrary.org/works/OL893508W"
+      },
+      {
+        "label": "Publisher cover",
+        "url": "https://www.penguinrandomhouse.com/books/304602/chapterhouse-dune-by-frank-herbert/"
+      }
+    ]
   }
 }
