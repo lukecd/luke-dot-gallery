@@ -1,0 +1,9 @@
+.invitation { padding: 20px; background: #f5eedb; color: #112b35; margin-top: 12px; }
+.link { display: flex; gap: 22px; align-items: center; color: inherit; text-decoration: none; }
+.covers { display: flex; gap: 5px; flex-shrink: 0; }
+.covers img { object-fit: contain; height: 72px; width: 48px; }
+.link strong { display: block; font: 600 29px/1.1 var(--font-barlow-condensed),sans-serif; }
+.link span span { display: block; font: 400 11px/1.6 var(--font-dm-mono),monospace; }
+.link .action { margin-top: 8px; text-decoration: underline; text-underline-offset: 3px; }
+.link:focus-visible { outline: 2px solid #356b68; outline-offset: 8px; }
+@media(max-width:600px) { .invitation { padding: 16px; } .link { gap: 14px; } .covers img { width: 32px; height: 55px; } .link strong { font-size: 25px; } .link span span { font-size: 10px; } }

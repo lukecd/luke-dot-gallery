@@ -1,0 +1,2271 @@
+{
+  "date": "2026-11-02",
+  "suggestions": 323,
+  "covered": 317,
+  "missing": [
+    {
+      "id": "/works/OL25631771W",
+      "title": "Texas Hill Country Loop"
+    },
+    {
+      "id": "/works/OL40528216W",
+      "title": "Brainy"
+    },
+    {
+      "id": "/works/OL23359788W",
+      "title": "Burma and India"
+    },
+    {
+      "id": "/works/OL39755931W",
+      "title": "Birdie and Beletta"
+    },
+    {
+      "id": "/works/OL3649942W",
+      "title": "Mary's prophet"
+    },
+    {
+      "id": "/works/OL3018494W",
+      "title": "The art of relaxation"
+    }
+  ],
+  "totalBytes": 7378068,
+  "averageBytes": 23275,
+  "maxBytes": 69242,
+  "smallSources": [
+    {
+      "title": "Man to man",
+      "cover": "/assets/books/discovery/OL4320891W.webp",
+      "bytes": 2626,
+      "width": 128,
+      "height": 206
+    },
+    {
+      "title": "Family Matter",
+      "cover": "/assets/books/discovery/OL4320890W.webp",
+      "bytes": 4166,
+      "width": 128,
+      "height": 198
+    }
+  ],
+  "images": [
+    {
+      "title": "Daughters of the Bamboo Grove",
+      "cover": "/assets/books/discovery/OL42424443W-publisher.webp",
+      "bytes": 25928,
+      "width": 292,
+      "height": 450
+    },
+    {
+      "title": "Alien Clay",
+      "cover": "/assets/books/discovery/OL37568895W.webp",
+      "bytes": 37198,
+      "width": 325,
+      "height": 500
+    },
+    {
+      "title": "Right Thing, Right Now",
+      "cover": "/assets/books/discovery/OL37540943W.webp",
+      "bytes": 29798,
+      "width": 354,
+      "height": 500
+    },
+    {
+      "title": "Rose/House",
+      "cover": "/assets/books/discovery/OL38652997W.webp",
+      "bytes": 24358,
+      "width": 341,
+      "height": 500
+    },
+    {
+      "title": "Service Model",
+      "cover": "/assets/books/discovery/OL37576633W.webp",
+      "bytes": 22750,
+      "width": 270,
+      "height": 415
+    },
+    {
+      "title": "Children of Memory",
+      "cover": "/assets/books/discovery/children-of-memory.webp",
+      "bytes": 39976,
+      "width": 333,
+      "height": 500
+    },
+    {
+      "title": "Demon Copperhead",
+      "cover": "/assets/books/discovery/OL27052926W.webp",
+      "bytes": 30572,
+      "width": 274,
+      "height": 416
+    },
+    {
+      "title": "Discipline is Destiny",
+      "cover": "/assets/books/discovery/OL27023502W.webp",
+      "bytes": 22048,
+      "width": 291,
+      "height": 400
+    },
+    {
+      "title": "Eyes of the Void",
+      "cover": "/assets/books/discovery/OL26518910W.webp",
+      "bytes": 28512,
+      "width": 323,
+      "height": 500
+    },
+    {
+      "title": "Feeding Littles and Beyond",
+      "cover": "/assets/books/discovery/OL26981301W.webp",
+      "bytes": 28124,
+      "width": 318,
+      "height": 400
+    },
+    {
+      "title": "Gangland",
+      "cover": "/assets/books/discovery/OL27017071W.webp",
+      "bytes": 17172,
+      "width": 331,
+      "height": 500
+    },
+    {
+      "title": "Rising Tiger",
+      "cover": "/assets/books/discovery/OL26660793W.webp",
+      "bytes": 54614,
+      "width": 328,
+      "height": 500
+    },
+    {
+      "title": "The Shame Machine",
+      "cover": "/assets/books/discovery/OL25291993W.webp",
+      "bytes": 11804,
+      "width": 334,
+      "height": 500
+    },
+    {
+      "title": "A Desolation Called Peace",
+      "cover": "/assets/books/discovery/9781250186461.webp",
+      "bytes": 29568,
+      "width": 324,
+      "height": 500
+    },
+    {
+      "title": "Baggage",
+      "cover": "/assets/books/discovery/OL24486636W.webp",
+      "bytes": 29238,
+      "width": 331,
+      "height": 500
+    },
+    {
+      "title": "Courage Is Calling",
+      "cover": "/assets/books/discovery/OL24698824W.webp",
+      "bytes": 37628,
+      "width": 353,
+      "height": 500
+    },
+    {
+      "title": "Elder Race",
+      "cover": "/assets/books/discovery/OL24770248W.webp",
+      "bytes": 21778,
+      "width": 313,
+      "height": 500
+    },
+    {
+      "title": "Moon Best of Yosemite",
+      "cover": "/assets/books/discovery/OL25764996W.webp",
+      "bytes": 37826,
+      "width": 321,
+      "height": 500
+    },
+    {
+      "title": "On the Origin of Species Illustrated",
+      "cover": "/assets/books/discovery/OL27881592W.webp",
+      "bytes": 57812,
+      "width": 416,
+      "height": 500
+    },
+    {
+      "title": "Shards of Earth",
+      "cover": "/assets/books/discovery/OL24481122W.webp",
+      "bytes": 31878,
+      "width": 325,
+      "height": 500
+    },
+    {
+      "title": "Doors of Eden",
+      "cover": "/assets/books/discovery/OL21368698W.webp",
+      "bytes": 54056,
+      "width": 324,
+      "height": 500
+    },
+    {
+      "title": "Eat the Buddha",
+      "cover": "/assets/books/discovery/OL20923876W.webp",
+      "bytes": 29166,
+      "width": 329,
+      "height": 500
+    },
+    {
+      "title": "Lives of the Stoics",
+      "cover": "/assets/books/discovery/OL21690596W.webp",
+      "bytes": 13230,
+      "width": 265,
+      "height": 400
+    },
+    {
+      "title": "Cheshire Crossing",
+      "cover": "/assets/books/discovery/OL17841386W.webp",
+      "bytes": 36028,
+      "width": 315,
+      "height": 450
+    },
+    {
+      "title": "Children of Ruin",
+      "cover": "/assets/books/discovery/9781509865857.webp",
+      "bytes": 30420,
+      "width": 333,
+      "height": 500
+    },
+    {
+      "title": "Fall; or, Dodge in Hell",
+      "cover": "/assets/books/discovery/OL19921476W.webp",
+      "bytes": 18518,
+      "width": 331,
+      "height": 500
+    },
+    {
+      "title": "Honey & Leon Take the High Road",
+      "cover": "/assets/books/discovery/OL20163191W.webp",
+      "bytes": 43646,
+      "width": 411,
+      "height": 500
+    },
+    {
+      "title": "Mama Sutra",
+      "cover": "/assets/books/discovery/OL21194455W-publisher.webp",
+      "bytes": 21984,
+      "width": 300,
+      "height": 450
+    },
+    {
+      "title": "Stillness Is the Key",
+      "cover": "/assets/books/discovery/OL20464740W.webp",
+      "bytes": 11718,
+      "width": 283,
+      "height": 400
+    },
+    {
+      "title": "What You Do Is Who You Are",
+      "cover": "/assets/books/discovery/OL21164124W.webp",
+      "bytes": 24520,
+      "width": 432,
+      "height": 432
+    },
+    {
+      "title": "Conspiracy",
+      "cover": "/assets/books/discovery/OL19739495W.webp",
+      "bytes": 12640,
+      "width": 310,
+      "height": 500
+    },
+    {
+      "title": "The Quick And Easy Way To Effective Speaking",
+      "cover": "/assets/books/discovery/OL34621205W.webp",
+      "bytes": 26376,
+      "width": 303,
+      "height": 500
+    },
+    {
+      "title": "Unsheltered",
+      "cover": "/assets/books/discovery/OL19749368W.webp",
+      "bytes": 16434,
+      "width": 432,
+      "height": 473
+    },
+    {
+      "title": "Artemis",
+      "cover": "/assets/books/discovery/9780553448122.webp",
+      "bytes": 14508,
+      "width": 329,
+      "height": 500
+    },
+    {
+      "title": "Beren and Lúthien",
+      "cover": "/assets/books/discovery/OL17755218W.webp",
+      "bytes": 22074,
+      "width": 335,
+      "height": 500
+    },
+    {
+      "title": "James Moriarty, Consulting Criminal",
+      "cover": "/assets/books/discovery/OL19650131W.webp",
+      "bytes": 20824,
+      "width": 312,
+      "height": 500
+    },
+    {
+      "title": "Logical family",
+      "cover": "/assets/books/discovery/OL19716738W.webp",
+      "bytes": 15820,
+      "width": 331,
+      "height": 500
+    },
+    {
+      "title": "Nuclear blues",
+      "cover": "/assets/books/discovery/OL19753329W-edition.webp",
+      "bytes": 30706,
+      "width": 333,
+      "height": 500
+    },
+    {
+      "title": "October",
+      "cover": "/assets/books/discovery/OL20058427W.webp",
+      "bytes": 20332,
+      "width": 325,
+      "height": 500
+    },
+    {
+      "title": "Perennial Seller",
+      "cover": "/assets/books/discovery/OL19716852W.webp",
+      "bytes": 23494,
+      "width": 333,
+      "height": 500
+    },
+    {
+      "title": "Tai ji dancing for kids",
+      "cover": "/assets/books/discovery/OL19724293W-edition.webp",
+      "bytes": 23508,
+      "width": 355,
+      "height": 500
+    },
+    {
+      "title": "The Daily Stoic Journal",
+      "cover": "/assets/books/discovery/OL20934912W.webp",
+      "bytes": 12448,
+      "width": 324,
+      "height": 500
+    },
+    {
+      "title": "The Egg and Other Stories",
+      "cover": "/assets/books/discovery/OL27699165W.webp",
+      "bytes": 15416,
+      "width": 312,
+      "height": 500
+    },
+    {
+      "title": "The Rise and Fall of D.O.D.O.",
+      "cover": "/assets/books/discovery/OL19330491W.webp",
+      "bytes": 19324,
+      "width": 234,
+      "height": 346
+    },
+    {
+      "title": "The wine lover's daughter",
+      "cover": "/assets/books/discovery/OL19722197W.webp",
+      "bytes": 9294,
+      "width": 335,
+      "height": 500
+    },
+    {
+      "title": "Ego is the Enemy",
+      "cover": "/assets/books/discovery/OL20033244W.webp",
+      "bytes": 18142,
+      "width": 367,
+      "height": 500
+    },
+    {
+      "title": "Inspiralize everything",
+      "cover": "/assets/books/discovery/OL20040474W.webp",
+      "bytes": 21608,
+      "width": 374,
+      "height": 500
+    },
+    {
+      "title": "The daily stoic",
+      "cover": "/assets/books/discovery/OL20046443W.webp",
+      "bytes": 14042,
+      "width": 321,
+      "height": 500
+    },
+    {
+      "title": "The Last Days of New Paris",
+      "cover": "/assets/books/discovery/OL19627650W.webp",
+      "bytes": 25126,
+      "width": 333,
+      "height": 500
+    },
+    {
+      "title": "This Census-Taker",
+      "cover": "/assets/books/discovery/OL40422720W.webp",
+      "bytes": 25538,
+      "width": 342,
+      "height": 500
+    },
+    {
+      "title": "Guns of the Dawn",
+      "cover": "/assets/books/discovery/OL19342360W.webp",
+      "bytes": 52388,
+      "width": 325,
+      "height": 500
+    },
+    {
+      "title": "Moon Yosemite, Sequoia & Kings Canyon",
+      "cover": "/assets/books/discovery/OL20670238W.webp",
+      "bytes": 53136,
+      "width": 367,
+      "height": 500
+    },
+    {
+      "title": "Yoga For Sports",
+      "cover": "/assets/books/discovery/OL32601895W.webp",
+      "bytes": 17782,
+      "width": 373,
+      "height": 500
+    },
+    {
+      "title": "Moving into meditation",
+      "cover": "/assets/books/discovery/OL19983188W.webp",
+      "bytes": 13124,
+      "width": 318,
+      "height": 500
+    },
+    {
+      "title": "The Rhesus Chart",
+      "cover": "/assets/books/discovery/OL17417547W.webp",
+      "bytes": 14436,
+      "width": 248,
+      "height": 400
+    },
+    {
+      "title": "What color is your parachute? guide to rethinking interviews",
+      "cover": "/assets/books/discovery/OL19977925W.webp",
+      "bytes": 17206,
+      "width": 306,
+      "height": 500
+    },
+    {
+      "title": "What color is your parachute? guide to rethinking resumes",
+      "cover": "/assets/books/discovery/OL19977926W.webp",
+      "bytes": 18512,
+      "width": 287,
+      "height": 500
+    },
+    {
+      "title": "Abaddon's Gate",
+      "cover": "/assets/books/discovery/9780316129077.webp",
+      "bytes": 43490,
+      "width": 323,
+      "height": 500
+    },
+    {
+      "title": "Hidden order",
+      "cover": "/assets/books/discovery/OL20940220W.webp",
+      "bytes": 15586,
+      "width": 325,
+      "height": 500
+    },
+    {
+      "title": "Moon handbooks",
+      "cover": "/assets/books/discovery/OL17759845W.webp",
+      "bytes": 32738,
+      "width": 338,
+      "height": 500
+    },
+    {
+      "title": "Neptunes Brood",
+      "cover": "/assets/books/discovery/OL17554076W.webp",
+      "bytes": 9442,
+      "width": 247,
+      "height": 400
+    },
+    {
+      "title": "On being a data skeptic",
+      "cover": "/assets/books/discovery/OL41910295W-publisher.webp",
+      "bytes": 16086,
+      "width": 432,
+      "height": 648
+    },
+    {
+      "title": "One Summer",
+      "cover": "/assets/books/discovery/OL17599122W.webp",
+      "bytes": 29606,
+      "width": 326,
+      "height": 500
+    },
+    {
+      "title": "The Obstacle is the Way",
+      "cover": "/assets/books/discovery/OL19977665W.webp",
+      "bytes": 20756,
+      "width": 355,
+      "height": 500
+    },
+    {
+      "title": "Flight behavior",
+      "cover": "/assets/books/discovery/OL16700025W.webp",
+      "bytes": 56600,
+      "width": 331,
+      "height": 500
+    },
+    {
+      "title": "Northern California biking",
+      "cover": "/assets/books/discovery/OL19953614W.webp",
+      "bytes": 23876,
+      "width": 311,
+      "height": 500
+    },
+    {
+      "title": "Railsea",
+      "cover": "/assets/books/discovery/OL16564661W.webp",
+      "bytes": 34910,
+      "width": 296,
+      "height": 450
+    },
+    {
+      "title": "Some Remarks",
+      "cover": "/assets/books/discovery/OL16714859W.webp",
+      "bytes": 16652,
+      "width": 336,
+      "height": 500
+    },
+    {
+      "title": "Essential Tai Ji",
+      "cover": "/assets/books/discovery/OL16214620W.webp",
+      "bytes": 9756,
+      "width": 302,
+      "height": 400
+    },
+    {
+      "title": "Master shots, volume 2",
+      "cover": "/assets/books/discovery/OL16414622W.webp",
+      "bytes": 4480,
+      "width": 300,
+      "height": 205
+    },
+    {
+      "title": "Rule 34",
+      "cover": "/assets/books/discovery/OL15921145W.webp",
+      "bytes": 23936,
+      "width": 329,
+      "height": 500
+    },
+    {
+      "title": "The Scar",
+      "cover": "/assets/books/discovery/OL21225161W.webp",
+      "bytes": 30282,
+      "width": 329,
+      "height": 500
+    },
+    {
+      "title": "At Home",
+      "cover": "/assets/books/discovery/OL15100470W.webp",
+      "bytes": 11992,
+      "width": 337,
+      "height": 500
+    },
+    {
+      "title": "Devils in exile",
+      "cover": "/assets/books/discovery/OL19935086W.webp",
+      "bytes": 18982,
+      "width": 308,
+      "height": 500
+    },
+    {
+      "title": "Foreign Influence",
+      "cover": "/assets/books/discovery/OL21445026W.webp",
+      "bytes": 15918,
+      "width": 335,
+      "height": 500
+    },
+    {
+      "title": "Kraken",
+      "cover": "/assets/books/discovery/OL14990804W.webp",
+      "bytes": 24120,
+      "width": 329,
+      "height": 500
+    },
+    {
+      "title": "The Athena Project",
+      "cover": "/assets/books/discovery/OL15493119W-edition.webp",
+      "bytes": 14940,
+      "width": 326,
+      "height": 500
+    },
+    {
+      "title": "The Fuller Memorandum",
+      "cover": "/assets/books/discovery/OL15505350W.webp",
+      "bytes": 31406,
+      "width": 432,
+      "height": 432
+    },
+    {
+      "title": "The Town",
+      "cover": "/assets/books/discovery/OL20458066W.webp",
+      "bytes": 24350,
+      "width": 432,
+      "height": 491
+    },
+    {
+      "title": "Blood of the mantis",
+      "cover": "/assets/books/discovery/OL15026872W.webp",
+      "bytes": 26946,
+      "width": 317,
+      "height": 500
+    },
+    {
+      "title": "Dragonfly falling",
+      "cover": "/assets/books/discovery/OL15026873W.webp",
+      "bytes": 17932,
+      "width": 315,
+      "height": 500
+    },
+    {
+      "title": "Monterey & Carmel",
+      "cover": "/assets/books/discovery/OL17668945W.webp",
+      "bytes": 30772,
+      "width": 352,
+      "height": 500
+    },
+    {
+      "title": "The 2009 What color is your parachute?",
+      "cover": "/assets/books/discovery/OL3333117W.webp",
+      "bytes": 21292,
+      "width": 317,
+      "height": 500
+    },
+    {
+      "title": "The City & The City",
+      "cover": "/assets/books/discovery/OL19341943W.webp",
+      "bytes": 19338,
+      "width": 330,
+      "height": 500
+    },
+    {
+      "title": "The Egg",
+      "cover": "/assets/books/discovery/OL17365207W.webp",
+      "bytes": 6974,
+      "width": 250,
+      "height": 390
+    },
+    {
+      "title": "The lacuna",
+      "cover": "/assets/books/discovery/OL1846840W.webp",
+      "bytes": 24762,
+      "width": 375,
+      "height": 500
+    },
+    {
+      "title": "Yoga wisdom & practice",
+      "cover": "/assets/books/discovery/OL16633787W.webp",
+      "bytes": 13826,
+      "width": 430,
+      "height": 500
+    },
+    {
+      "title": "You are here",
+      "cover": "/assets/books/discovery/OL13721113W.webp",
+      "bytes": 9840,
+      "width": 318,
+      "height": 500
+    },
+    {
+      "title": "A Really Short History of Nearly Everything",
+      "cover": "/assets/books/discovery/OL14991884W.webp",
+      "bytes": 26580,
+      "width": 359,
+      "height": 500
+    },
+    {
+      "title": "Anathem",
+      "cover": "/assets/books/discovery/OL14911626W.webp",
+      "bytes": 24878,
+      "width": 307,
+      "height": 500
+    },
+    {
+      "title": "Empire in black and gold",
+      "cover": "/assets/books/discovery/OL15026874W.webp",
+      "bytes": 8096,
+      "width": 315,
+      "height": 500
+    },
+    {
+      "title": "Enlightenment for idiots",
+      "cover": "/assets/books/discovery/OL2741737W-edition.webp",
+      "bytes": 17404,
+      "width": 330,
+      "height": 500
+    },
+    {
+      "title": "Saturn's Children",
+      "cover": "/assets/books/discovery/OL2465692W-verified.webp",
+      "bytes": 19666,
+      "width": 280,
+      "height": 450
+    },
+    {
+      "title": "The last patriot",
+      "cover": "/assets/books/discovery/OL5846037W-edition.webp",
+      "bytes": 39032,
+      "width": 319,
+      "height": 500
+    },
+    {
+      "title": "Animal, Vegetable, Miracle",
+      "cover": "/assets/books/discovery/OL1846871W.webp",
+      "bytes": 42270,
+      "width": 316,
+      "height": 500
+    },
+    {
+      "title": "At Large and At Small",
+      "cover": "/assets/books/discovery/OL1889676W.webp",
+      "bytes": 9758,
+      "width": 339,
+      "height": 500
+    },
+    {
+      "title": "Iyengar",
+      "cover": "/assets/books/discovery/OL3018479W.webp",
+      "bytes": 14142,
+      "width": 322,
+      "height": 500
+    },
+    {
+      "title": "Save the Cat! Goes to the Movies",
+      "cover": "/assets/books/discovery/OL9267734W.webp",
+      "bytes": 17102,
+      "width": 333,
+      "height": 500
+    },
+    {
+      "title": "Shakespeare",
+      "cover": "/assets/books/discovery/OL74119W.webp",
+      "bytes": 26396,
+      "width": 318,
+      "height": 500
+    },
+    {
+      "title": "The art of power",
+      "cover": "/assets/books/discovery/OL263662W-edition.webp",
+      "bytes": 10674,
+      "width": 429,
+      "height": 648
+    },
+    {
+      "title": "The First Commandment",
+      "cover": "/assets/books/discovery/OL5846036W.webp",
+      "bytes": 23034,
+      "width": 329,
+      "height": 500
+    },
+    {
+      "title": "The Killing Moon",
+      "cover": "/assets/books/discovery/OL2695937W.webp",
+      "bytes": 13166,
+      "width": 325,
+      "height": 500
+    },
+    {
+      "title": "Un Lun Dun",
+      "cover": "/assets/books/discovery/OL14871881W.webp",
+      "bytes": 34494,
+      "width": 375,
+      "height": 500
+    },
+    {
+      "title": "Dale Carnegie's Radio Program: How to Win Friends and Influence People - Lesson 1",
+      "cover": "/assets/books/discovery/OL1063327W.webp",
+      "bytes": 21988,
+      "width": 432,
+      "height": 432
+    },
+    {
+      "title": "Glasshouse",
+      "cover": "/assets/books/discovery/OL2465690W.webp",
+      "bytes": 14822,
+      "width": 323,
+      "height": 500
+    },
+    {
+      "title": "Iyengar Yoga For Beginners",
+      "cover": "/assets/books/discovery/OL16492238W.webp",
+      "bytes": 5430,
+      "width": 270,
+      "height": 270
+    },
+    {
+      "title": "Moon Tahoe",
+      "cover": "/assets/books/discovery/OL2925615W.webp",
+      "bytes": 28776,
+      "width": 367,
+      "height": 500
+    },
+    {
+      "title": "Take a Hike Los Angeles",
+      "cover": "/assets/books/discovery/OL25651625W.webp",
+      "bytes": 20010,
+      "width": 320,
+      "height": 500
+    },
+    {
+      "title": "The Jennifer Morgue",
+      "cover": "/assets/books/discovery/OL2465689W.webp",
+      "bytes": 27552,
+      "width": 320,
+      "height": 500
+    },
+    {
+      "title": "Wintersmith",
+      "cover": "/assets/books/discovery/OL453989W.webp",
+      "bytes": 18334,
+      "width": 317,
+      "height": 500
+    },
+    {
+      "title": "Blowback",
+      "cover": "/assets/books/discovery/OL5846031W.webp",
+      "bytes": 31806,
+      "width": 329,
+      "height": 500
+    },
+    {
+      "title": "Born to Lose",
+      "cover": "/assets/books/discovery/OL3374842W.webp",
+      "bytes": 14554,
+      "width": 323,
+      "height": 500
+    },
+    {
+      "title": "Foghorn Outdoors Southern California Cabins and Cottages",
+      "cover": "/assets/books/discovery/OL2925608W.webp",
+      "bytes": 40856,
+      "width": 319,
+      "height": 500
+    },
+    {
+      "title": "Good Daughter",
+      "cover": "/assets/books/discovery/OL9146144W.webp",
+      "bytes": 32274,
+      "width": 323,
+      "height": 500
+    },
+    {
+      "title": "Light on Life",
+      "cover": "/assets/books/discovery/OL3018483W.webp",
+      "bytes": 22964,
+      "width": 309,
+      "height": 500
+    },
+    {
+      "title": "Looking for Jake",
+      "cover": "/assets/books/discovery/OL14871878W.webp",
+      "bytes": 35190,
+      "width": 331,
+      "height": 500
+    },
+    {
+      "title": "Public Speaking for Success",
+      "cover": "/assets/books/discovery/OL1063329W.webp",
+      "bytes": 35744,
+      "width": 353,
+      "height": 500
+    },
+    {
+      "title": "Rereadings",
+      "cover": "/assets/books/discovery/OL1889679W.webp",
+      "bytes": 8674,
+      "width": 333,
+      "height": 500
+    },
+    {
+      "title": "Iron Council",
+      "cover": "/assets/books/discovery/OL25051471W.webp",
+      "bytes": 20490,
+      "width": 322,
+      "height": 500
+    },
+    {
+      "title": "Iron sunrise",
+      "cover": "/assets/books/discovery/OL2465675W.webp",
+      "bytes": 13610,
+      "width": 314,
+      "height": 475
+    },
+    {
+      "title": "Prince of Thieves",
+      "cover": "/assets/books/discovery/OL2695940W.webp",
+      "bytes": 23290,
+      "width": 331,
+      "height": 500
+    },
+    {
+      "title": "State of the Union",
+      "cover": "/assets/books/discovery/OL5846032W.webp",
+      "bytes": 28848,
+      "width": 310,
+      "height": 500
+    },
+    {
+      "title": "The Atrocity Archives",
+      "cover": "/assets/books/discovery/OL2465682W.webp",
+      "bytes": 28426,
+      "width": 307,
+      "height": 475
+    },
+    {
+      "title": "The family trade",
+      "cover": "/assets/books/discovery/OL2465673W.webp",
+      "bytes": 56332,
+      "width": 329,
+      "height": 500
+    },
+    {
+      "title": "A short history of nearly everything",
+      "cover": "/assets/books/discovery/OL74128W.webp",
+      "bytes": 13098,
+      "width": 329,
+      "height": 500
+    },
+    {
+      "title": "Bicycling the Lewis & Clark Trail",
+      "cover": "/assets/books/discovery/OL18328037W.webp",
+      "bytes": 30548,
+      "width": 316,
+      "height": 475
+    },
+    {
+      "title": "Foghorn Outdoors 101 Great Hikes of the San Francisco Bay Area",
+      "cover": "/assets/books/discovery/OL2925601W.webp",
+      "bytes": 28274,
+      "width": 305,
+      "height": 475
+    },
+    {
+      "title": "Path of the assassin",
+      "cover": "/assets/books/discovery/OL16076435W.webp",
+      "bytes": 18902,
+      "width": 297,
+      "height": 500
+    },
+    {
+      "title": "Singularity sky",
+      "cover": "/assets/books/discovery/OL2465688W.webp",
+      "bytes": 16544,
+      "width": 315,
+      "height": 475
+    },
+    {
+      "title": "System of the World",
+      "cover": "/assets/books/discovery/OL38489W.webp",
+      "bytes": 37716,
+      "width": 333,
+      "height": 500
+    },
+    {
+      "title": "The best American essays 2003",
+      "cover": "/assets/books/discovery/OL16065349W.webp",
+      "bytes": 9132,
+      "width": 317,
+      "height": 500
+    },
+    {
+      "title": "The Confusion. Volume II of the Baroque Cycle",
+      "cover": "/assets/books/discovery/OL38483W.webp",
+      "bytes": 21572,
+      "width": 350,
+      "height": 500
+    },
+    {
+      "title": "The Half-Empty Heart",
+      "cover": "/assets/books/discovery/OL1901731W.webp",
+      "bytes": 19756,
+      "width": 329,
+      "height": 500
+    },
+    {
+      "title": "Ben Franklin and his notebooks",
+      "cover": "/assets/books/discovery/OL18017951W.webp",
+      "bytes": 18442,
+      "width": 323,
+      "height": 500
+    },
+    {
+      "title": "Interface",
+      "cover": "/assets/books/discovery/OL14911628W.webp",
+      "bytes": 21194,
+      "width": 314,
+      "height": 500
+    },
+    {
+      "title": "Secrets of an Executive Coach",
+      "cover": "/assets/books/discovery/OL1901729W.webp",
+      "bytes": 14342,
+      "width": 330,
+      "height": 500
+    },
+    {
+      "title": "The Lions of Lucerne",
+      "cover": "/assets/books/discovery/OL5846034W.webp",
+      "bytes": 22300,
+      "width": 308,
+      "height": 475
+    },
+    {
+      "title": "The Scar",
+      "cover": "/assets/books/discovery/OL8718787W.webp",
+      "bytes": 24094,
+      "width": 289,
+      "height": 475
+    },
+    {
+      "title": "Why does this keep happening to me?",
+      "cover": "/assets/books/discovery/OL1901728W.webp",
+      "bytes": 19216,
+      "width": 310,
+      "height": 475
+    },
+    {
+      "title": "Anger",
+      "cover": "/assets/books/discovery/OL263657W.webp",
+      "bytes": 17142,
+      "width": 314,
+      "height": 475
+    },
+    {
+      "title": "Rethinking Golf",
+      "cover": "/assets/books/discovery/OL2695930W.webp",
+      "bytes": 20266,
+      "width": 250,
+      "height": 500
+    },
+    {
+      "title": "The Children of Húrin",
+      "cover": "/assets/books/discovery/OL27471W.webp",
+      "bytes": 12448,
+      "width": 322,
+      "height": 500
+    },
+    {
+      "title": "Thich Nhat Hanh",
+      "cover": "/assets/books/discovery/OL263647W.webp",
+      "bytes": 10082,
+      "width": 302,
+      "height": 475
+    },
+    {
+      "title": "Yoga",
+      "cover": "/assets/books/discovery/OL3018498W.webp",
+      "bytes": 11744,
+      "width": 350,
+      "height": 450
+    },
+    {
+      "title": "101 great hikes of the San Francisco Bay Area",
+      "cover": "/assets/books/discovery/OL2925620W.webp",
+      "bytes": 16796,
+      "width": 302,
+      "height": 500
+    },
+    {
+      "title": "Aṣṭadaḷa yogamālā",
+      "cover": "/assets/books/discovery/OL3018473W-edition.webp",
+      "bytes": 18428,
+      "width": 318,
+      "height": 500
+    },
+    {
+      "title": "Down Under (In a Sunburned Country)",
+      "cover": "/assets/books/discovery/OL74115W.webp",
+      "bytes": 18320,
+      "width": 291,
+      "height": 500
+    },
+    {
+      "title": "Perdido Street Station",
+      "cover": "/assets/books/discovery/OL8718786W.webp",
+      "bytes": 11774,
+      "width": 230,
+      "height": 350
+    },
+    {
+      "title": "The Fearless Executive",
+      "cover": "/assets/books/discovery/OL1901723W.webp",
+      "bytes": 24950,
+      "width": 316,
+      "height": 475
+    },
+    {
+      "title": "The World of Cinema",
+      "cover": "/assets/books/discovery/OL523215W.webp",
+      "bytes": 19948,
+      "width": 317,
+      "height": 475
+    },
+    {
+      "title": "Blood Artists, The",
+      "cover": "/assets/books/discovery/OL2695926W.webp",
+      "bytes": 7310,
+      "width": 285,
+      "height": 475
+    },
+    {
+      "title": "In the Beginning...Was the Command Line",
+      "cover": "/assets/books/discovery/OL38477W.webp",
+      "bytes": 17882,
+      "width": 323,
+      "height": 500
+    },
+    {
+      "title": "Tao mentoring",
+      "cover": "/assets/books/discovery/OL448106W.webp",
+      "bytes": 20924,
+      "width": 274,
+      "height": 475
+    },
+    {
+      "title": "The Chinese book of animal powers",
+      "cover": "/assets/books/discovery/OL448103W.webp",
+      "bytes": 30154,
+      "width": 432,
+      "height": 370
+    },
+    {
+      "title": "Aliens",
+      "cover": "/assets/books/discovery/OL523204W-verified.webp",
+      "bytes": 7152,
+      "width": 432,
+      "height": 447
+    },
+    {
+      "title": "Ex Libris",
+      "cover": "/assets/books/discovery/OL1889681W.webp",
+      "bytes": 8362,
+      "width": 318,
+      "height": 475
+    },
+    {
+      "title": "Foghorn Outdoors",
+      "cover": "/assets/books/discovery/OL2925621W.webp",
+      "bytes": 37360,
+      "width": 294,
+      "height": 475
+    },
+    {
+      "title": "King Rat",
+      "cover": "/assets/books/discovery/OL14871882W.webp",
+      "bytes": 12250,
+      "width": 303,
+      "height": 475
+    },
+    {
+      "title": "Seven miracles of management",
+      "cover": "/assets/books/discovery/OL1901726W.webp",
+      "bytes": 27114,
+      "width": 326,
+      "height": 475
+    },
+    {
+      "title": "The blood artists",
+      "cover": "/assets/books/discovery/OL2695935W.webp",
+      "bytes": 12670,
+      "width": 317,
+      "height": 475
+    },
+    {
+      "title": "The Cobweb",
+      "cover": "/assets/books/discovery/OL14911607W.webp",
+      "bytes": 21754,
+      "width": 324,
+      "height": 500
+    },
+    {
+      "title": "The heart of the Buddha's teaching",
+      "cover": "/assets/books/discovery/OL115690W.webp",
+      "bytes": 21942,
+      "width": 308,
+      "height": 475
+    },
+    {
+      "title": "The voice of hope",
+      "cover": "/assets/books/discovery/OL15155475W.webp",
+      "bytes": 23846,
+      "width": 328,
+      "height": 500
+    },
+    {
+      "title": "What Color Is Your Parachute Workbook",
+      "cover": "/assets/books/discovery/OL3333154W.webp",
+      "bytes": 28042,
+      "width": 367,
+      "height": 475
+    },
+    {
+      "title": "3001",
+      "cover": "/assets/books/discovery/OL17409W.webp",
+      "bytes": 20532,
+      "width": 329,
+      "height": 475
+    },
+    {
+      "title": "A Walk in the Woods",
+      "cover": "/assets/books/discovery/OL74123W.webp",
+      "bytes": 45196,
+      "width": 309,
+      "height": 500
+    },
+    {
+      "title": "Adventure Cycling in Michigan",
+      "cover": "/assets/books/discovery/OL8644112W.webp",
+      "bytes": 35802,
+      "width": 301,
+      "height": 475
+    },
+    {
+      "title": "Beyond the looking glass",
+      "cover": "/assets/books/discovery/OL1901722W.webp",
+      "bytes": 18640,
+      "width": 300,
+      "height": 475
+    },
+    {
+      "title": "Job-Hunting on the Internet",
+      "cover": "/assets/books/discovery/OL3333158W.webp",
+      "bytes": 20286,
+      "width": 341,
+      "height": 475
+    },
+    {
+      "title": "Letters from Burma",
+      "cover": "/assets/books/discovery/OL1059430W.webp",
+      "bytes": 23184,
+      "width": 318,
+      "height": 500
+    },
+    {
+      "title": "Voix du défi",
+      "cover": "/assets/books/discovery/OL1059432W.webp",
+      "bytes": 30296,
+      "width": 314,
+      "height": 475
+    },
+    {
+      "title": "Hogfather",
+      "cover": "/assets/books/discovery/OL453662W.webp",
+      "bytes": 36676,
+      "width": 317,
+      "height": 500
+    },
+    {
+      "title": "Logavina Street",
+      "cover": "/assets/books/discovery/OL3257621W.webp",
+      "bytes": 25984,
+      "width": 326,
+      "height": 475
+    },
+    {
+      "title": "The 1996 what colour is your parachute?",
+      "cover": "/assets/books/discovery/OL15860369W.webp",
+      "bytes": 10262,
+      "width": 325,
+      "height": 500
+    },
+    {
+      "title": "Become what you are",
+      "cover": "/assets/books/discovery/OL1877183W.webp",
+      "bytes": 21468,
+      "width": 305,
+      "height": 475
+    },
+    {
+      "title": "Corporate executions",
+      "cover": "/assets/books/discovery/OL1901730W.webp",
+      "bytes": 19000,
+      "width": 331,
+      "height": 475
+    },
+    {
+      "title": "High tide in Tucson",
+      "cover": "/assets/books/discovery/OL1846873W.webp",
+      "bytes": 20942,
+      "width": 314,
+      "height": 475
+    },
+    {
+      "title": "Living Buddha, living Christ",
+      "cover": "/assets/books/discovery/OL15373820W.webp",
+      "bytes": 26066,
+      "width": 295,
+      "height": 475
+    },
+    {
+      "title": "Notes from a small island",
+      "cover": "/assets/books/discovery/OL74129W.webp",
+      "bytes": 21268,
+      "width": 329,
+      "height": 500
+    },
+    {
+      "title": "The Diamond Age",
+      "cover": "/assets/books/discovery/OL38499W.webp",
+      "bytes": 27590,
+      "width": 328,
+      "height": 500
+    },
+    {
+      "title": "The standoff",
+      "cover": "/assets/books/discovery/OL2695939W-edition.webp",
+      "bytes": 18908,
+      "width": 323,
+      "height": 500
+    },
+    {
+      "title": "Made in America",
+      "cover": "/assets/books/discovery/OL74122W.webp",
+      "bytes": 38254,
+      "width": 328,
+      "height": 500
+    },
+    {
+      "title": "The Wee Free Men",
+      "cover": "/assets/books/discovery/OL453748W.webp",
+      "bytes": 32282,
+      "width": 316,
+      "height": 500
+    },
+    {
+      "title": "Learning Golf",
+      "cover": "/assets/books/discovery/OL2695938W.webp",
+      "bytes": 23880,
+      "width": 314,
+      "height": 475
+    },
+    {
+      "title": "Light on the Yoga Sutras of Patanjali",
+      "cover": "/assets/books/discovery/OL262819W.webp",
+      "bytes": 15644,
+      "width": 305,
+      "height": 475
+    },
+    {
+      "title": "Pigs in heaven",
+      "cover": "/assets/books/discovery/OL1846879W.webp",
+      "bytes": 35230,
+      "width": 304,
+      "height": 475
+    },
+    {
+      "title": "The Leader in You",
+      "cover": "/assets/books/discovery/OL1063308W.webp",
+      "bytes": 32026,
+      "width": 289,
+      "height": 475
+    },
+    {
+      "title": "Maybe the Moon",
+      "cover": "/assets/books/discovery/OL2433538W.webp",
+      "bytes": 35092,
+      "width": 270,
+      "height": 475
+    },
+    {
+      "title": "Small Gods",
+      "cover": "/assets/books/discovery/OL453697W.webp",
+      "bytes": 14034,
+      "width": 325,
+      "height": 500
+    },
+    {
+      "title": "Thinking body, dancing mind",
+      "cover": "/assets/books/discovery/OL115699W-edition.webp",
+      "bytes": 28536,
+      "width": 331,
+      "height": 500
+    },
+    {
+      "title": "Aung San of Burma",
+      "cover": "/assets/books/discovery/OL1059425W.webp",
+      "bytes": 19342,
+      "width": 375,
+      "height": 500
+    },
+    {
+      "title": "Gays, Lesbians, and Their Therapists",
+      "cover": "/assets/books/discovery/OL4320889W-edition.webp",
+      "bytes": 13828,
+      "width": 331,
+      "height": 500
+    },
+    {
+      "title": "How to find your mission in life",
+      "cover": "/assets/books/discovery/OL3333157W.webp",
+      "bytes": 36460,
+      "width": 336,
+      "height": 475
+    },
+    {
+      "title": "Neither here nor there",
+      "cover": "/assets/books/discovery/OL74125W.webp",
+      "bytes": 30446,
+      "width": 316,
+      "height": 500
+    },
+    {
+      "title": "Reaper Man",
+      "cover": "/assets/books/discovery/OL453654W.webp",
+      "bytes": 43834,
+      "width": 336,
+      "height": 500
+    },
+    {
+      "title": "The Garden of Rama",
+      "cover": "/assets/books/discovery/OL17373W.webp",
+      "bytes": 3640,
+      "width": 316,
+      "height": 500
+    },
+    {
+      "title": "Good Omens",
+      "cover": "/assets/books/discovery/OL453936W.webp",
+      "bytes": 31822,
+      "width": 325,
+      "height": 500
+    },
+    {
+      "title": "How to create a picture of your ideal job or next career",
+      "cover": "/assets/books/discovery/OL3333122W.webp",
+      "bytes": 28358,
+      "width": 320,
+      "height": 500
+    },
+    {
+      "title": "Old Path White Clouds",
+      "cover": "/assets/books/discovery/OL263633W.webp",
+      "bytes": 16268,
+      "width": 319,
+      "height": 500
+    },
+    {
+      "title": "Peace is every step",
+      "cover": "/assets/books/discovery/OL15373819W.webp",
+      "bytes": 17120,
+      "width": 317,
+      "height": 500
+    },
+    {
+      "title": "Guards! Guards!",
+      "cover": "/assets/books/discovery/OL453735W.webp",
+      "bytes": 42452,
+      "width": 329,
+      "height": 500
+    },
+    {
+      "title": "Homeland",
+      "cover": "/assets/books/discovery/OL1846866W-verified.webp",
+      "bytes": 28850,
+      "width": 416,
+      "height": 648
+    },
+    {
+      "title": "Pyramids",
+      "cover": "/assets/books/discovery/OL453661W.webp",
+      "bytes": 50896,
+      "width": 300,
+      "height": 500
+    },
+    {
+      "title": "Rama II",
+      "cover": "/assets/books/discovery/OL17395W-publisher.webp",
+      "bytes": 36726,
+      "width": 274,
+      "height": 450
+    },
+    {
+      "title": "Tai Ji",
+      "cover": "/assets/books/discovery/OL115697W.webp",
+      "bytes": 31896,
+      "width": 375,
+      "height": 475
+    },
+    {
+      "title": "The Lost Continent",
+      "cover": "/assets/books/discovery/OL74124W.webp",
+      "bytes": 28344,
+      "width": 323,
+      "height": 500
+    },
+    {
+      "title": "Sourcery",
+      "cover": "/assets/books/discovery/OL453659W.webp",
+      "bytes": 28494,
+      "width": 300,
+      "height": 500
+    },
+    {
+      "title": "The Bean Trees",
+      "cover": "/assets/books/discovery/OL1846863W.webp",
+      "bytes": 39006,
+      "width": 309,
+      "height": 475
+    },
+    {
+      "title": "Tree of Yoga",
+      "cover": "/assets/books/discovery/OL262820W.webp",
+      "bytes": 34498,
+      "width": 314,
+      "height": 475
+    },
+    {
+      "title": "Wyrd Sisters",
+      "cover": "/assets/books/discovery/OL453660W.webp",
+      "bytes": 33452,
+      "width": 331,
+      "height": 500
+    },
+    {
+      "title": "Zodiac",
+      "cover": "/assets/books/discovery/OL38503W.webp",
+      "bytes": 21512,
+      "width": 298,
+      "height": 500
+    },
+    {
+      "title": "2061",
+      "cover": "/assets/books/discovery/OL17408W-edition.webp",
+      "bytes": 18706,
+      "width": 404,
+      "height": 648
+    },
+    {
+      "title": "Animal Dreams Cloth Signed",
+      "cover": "/assets/books/discovery/OL1846827W.webp",
+      "bytes": 18430,
+      "width": 330,
+      "height": 500
+    },
+    {
+      "title": "Being peace",
+      "cover": "/assets/books/discovery/OL263663W.webp",
+      "bytes": 6048,
+      "width": 328,
+      "height": 500
+    },
+    {
+      "title": "Equal Rites",
+      "cover": "/assets/books/discovery/OL453670W.webp",
+      "bytes": 41006,
+      "width": 305,
+      "height": 500
+    },
+    {
+      "title": "Mort",
+      "cover": "/assets/books/discovery/OL453658W.webp",
+      "bytes": 35704,
+      "width": 317,
+      "height": 500
+    },
+    {
+      "title": "The Miracle of Mindfulness",
+      "cover": "/assets/books/discovery/OL12381026W.webp",
+      "bytes": 14086,
+      "width": 332,
+      "height": 499
+    },
+    {
+      "title": "Five Days to Golfing Excellence",
+      "cover": "/assets/books/discovery/OL2695936W.webp",
+      "bytes": 37138,
+      "width": 315,
+      "height": 475
+    },
+    {
+      "title": "The Songs of Distant Earth",
+      "cover": "/assets/books/discovery/OL17383W.webp",
+      "bytes": 25402,
+      "width": 296,
+      "height": 475
+    },
+    {
+      "title": "Let's visit Bhutan",
+      "cover": "/assets/books/discovery/OL1059427W.webp",
+      "bytes": 28878,
+      "width": 375,
+      "height": 500
+    },
+    {
+      "title": "Let's visit Burma",
+      "cover": "/assets/books/discovery/OL1059428W.webp",
+      "bytes": 25016,
+      "width": 357,
+      "height": 500
+    },
+    {
+      "title": "Let's visitNepal",
+      "cover": "/assets/books/discovery/OL1059429W.webp",
+      "bytes": 46114,
+      "width": 369,
+      "height": 500
+    },
+    {
+      "title": "New Quick Job-Hunting Map",
+      "cover": "/assets/books/discovery/OL3333148W.webp",
+      "bytes": 25174,
+      "width": 332,
+      "height": 500
+    },
+    {
+      "title": "The Art of Yoga",
+      "cover": "/assets/books/discovery/OL271467W.webp",
+      "bytes": 10404,
+      "width": 375,
+      "height": 500
+    },
+    {
+      "title": "Aung San",
+      "cover": "/assets/books/discovery/OL1059423W-verified.webp",
+      "bytes": 42848,
+      "width": 432,
+      "height": 576
+    },
+    {
+      "title": "The Big U",
+      "cover": "/assets/books/discovery/OL38467W.webp",
+      "bytes": 14432,
+      "width": 332,
+      "height": 500
+    },
+    {
+      "title": "Love in vain",
+      "cover": "/assets/books/discovery/OL3959949W.webp",
+      "bytes": 10528,
+      "width": 297,
+      "height": 475
+    },
+    {
+      "title": "Quantum soup",
+      "cover": "/assets/books/discovery/OL115696W.webp",
+      "bytes": 27962,
+      "width": 369,
+      "height": 475
+    },
+    {
+      "title": "The Book of Lost Tales [1/2]",
+      "cover": "/assets/books/discovery/OL27435W.webp",
+      "bytes": 15844,
+      "width": 311,
+      "height": 500
+    },
+    {
+      "title": "2010, odyssey two",
+      "cover": "/assets/books/discovery/OL17391W-publisher.webp",
+      "bytes": 23136,
+      "width": 296,
+      "height": 450
+    },
+    {
+      "title": "Philosophy",
+      "cover": "/assets/books/discovery/OL731724W.webp",
+      "bytes": 15556,
+      "width": 305,
+      "height": 500
+    },
+    {
+      "title": "Man to man",
+      "cover": "/assets/books/discovery/OL4320891W.webp",
+      "bytes": 2626,
+      "width": 128,
+      "height": 206
+    },
+    {
+      "title": "My guru and his disciple",
+      "cover": "/assets/books/discovery/OL51197W-edition.webp",
+      "bytes": 69242,
+      "width": 326,
+      "height": 500
+    },
+    {
+      "title": "Unfinished Tales of Númenor and Middle-earth",
+      "cover": "/assets/books/discovery/OL27466W.webp",
+      "bytes": 21722,
+      "width": 326,
+      "height": 500
+    },
+    {
+      "title": "The Fountains of Paradise",
+      "cover": "/assets/books/discovery/OL17403W-edition.webp",
+      "bytes": 18230,
+      "width": 333,
+      "height": 500
+    },
+    {
+      "title": "The three boxes of life",
+      "cover": "/assets/books/discovery/OL3333155W-edition.webp",
+      "bytes": 20502,
+      "width": 331,
+      "height": 500
+    },
+    {
+      "title": "Family Matter",
+      "cover": "/assets/books/discovery/OL4320890W.webp",
+      "bytes": 4166,
+      "width": 128,
+      "height": 198
+    },
+    {
+      "title": "The Silmarillion",
+      "cover": "/assets/books/discovery/OL27495W.webp",
+      "bytes": 29400,
+      "width": 320,
+      "height": 500
+    },
+    {
+      "title": "Christopher and his kind",
+      "cover": "/assets/books/discovery/OL51187W.webp",
+      "bytes": 16238,
+      "width": 315,
+      "height": 475
+    },
+    {
+      "title": "Living Tao",
+      "cover": "/assets/books/discovery/OL448104W.webp",
+      "bytes": 21744,
+      "width": 391,
+      "height": 500
+    },
+    {
+      "title": "Phép lạ của sự tỉnh thức",
+      "cover": "/assets/books/discovery/OL263655W.webp",
+      "bytes": 29456,
+      "width": 316,
+      "height": 475
+    },
+    {
+      "title": "The Father Christmas letters",
+      "cover": "/assets/books/discovery/OL27497W.webp",
+      "bytes": 11676,
+      "width": 390,
+      "height": 500
+    },
+    {
+      "title": "The essence of Alan Watts",
+      "cover": "/assets/books/discovery/OL1877185W.webp",
+      "bytes": 21264,
+      "width": 313,
+      "height": 500
+    },
+    {
+      "title": "Clefs pour le zen",
+      "cover": "/assets/books/discovery/OL263651W.webp",
+      "bytes": 17528,
+      "width": 333,
+      "height": 500
+    },
+    {
+      "title": "Como Disfrutar De La Vida/ How to Enjoy Your Life and Your Job",
+      "cover": "/assets/books/discovery/OL1063262W-edition.webp",
+      "bytes": 13906,
+      "width": 323,
+      "height": 500
+    },
+    {
+      "title": "Embrace tiger, return to mountain",
+      "cover": "/assets/books/discovery/OL115698W.webp",
+      "bytes": 27962,
+      "width": 369,
+      "height": 475
+    },
+    {
+      "title": "Rendezvous with Rama",
+      "cover": "/assets/books/discovery/OL17417W.webp",
+      "bytes": 18420,
+      "width": 332,
+      "height": 500
+    },
+    {
+      "title": "In my own way",
+      "cover": "/assets/books/discovery/OL1877206W.webp",
+      "bytes": 13932,
+      "width": 334,
+      "height": 500
+    },
+    {
+      "title": "The New Left",
+      "cover": "/assets/books/discovery/OL731733W.webp",
+      "bytes": 15618,
+      "width": 316,
+      "height": 475
+    },
+    {
+      "title": "Does It Matter?",
+      "cover": "/assets/books/discovery/OL266155W.webp",
+      "bytes": 10170,
+      "width": 322,
+      "height": 500
+    },
+    {
+      "title": "The Romantic Manifesto",
+      "cover": "/assets/books/discovery/OL731730W.webp",
+      "bytes": 19812,
+      "width": 305,
+      "height": 500
+    },
+    {
+      "title": "A meeting by the river",
+      "cover": "/assets/books/discovery/OL51202W.webp",
+      "bytes": 24076,
+      "width": 313,
+      "height": 475
+    },
+    {
+      "title": "Introduction to Objectivist Epistemology",
+      "cover": "/assets/books/discovery/OL731723W.webp",
+      "bytes": 20762,
+      "width": 297,
+      "height": 475
+    },
+    {
+      "title": "The Book",
+      "cover": "/assets/books/discovery/OL1877201W.webp",
+      "bytes": 14716,
+      "width": 297,
+      "height": 500
+    },
+    {
+      "title": "Light on Yoga",
+      "cover": "/assets/books/discovery/OL262821W.webp",
+      "bytes": 16924,
+      "width": 432,
+      "height": 462
+    },
+    {
+      "title": "A single man",
+      "cover": "/assets/books/discovery/OL51203W.webp",
+      "bytes": 21048,
+      "width": 319,
+      "height": 475
+    },
+    {
+      "title": "The Virtue of Selfishness",
+      "cover": "/assets/books/discovery/OL731731W.webp",
+      "bytes": 25914,
+      "width": 294,
+      "height": 475
+    },
+    {
+      "title": "Tree and Leaf",
+      "cover": "/assets/books/discovery/OL27512W.webp",
+      "bytes": 26712,
+      "width": 323,
+      "height": 500
+    },
+    {
+      "title": "Island",
+      "cover": "/assets/books/discovery/OL64462W.webp",
+      "bytes": 28946,
+      "width": 292,
+      "height": 500
+    },
+    {
+      "title": "A Fall of Moondust",
+      "cover": "/assets/books/discovery/OL17402W.webp",
+      "bytes": 26134,
+      "width": 311,
+      "height": 500
+    },
+    {
+      "title": "For the New Intellectual",
+      "cover": "/assets/books/discovery/OL731734W.webp",
+      "bytes": 24190,
+      "width": 305,
+      "height": 500
+    },
+    {
+      "title": "Psychotherapy, East and West",
+      "cover": "/assets/books/discovery/OL1877170W.webp",
+      "bytes": 35476,
+      "width": 296,
+      "height": 500
+    },
+    {
+      "title": "Shackleton's valiant voyage",
+      "cover": "/assets/books/discovery/OL15857470W.webp",
+      "bytes": 5596,
+      "width": 330,
+      "height": 500
+    },
+    {
+      "title": "This is it, and other essays on Zen and spiritual experience",
+      "cover": "/assets/books/discovery/OL1877190W.webp",
+      "bytes": 30986,
+      "width": 290,
+      "height": 500
+    },
+    {
+      "title": "Brave New World Revisited",
+      "cover": "/assets/books/discovery/OL64448W.webp",
+      "bytes": 12812,
+      "width": 314,
+      "height": 475
+    },
+    {
+      "title": "Nature, Man,& Woman",
+      "cover": "/assets/books/discovery/OL266156W.webp",
+      "bytes": 22774,
+      "width": 290,
+      "height": 475
+    },
+    {
+      "title": "The Way of Zen",
+      "cover": "/assets/books/discovery/OL266160W.webp",
+      "bytes": 25894,
+      "width": 308,
+      "height": 475
+    },
+    {
+      "title": "How to Develop Self-confidence (Personal Development)",
+      "cover": "/assets/books/discovery/OL1063296W.webp",
+      "bytes": 24648,
+      "width": 327,
+      "height": 500
+    },
+    {
+      "title": "The City and the Stars",
+      "cover": "/assets/books/discovery/OL17400W.webp",
+      "bytes": 41698,
+      "width": 299,
+      "height": 498
+    },
+    {
+      "title": "The Doors of Perception / Heaven and Hell",
+      "cover": "/assets/books/discovery/OL64442W.webp",
+      "bytes": 10868,
+      "width": 312,
+      "height": 475
+    },
+    {
+      "title": "The doors of perception",
+      "cover": "/assets/books/discovery/OL64441W.webp",
+      "bytes": 16950,
+      "width": 289,
+      "height": 500
+    },
+    {
+      "title": "The Fellowship of the Ring",
+      "cover": "/assets/books/discovery/OL27513W.webp",
+      "bytes": 21080,
+      "width": 301,
+      "height": 500
+    },
+    {
+      "title": "The Two Towers",
+      "cover": "/assets/books/discovery/OL27479W.webp",
+      "bytes": 22562,
+      "width": 307,
+      "height": 500
+    },
+    {
+      "title": "Childhood’s End",
+      "cover": "/assets/books/discovery/OL17415W.webp",
+      "bytes": 16374,
+      "width": 317,
+      "height": 475
+    },
+    {
+      "title": "The devils of Loudun",
+      "cover": "/assets/books/discovery/OL64446W.webp",
+      "bytes": 17458,
+      "width": 326,
+      "height": 500
+    },
+    {
+      "title": "The Sands of Mars",
+      "cover": "/assets/books/discovery/OL17406W.webp",
+      "bytes": 27260,
+      "width": 321,
+      "height": 500
+    },
+    {
+      "title": "The Wisdom of Insecurity",
+      "cover": "/assets/books/discovery/OL266158W.webp",
+      "bytes": 41596,
+      "width": 283,
+      "height": 475
+    },
+    {
+      "title": "The Return of the King",
+      "cover": "/assets/books/discovery/OL27455W.webp",
+      "bytes": 18554,
+      "width": 301,
+      "height": 500
+    },
+    {
+      "title": "The supreme identity",
+      "cover": "/assets/books/discovery/OL1877211W-edition.webp",
+      "bytes": 46772,
+      "width": 313,
+      "height": 500
+    },
+    {
+      "title": "Farmer Giles of Ham",
+      "cover": "/assets/books/discovery/OL27517W.webp",
+      "bytes": 34822,
+      "width": 303,
+      "height": 500
+    },
+    {
+      "title": "The Joy of Gay Sex",
+      "cover": "/assets/books/discovery/OL4320893W.webp",
+      "bytes": 17358,
+      "width": 341,
+      "height": 500
+    },
+    {
+      "title": "Prater Violet",
+      "cover": "/assets/books/discovery/OL51209W.webp",
+      "bytes": 23410,
+      "width": 313,
+      "height": 475
+    },
+    {
+      "title": "The Berlin Stories",
+      "cover": "/assets/books/discovery/OL51208W.webp",
+      "bytes": 22374,
+      "width": 315,
+      "height": 500
+    },
+    {
+      "title": "The perennial philosophy",
+      "cover": "/assets/books/discovery/OL64463W.webp",
+      "bytes": 9974,
+      "width": 310,
+      "height": 475
+    },
+    {
+      "title": "The Fountainhead",
+      "cover": "/assets/books/discovery/OL731663W-publisher.webp",
+      "bytes": 22780,
+      "width": 274,
+      "height": 450
+    },
+    {
+      "title": "After Many a Summer",
+      "cover": "/assets/books/discovery/OL64422W.webp",
+      "bytes": 26812,
+      "width": 346,
+      "height": 500
+    },
+    {
+      "title": "Goodbye to Berlin",
+      "cover": "/assets/books/discovery/OL51210W.webp",
+      "bytes": 17636,
+      "width": 326,
+      "height": 500
+    },
+    {
+      "title": "Lions and shadows: an education in the Twenties",
+      "cover": "/assets/books/discovery/OL51184W.webp",
+      "bytes": 10904,
+      "width": 256,
+      "height": 400
+    },
+    {
+      "title": "Anthem",
+      "cover": "/assets/books/discovery/OL731737W.webp",
+      "bytes": 10758,
+      "width": 295,
+      "height": 475
+    },
+    {
+      "title": "How to Stop Worrying and Start Living",
+      "cover": "/assets/books/discovery/OL1063338W.webp",
+      "bytes": 23948,
+      "width": 354,
+      "height": 500
+    },
+    {
+      "title": "Night of January 16th",
+      "cover": "/assets/books/discovery/OL731729W-edition.webp",
+      "bytes": 13198,
+      "width": 314,
+      "height": 475
+    },
+    {
+      "title": "The Spirit of Zen",
+      "cover": "/assets/books/discovery/OL266159W.webp",
+      "bytes": 15266,
+      "width": 323,
+      "height": 500
+    },
+    {
+      "title": "We the living",
+      "cover": "/assets/books/discovery/OL731732W.webp",
+      "bytes": 25452,
+      "width": 307,
+      "height": 475
+    },
+    {
+      "title": "Mr Norris Changes Trains",
+      "cover": "/assets/books/discovery/OL51211W.webp",
+      "bytes": 12946,
+      "width": 306,
+      "height": 475
+    },
+    {
+      "title": "Lincoln, El Desconocido/ Lincoln the Unknown (Biografias Y Testimonios)",
+      "cover": "/assets/books/discovery/OL1063309W.webp",
+      "bytes": 18454,
+      "width": 407,
+      "height": 500
+    },
+    {
+      "title": "The Memorial",
+      "cover": "/assets/books/discovery/OL51206W.webp",
+      "bytes": 22590,
+      "width": 307,
+      "height": 475
+    },
+    {
+      "title": "The Autobiography of Charles Darwin",
+      "cover": "/assets/books/discovery/OL515057W.webp",
+      "bytes": 32676,
+      "width": 320,
+      "height": 475
+    },
+    {
+      "title": "All the conspirators",
+      "cover": "/assets/books/discovery/OL51201W.webp",
+      "bytes": 14808,
+      "width": 295,
+      "height": 475
+    },
+    {
+      "title": "Public Speaking and Influencing Men in Business",
+      "cover": "/assets/books/discovery/OL1063333W.webp",
+      "bytes": 20874,
+      "width": 432,
+      "height": 432
+    },
+    {
+      "title": "Full Black",
+      "cover": "/assets/books/discovery/OL20309437W.webp",
+      "bytes": 19872,
+      "width": 432,
+      "height": 499
+    },
+    {
+      "title": "Those barren leaves, a novel",
+      "cover": "/assets/books/discovery/OL64391W.webp",
+      "bytes": 10144,
+      "width": 325,
+      "height": 475
+    },
+    {
+      "title": "Antic Hay",
+      "cover": "/assets/books/discovery/OL64466W.webp",
+      "bytes": 14542,
+      "width": 295,
+      "height": 475
+    },
+    {
+      "title": "Crome yellow",
+      "cover": "/assets/books/discovery/OL64369W.webp",
+      "bytes": 8414,
+      "width": 318,
+      "height": 500
+    },
+    {
+      "title": "The Art of Public Speaking",
+      "cover": "/assets/books/discovery/OL1063254W.webp",
+      "bytes": 17904,
+      "width": 324,
+      "height": 500
+    },
+    {
+      "title": "Accelerando",
+      "cover": "/assets/books/discovery/OL2465670W.webp",
+      "bytes": 16794,
+      "width": 331,
+      "height": 500
+    },
+    {
+      "title": "The life and letters of Charles Darwin",
+      "cover": "/assets/books/discovery/OL515346W.webp",
+      "bytes": 11434,
+      "width": 333,
+      "height": 500
+    },
+    {
+      "title": "The different forms of flowers on plants of the same species",
+      "cover": "/assets/books/discovery/OL515355W.webp",
+      "bytes": 14446,
+      "width": 297,
+      "height": 500
+    },
+    {
+      "title": "Insectivorous plants",
+      "cover": "/assets/books/discovery/OL515357W.webp",
+      "bytes": 11840,
+      "width": 297,
+      "height": 475
+    },
+    {
+      "title": "The expression of emotions in man and animals",
+      "cover": "/assets/books/discovery/OL515301W.webp",
+      "bytes": 33268,
+      "width": 307,
+      "height": 500
+    },
+    {
+      "title": "The descent of man",
+      "cover": "/assets/books/discovery/OL515361W.webp",
+      "bytes": 15934,
+      "width": 296,
+      "height": 500
+    },
+    {
+      "title": "The descent of man, and selection in relation to sex",
+      "cover": "/assets/books/discovery/OL15330328W.webp",
+      "bytes": 33700,
+      "width": 346,
+      "height": 500
+    },
+    {
+      "title": "The variation of animals and plants under domestication",
+      "cover": "/assets/books/discovery/OL515356W.webp",
+      "bytes": 38936,
+      "width": 355,
+      "height": 500
+    },
+    {
+      "title": "The structure and distribution of coral reefs",
+      "cover": "/assets/books/discovery/OL515359W.webp",
+      "bytes": 23116,
+      "width": 360,
+      "height": 480
+    },
+    {
+      "title": "Charles Darwin's The Voyage of the Beagle:",
+      "cover": "/assets/books/discovery/OL515065W.webp",
+      "bytes": 17214,
+      "width": 370,
+      "height": 500
+    },
+    {
+      "title": "Down There on a Visit",
+      "cover": "/assets/books/discovery/OL51205W.webp",
+      "bytes": 18116,
+      "width": 307,
+      "height": 475
+    },
+    {
+      "title": "The Mother Tongue",
+      "cover": "/assets/books/discovery/OL74126W.webp",
+      "bytes": 20906,
+      "width": 326,
+      "height": 500
+    },
+    {
+      "title": "Point Counter Point",
+      "cover": "/assets/books/discovery/OL64465W.webp",
+      "bytes": 17176,
+      "width": 326,
+      "height": 500
+    }
+  ]
+}

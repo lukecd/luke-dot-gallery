@@ -1,0 +1,60 @@
+[
+  {
+    "id": "/works/OL17074648W",
+    "title": "Abaddon's Gate",
+    "authors": [
+      "James S. A. Corey"
+    ],
+    "publicationYear": 2013,
+    "cover": "/assets/books/discovery/9780316129077.webp",
+    "sourceUrl": "https://www.hachettebookgroup.com/series/the-expanse/",
+    "series": "The Expanse",
+    "seriesOrder": 3
+  },
+  {
+    "id": "/works/OL20079532W",
+    "title": "Children of Ruin",
+    "authors": [
+      "Adrian Tchaikovsky"
+    ],
+    "publicationYear": 2019,
+    "cover": "/assets/books/discovery/9781509865857.webp",
+    "sourceUrl": "https://www.panmacmillan.com/authors/adrian-tchaikovsky/children-of-ruin/9781509865857",
+    "series": "Children of Time",
+    "seriesOrder": 2
+  },
+  {
+    "id": "/works/OL28018696W",
+    "title": "Children of Memory",
+    "authors": [
+      "Adrian Tchaikovsky"
+    ],
+    "publicationYear": 2022,
+    "cover": "/assets/books/discovery/children-of-memory.webp",
+    "sourceUrl": "https://www.panmacmillan.com/authors/adrian-tchaikovsky/children-of-memory/9781529087215",
+    "series": "Children of Time",
+    "seriesOrder": 3
+  },
+  {
+    "id": "/works/OL20832939W",
+    "title": "A Desolation Called Peace",
+    "authors": [
+      "Arkady Martine"
+    ],
+    "publicationYear": 2021,
+    "cover": "/assets/books/discovery/9781250186461.webp",
+    "sourceUrl": "https://www.arkadymartine.net/books/adcp",
+    "series": "Teixcalaan",
+    "seriesOrder": 2
+  },
+  {
+    "id": "/works/OL17837968W",
+    "title": "Artemis",
+    "authors": [
+      "Andy Weir"
+    ],
+    "publicationYear": 2017,
+    "cover": "/assets/books/discovery/9780553448122.webp",
+    "sourceUrl": "https://www.penguinrandomhouse.com/books/250305/artemis-by-andy-weir/"
+  }
+]

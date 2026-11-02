@@ -537,3 +537,6 @@ body { overflow-x: hidden; }
   .project-description { font-size: 13px; }
   .project-subtitle { font-size: 20px; }
 }
+
+.site-menu > a { display: block; color: inherit; font: inherit; padding: .65rem .8rem; text-decoration: none; border-top: 1px solid currentColor; }
+.site-menu > a:hover { text-decoration: underline; }

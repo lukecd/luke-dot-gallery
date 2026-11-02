@@ -1,6 +1,7 @@
 "use client";
 
 import { type FormEvent, useState } from "react";
+import { LibraryInvitation } from "./LibraryInvitation";
 
 export function ContactForm() {
   const [isSending, setIsSending] = useState(false);
@@ -64,6 +65,7 @@ export function ContactForm() {
         </button>
         <p className="contact-form__notice" aria-live="polite">{notice}</p>
       </form>
+      <LibraryInvitation />
     </section>
   );
 }

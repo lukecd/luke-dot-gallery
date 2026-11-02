@@ -1,0 +1,408 @@
+{
+  "recordedAt": "2026-11-01",
+  "source": "Luke's direct recollection in chat; separate from Amazon order evidence",
+  "memories": [
+    {
+      "id": "dune-originals-memory",
+      "series": "Dune",
+      "group": "original books",
+      "readingStatus": "read",
+      "format": "paperback",
+      "reportedBookCount": 6,
+      "exactTitles": [
+        "Dune",
+        "Dune Messiah",
+        "Children of Dune",
+        "God Emperor of Dune",
+        "Heretics of Dune",
+        "Chapterhouse: Dune"
+      ],
+      "readDates": null,
+      "note": "Luke confirmed all six original titles in his screenshot on 2026-11-01. Read in paperback; reading dates unknown. Listed years are publication years only.",
+      "books": [
+        {
+          "id": "memory-dune-1",
+          "title": "Dune",
+          "authors": [
+            "Frank Herbert"
+          ],
+          "publicationYear": 1965,
+          "cover": null,
+          "sources": [],
+          "readDate": null,
+          "format": "Paperback",
+          "seriesOrder": 1
+        },
+        {
+          "id": "memory-dune-2",
+          "title": "Dune Messiah",
+          "authors": [
+            "Frank Herbert"
+          ],
+          "publicationYear": 1969,
+          "cover": null,
+          "sources": [],
+          "readDate": null,
+          "format": "Paperback",
+          "seriesOrder": 2
+        },
+        {
+          "id": "memory-dune-3",
+          "title": "Children of Dune",
+          "authors": [
+            "Frank Herbert"
+          ],
+          "publicationYear": 1976,
+          "cover": null,
+          "sources": [],
+          "readDate": null,
+          "format": "Paperback",
+          "seriesOrder": 3
+        },
+        {
+          "id": "memory-dune-4",
+          "title": "God Emperor of Dune",
+          "authors": [
+            "Frank Herbert"
+          ],
+          "publicationYear": 1981,
+          "cover": null,
+          "sources": [],
+          "readDate": null,
+          "format": "Paperback",
+          "seriesOrder": 4
+        },
+        {
+          "id": "memory-dune-5",
+          "title": "Heretics of Dune",
+          "authors": [
+            "Frank Herbert"
+          ],
+          "publicationYear": 1984,
+          "cover": null,
+          "sources": [],
+          "readDate": null,
+          "format": "Paperback",
+          "seriesOrder": 5
+        },
+        {
+          "id": "memory-dune-6",
+          "title": "Chapterhouse: Dune",
+          "authors": [
+            "Frank Herbert"
+          ],
+          "publicationYear": 1985,
+          "cover": null,
+          "sources": [],
+          "readDate": null,
+          "format": "Paperback",
+          "seriesOrder": 6
+        }
+      ]
+    },
+    {
+      "id": "dune-prequels-memory",
+      "series": "Dune",
+      "group": "prequels",
+      "readingStatus": "read",
+      "reaction": "disliked",
+      "exactTitles": null,
+      "format": null,
+      "readDates": null,
+      "note": "Luke said: I read the prequels too but they sucked. Exact titles and scope remain unspecified."
+    },
+    {
+      "id": "tales-of-the-city-memory",
+      "series": "Tales of the City",
+      "group": "complete series",
+      "readingStatus": "read",
+      "format": null,
+      "reportedBookCount": 10,
+      "exactTitles": [
+        "Tales of the City",
+        "More Tales of the City",
+        "Further Tales of the City",
+        "Babycakes",
+        "Significant Others",
+        "Sure of You",
+        "Michael Tolliver Lives",
+        "Mary Ann in Autumn",
+        "The Days of Anna Madrigal",
+        "Mona of the Manor"
+      ],
+      "readDates": null,
+      "note": "Luke confirmed all ten as read and gay fiction; recalls books 1–8 in paperback. His late-1990s/early-2000s estimate cannot apply to books 7–8 (published 2007/2010), so no exact reading or purchase dates are inferred. Amazon already records Kindle purchases for books 7–9 in February 2014; those remain canonical entries. Format for book 10 is unknown.",
+      "books": [
+        {
+          "id": "memory-tales-1",
+          "title": "Tales of the City",
+          "authors": [
+            "Armistead Maupin"
+          ],
+          "publicationYear": 1978,
+          "seriesOrder": 1,
+          "cover": "/assets/books/covers/42408.jpg",
+          "sources": [
+            {
+              "label": "Open Library",
+              "url": "https://openlibrary.org/works/OL2433540W"
+            },
+            {
+              "label": "Series bibliography",
+              "url": "https://en.wikipedia.org/wiki/Tales_of_the_City"
+            }
+          ],
+          "subjects": [
+            "Social life and customs",
+            "Gay men",
+            "Vida social y costumbres",
+            "Fiction",
+            "Hombres gays",
+            "Nineteen seventies",
+            "Ficción",
+            "Vida urbana",
+            "City and town life",
+            "Humorous stories",
+            "Interpersonal relations",
+            "Lesbians",
+            "California, fiction",
+            "San francisco (calif.), fiction",
+            "Fiction, gay",
+            "Fiction, lgbtq+, gay",
+            "Gays",
+            "Fiction, general",
+            "City and town life -- California -- San Francisco -- Fiction.",
+            "San Francisco (Calif.) -- Fiction.",
+            "LGBTQ novels",
+            "Gay fiction",
+            "LGBTQ fiction"
+          ],
+          "readDate": null,
+          "format": "Paperback"
+        },
+        {
+          "id": "memory-tales-2",
+          "title": "More Tales of the City",
+          "authors": [
+            "Armistead Maupin"
+          ],
+          "publicationYear": 1980,
+          "seriesOrder": 2,
+          "cover": "/assets/books/covers/40104.jpg",
+          "sources": [
+            {
+              "label": "Open Library",
+              "url": "https://openlibrary.org/works/OL2433535W"
+            },
+            {
+              "label": "Series bibliography",
+              "url": "https://en.wikipedia.org/wiki/Tales_of_the_City"
+            }
+          ],
+          "subjects": [
+            "Fiction",
+            "Lesbians",
+            "City and town life",
+            "Fiction, gay",
+            "San francisco (calif.), fiction",
+            "Gays",
+            "FICTION / Media Tie-In",
+            "Fiction, lgbtq+, gay",
+            "California, fiction",
+            "Humorous stories",
+            "Vie urbaine",
+            "Romans, nouvelles",
+            "American literature",
+            "Vida urbana",
+            "Social life and customs",
+            "Vida social y costumbres",
+            "Ficción",
+            "Nineteen seventies",
+            "Lesbianas",
+            "LGBTQ novels",
+            "Gay fiction",
+            "LGBTQ fiction"
+          ],
+          "readDate": null,
+          "format": "Paperback"
+        },
+        {
+          "id": "memory-tales-3",
+          "title": "Further Tales of the City",
+          "authors": [
+            "Armistead Maupin"
+          ],
+          "publicationYear": 1982,
+          "seriesOrder": 3,
+          "cover": "/assets/books/covers/40108.jpg",
+          "sources": [
+            {
+              "label": "Open Library",
+              "url": "https://openlibrary.org/works/OL2433560W"
+            },
+            {
+              "label": "Series bibliography",
+              "url": "https://en.wikipedia.org/wiki/Tales_of_the_City"
+            }
+          ],
+          "subjects": [
+            "City and town life",
+            "Ficción",
+            "Fiction",
+            "Social life and customs",
+            "Vida urbana",
+            "Gays",
+            "San francisco (calif.), fiction",
+            "Fiction, gay",
+            "California, fiction",
+            "Fiction, lgbtq+, gay",
+            "LGBTQ novels",
+            "Gay fiction",
+            "LGBTQ fiction"
+          ],
+          "readDate": null,
+          "format": "Paperback"
+        },
+        {
+          "id": "memory-tales-4",
+          "title": "Babycakes",
+          "authors": [
+            "Armistead Maupin"
+          ],
+          "publicationYear": 1984,
+          "seriesOrder": 4,
+          "cover": "/assets/books/covers/367707.jpg",
+          "sources": [
+            {
+              "label": "Open Library",
+              "url": "https://openlibrary.org/works/OL2433532W"
+            },
+            {
+              "label": "Series bibliography",
+              "url": "https://en.wikipedia.org/wiki/Tales_of_the_City"
+            }
+          ],
+          "subjects": [
+            "Fiction, gay",
+            "San francisco (calif.), fiction",
+            "California, fiction",
+            "American fiction",
+            "City and town life",
+            "Fiction",
+            "Phantastische Literatur",
+            "Aufsatzsammlung",
+            "Fiction, lgbtq+, gay",
+            "Gays",
+            "Gay fiction",
+            "LGBTQ fiction"
+          ],
+          "readDate": null,
+          "format": "Paperback"
+        },
+        {
+          "id": "memory-tales-5",
+          "title": "Significant Others",
+          "authors": [
+            "Armistead Maupin"
+          ],
+          "publicationYear": 1987,
+          "seriesOrder": 5,
+          "cover": "/assets/books/covers/8315194.jpg",
+          "sources": [
+            {
+              "label": "Open Library",
+              "url": "https://openlibrary.org/works/OL2433529W"
+            },
+            {
+              "label": "Series bibliography",
+              "url": "https://en.wikipedia.org/wiki/Tales_of_the_City"
+            }
+          ],
+          "subjects": [
+            "Fiction, gay",
+            "Los angeles (calif.), fiction",
+            "California, fiction",
+            "City and town life",
+            "Fiction",
+            "City and town life -- Fiction.",
+            "San Francisco (Calif.) -- Fiction.",
+            "San francisco (calif.), fiction",
+            "Fiction, lgbtq+, gay",
+            "Michael Tolliver (Fictitious character)",
+            "Camping",
+            "American literature",
+            "LGBTQ novels",
+            "Gay fiction",
+            "LGBTQ fiction"
+          ],
+          "readDate": null,
+          "format": "Paperback"
+        },
+        {
+          "id": "memory-tales-6",
+          "title": "Sure of You",
+          "authors": [
+            "Armistead Maupin"
+          ],
+          "publicationYear": 1989,
+          "seriesOrder": 6,
+          "cover": "/assets/books/covers/40107.jpg",
+          "sources": [
+            {
+              "label": "Open Library",
+              "url": "https://openlibrary.org/works/OL2433534W"
+            },
+            {
+              "label": "Series bibliography",
+              "url": "https://en.wikipedia.org/wiki/Tales_of_the_City"
+            }
+          ],
+          "subjects": [
+            "City and town life",
+            "Fiction",
+            "San francisco (calif.), fiction",
+            "Fiction, lgbtq+, gay",
+            "California, fiction",
+            "Gay men",
+            "Fiction, gay",
+            "Social life and customs",
+            "Families",
+            "Women television personalities",
+            "Manners and customs",
+            "LGBTQ novels",
+            "Gay fiction",
+            "LGBTQ fiction"
+          ],
+          "readDate": null,
+          "format": "Paperback"
+        },
+        {
+          "id": "memory-tales-10",
+          "title": "Mona of the Manor",
+          "authors": [
+            "Armistead Maupin"
+          ],
+          "publicationYear": 2024,
+          "seriesOrder": 10,
+          "cover": "/assets/books/covers/14589777.jpg",
+          "sources": [
+            {
+              "label": "Open Library",
+              "url": "https://openlibrary.org/works/OL28803244W"
+            },
+            {
+              "label": "Series bibliography",
+              "url": "https://en.wikipedia.org/wiki/Tales_of_the_City"
+            }
+          ],
+          "subjects": [
+            "Gay fiction",
+            "LGBTQ fiction"
+          ],
+          "readDate": null,
+          "format": "Unknown"
+        }
+      ]
+    }
+  ]
+}

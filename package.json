@@ -10,9 +10,14 @@
     "build": "next build",
     "start": "next start",
     "test": "npm run build",
-    "lint": "eslint . --ignore-pattern .next"
+    "lint": "eslint . --ignore-pattern .next",
+    "books:discover": "node --experimental-strip-types scripts/books/refresh-discovery.ts",
+    "books:covers": "node --experimental-strip-types scripts/books/discovery-covers.ts",
+    "books:optimize-covers": "node --experimental-strip-types scripts/books/optimize-discovery-covers.ts",
+    "books:test": "node --experimental-strip-types --test scripts/books/*.test.ts"
   },
   "dependencies": {
+    "@vercel/blob": "^2.8.2",
     "next": "16.2.6",
     "react": "19.2.6",
     "react-dom": "19.2.6"
@@ -24,6 +29,7 @@
     "@types/react-dom": "19.2.3",
     "eslint": "9.39.4",
     "eslint-config-next": "16.2.6",
+    "sharp": "^0.34.5",
     "tailwindcss": "4.2.1",
     "typescript": "5.9.3"
   },

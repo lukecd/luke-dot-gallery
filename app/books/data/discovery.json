@@ -1,0 +1,4287 @@
+{
+  "updatedAt": "2026-11-02T02:14:07.832Z",
+  "checks": {
+    "Armistead Maupin": {
+      "authorKey": "OL336072A",
+      "attemptedAt": "2026-11-02T02:14:07.832Z",
+      "checkedAt": "2026-11-02T02:14:07.832Z"
+    },
+    "Margaret Atwood": {
+      "attemptedAt": "2026-11-02T02:07:26.985Z",
+      "checkedAt": null
+    },
+    "Blake Crouch": {
+      "attemptedAt": "2026-11-02T02:07:26.985Z",
+      "checkedAt": null
+    },
+    "Frank Herbert": {
+      "attemptedAt": "2026-11-02T02:07:26.985Z",
+      "checkedAt": null
+    },
+    "Haruki Murakami": {
+      "attemptedAt": "2026-11-02T02:07:26.985Z",
+      "checkedAt": null
+    },
+    "Neal Stephenson": {
+      "authorKey": "OL19430A",
+      "attemptedAt": "2026-11-02T02:14:07.832Z",
+      "checkedAt": "2026-11-02T02:14:07.832Z"
+    },
+    "David Mitchell": {
+      "attemptedAt": "2026-11-02T02:07:26.985Z",
+      "checkedAt": null
+    },
+    "George R. R. Martin": {
+      "attemptedAt": "2026-11-02T02:07:26.985Z",
+      "checkedAt": null
+    },
+    "James S. A. Corey": {
+      "attemptedAt": "2026-11-02T02:07:26.985Z",
+      "checkedAt": null
+    },
+    "Michael Cunningham": {
+      "attemptedAt": "2026-11-02T02:07:26.985Z",
+      "checkedAt": null
+    },
+    "Orson Scott Card": {
+      "attemptedAt": "2026-11-02T02:07:26.985Z",
+      "checkedAt": null
+    },
+    "Peter F. Hamilton": {
+      "attemptedAt": "2026-11-02T02:07:26.985Z",
+      "checkedAt": null
+    },
+    "Cixin Liu": {
+      "attemptedAt": "2026-11-02T02:07:26.985Z",
+      "checkedAt": null
+    },
+    "Walter Isaacson": {
+      "attemptedAt": "2026-11-02T02:07:26.985Z",
+      "checkedAt": null
+    },
+    "A. G. Riddle": {
+      "attemptedAt": "2026-11-02T02:07:26.985Z",
+      "checkedAt": null
+    },
+    "Ben Mezrich": {
+      "attemptedAt": "2026-11-02T02:07:26.985Z",
+      "checkedAt": null
+    },
+    "Guillermo del Toro": {
+      "attemptedAt": "2026-11-02T02:07:26.985Z",
+      "checkedAt": null
+    },
+    "Kim Stanley Robinson": {
+      "attemptedAt": "2026-11-02T02:07:26.985Z",
+      "checkedAt": null
+    },
+    "N. K. Jemisin": {
+      "attemptedAt": "2026-11-02T02:07:26.985Z",
+      "checkedAt": null
+    },
+    "Pierce Brown": {
+      "attemptedAt": "2026-11-02T02:07:26.985Z",
+      "checkedAt": null
+    },
+    "Andy Weir": {
+      "authorKey": "OL7234434A",
+      "attemptedAt": "2026-11-02T02:14:07.832Z",
+      "checkedAt": "2026-11-02T02:14:07.832Z"
+    },
+    "Ayn Rand": {
+      "authorKey": "OL59188A",
+      "attemptedAt": "2026-11-02T02:14:07.832Z",
+      "checkedAt": "2026-11-02T02:14:07.832Z"
+    },
+    "Brian Herbert": {
+      "attemptedAt": "2026-11-02T02:07:26.985Z",
+      "checkedAt": null
+    },
+    "Ian Tregillis": {
+      "attemptedAt": "2026-11-02T02:07:26.985Z",
+      "checkedAt": null
+    },
+    "J. K. Rowling": {
+      "attemptedAt": "2026-11-02T02:07:26.985Z",
+      "checkedAt": null
+    },
+    "J. R. R. Tolkien": {
+      "authorKey": "OL26320A",
+      "attemptedAt": "2026-11-02T02:14:07.832Z",
+      "checkedAt": "2026-11-02T02:14:07.832Z"
+    },
+    "James O'Reilly": {
+      "attemptedAt": "2026-11-02T02:07:26.985Z",
+      "checkedAt": null
+    },
+    "Judith Weston": {
+      "attemptedAt": "2026-11-02T02:07:26.985Z",
+      "checkedAt": null
+    },
+    "Kevin J. Anderson": {
+      "attemptedAt": "2026-11-02T02:07:26.985Z",
+      "checkedAt": null
+    },
+    "Ramesh Menon": {
+      "attemptedAt": "2026-11-02T02:07:26.985Z",
+      "checkedAt": null
+    },
+    "Richard Nelson Bolles": {
+      "authorKey": "OL540021A",
+      "attemptedAt": "2026-11-02T02:11:47.093Z",
+      "checkedAt": "2026-11-02T02:11:47.093Z"
+    },
+    "Ryan Holiday": {
+      "authorKey": "OL7099653A",
+      "attemptedAt": "2026-11-02T02:11:47.093Z",
+      "checkedAt": "2026-11-02T02:11:47.093Z"
+    },
+    "Terry Pratchett": {
+      "authorKey": "OL25712A",
+      "attemptedAt": "2026-11-02T02:11:47.093Z",
+      "checkedAt": "2026-11-02T02:11:47.093Z"
+    },
+    "Thich Nhat Hanh": {
+      "authorKey": "OL2623681A",
+      "attemptedAt": "2026-11-02T02:11:47.093Z",
+      "checkedAt": "2026-11-02T02:11:47.093Z"
+    },
+    "Adrian Tchaikovsky": {
+      "authorKey": "OL7468980A",
+      "attemptedAt": "2026-11-02T02:11:47.093Z",
+      "checkedAt": "2026-11-02T02:11:47.093Z"
+    },
+    "Adventure Cycling Association": {
+      "authorKey": "OL2913627A",
+      "attemptedAt": "2026-11-02T02:11:47.093Z",
+      "checkedAt": "2026-11-02T02:11:47.093Z"
+    },
+    "Al Chung-liang Huang": {
+      "authorKey": "OL19085A",
+      "attemptedAt": "2026-11-02T02:11:47.093Z",
+      "checkedAt": "2026-11-02T02:11:47.093Z"
+    },
+    "Alan Cumming": {
+      "authorKey": "OL5319265A",
+      "attemptedAt": "2026-11-02T02:11:47.093Z",
+      "checkedAt": "2026-11-02T02:11:47.093Z"
+    },
+    "Alan Downs": {
+      "authorKey": "OL227679A",
+      "attemptedAt": "2026-11-02T02:11:47.093Z",
+      "checkedAt": "2026-11-02T02:11:47.093Z"
+    },
+    "Alan Greenberg": {
+      "authorKey": "OL723183A",
+      "attemptedAt": "2026-11-02T02:11:47.093Z",
+      "checkedAt": "2026-11-02T02:11:47.093Z"
+    },
+    "Alan Watts": {
+      "authorKey": "OL422625A",
+      "attemptedAt": "2026-11-02T02:11:47.093Z",
+      "checkedAt": "2026-11-02T02:11:47.093Z"
+    },
+    "Aldous Huxley": {
+      "authorKey": "OL19767A",
+      "attemptedAt": "2026-11-02T02:11:47.093Z",
+      "checkedAt": "2026-11-02T02:11:47.093Z"
+    },
+    "Alex Belth": {
+      "attemptedAt": "2026-11-02T02:11:47.093Z",
+      "checkedAt": null
+    },
+    "Alfred Lansing": {
+      "authorKey": "OL76558A",
+      "attemptedAt": "2026-11-02T02:11:47.093Z",
+      "checkedAt": "2026-11-02T02:11:47.093Z"
+    },
+    "Ali Maffucci": {
+      "authorKey": "OL7442707A",
+      "attemptedAt": "2026-11-02T02:11:47.093Z",
+      "checkedAt": "2026-11-02T02:11:47.093Z"
+    },
+    "Amy Wallace": {
+      "attemptedAt": "2026-11-02T02:11:47.093Z",
+      "checkedAt": null
+    },
+    "Andrew Chen": {
+      "authorKey": "OL7318750A",
+      "attemptedAt": "2026-11-02T02:11:47.093Z",
+      "checkedAt": "2026-11-02T02:11:47.093Z"
+    },
+    "Ann Marie Brown": {
+      "authorKey": "OL445815A",
+      "attemptedAt": "2026-11-02T02:11:47.093Z",
+      "checkedAt": "2026-11-02T02:11:47.093Z"
+    },
+    "Anne Cushman": {
+      "authorKey": "OL402078A",
+      "attemptedAt": "2026-11-02T02:11:47.093Z",
+      "checkedAt": "2026-11-02T02:11:47.093Z"
+    },
+    "Anne Fadiman": {
+      "authorKey": "OL226208A",
+      "attemptedAt": "2026-11-02T02:11:47.093Z",
+      "checkedAt": "2026-11-02T02:11:47.093Z"
+    },
+    "Arkady Martine": {
+      "authorKey": "OL7635848A",
+      "attemptedAt": "2026-11-02T02:11:47.093Z",
+      "checkedAt": "2026-11-02T02:11:47.093Z"
+    },
+    "Arthur C. Clarke": {
+      "authorKey": "OL2623461A",
+      "attemptedAt": "2026-11-02T02:11:47.093Z",
+      "checkedAt": "2026-11-02T02:11:47.093Z"
+    },
+    "Aung San Suu Kyi": {
+      "authorKey": "OL106595A",
+      "attemptedAt": "2026-11-02T02:11:47.093Z",
+      "checkedAt": "2026-11-02T02:11:47.093Z"
+    },
+    "B. K. S. Iyengar": {
+      "authorKey": "OL464494A",
+      "attemptedAt": "2026-11-02T02:11:47.093Z",
+      "checkedAt": "2026-11-02T02:11:47.093Z"
+    },
+    "Barbara Demick": {
+      "authorKey": "OL530803A",
+      "attemptedAt": "2026-11-02T02:11:47.093Z",
+      "checkedAt": "2026-11-02T02:11:47.093Z"
+    },
+    "Barbara Kingsolver": {
+      "authorKey": "OL221083A",
+      "attemptedAt": "2026-11-02T02:11:47.093Z",
+      "checkedAt": "2026-11-02T02:11:47.093Z"
+    },
+    "Barbara Savage": {
+      "authorKey": "OL625255A",
+      "attemptedAt": "2026-11-02T02:11:47.093Z",
+      "checkedAt": "2026-11-02T02:11:47.093Z"
+    },
+    "Ben Horowitz": {
+      "authorKey": "OL7987562A",
+      "attemptedAt": "2026-11-02T02:11:47.093Z",
+      "checkedAt": "2026-11-02T02:11:47.093Z"
+    },
+    "Ben McKenzie": {
+      "authorKey": "OL7540670A",
+      "attemptedAt": "2026-11-02T02:11:47.093Z",
+      "checkedAt": "2026-11-02T02:11:47.093Z"
+    },
+    "Bill Bryson": {
+      "authorKey": "OL21718A",
+      "attemptedAt": "2026-11-02T02:11:47.093Z",
+      "checkedAt": "2026-11-02T02:11:47.093Z"
+    },
+    "Bill Lee": {
+      "authorKey": "OL549921A",
+      "attemptedAt": "2026-11-02T02:14:07.832Z",
+      "checkedAt": "2026-11-02T02:14:07.832Z"
+    },
+    "Bjorn Turmann": {
+      "authorKey": "OL3226025A",
+      "attemptedAt": "2026-11-02T02:14:07.832Z",
+      "checkedAt": "2026-11-02T02:14:07.832Z"
+    },
+    "Blake Snyder": {
+      "authorKey": "OL3321964A",
+      "attemptedAt": "2026-11-02T02:14:07.832Z",
+      "checkedAt": "2026-11-02T02:14:07.832Z"
+    },
+    "Brad Thor": {
+      "authorKey": "OL1434353A",
+      "attemptedAt": "2026-11-02T02:14:07.832Z",
+      "checkedAt": "2026-11-02T02:14:07.832Z"
+    },
+    "Bradley K. Martin": {
+      "authorKey": "OL3239084A",
+      "attemptedAt": "2026-11-02T02:14:07.832Z",
+      "checkedAt": "2026-11-02T02:14:07.832Z"
+    },
+    "Brent Schlender": {
+      "authorKey": "OL7419496A",
+      "attemptedAt": "2026-11-02T02:14:07.832Z",
+      "checkedAt": "2026-11-02T02:14:07.832Z"
+    },
+    "Brian Sibley": {
+      "attemptedAt": "2026-11-02T02:14:07.832Z",
+      "checkedAt": null
+    },
+    "Caro Claire Burke": {
+      "authorKey": "OL16292418A",
+      "attemptedAt": "2026-11-02T02:14:07.832Z",
+      "checkedAt": "2026-11-02T02:14:07.832Z"
+    },
+    "Carolyn Brown": {
+      "attemptedAt": "2026-11-02T02:14:07.832Z",
+      "checkedAt": null
+    },
+    "Carolyn Ives Gilman": {
+      "authorKey": "OL772943A",
+      "attemptedAt": "2026-11-02T02:14:07.832Z",
+      "checkedAt": "2026-11-02T02:14:07.832Z"
+    },
+    "Carson Reeves": {
+      "attemptedAt": "2026-11-02T02:14:07.832Z",
+      "checkedAt": null
+    },
+    "Cathy O'Neil": {
+      "authorKey": "OL7412371A",
+      "attemptedAt": "2026-11-02T02:14:07.832Z",
+      "checkedAt": "2026-11-02T02:14:07.832Z"
+    },
+    "Charles Darwin": {
+      "authorKey": "OL35839A",
+      "attemptedAt": "2026-11-02T02:14:07.832Z",
+      "checkedAt": "2026-11-02T02:14:07.832Z"
+    },
+    "Charles Silverstein": {
+      "authorKey": "OL841051A",
+      "attemptedAt": "2026-11-02T02:14:07.832Z",
+      "checkedAt": "2026-11-02T02:14:07.832Z"
+    },
+    "Charles Stross": {
+      "authorKey": "OL343157A",
+      "attemptedAt": "2026-11-02T02:14:07.832Z",
+      "checkedAt": "2026-11-02T02:14:07.832Z"
+    },
+    "Chen Qiufan": {
+      "authorKey": "OL7524838A",
+      "attemptedAt": "2026-11-02T02:14:07.832Z",
+      "checkedAt": "2026-11-02T02:14:07.832Z"
+    },
+    "China Miéville": {
+      "authorKey": "OL3075854A",
+      "attemptedAt": "2026-11-02T02:14:07.832Z",
+      "checkedAt": "2026-11-02T02:14:07.832Z"
+    },
+    "China Miville": {
+      "authorKey": "OL7879797A",
+      "attemptedAt": "2026-11-02T02:14:07.832Z",
+      "checkedAt": "2026-11-02T02:14:07.832Z"
+    },
+    "Chris Dixon": {
+      "authorKey": "OL6166427A",
+      "attemptedAt": "2026-11-02T02:14:07.832Z",
+      "checkedAt": "2026-11-02T02:14:07.832Z"
+    },
+    "Christopher Isherwood": {
+      "authorKey": "OL19499A",
+      "attemptedAt": "2026-11-02T02:14:07.832Z",
+      "checkedAt": "2026-11-02T02:14:07.832Z"
+    },
+    "Christopher Kenworthy": {
+      "authorKey": "OL36663A",
+      "attemptedAt": "2026-11-02T02:14:07.832Z",
+      "checkedAt": "2026-11-02T02:14:07.832Z"
+    },
+    "Chuck Hogan": {
+      "authorKey": "OL394081A",
+      "attemptedAt": "2026-11-02T02:14:07.832Z",
+      "checkedAt": "2026-11-02T02:14:07.832Z"
+    },
+    "Craig Marks": {
+      "authorKey": "OL3552580A",
+      "attemptedAt": "2026-11-02T02:14:07.832Z",
+      "checkedAt": "2026-11-02T02:14:07.832Z"
+    },
+    "Dale Carnegie": {
+      "authorKey": "OL107569A",
+      "attemptedAt": "2026-11-02T02:14:07.832Z",
+      "checkedAt": "2026-11-02T02:14:07.832Z"
+    },
+    "Dan Lyons": {
+      "attemptedAt": "2026-11-02T02:14:07.832Z",
+      "checkedAt": null
+    }
+  },
+  "candidates": [
+    {
+      "id": "/works/OL42424443W",
+      "title": "Daughters of the Bamboo Grove",
+      "authors": [
+        "Barbara Demick"
+      ],
+      "publicationYear": 2025,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL42424443W"
+    },
+    {
+      "id": "/works/OL37568895W",
+      "title": "Alien Clay",
+      "authors": [
+        "Adrian Tchaikovsky"
+      ],
+      "publicationYear": 2024,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL37568895W"
+    },
+    {
+      "id": "/works/OL37540943W",
+      "title": "Right Thing, Right Now",
+      "authors": [
+        "Ryan Holiday"
+      ],
+      "publicationYear": 2024,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL37540943W"
+    },
+    {
+      "id": "/works/OL38652997W",
+      "title": "Rose/House",
+      "authors": [
+        "Arkady Martine"
+      ],
+      "publicationYear": 2024,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL38652997W"
+    },
+    {
+      "id": "/works/OL37576633W",
+      "title": "Service Model",
+      "authors": [
+        "Adrian Tchaikovsky"
+      ],
+      "publicationYear": 2024,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL37576633W"
+    },
+    {
+      "id": "/works/OL36741141W",
+      "title": "Memory Called Empire and a Desolation Called Peace",
+      "authors": [
+        "Arkady Martine"
+      ],
+      "publicationYear": 2023,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL36741141W"
+    },
+    {
+      "id": "/works/OL28018696W",
+      "title": "Children of Memory",
+      "authors": [
+        "Adrian Tchaikovsky"
+      ],
+      "publicationYear": 2022,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL28018696W"
+    },
+    {
+      "id": "/works/OL27052926W",
+      "title": "Demon Copperhead",
+      "authors": [
+        "Barbara Kingsolver"
+      ],
+      "publicationYear": 2022,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL27052926W"
+    },
+    {
+      "id": "/works/OL27023502W",
+      "title": "Discipline is Destiny",
+      "authors": [
+        "Ryan Holiday"
+      ],
+      "publicationYear": 2022,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL27023502W"
+    },
+    {
+      "id": "/works/OL26518910W",
+      "title": "Eyes of the Void",
+      "authors": [
+        "Adrian Tchaikovsky"
+      ],
+      "publicationYear": 2022,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL26518910W"
+    },
+    {
+      "id": "/works/OL26981301W",
+      "title": "Feeding Littles and Beyond",
+      "authors": [
+        "Ali Maffucci",
+        "Megan McNamee",
+        "Judy Delaware"
+      ],
+      "publicationYear": 2022,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL26981301W"
+    },
+    {
+      "id": "/works/OL27017071W",
+      "title": "Gangland",
+      "authors": [
+        "Chuck Hogan"
+      ],
+      "publicationYear": 2022,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL27017071W"
+    },
+    {
+      "id": "/works/OL26660793W",
+      "title": "Rising Tiger",
+      "authors": [
+        "Brad Thor"
+      ],
+      "publicationYear": 2022,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL26660793W"
+    },
+    {
+      "id": "/works/OL31015291W",
+      "title": "Sketchy History of Akron",
+      "authors": [
+        "Craig Marks"
+      ],
+      "publicationYear": 2022,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL31015291W"
+    },
+    {
+      "id": "/works/OL36735881W",
+      "title": "The Martian / Artemis / Project Hail Mary",
+      "authors": [
+        "Andy Weir"
+      ],
+      "publicationYear": 2022,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL36735881W"
+    },
+    {
+      "id": "/works/OL25291993W",
+      "title": "The Shame Machine",
+      "authors": [
+        "Cathy O'Neil"
+      ],
+      "publicationYear": 2022,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL25291993W"
+    },
+    {
+      "id": "/works/OL20832939W",
+      "title": "A Desolation Called Peace",
+      "authors": [
+        "Arkady Martine"
+      ],
+      "publicationYear": 2021,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL20832939W"
+    },
+    {
+      "id": "/works/OL24486636W",
+      "title": "Baggage",
+      "authors": [
+        "Alan Cumming"
+      ],
+      "publicationYear": 2021,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL24486636W"
+    },
+    {
+      "id": "/works/OL27859378W",
+      "title": "Circular Book of All That Is",
+      "authors": [
+        "Chris Dixon"
+      ],
+      "publicationYear": 2021,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL27859378W"
+    },
+    {
+      "id": "/works/OL24698824W",
+      "title": "Courage Is Calling",
+      "authors": [
+        "Ryan Holiday"
+      ],
+      "publicationYear": 2021,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL24698824W"
+    },
+    {
+      "id": "/works/OL24770248W",
+      "title": "Elder Race",
+      "authors": [
+        "Adrian Tchaikovsky"
+      ],
+      "publicationYear": 2021,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL24770248W"
+    },
+    {
+      "id": "/works/OL25774715W",
+      "title": "How Do I Collect Documentary Evidence for My Dissertation?",
+      "authors": [
+        "Bill Lee"
+      ],
+      "publicationYear": 2021,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL25774715W"
+    },
+    {
+      "id": "/works/OL25764996W",
+      "title": "Moon Best of Yosemite",
+      "authors": [
+        "Ann Marie Brown"
+      ],
+      "publicationYear": 2021,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL25764996W"
+    },
+    {
+      "id": "/works/OL25458490W",
+      "title": "Ocean",
+      "authors": [
+        "Chris Dixon",
+        "Jeremy K. Spencer"
+      ],
+      "publicationYear": 2021,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL25458490W"
+    },
+    {
+      "id": "/works/OL27881592W",
+      "title": "On the Origin of Species Illustrated",
+      "authors": [
+        "Charles Darwin"
+      ],
+      "publicationYear": 2021,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL27881592W"
+    },
+    {
+      "id": "/works/OL24481122W",
+      "title": "Shards of Earth",
+      "authors": [
+        "Adrian Tchaikovsky"
+      ],
+      "publicationYear": 2021,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL24481122W"
+    },
+    {
+      "id": "/works/OL29188751W",
+      "title": "Badlands",
+      "authors": [
+        "Christopher Kenworthy"
+      ],
+      "publicationYear": 2020,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL29188751W"
+    },
+    {
+      "id": "/works/OL30446690W",
+      "title": "Dancing in the Cloud",
+      "authors": [
+        "Chris Dixon"
+      ],
+      "publicationYear": 2020,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL30446690W"
+    },
+    {
+      "id": "/works/OL38029724W",
+      "title": "Desolation Called Peace Sneak Peek",
+      "authors": [
+        "Arkady Martine"
+      ],
+      "publicationYear": 2020,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL38029724W"
+    },
+    {
+      "id": "/works/OL21368698W",
+      "title": "Doors of Eden",
+      "authors": [
+        "Adrian Tchaikovsky"
+      ],
+      "publicationYear": 2020,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL21368698W"
+    },
+    {
+      "id": "/works/OL20923876W",
+      "title": "Eat the Buddha",
+      "authors": [
+        "Barbara Demick"
+      ],
+      "publicationYear": 2020,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL20923876W"
+    },
+    {
+      "id": "/works/OL29180457W",
+      "title": "Last Shot",
+      "authors": [
+        "Christopher Kenworthy"
+      ],
+      "publicationYear": 2020,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL29180457W"
+    },
+    {
+      "id": "/works/OL21690596W",
+      "title": "Lives of the Stoics",
+      "authors": [
+        "Ryan Holiday",
+        "Stephen Hanselman"
+      ],
+      "publicationYear": 2020,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL21690596W"
+    },
+    {
+      "id": "/works/OL32264065W",
+      "title": "Spatial and genomic analysis of the glioblastoma tumor microenvironment",
+      "authors": [
+        "Andrew Chen"
+      ],
+      "publicationYear": 2020,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL32264065W"
+    },
+    {
+      "id": "/works/OL27472336W",
+      "title": "Unti Oral History of the WWE",
+      "authors": [
+        "Craig Marks",
+        "Rob Tannenbaum"
+      ],
+      "publicationYear": 2020,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL27472336W"
+    },
+    {
+      "id": "/works/OL17841386W",
+      "title": "Cheshire Crossing",
+      "authors": [
+        "Andy Weir"
+      ],
+      "publicationYear": 2019,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL17841386W"
+    },
+    {
+      "id": "/works/OL20079532W",
+      "title": "Children of Ruin",
+      "authors": [
+        "Adrian Tchaikovsky"
+      ],
+      "publicationYear": 2019,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL20079532W"
+    },
+    {
+      "id": "/works/OL19921476W",
+      "title": "Fall; or, Dodge in Hell",
+      "authors": [
+        "Neal Stephenson",
+        "Malcolm Hillgartner"
+      ],
+      "publicationYear": 2019,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL19921476W"
+    },
+    {
+      "id": "/works/OL20163191W",
+      "title": "Honey & Leon Take the High Road",
+      "authors": [
+        "Alan Cumming"
+      ],
+      "publicationYear": 2019,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL20163191W"
+    },
+    {
+      "id": "/works/OL21194455W",
+      "title": "Mama Sutra",
+      "authors": [
+        "Anne Cushman"
+      ],
+      "publicationYear": 2019,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL21194455W"
+    },
+    {
+      "id": "/works/OL20464740W",
+      "title": "Stillness Is the Key",
+      "authors": [
+        "Ryan Holiday"
+      ],
+      "publicationYear": 2019,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL20464740W"
+    },
+    {
+      "id": "/works/OL21669696W",
+      "title": "Uneven Development in South East Asia",
+      "authors": [
+        "Chris Dixon",
+        "David Drakakis-Smith"
+      ],
+      "publicationYear": 2019,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL21669696W"
+    },
+    {
+      "id": "/works/OL21164124W",
+      "title": "What You Do Is Who You Are",
+      "authors": [
+        "Ben Horowitz"
+      ],
+      "publicationYear": 2019,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL21164124W"
+    },
+    {
+      "id": "/works/OL20591212W",
+      "title": "African Americans and the Pacific War, 1941-1945",
+      "authors": [
+        "Chris Dixon"
+      ],
+      "publicationYear": 2018,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL20591212W"
+    },
+    {
+      "id": "/works/OL19739495W",
+      "title": "Conspiracy",
+      "authors": [
+        "Ryan Holiday"
+      ],
+      "publicationYear": 2018,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL19739495W"
+    },
+    {
+      "id": "/works/OL19750372W",
+      "title": "Inspiralized & beyond",
+      "authors": [
+        "Ali Maffucci"
+      ],
+      "publicationYear": 2018,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL19750372W"
+    },
+    {
+      "id": "/works/OL34621205W",
+      "title": "The Quick And Easy Way To Effective Speaking",
+      "authors": [
+        "Dale Carnegie"
+      ],
+      "publicationYear": 2018,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL34621205W"
+    },
+    {
+      "id": "/works/OL20170445W",
+      "title": "This Road I'm On",
+      "authors": [
+        "Bill Lee"
+      ],
+      "publicationYear": 2018,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL20170445W"
+    },
+    {
+      "id": "/works/OL19749368W",
+      "title": "Unsheltered",
+      "authors": [
+        "Barbara Kingsolver"
+      ],
+      "publicationYear": 2018,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL19749368W"
+    },
+    {
+      "id": "/works/OL30090267W",
+      "title": "Watchman",
+      "authors": [
+        "Christopher Kenworthy"
+      ],
+      "publicationYear": 2018,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL30090267W"
+    },
+    {
+      "id": "/works/OL17837968W",
+      "title": "Artemis",
+      "authors": [
+        "Andy Weir"
+      ],
+      "publicationYear": 2017,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL17837968W"
+    },
+    {
+      "id": "/works/OL17755218W",
+      "title": "Beren and Lúthien",
+      "authors": [
+        "J.R.R. Tolkien",
+        "Christopher Tolkien",
+        "ʻImanuʼel Loṭem"
+      ],
+      "publicationYear": 2017,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL17755218W"
+    },
+    {
+      "id": "/works/OL21838876W",
+      "title": "Eating Around the World",
+      "authors": [
+        "Craig Marks",
+        "Isabella Grott"
+      ],
+      "publicationYear": 2017,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL21838876W"
+    },
+    {
+      "id": "/works/OL19650131W",
+      "title": "James Moriarty, Consulting Criminal",
+      "authors": [
+        "Andy Weir"
+      ],
+      "publicationYear": 2017,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL19650131W"
+    },
+    {
+      "id": "/works/OL19716738W",
+      "title": "Logical family",
+      "authors": [
+        "Armistead Maupin"
+      ],
+      "publicationYear": 2017,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL19716738W"
+    },
+    {
+      "id": "/works/OL19753329W",
+      "title": "Nuclear blues",
+      "authors": [
+        "Bradley K. Martin"
+      ],
+      "publicationYear": 2017,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL19753329W"
+    },
+    {
+      "id": "/works/OL20058427W",
+      "title": "October",
+      "authors": [
+        "China Miéville",
+        "John Banks"
+      ],
+      "publicationYear": 2017,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL20058427W"
+    },
+    {
+      "id": "/works/OL19716852W",
+      "title": "Perennial Seller",
+      "authors": [
+        "Ryan Holiday"
+      ],
+      "publicationYear": 2017,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL19716852W"
+    },
+    {
+      "id": "/works/OL19724293W",
+      "title": "Tai ji dancing for kids",
+      "authors": [
+        "Al Chung-liang Huang"
+      ],
+      "publicationYear": 2017,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL19724293W"
+    },
+    {
+      "id": "/works/OL20934912W",
+      "title": "The Daily Stoic Journal",
+      "authors": [
+        "Ryan Holiday",
+        "Stephen Hanselman"
+      ],
+      "publicationYear": 2017,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL20934912W"
+    },
+    {
+      "id": "/works/OL27699165W",
+      "title": "The Egg and Other Stories",
+      "authors": [
+        "Andy Weir"
+      ],
+      "publicationYear": 2017,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL27699165W"
+    },
+    {
+      "id": "/works/OL19330491W",
+      "title": "The Rise and Fall of D.O.D.O.",
+      "authors": [
+        "Neal Stephenson",
+        "Nicole Galland"
+      ],
+      "publicationYear": 2017,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL19330491W"
+    },
+    {
+      "id": "/works/OL19722197W",
+      "title": "The wine lover's daughter",
+      "authors": [
+        "Anne Fadiman"
+      ],
+      "publicationYear": 2017,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL19722197W"
+    },
+    {
+      "id": "/works/OL19752116W",
+      "title": "We can reuse it!",
+      "authors": [
+        "Craig Marks"
+      ],
+      "publicationYear": 2017,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL19752116W"
+    },
+    {
+      "id": "/works/OL20033244W",
+      "title": "Ego is the Enemy",
+      "authors": [
+        "Ryan Holiday"
+      ],
+      "publicationYear": 2016,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL20033244W"
+    },
+    {
+      "id": "/works/OL19733825W",
+      "title": "Goodbye Barbary Lane",
+      "authors": [
+        "Armistead Maupin"
+      ],
+      "publicationYear": 2016,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL19733825W"
+    },
+    {
+      "id": "/works/OL20040474W",
+      "title": "Inspiralize everything",
+      "authors": [
+        "Ali Maffucci"
+      ],
+      "publicationYear": 2016,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL20040474W"
+    },
+    {
+      "id": "/works/OL29494898W",
+      "title": "Shoot to Kill",
+      "authors": [
+        "Christopher Kenworthy"
+      ],
+      "publicationYear": 2016,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL29494898W"
+    },
+    {
+      "id": "/works/OL25631771W",
+      "title": "Texas Hill Country Loop",
+      "authors": [
+        "Adventure Cycling Association"
+      ],
+      "publicationYear": 2016,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL25631771W"
+    },
+    {
+      "id": "/works/OL20046443W",
+      "title": "The daily stoic",
+      "authors": [
+        "Ryan Holiday"
+      ],
+      "publicationYear": 2016,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL20046443W"
+    },
+    {
+      "id": "/works/OL19627650W",
+      "title": "The Last Days of New Paris",
+      "authors": [
+        "China Miéville"
+      ],
+      "publicationYear": 2016,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL19627650W"
+    },
+    {
+      "id": "/works/OL40422720W",
+      "title": "This Census-Taker",
+      "authors": [
+        "China Miéville"
+      ],
+      "publicationYear": 2016,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL40422720W"
+    },
+    {
+      "id": "/works/OL19342360W",
+      "title": "Guns of the Dawn",
+      "authors": [
+        "Adrian Tchaikovsky"
+      ],
+      "publicationYear": 2015,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL19342360W"
+    },
+    {
+      "id": "/works/OL20670238W",
+      "title": "Moon Yosemite, Sequoia & Kings Canyon",
+      "authors": [
+        "Ann Marie Brown"
+      ],
+      "publicationYear": 2015,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL20670238W"
+    },
+    {
+      "id": "/works/OL32601895W",
+      "title": "Yoga For Sports",
+      "authors": [
+        "B. K. S. Iyengar"
+      ],
+      "publicationYear": 2015,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL32601895W"
+    },
+    {
+      "id": "/works/OL40138656W",
+      "title": "6th Grade100 Word Problems",
+      "authors": [
+        "Bill Lee"
+      ],
+      "publicationYear": 2014,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL40138656W"
+    },
+    {
+      "id": "/works/OL20004953W",
+      "title": "Another politics",
+      "authors": [
+        "Chris Dixon",
+        "Chris Dixon"
+      ],
+      "publicationYear": 2014,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL20004953W"
+    },
+    {
+      "id": "/works/OL40528216W",
+      "title": "Brainy",
+      "authors": [
+        "Armistead Maupin"
+      ],
+      "publicationYear": 2014,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL40528216W"
+    },
+    {
+      "id": "/works/OL40329018W",
+      "title": "Fraction Word Problems",
+      "authors": [
+        "Bill Lee"
+      ],
+      "publicationYear": 2014,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL40329018W"
+    },
+    {
+      "id": "/works/OL19983188W",
+      "title": "Moving into meditation",
+      "authors": [
+        "Anne Cushman"
+      ],
+      "publicationYear": 2014,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL19983188W"
+    },
+    {
+      "id": "/works/OL17417547W",
+      "title": "The Rhesus Chart",
+      "authors": [
+        "Charles Stross"
+      ],
+      "publicationYear": 2014,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL17417547W"
+    },
+    {
+      "id": "/works/OL19977925W",
+      "title": "What color is your parachute? guide to rethinking interviews",
+      "authors": [
+        "Richard Nelson Bolles"
+      ],
+      "publicationYear": 2014,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL19977925W"
+    },
+    {
+      "id": "/works/OL19977926W",
+      "title": "What color is your parachute? guide to rethinking resumes",
+      "authors": [
+        "Richard Nelson Bolles"
+      ],
+      "publicationYear": 2014,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL19977926W"
+    },
+    {
+      "id": "/works/OL23359788W",
+      "title": "Burma and India",
+      "authors": [
+        "Aung San Suu Kyi"
+      ],
+      "publicationYear": 2013,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL23359788W"
+    },
+    {
+      "id": "/works/OL20940220W",
+      "title": "Hidden order",
+      "authors": [
+        "Brad Thor"
+      ],
+      "publicationYear": 2013,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL20940220W"
+    },
+    {
+      "id": "/works/OL21515349W",
+      "title": "Kate Gallagher and the Zimmermanite Quest",
+      "authors": [
+        "Alan Cumming"
+      ],
+      "publicationYear": 2013,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL21515349W"
+    },
+    {
+      "id": "/works/OL17759845W",
+      "title": "Moon handbooks",
+      "authors": [
+        "Ann Marie Brown"
+      ],
+      "publicationYear": 2013,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL17759845W"
+    },
+    {
+      "id": "/works/OL17554076W",
+      "title": "Neptunes Brood",
+      "authors": [
+        "Charles Stross"
+      ],
+      "publicationYear": 2013,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL17554076W"
+    },
+    {
+      "id": "/works/OL41910295W",
+      "title": "On being a data skeptic",
+      "authors": [
+        "Cathy O'Neil"
+      ],
+      "publicationYear": 2013,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL41910295W"
+    },
+    {
+      "id": "/works/OL17599122W",
+      "title": "One Summer",
+      "authors": [
+        "Bill Bryson"
+      ],
+      "publicationYear": 2013,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL17599122W"
+    },
+    {
+      "id": "/works/OL21511985W",
+      "title": "Science Activity Book",
+      "authors": [
+        "Chris Dixon",
+        "Cisco (Multinational corporation : California) Staff"
+      ],
+      "publicationYear": 2013,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL21511985W"
+    },
+    {
+      "id": "/works/OL19977665W",
+      "title": "The Obstacle is the Way",
+      "authors": [
+        "Ryan Holiday"
+      ],
+      "publicationYear": 2013,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL19977665W"
+    },
+    {
+      "id": "/works/OL39732285W",
+      "title": "Word Problems-Detailed Explanations of Reasoning and Solving Strategies",
+      "authors": [
+        "Bill Lee"
+      ],
+      "publicationYear": 2013,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL39732285W"
+    },
+    {
+      "id": "/works/OL22716979W",
+      "title": "Besieged",
+      "authors": [
+        "Barbara Demick"
+      ],
+      "publicationYear": 2012,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL22716979W"
+    },
+    {
+      "id": "/works/OL39755931W",
+      "title": "Birdie and Beletta",
+      "authors": [
+        "Barbara Savage"
+      ],
+      "publicationYear": 2012,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL39755931W"
+    },
+    {
+      "id": "/works/OL16700025W",
+      "title": "Flight behavior",
+      "authors": [
+        "Barbara Kingsolver"
+      ],
+      "publicationYear": 2012,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL16700025W"
+    },
+    {
+      "id": "/works/OL19953614W",
+      "title": "Northern California biking",
+      "authors": [
+        "Ann Marie Brown"
+      ],
+      "publicationYear": 2012,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL19953614W"
+    },
+    {
+      "id": "/works/OL16564661W",
+      "title": "Railsea",
+      "authors": [
+        "China Miéville"
+      ],
+      "publicationYear": 2012,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL16564661W"
+    },
+    {
+      "id": "/works/OL16714859W",
+      "title": "Some Remarks",
+      "authors": [
+        "Neal Stephenson"
+      ],
+      "publicationYear": 2012,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL16714859W"
+    },
+    {
+      "id": "/works/OL16214620W",
+      "title": "Essential Tai Ji",
+      "authors": [
+        "Al Chung-liang Huang"
+      ],
+      "publicationYear": 2011,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL16214620W"
+    },
+    {
+      "id": "/works/OL20437711W",
+      "title": "Ghost Wave",
+      "authors": [
+        "Chris Dixon"
+      ],
+      "publicationYear": 2011,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL20437711W"
+    },
+    {
+      "id": "/works/OL16414622W",
+      "title": "Master shots, volume 2",
+      "authors": [
+        "Christopher Kenworthy"
+      ],
+      "publicationYear": 2011,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL16414622W"
+    },
+    {
+      "id": "/works/OL15921145W",
+      "title": "Rule 34",
+      "authors": [
+        "Charles Stross"
+      ],
+      "publicationYear": 2011,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL15921145W"
+    },
+    {
+      "id": "/works/OL29416768W",
+      "title": "South East Asia in the World-Economy",
+      "authors": [
+        "Chris Dixon"
+      ],
+      "publicationYear": 2011,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL29416768W"
+    },
+    {
+      "id": "/works/OL21225161W",
+      "title": "The Scar",
+      "authors": [
+        "China Miville"
+      ],
+      "publicationYear": 2011,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL21225161W"
+    },
+    {
+      "id": "/works/OL15100470W",
+      "title": "At Home",
+      "authors": [
+        "Bill Bryson"
+      ],
+      "publicationYear": 2010,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL15100470W"
+    },
+    {
+      "id": "/works/OL30575175W",
+      "title": "Confessions of a Government Man",
+      "authors": [
+        "Alan Greenberg"
+      ],
+      "publicationYear": 2010,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL30575175W"
+    },
+    {
+      "id": "/works/OL19935086W",
+      "title": "Devils in exile",
+      "authors": [
+        "Chuck Hogan"
+      ],
+      "publicationYear": 2010,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL19935086W"
+    },
+    {
+      "id": "/works/OL21445026W",
+      "title": "Foreign Influence",
+      "authors": [
+        "Brad Thor"
+      ],
+      "publicationYear": 2010,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL21445026W"
+    },
+    {
+      "id": "/works/OL14990804W",
+      "title": "Kraken",
+      "authors": [
+        "China Miéville"
+      ],
+      "publicationYear": 2010,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL14990804W"
+    },
+    {
+      "id": "/works/OL15493119W",
+      "title": "The Athena Project",
+      "authors": [
+        "Brad Thor"
+      ],
+      "publicationYear": 2010,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL15493119W"
+    },
+    {
+      "id": "/works/OL15505350W",
+      "title": "The Fuller Memorandum",
+      "authors": [
+        "Charles Stross"
+      ],
+      "publicationYear": 2010,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL15505350W"
+    },
+    {
+      "id": "/works/OL20458066W",
+      "title": "The Town",
+      "authors": [
+        "Chuck Hogan"
+      ],
+      "publicationYear": 2010,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL20458066W"
+    },
+    {
+      "id": "/works/OL15026872W",
+      "title": "Blood of the mantis",
+      "authors": [
+        "Adrian Tchaikovsky"
+      ],
+      "publicationYear": 2009,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL15026872W"
+    },
+    {
+      "id": "/works/OL15026873W",
+      "title": "Dragonfly falling",
+      "authors": [
+        "Adrian Tchaikovsky"
+      ],
+      "publicationYear": 2009,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL15026873W"
+    },
+    {
+      "id": "/works/OL523208W",
+      "title": "Master shots",
+      "authors": [
+        "Christopher Kenworthy"
+      ],
+      "publicationYear": 2009,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL523208W"
+    },
+    {
+      "id": "/works/OL17668945W",
+      "title": "Monterey & Carmel",
+      "authors": [
+        "Ann Marie Brown"
+      ],
+      "publicationYear": 2009,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL17668945W"
+    },
+    {
+      "id": "/works/OL17444605W",
+      "title": "Save The Cat Strikes Back More Trouble For Screenwriters Sic To Get Into And Out Of",
+      "authors": [
+        "Blake Snyder"
+      ],
+      "publicationYear": 2009,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL17444605W"
+    },
+    {
+      "id": "/works/OL3333117W",
+      "title": "The 2009 What color is your parachute?",
+      "authors": [
+        "Richard Nelson Bolles"
+      ],
+      "publicationYear": 2009,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL3333117W"
+    },
+    {
+      "id": "/works/OL19341943W",
+      "title": "The City & The City",
+      "authors": [
+        "China Miéville"
+      ],
+      "publicationYear": 2009,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL19341943W"
+    },
+    {
+      "id": "/works/OL17365207W",
+      "title": "The Egg",
+      "authors": [
+        "Andy Weir"
+      ],
+      "publicationYear": 2009,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL17365207W"
+    },
+    {
+      "id": "/works/OL1846840W",
+      "title": "The lacuna",
+      "authors": [
+        "Barbara Kingsolver"
+      ],
+      "publicationYear": 2009,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL1846840W"
+    },
+    {
+      "id": "/works/OL16633787W",
+      "title": "Yoga wisdom & practice",
+      "authors": [
+        "B. K. S. Iyengar"
+      ],
+      "publicationYear": 2009,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL16633787W"
+    },
+    {
+      "id": "/works/OL13721113W",
+      "title": "You are here",
+      "authors": [
+        "Thích Nhất Hạnh"
+      ],
+      "publicationYear": 2009,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL13721113W"
+    },
+    {
+      "id": "/works/OL14991884W",
+      "title": "A Really Short History of Nearly Everything",
+      "authors": [
+        "Bill Bryson"
+      ],
+      "publicationYear": 2008,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL14991884W"
+    },
+    {
+      "id": "/works/OL14911626W",
+      "title": "Anathem",
+      "authors": [
+        "Neal Stephenson"
+      ],
+      "publicationYear": 2008,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL14911626W"
+    },
+    {
+      "id": "/works/OL15026874W",
+      "title": "Empire in black and gold",
+      "authors": [
+        "Adrian Tchaikovsky"
+      ],
+      "publicationYear": 2008,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL15026874W"
+    },
+    {
+      "id": "/works/OL2741737W",
+      "title": "Enlightenment for idiots",
+      "authors": [
+        "Anne Cushman"
+      ],
+      "publicationYear": 2008,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL2741737W"
+    },
+    {
+      "id": "/works/OL2465692W",
+      "title": "Saturn's Children",
+      "authors": [
+        "Charles Stross"
+      ],
+      "publicationYear": 2008,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL2465692W"
+    },
+    {
+      "id": "/works/OL5846037W",
+      "title": "The last patriot",
+      "authors": [
+        "Brad Thor"
+      ],
+      "publicationYear": 2008,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL5846037W"
+    },
+    {
+      "id": "/works/OL1846871W",
+      "title": "Animal, Vegetable, Miracle",
+      "authors": [
+        "Barbara Kingsolver",
+        "Camille Kingsolver",
+        "Steven L. Hopp",
+        "Lily Hopp Kingsolver"
+      ],
+      "publicationYear": 2007,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL1846871W"
+    },
+    {
+      "id": "/works/OL1889676W",
+      "title": "At Large and At Small",
+      "authors": [
+        "Anne Fadiman"
+      ],
+      "publicationYear": 2007,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL1889676W"
+    },
+    {
+      "id": "/works/OL3018479W",
+      "title": "Iyengar",
+      "authors": [
+        "B. K. S. Iyengar"
+      ],
+      "publicationYear": 2007,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL3018479W"
+    },
+    {
+      "id": "/works/OL9267734W",
+      "title": "Save the Cat! Goes to the Movies",
+      "authors": [
+        "Blake Snyder",
+        "George Newbern"
+      ],
+      "publicationYear": 2007,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL9267734W"
+    },
+    {
+      "id": "/works/OL74119W",
+      "title": "Shakespeare",
+      "authors": [
+        "Bill Bryson"
+      ],
+      "publicationYear": 2007,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL74119W"
+    },
+    {
+      "id": "/works/OL263662W",
+      "title": "The art of power",
+      "authors": [
+        "Thích Nhất Hạnh"
+      ],
+      "publicationYear": 2007,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL263662W"
+    },
+    {
+      "id": "/works/OL5846036W",
+      "title": "The First Commandment",
+      "authors": [
+        "Brad Thor"
+      ],
+      "publicationYear": 2007,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL5846036W"
+    },
+    {
+      "id": "/works/OL2695937W",
+      "title": "The Killing Moon",
+      "authors": [
+        "Chuck Hogan"
+      ],
+      "publicationYear": 2007,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL2695937W"
+    },
+    {
+      "id": "/works/OL14871881W",
+      "title": "Un Lun Dun",
+      "authors": [
+        "China Miéville"
+      ],
+      "publicationYear": 2007,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL14871881W"
+    },
+    {
+      "id": "/works/OL3374845W",
+      "title": "A Casebook of Community Practice",
+      "authors": [
+        "Bill Lee"
+      ],
+      "publicationYear": 2006,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL3374845W"
+    },
+    {
+      "id": "/works/OL1063327W",
+      "title": "Dale Carnegie's Radio Program: How to Win Friends and Influence People - Lesson 1",
+      "authors": [
+        "Dale Carnegie"
+      ],
+      "publicationYear": 2006,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL1063327W"
+    },
+    {
+      "id": "/works/OL2465690W",
+      "title": "Glasshouse",
+      "authors": [
+        "Charles Stross"
+      ],
+      "publicationYear": 2006,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL2465690W"
+    },
+    {
+      "id": "/works/OL16492238W",
+      "title": "Iyengar Yoga For Beginners",
+      "authors": [
+        "B. K. S. Iyengar"
+      ],
+      "publicationYear": 2006,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL16492238W"
+    },
+    {
+      "id": "/works/OL2925615W",
+      "title": "Moon Tahoe",
+      "authors": [
+        "Ann Marie Brown"
+      ],
+      "publicationYear": 2006,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL2925615W"
+    },
+    {
+      "id": "/works/OL25651625W",
+      "title": "Take a Hike Los Angeles",
+      "authors": [
+        "Ann Marie Brown",
+        "Julie Sheer"
+      ],
+      "publicationYear": 2006,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL25651625W"
+    },
+    {
+      "id": "/works/OL2465689W",
+      "title": "The Jennifer Morgue",
+      "authors": [
+        "Charles Stross"
+      ],
+      "publicationYear": 2006,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL2465689W"
+    },
+    {
+      "id": "/works/OL453989W",
+      "title": "Wintersmith",
+      "authors": [
+        "Terry Pratchett",
+        "Paul Kidby"
+      ],
+      "publicationYear": 2006,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL453989W"
+    },
+    {
+      "id": "/works/OL5846031W",
+      "title": "Blowback",
+      "authors": [
+        "Brad Thor"
+      ],
+      "publicationYear": 2005,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL5846031W"
+    },
+    {
+      "id": "/works/OL3374842W",
+      "title": "Born to Lose",
+      "authors": [
+        "Bill Lee"
+      ],
+      "publicationYear": 2005,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL3374842W"
+    },
+    {
+      "id": "/works/OL2925608W",
+      "title": "Foghorn Outdoors Southern California Cabins and Cottages",
+      "authors": [
+        "Ann Marie Brown"
+      ],
+      "publicationYear": 2005,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL2925608W"
+    },
+    {
+      "id": "/works/OL9146144W",
+      "title": "Good Daughter",
+      "authors": [
+        "Bjorn Turmann"
+      ],
+      "publicationYear": 2005,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL9146144W"
+    },
+    {
+      "id": "/works/OL3018483W",
+      "title": "Light on Life",
+      "authors": [
+        "B. K. S. Iyengar",
+        "John J. Evans",
+        "Douglas Abrams"
+      ],
+      "publicationYear": 2005,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL3018483W"
+    },
+    {
+      "id": "/works/OL27976594W",
+      "title": "Little Red  Book",
+      "authors": [
+        "Bill Lee",
+        "Jim Prime"
+      ],
+      "publicationYear": 2005,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL27976594W"
+    },
+    {
+      "id": "/works/OL14871878W",
+      "title": "Looking for Jake",
+      "authors": [
+        "China Miéville"
+      ],
+      "publicationYear": 2005,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL14871878W"
+    },
+    {
+      "id": "/works/OL1063329W",
+      "title": "Public Speaking for Success",
+      "authors": [
+        "Dale Carnegie"
+      ],
+      "publicationYear": 2005,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL1063329W"
+    },
+    {
+      "id": "/works/OL1889679W",
+      "title": "Rereadings",
+      "authors": [
+        "Anne Fadiman"
+      ],
+      "publicationYear": 2005,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL1889679W"
+    },
+    {
+      "id": "/works/OL27825862W",
+      "title": "Spirit Catches You When You Fall Down",
+      "authors": [
+        "Anne Fadiman"
+      ],
+      "publicationYear": 2005,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL27825862W"
+    },
+    {
+      "id": "/works/OL3333151W",
+      "title": "What Color Is Your Parachute 2006",
+      "authors": [
+        "Richard Nelson Bolles"
+      ],
+      "publicationYear": 2005,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL3333151W"
+    },
+    {
+      "id": "/works/OL25051471W",
+      "title": "Iron Council",
+      "authors": [
+        "China Miéville"
+      ],
+      "publicationYear": 2004,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL25051471W"
+    },
+    {
+      "id": "/works/OL2465675W",
+      "title": "Iron sunrise",
+      "authors": [
+        "Charles Stross"
+      ],
+      "publicationYear": 2004,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL2465675W"
+    },
+    {
+      "id": "/works/OL2695940W",
+      "title": "Prince of Thieves",
+      "authors": [
+        "Chuck Hogan"
+      ],
+      "publicationYear": 2004,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL2695940W"
+    },
+    {
+      "id": "/works/OL5846032W",
+      "title": "State of the Union",
+      "authors": [
+        "Brad Thor"
+      ],
+      "publicationYear": 2004,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL5846032W"
+    },
+    {
+      "id": "/works/OL2465682W",
+      "title": "The Atrocity Archives",
+      "authors": [
+        "Charles Stross",
+        "Lucius Shepard"
+      ],
+      "publicationYear": 2004,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL2465682W"
+    },
+    {
+      "id": "/works/OL2465673W",
+      "title": "The family trade",
+      "authors": [
+        "Charles Stross"
+      ],
+      "publicationYear": 2004,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL2465673W"
+    },
+    {
+      "id": "/works/OL74128W",
+      "title": "A short history of nearly everything",
+      "authors": [
+        "Bill Bryson"
+      ],
+      "publicationYear": 2003,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL74128W"
+    },
+    {
+      "id": "/works/OL18328037W",
+      "title": "Bicycling the Lewis & Clark Trail",
+      "authors": [
+        "Adventure Cycling Association"
+      ],
+      "publicationYear": 2003,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL18328037W"
+    },
+    {
+      "id": "/works/OL2925601W",
+      "title": "Foghorn Outdoors 101 Great Hikes of the San Francisco Bay Area",
+      "authors": [
+        "Ann Marie Brown"
+      ],
+      "publicationYear": 2003,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL2925601W"
+    },
+    {
+      "id": "/works/OL16076435W",
+      "title": "Path of the assassin",
+      "authors": [
+        "Brad Thor"
+      ],
+      "publicationYear": 2003,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL16076435W"
+    },
+    {
+      "id": "/works/OL2465688W",
+      "title": "Singularity sky",
+      "authors": [
+        "Charles Stross"
+      ],
+      "publicationYear": 2003,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL2465688W"
+    },
+    {
+      "id": "/works/OL38489W",
+      "title": "System of the World",
+      "authors": [
+        "Neal Stephenson"
+      ],
+      "publicationYear": 2003,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL38489W"
+    },
+    {
+      "id": "/works/OL16065349W",
+      "title": "The best American essays 2003",
+      "authors": [
+        "Anne Fadiman",
+        "Robert Atwan"
+      ],
+      "publicationYear": 2003,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL16065349W"
+    },
+    {
+      "id": "/works/OL38483W",
+      "title": "The Confusion. Volume II of the Baroque Cycle",
+      "authors": [
+        "Neal Stephenson",
+        "Simon Prebble",
+        "Katherine Kellgren",
+        "Kevin Pariseau"
+      ],
+      "publicationYear": 2003,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL38483W"
+    },
+    {
+      "id": "/works/OL1901731W",
+      "title": "The Half-Empty Heart",
+      "authors": [
+        "Alan Downs"
+      ],
+      "publicationYear": 2003,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL1901731W"
+    },
+    {
+      "id": "/works/OL18017951W",
+      "title": "Ben Franklin and his notebooks",
+      "authors": [
+        "Ben Horowitz"
+      ],
+      "publicationYear": 2002,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL18017951W"
+    },
+    {
+      "id": "/works/OL14911628W",
+      "title": "Interface",
+      "authors": [
+        "Neal Stephenson"
+      ],
+      "publicationYear": 2002,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL14911628W"
+    },
+    {
+      "id": "/works/OL1901729W",
+      "title": "Secrets of an Executive Coach",
+      "authors": [
+        "Alan Downs"
+      ],
+      "publicationYear": 2002,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL1901729W"
+    },
+    {
+      "id": "/works/OL1846856W",
+      "title": "Small Wonder_display",
+      "authors": [
+        "Barbara Kingsolver"
+      ],
+      "publicationYear": 2002,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL1846856W"
+    },
+    {
+      "id": "/works/OL5846034W",
+      "title": "The Lions of Lucerne",
+      "authors": [
+        "Brad Thor"
+      ],
+      "publicationYear": 2002,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL5846034W"
+    },
+    {
+      "id": "/works/OL8718787W",
+      "title": "The Scar",
+      "authors": [
+        "China Miéville"
+      ],
+      "publicationYear": 2002,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL8718787W"
+    },
+    {
+      "id": "/works/OL1901728W",
+      "title": "Why does this keep happening to me?",
+      "authors": [
+        "Alan Downs"
+      ],
+      "publicationYear": 2002,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL1901728W"
+    },
+    {
+      "id": "/works/OL263657W",
+      "title": "Anger",
+      "authors": [
+        "Thích Nhất Hạnh"
+      ],
+      "publicationYear": 2001,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL263657W"
+    },
+    {
+      "id": "/works/OL2695930W",
+      "title": "Rethinking Golf",
+      "authors": [
+        "Chuck Hogan"
+      ],
+      "publicationYear": 2001,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL2695930W"
+    },
+    {
+      "id": "/works/OL27471W",
+      "title": "The Children of Húrin",
+      "authors": [
+        "J.R.R. Tolkien"
+      ],
+      "publicationYear": 2001,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL27471W"
+    },
+    {
+      "id": "/works/OL263647W",
+      "title": "Thich Nhat Hanh",
+      "authors": [
+        "Thích Nhất Hạnh"
+      ],
+      "publicationYear": 2001,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL263647W"
+    },
+    {
+      "id": "/works/OL3018498W",
+      "title": "Yoga",
+      "authors": [
+        "B. K. S. Iyengar",
+        "Daphne Razazan"
+      ],
+      "publicationYear": 2001,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL3018498W"
+    },
+    {
+      "id": "/works/OL2925620W",
+      "title": "101 great hikes of the San Francisco Bay Area",
+      "authors": [
+        "Ann Marie Brown"
+      ],
+      "publicationYear": 2000,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL2925620W"
+    },
+    {
+      "id": "/works/OL3018473W",
+      "title": "Aṣṭadaḷa yogamālā",
+      "authors": [
+        "B. K. S. Iyengar",
+        "Miguel Portillo Díez"
+      ],
+      "publicationYear": 2000,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL3018473W"
+    },
+    {
+      "id": "/works/OL74115W",
+      "title": "Down Under (In a Sunburned Country)",
+      "authors": [
+        "Bill Bryson"
+      ],
+      "publicationYear": 2000,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL74115W"
+    },
+    {
+      "id": "/works/OL8718786W",
+      "title": "Perdido Street Station",
+      "authors": [
+        "China Miéville"
+      ],
+      "publicationYear": 2000,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL8718786W"
+    },
+    {
+      "id": "/works/OL1846851W",
+      "title": "Prodigal Summer Display",
+      "authors": [
+        "Barbara Kingsolver"
+      ],
+      "publicationYear": 2000,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL1846851W"
+    },
+    {
+      "id": "/works/OL1901723W",
+      "title": "The Fearless Executive",
+      "authors": [
+        "Alan Downs"
+      ],
+      "publicationYear": 2000,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL1901723W"
+    },
+    {
+      "id": "/works/OL523215W",
+      "title": "The World of Cinema",
+      "authors": [
+        "Christopher Kenworthy"
+      ],
+      "publicationYear": 2000,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL523215W"
+    },
+    {
+      "id": "/works/OL2695926W",
+      "title": "Blood Artists, The",
+      "authors": [
+        "Chuck Hogan"
+      ],
+      "publicationYear": 1999,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL2695926W"
+    },
+    {
+      "id": "/works/OL38477W",
+      "title": "In the Beginning...Was the Command Line",
+      "authors": [
+        "Neal Stephenson"
+      ],
+      "publicationYear": 1999,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL38477W"
+    },
+    {
+      "id": "/works/OL448106W",
+      "title": "Tao mentoring",
+      "authors": [
+        "Al Chung-liang Huang",
+        "Chungliang Al Huang",
+        "Jerry Lynch",
+        "Laura Archera Huxley"
+      ],
+      "publicationYear": 1999,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL448106W"
+    },
+    {
+      "id": "/works/OL448103W",
+      "title": "The Chinese book of animal powers",
+      "authors": [
+        "Al Chung-liang Huang"
+      ],
+      "publicationYear": 1999,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL448103W"
+    },
+    {
+      "id": "/works/OL523204W",
+      "title": "Aliens",
+      "authors": [
+        "Christopher Kenworthy"
+      ],
+      "publicationYear": 1998,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL523204W"
+    },
+    {
+      "id": "/works/OL1889681W",
+      "title": "Ex Libris",
+      "authors": [
+        "Anne Fadiman"
+      ],
+      "publicationYear": 1998,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL1889681W"
+    },
+    {
+      "id": "/works/OL2925621W",
+      "title": "Foghorn Outdoors",
+      "authors": [
+        "Ann Marie Brown"
+      ],
+      "publicationYear": 1998,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL2925621W"
+    },
+    {
+      "id": "/works/OL14871882W",
+      "title": "King Rat",
+      "authors": [
+        "China Miéville"
+      ],
+      "publicationYear": 1998,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL14871882W"
+    },
+    {
+      "id": "/works/OL1901726W",
+      "title": "Seven miracles of management",
+      "authors": [
+        "Alan Downs"
+      ],
+      "publicationYear": 1998,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL1901726W"
+    },
+    {
+      "id": "/works/OL2695935W",
+      "title": "The blood artists",
+      "authors": [
+        "Chuck Hogan"
+      ],
+      "publicationYear": 1998,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL2695935W"
+    },
+    {
+      "id": "/works/OL14911607W",
+      "title": "The Cobweb",
+      "authors": [
+        "Neal Stephenson",
+        "George F. Jewsbury",
+        "Frederick George"
+      ],
+      "publicationYear": 1998,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL14911607W"
+    },
+    {
+      "id": "/works/OL115690W",
+      "title": "The heart of the Buddha's teaching",
+      "authors": [
+        "Thích Nhất Hạnh"
+      ],
+      "publicationYear": 1998,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL115690W"
+    },
+    {
+      "id": "/works/OL15155475W",
+      "title": "The voice of hope",
+      "authors": [
+        "Aung San Suu Kyi"
+      ],
+      "publicationYear": 1998,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL15155475W"
+    },
+    {
+      "id": "/works/OL3333154W",
+      "title": "What Color Is Your Parachute Workbook",
+      "authors": [
+        "Richard Nelson Bolles"
+      ],
+      "publicationYear": 1998,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL3333154W"
+    },
+    {
+      "id": "/works/OL17409W",
+      "title": "3001",
+      "authors": [
+        "Arthur C. Clarke"
+      ],
+      "publicationYear": 1997,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL17409W"
+    },
+    {
+      "id": "/works/OL74123W",
+      "title": "A Walk in the Woods",
+      "authors": [
+        "Bill Bryson"
+      ],
+      "publicationYear": 1997,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL74123W"
+    },
+    {
+      "id": "/works/OL8644112W",
+      "title": "Adventure Cycling in Michigan",
+      "authors": [
+        "Adventure Cycling Association"
+      ],
+      "publicationYear": 1997,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL8644112W"
+    },
+    {
+      "id": "/works/OL1901722W",
+      "title": "Beyond the looking glass",
+      "authors": [
+        "Alan Downs"
+      ],
+      "publicationYear": 1997,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL1901722W"
+    },
+    {
+      "id": "/works/OL3333158W",
+      "title": "Job-Hunting on the Internet",
+      "authors": [
+        "Richard Nelson Bolles"
+      ],
+      "publicationYear": 1997,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL3333158W"
+    },
+    {
+      "id": "/works/OL1059430W",
+      "title": "Letters from Burma",
+      "authors": [
+        "Aung San Suu Kyi"
+      ],
+      "publicationYear": 1997,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL1059430W"
+    },
+    {
+      "id": "/works/OL38019278W",
+      "title": "Spirt Catches You",
+      "authors": [
+        "Anne Fadiman"
+      ],
+      "publicationYear": 1997,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL38019278W"
+    },
+    {
+      "id": "/works/OL1059432W",
+      "title": "Voix du défi",
+      "authors": [
+        "Aung San Suu Kyi",
+        "Alan E. Clements",
+        "Fergus Harlow"
+      ],
+      "publicationYear": 1997,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL1059432W"
+    },
+    {
+      "id": "/works/OL453662W",
+      "title": "Hogfather",
+      "authors": [
+        "Terry Pratchett"
+      ],
+      "publicationYear": 1996,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL453662W"
+    },
+    {
+      "id": "/works/OL3257621W",
+      "title": "Logavina Street",
+      "authors": [
+        "Barbara Demick"
+      ],
+      "publicationYear": 1996,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL3257621W"
+    },
+    {
+      "id": "/works/OL15860369W",
+      "title": "The 1996 what colour is your parachute?",
+      "authors": [
+        "Richard Nelson Bolles"
+      ],
+      "publicationYear": 1996,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL15860369W"
+    },
+    {
+      "id": "/works/OL3374857W",
+      "title": "The Newcomer's Guide to North Carolina",
+      "authors": [
+        "Bill Lee"
+      ],
+      "publicationYear": 1996,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL3374857W"
+    },
+    {
+      "id": "/works/OL1877183W",
+      "title": "Become what you are",
+      "authors": [
+        "Alan Watts"
+      ],
+      "publicationYear": 1995,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL1877183W"
+    },
+    {
+      "id": "/works/OL1901730W",
+      "title": "Corporate executions",
+      "authors": [
+        "Alan Downs"
+      ],
+      "publicationYear": 1995,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL1901730W"
+    },
+    {
+      "id": "/works/OL20953015W",
+      "title": "Freedom from fear",
+      "authors": [
+        "Aung San Suu Kyi"
+      ],
+      "publicationYear": 1995,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL20953015W"
+    },
+    {
+      "id": "/works/OL1846873W",
+      "title": "High tide in Tucson",
+      "authors": [
+        "Barbara Kingsolver"
+      ],
+      "publicationYear": 1995,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL1846873W"
+    },
+    {
+      "id": "/works/OL15373820W",
+      "title": "Living Buddha, living Christ",
+      "authors": [
+        "Thích Nhất Hạnh"
+      ],
+      "publicationYear": 1995,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL15373820W"
+    },
+    {
+      "id": "/works/OL74129W",
+      "title": "Notes from a small island",
+      "authors": [
+        "Bill Bryson"
+      ],
+      "publicationYear": 1995,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL74129W"
+    },
+    {
+      "id": "/works/OL38499W",
+      "title": "The Diamond Age",
+      "authors": [
+        "Neal Stephenson"
+      ],
+      "publicationYear": 1995,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL38499W"
+    },
+    {
+      "id": "/works/OL2695939W",
+      "title": "The standoff",
+      "authors": [
+        "Chuck Hogan"
+      ],
+      "publicationYear": 1995,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL2695939W"
+    },
+    {
+      "id": "/works/OL4320888W",
+      "title": "First on the Hill: Atlanta's Medical Camelot",
+      "authors": [
+        "Charles Silverstein"
+      ],
+      "publicationYear": 1994,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL4320888W"
+    },
+    {
+      "id": "/works/OL74122W",
+      "title": "Made in America",
+      "authors": [
+        "Bill Bryson"
+      ],
+      "publicationYear": 1994,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL74122W"
+    },
+    {
+      "id": "/works/OL453748W",
+      "title": "The Wee Free Men",
+      "authors": [
+        "Terry Pratchett",
+        "Paul Kidby"
+      ],
+      "publicationYear": 1994,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL453748W"
+    },
+    {
+      "id": "/works/OL2695938W",
+      "title": "Learning Golf",
+      "authors": [
+        "Chuck Hogan"
+      ],
+      "publicationYear": 1993,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL2695938W"
+    },
+    {
+      "id": "/works/OL262819W",
+      "title": "Light on the Yoga Sutras of Patanjali",
+      "authors": [
+        "B. K. S. Iyengar"
+      ],
+      "publicationYear": 1993,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL262819W"
+    },
+    {
+      "id": "/works/OL3649942W",
+      "title": "Mary's prophet",
+      "authors": [
+        "Barbara Savage"
+      ],
+      "publicationYear": 1993,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL3649942W"
+    },
+    {
+      "id": "/works/OL1846879W",
+      "title": "Pigs in heaven",
+      "authors": [
+        "Barbara Kingsolver"
+      ],
+      "publicationYear": 1993,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL1846879W"
+    },
+    {
+      "id": "/works/OL13262944W",
+      "title": "Robin Hood Golf Club",
+      "authors": [
+        "Chris Dixon"
+      ],
+      "publicationYear": 1993,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL13262944W"
+    },
+    {
+      "id": "/works/OL1063308W",
+      "title": "The Leader in You",
+      "authors": [
+        "Dale Carnegie",
+        "Stuart R. Levine",
+        "Michael A. Crom"
+      ],
+      "publicationYear": 1993,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL1063308W"
+    },
+    {
+      "id": "/works/OL2433538W",
+      "title": "Maybe the Moon",
+      "authors": [
+        "Armistead Maupin"
+      ],
+      "publicationYear": 1992,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL2433538W"
+    },
+    {
+      "id": "/works/OL453697W",
+      "title": "Small Gods",
+      "authors": [
+        "Terry Pratchett",
+        "Ray Friesen"
+      ],
+      "publicationYear": 1992,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL453697W"
+    },
+    {
+      "id": "/works/OL115699W",
+      "title": "Thinking body, dancing mind",
+      "authors": [
+        "Al Chung-liang Huang"
+      ],
+      "publicationYear": 1992,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL115699W"
+    },
+    {
+      "id": "/works/OL12217248W",
+      "title": "Accidental death of an anarchist",
+      "authors": [
+        "Alan Cumming"
+      ],
+      "publicationYear": 1991,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL12217248W"
+    },
+    {
+      "id": "/works/OL37030360W",
+      "title": "An equal and permanent relationship",
+      "authors": [
+        "Chris Dixon"
+      ],
+      "publicationYear": 1991,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL37030360W"
+    },
+    {
+      "id": "/works/OL1059425W",
+      "title": "Aung San of Burma",
+      "authors": [
+        "Aung San Suu Kyi"
+      ],
+      "publicationYear": 1991,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL1059425W"
+    },
+    {
+      "id": "/works/OL3374841W",
+      "title": "Bi Ranchers Bi Mates",
+      "authors": [
+        "Bill Lee"
+      ],
+      "publicationYear": 1991,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL3374841W"
+    },
+    {
+      "id": "/works/OL4320889W",
+      "title": "Gays, Lesbians, and Their Therapists",
+      "authors": [
+        "Charles Silverstein"
+      ],
+      "publicationYear": 1991,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL4320889W"
+    },
+    {
+      "id": "/works/OL3333157W",
+      "title": "How to find your mission in life",
+      "authors": [
+        "Richard Nelson Bolles"
+      ],
+      "publicationYear": 1991,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL3333157W"
+    },
+    {
+      "id": "/works/OL74125W",
+      "title": "Neither here nor there",
+      "authors": [
+        "Bill Bryson"
+      ],
+      "publicationYear": 1991,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL74125W"
+    },
+    {
+      "id": "/works/OL453654W",
+      "title": "Reaper Man",
+      "authors": [
+        "Terry Pratchett"
+      ],
+      "publicationYear": 1991,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL453654W"
+    },
+    {
+      "id": "/works/OL17373W",
+      "title": "The Garden of Rama",
+      "authors": [
+        "Arthur C. Clarke",
+        "Gentry Lee"
+      ],
+      "publicationYear": 1991,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL17373W"
+    },
+    {
+      "id": "/works/OL2433533W",
+      "title": "Back to Barbary Lane",
+      "authors": [
+        "Armistead Maupin"
+      ],
+      "publicationYear": 1990,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL2433533W"
+    },
+    {
+      "id": "/works/OL453936W",
+      "title": "Good Omens",
+      "authors": [
+        "Terry Pratchett",
+        "Neil Gaiman"
+      ],
+      "publicationYear": 1990,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL453936W"
+    },
+    {
+      "id": "/works/OL3333122W",
+      "title": "How to create a picture of your ideal job or next career",
+      "authors": [
+        "Richard Nelson Bolles"
+      ],
+      "publicationYear": 1990,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL3333122W"
+    },
+    {
+      "id": "/works/OL263633W",
+      "title": "Old Path White Clouds",
+      "authors": [
+        "Thích Nhất Hạnh"
+      ],
+      "publicationYear": 1990,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL263633W"
+    },
+    {
+      "id": "/works/OL15373819W",
+      "title": "Peace is every step",
+      "authors": [
+        "Thích Nhất Hạnh"
+      ],
+      "publicationYear": 1990,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL15373819W"
+    },
+    {
+      "id": "/works/OL2433528W",
+      "title": "28 Barbary Lane",
+      "authors": [
+        "Armistead Maupin"
+      ],
+      "publicationYear": 1989,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL2433528W"
+    },
+    {
+      "id": "/works/OL453735W",
+      "title": "Guards! Guards!",
+      "authors": [
+        "Terry Pratchett"
+      ],
+      "publicationYear": 1989,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL453735W"
+    },
+    {
+      "id": "/works/OL1846866W",
+      "title": "Homeland",
+      "authors": [
+        "Barbara Kingsolver"
+      ],
+      "publicationYear": 1989,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL1846866W"
+    },
+    {
+      "id": "/works/OL453661W",
+      "title": "Pyramids",
+      "authors": [
+        "Terry Pratchett"
+      ],
+      "publicationYear": 1989,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL453661W"
+    },
+    {
+      "id": "/works/OL17395W",
+      "title": "Rama II",
+      "authors": [
+        "Arthur C. Clarke",
+        "Gentry Lee"
+      ],
+      "publicationYear": 1989,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL17395W"
+    },
+    {
+      "id": "/works/OL115697W",
+      "title": "Tai Ji",
+      "authors": [
+        "Al Chung-liang Huang"
+      ],
+      "publicationYear": 1989,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL115697W"
+    },
+    {
+      "id": "/works/OL74124W",
+      "title": "The Lost Continent",
+      "authors": [
+        "Bill Bryson"
+      ],
+      "publicationYear": 1989,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL74124W"
+    },
+    {
+      "id": "/works/OL13262945W",
+      "title": "Winter in Aphelion",
+      "authors": [
+        "Chris Dixon"
+      ],
+      "publicationYear": 1989,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL13262945W"
+    },
+    {
+      "id": "/works/OL453659W",
+      "title": "Sourcery",
+      "authors": [
+        "Terry Pratchett"
+      ],
+      "publicationYear": 1988,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL453659W"
+    },
+    {
+      "id": "/works/OL1846863W",
+      "title": "The Bean Trees",
+      "authors": [
+        "Barbara Kingsolver"
+      ],
+      "publicationYear": 1988,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL1846863W"
+    },
+    {
+      "id": "/works/OL262820W",
+      "title": "Tree of Yoga",
+      "authors": [
+        "B. K. S. Iyengar"
+      ],
+      "publicationYear": 1988,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL262820W"
+    },
+    {
+      "id": "/works/OL453660W",
+      "title": "Wyrd Sisters",
+      "authors": [
+        "Terry Pratchett"
+      ],
+      "publicationYear": 1988,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL453660W"
+    },
+    {
+      "id": "/works/OL38503W",
+      "title": "Zodiac",
+      "authors": [
+        "Neal Stephenson"
+      ],
+      "publicationYear": 1988,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL38503W"
+    },
+    {
+      "id": "/works/OL17408W",
+      "title": "2061",
+      "authors": [
+        "Arthur C. Clarke"
+      ],
+      "publicationYear": 1987,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL17408W"
+    },
+    {
+      "id": "/works/OL1846827W",
+      "title": "Animal Dreams Cloth Signed",
+      "authors": [
+        "Barbara Kingsolver"
+      ],
+      "publicationYear": 1987,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL1846827W"
+    },
+    {
+      "id": "/works/OL263663W",
+      "title": "Being peace",
+      "authors": [
+        "Thích Nhất Hạnh",
+        "Jane Goodall"
+      ],
+      "publicationYear": 1987,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL263663W"
+    },
+    {
+      "id": "/works/OL453670W",
+      "title": "Equal Rites",
+      "authors": [
+        "Terry Pratchett"
+      ],
+      "publicationYear": 1987,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL453670W"
+    },
+    {
+      "id": "/works/OL453658W",
+      "title": "Mort",
+      "authors": [
+        "Terry Pratchett"
+      ],
+      "publicationYear": 1987,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL453658W"
+    },
+    {
+      "id": "/works/OL12381026W",
+      "title": "The Miracle of Mindfulness",
+      "authors": [
+        "Thích Nhất Hạnh"
+      ],
+      "publicationYear": 1987,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL12381026W"
+    },
+    {
+      "id": "/works/OL2695936W",
+      "title": "Five Days to Golfing Excellence",
+      "authors": [
+        "Chuck Hogan"
+      ],
+      "publicationYear": 1986,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL2695936W"
+    },
+    {
+      "id": "/works/OL17383W",
+      "title": "The Songs of Distant Earth",
+      "authors": [
+        "Arthur C. Clarke"
+      ],
+      "publicationYear": 1986,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL17383W"
+    },
+    {
+      "id": "/works/OL523203W",
+      "title": "Against a dark shore",
+      "authors": [
+        "Christopher Kenworthy"
+      ],
+      "publicationYear": 1985,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL523203W"
+    },
+    {
+      "id": "/works/OL1059427W",
+      "title": "Let's visit Bhutan",
+      "authors": [
+        "Aung San Suu Kyi"
+      ],
+      "publicationYear": 1985,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL1059427W"
+    },
+    {
+      "id": "/works/OL1059428W",
+      "title": "Let's visit Burma",
+      "authors": [
+        "Aung San Suu Kyi"
+      ],
+      "publicationYear": 1985,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL1059428W"
+    },
+    {
+      "id": "/works/OL1059429W",
+      "title": "Let's visitNepal",
+      "authors": [
+        "Aung San Suu Kyi"
+      ],
+      "publicationYear": 1985,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL1059429W"
+    },
+    {
+      "id": "/works/OL3333148W",
+      "title": "New Quick Job-Hunting Map",
+      "authors": [
+        "Richard Nelson Bolles"
+      ],
+      "publicationYear": 1985,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL3333148W"
+    },
+    {
+      "id": "/works/OL3374856W",
+      "title": "People in Jazz",
+      "authors": [
+        "Bill Lee"
+      ],
+      "publicationYear": 1985,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL3374856W"
+    },
+    {
+      "id": "/works/OL271467W",
+      "title": "The Art of Yoga",
+      "authors": [
+        "B. K. S. Iyengar"
+      ],
+      "publicationYear": 1985,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL271467W"
+    },
+    {
+      "id": "/works/OL1059423W",
+      "title": "Aung San",
+      "authors": [
+        "Aung San Suu Kyi"
+      ],
+      "publicationYear": 1984,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL1059423W"
+    },
+    {
+      "id": "/works/OL38467W",
+      "title": "The Big U",
+      "authors": [
+        "Neal Stephenson"
+      ],
+      "publicationYear": 1984,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL38467W"
+    },
+    {
+      "id": "/works/OL3959949W",
+      "title": "Love in vain",
+      "authors": [
+        "Alan Greenberg"
+      ],
+      "publicationYear": 1983,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL3959949W"
+    },
+    {
+      "id": "/works/OL115696W",
+      "title": "Quantum soup",
+      "authors": [
+        "Al Chung-liang Huang"
+      ],
+      "publicationYear": 1983,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL115696W"
+    },
+    {
+      "id": "/works/OL27435W",
+      "title": "The Book of Lost Tales [1/2]",
+      "authors": [
+        "J.R.R. Tolkien",
+        "Christopher Tolkien"
+      ],
+      "publicationYear": 1983,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL27435W"
+    },
+    {
+      "id": "/works/OL17391W",
+      "title": "2010, odyssey two",
+      "authors": [
+        "Arthur C. Clarke"
+      ],
+      "publicationYear": 1982,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL17391W"
+    },
+    {
+      "id": "/works/OL731724W",
+      "title": "Philosophy",
+      "authors": [
+        "Ayn Rand"
+      ],
+      "publicationYear": 1982,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL731724W"
+    },
+    {
+      "id": "/works/OL523210W",
+      "title": "Ride a dark tide",
+      "authors": [
+        "Christopher Kenworthy"
+      ],
+      "publicationYear": 1982,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL523210W"
+    },
+    {
+      "id": "/works/OL523207W",
+      "title": "In the dark of the moon",
+      "authors": [
+        "Christopher Kenworthy"
+      ],
+      "publicationYear": 1981,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL523207W"
+    },
+    {
+      "id": "/works/OL4320891W",
+      "title": "Man to man",
+      "authors": [
+        "Charles Silverstein"
+      ],
+      "publicationYear": 1980,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL4320891W"
+    },
+    {
+      "id": "/works/OL51197W",
+      "title": "My guru and his disciple",
+      "authors": [
+        "Christopher Isherwood"
+      ],
+      "publicationYear": 1980,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL51197W"
+    },
+    {
+      "id": "/works/OL27466W",
+      "title": "Unfinished Tales of Númenor and Middle-earth",
+      "authors": [
+        "J.R.R. Tolkien",
+        "Christopher Tolkien",
+        "ʻImanuʼel Loṭem"
+      ],
+      "publicationYear": 1980,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL27466W"
+    },
+    {
+      "id": "/works/OL3333156W",
+      "title": "What colour is your parachute?",
+      "authors": [
+        "Richard Nelson Bolles"
+      ],
+      "publicationYear": 1980,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL3333156W"
+    },
+    {
+      "id": "/works/OL14926019W",
+      "title": "The Hobbit & The Lord of the Rings [collection/set]",
+      "authors": [
+        "J.R.R. Tolkien"
+      ],
+      "publicationYear": 1979,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL14926019W"
+    },
+    {
+      "id": "/works/OL523206W",
+      "title": "Citizen Smith",
+      "authors": [
+        "Christopher Kenworthy"
+      ],
+      "publicationYear": 1978,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL523206W"
+    },
+    {
+      "id": "/works/OL17403W",
+      "title": "The Fountains of Paradise",
+      "authors": [
+        "Arthur C. Clarke"
+      ],
+      "publicationYear": 1978,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL17403W"
+    },
+    {
+      "id": "/works/OL3333155W",
+      "title": "The three boxes of life",
+      "authors": [
+        "Richard Nelson Bolles"
+      ],
+      "publicationYear": 1978,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL3333155W"
+    },
+    {
+      "id": "/works/OL4320890W",
+      "title": "Family Matter",
+      "authors": [
+        "Charles Silverstein"
+      ],
+      "publicationYear": 1977,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL4320890W"
+    },
+    {
+      "id": "/works/OL3018494W",
+      "title": "The art of relaxation",
+      "authors": [
+        "B. K. S. Iyengar"
+      ],
+      "publicationYear": 1977,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL3018494W"
+    },
+    {
+      "id": "/works/OL27495W",
+      "title": "The Silmarillion",
+      "authors": [
+        "J.R.R. Tolkien",
+        "Christopher Tolkien"
+      ],
+      "publicationYear": 1977,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL27495W"
+    },
+    {
+      "id": "/works/OL51187W",
+      "title": "Christopher and his kind",
+      "authors": [
+        "Christopher Isherwood"
+      ],
+      "publicationYear": 1976,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL51187W"
+    },
+    {
+      "id": "/works/OL3959948W",
+      "title": "Heart of glass",
+      "authors": [
+        "Alan Greenberg"
+      ],
+      "publicationYear": 1976,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL3959948W"
+    },
+    {
+      "id": "/works/OL448104W",
+      "title": "Living Tao",
+      "authors": [
+        "Al Chung-liang Huang"
+      ],
+      "publicationYear": 1976,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL448104W"
+    },
+    {
+      "id": "/works/OL263655W",
+      "title": "Phép lạ của sự tỉnh thức",
+      "authors": [
+        "Thích Nhất Hạnh"
+      ],
+      "publicationYear": 1976,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL263655W"
+    },
+    {
+      "id": "/works/OL27497W",
+      "title": "The Father Christmas letters",
+      "authors": [
+        "J.R.R. Tolkien"
+      ],
+      "publicationYear": 1976,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL27497W"
+    },
+    {
+      "id": "/works/OL1877185W",
+      "title": "The essence of Alan Watts",
+      "authors": [
+        "Alan Watts"
+      ],
+      "publicationYear": 1974,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL1877185W"
+    },
+    {
+      "id": "/works/OL263651W",
+      "title": "Clefs pour le zen",
+      "authors": [
+        "Thích Nhất Hạnh"
+      ],
+      "publicationYear": 1973,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL263651W"
+    },
+    {
+      "id": "/works/OL1063262W",
+      "title": "Como Disfrutar De La Vida/ How to Enjoy Your Life and Your Job",
+      "authors": [
+        "Dale Carnegie"
+      ],
+      "publicationYear": 1973,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL1063262W"
+    },
+    {
+      "id": "/works/OL115698W",
+      "title": "Embrace tiger, return to mountain",
+      "authors": [
+        "Al Chung-liang Huang"
+      ],
+      "publicationYear": 1973,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL115698W"
+    },
+    {
+      "id": "/works/OL17417W",
+      "title": "Rendezvous with Rama",
+      "authors": [
+        "Arthur C. Clarke"
+      ],
+      "publicationYear": 1973,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL17417W"
+    },
+    {
+      "id": "/works/OL1877206W",
+      "title": "In my own way",
+      "authors": [
+        "Alan Watts"
+      ],
+      "publicationYear": 1972,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL1877206W"
+    },
+    {
+      "id": "/works/OL731733W",
+      "title": "The New Left",
+      "authors": [
+        "Ayn Rand"
+      ],
+      "publicationYear": 1971,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL731733W"
+    },
+    {
+      "id": "/works/OL266155W",
+      "title": "Does It Matter?",
+      "authors": [
+        "Alan Watts"
+      ],
+      "publicationYear": 1970,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL266155W"
+    },
+    {
+      "id": "/works/OL731730W",
+      "title": "The Romantic Manifesto",
+      "authors": [
+        "Ayn Rand"
+      ],
+      "publicationYear": 1969,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL731730W"
+    },
+    {
+      "id": "/works/OL51202W",
+      "title": "A meeting by the river",
+      "authors": [
+        "Christopher Isherwood"
+      ],
+      "publicationYear": 1967,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL51202W"
+    },
+    {
+      "id": "/works/OL731723W",
+      "title": "Introduction to Objectivist Epistemology",
+      "authors": [
+        "Ayn Rand"
+      ],
+      "publicationYear": 1967,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL731723W"
+    },
+    {
+      "id": "/works/OL1877201W",
+      "title": "The Book",
+      "authors": [
+        "Alan Watts"
+      ],
+      "publicationYear": 1966,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL1877201W"
+    },
+    {
+      "id": "/works/OL262821W",
+      "title": "Light on Yoga",
+      "authors": [
+        "B. K. S. Iyengar"
+      ],
+      "publicationYear": 1965,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL262821W"
+    },
+    {
+      "id": "/works/OL51203W",
+      "title": "A single man",
+      "authors": [
+        "Christopher Isherwood"
+      ],
+      "publicationYear": 1964,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL51203W"
+    },
+    {
+      "id": "/works/OL731731W",
+      "title": "The Virtue of Selfishness",
+      "authors": [
+        "Ayn Rand",
+        "C. M. Hebert"
+      ],
+      "publicationYear": 1964,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL731731W"
+    },
+    {
+      "id": "/works/OL27512W",
+      "title": "Tree and Leaf",
+      "authors": [
+        "J.R.R. Tolkien"
+      ],
+      "publicationYear": 1964,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL27512W"
+    },
+    {
+      "id": "/works/OL64462W",
+      "title": "Island",
+      "authors": [
+        "Aldous Huxley"
+      ],
+      "publicationYear": 1962,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL64462W"
+    },
+    {
+      "id": "/works/OL17402W",
+      "title": "A Fall of Moondust",
+      "authors": [
+        "Arthur C. Clarke",
+        "Oliver Wyman"
+      ],
+      "publicationYear": 1961,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL17402W"
+    },
+    {
+      "id": "/works/OL731734W",
+      "title": "For the New Intellectual",
+      "authors": [
+        "Ayn Rand"
+      ],
+      "publicationYear": 1961,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL731734W"
+    },
+    {
+      "id": "/works/OL1877170W",
+      "title": "Psychotherapy, East and West",
+      "authors": [
+        "Alan Watts"
+      ],
+      "publicationYear": 1961,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL1877170W"
+    },
+    {
+      "id": "/works/OL15857470W",
+      "title": "Shackleton's valiant voyage",
+      "authors": [
+        "Alfred Lansing"
+      ],
+      "publicationYear": 1960,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL15857470W"
+    },
+    {
+      "id": "/works/OL1877190W",
+      "title": "This is it, and other essays on Zen and spiritual experience",
+      "authors": [
+        "Alan Watts"
+      ],
+      "publicationYear": 1960,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL1877190W"
+    },
+    {
+      "id": "/works/OL874157W",
+      "title": "Endurance; Shackleton's incredible voyage",
+      "authors": [
+        "Alfred Lansing"
+      ],
+      "publicationYear": 1959,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL874157W"
+    },
+    {
+      "id": "/works/OL64448W",
+      "title": "Brave New World Revisited",
+      "authors": [
+        "Aldous Huxley"
+      ],
+      "publicationYear": 1958,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL64448W"
+    },
+    {
+      "id": "/works/OL266156W",
+      "title": "Nature, Man,& Woman",
+      "authors": [
+        "Alan Watts"
+      ],
+      "publicationYear": 1958,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL266156W"
+    },
+    {
+      "id": "/works/OL266160W",
+      "title": "The Way of Zen",
+      "authors": [
+        "Alan Watts"
+      ],
+      "publicationYear": 1957,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL266160W"
+    },
+    {
+      "id": "/works/OL1063296W",
+      "title": "How to Develop Self-confidence (Personal Development)",
+      "authors": [
+        "Dale Carnegie"
+      ],
+      "publicationYear": 1956,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL1063296W"
+    },
+    {
+      "id": "/works/OL17400W",
+      "title": "The City and the Stars",
+      "authors": [
+        "Arthur C. Clarke"
+      ],
+      "publicationYear": 1956,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL17400W"
+    },
+    {
+      "id": "/works/OL64442W",
+      "title": "The Doors of Perception / Heaven and Hell",
+      "authors": [
+        "Aldous Huxley"
+      ],
+      "publicationYear": 1956,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL64442W"
+    },
+    {
+      "id": "/works/OL64441W",
+      "title": "The doors of perception",
+      "authors": [
+        "Aldous Huxley"
+      ],
+      "publicationYear": 1954,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL64441W"
+    },
+    {
+      "id": "/works/OL27513W",
+      "title": "The Fellowship of the Ring",
+      "authors": [
+        "J.R.R. Tolkien"
+      ],
+      "publicationYear": 1954,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL27513W"
+    },
+    {
+      "id": "/works/OL27479W",
+      "title": "The Two Towers",
+      "authors": [
+        "J.R.R. Tolkien"
+      ],
+      "publicationYear": 1954,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL27479W"
+    },
+    {
+      "id": "/works/OL17415W",
+      "title": "Childhood’s End",
+      "authors": [
+        "Arthur C. Clarke"
+      ],
+      "publicationYear": 1952,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL17415W"
+    },
+    {
+      "id": "/works/OL64446W",
+      "title": "The devils of Loudun",
+      "authors": [
+        "Aldous Huxley",
+        "Matthew Lloyd Davies"
+      ],
+      "publicationYear": 1952,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL64446W"
+    },
+    {
+      "id": "/works/OL17406W",
+      "title": "The Sands of Mars",
+      "authors": [
+        "Arthur C. Clarke"
+      ],
+      "publicationYear": 1951,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL17406W"
+    },
+    {
+      "id": "/works/OL266158W",
+      "title": "The Wisdom of Insecurity",
+      "authors": [
+        "Alan Watts"
+      ],
+      "publicationYear": 1951,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL266158W"
+    },
+    {
+      "id": "/works/OL27455W",
+      "title": "The Return of the King",
+      "authors": [
+        "J.R.R. Tolkien"
+      ],
+      "publicationYear": 1950,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL27455W"
+    },
+    {
+      "id": "/works/OL1877211W",
+      "title": "The supreme identity",
+      "authors": [
+        "Alan Watts"
+      ],
+      "publicationYear": 1950,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL1877211W"
+    },
+    {
+      "id": "/works/OL27517W",
+      "title": "Farmer Giles of Ham",
+      "authors": [
+        "J.R.R. Tolkien"
+      ],
+      "publicationYear": 1949,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL27517W"
+    },
+    {
+      "id": "/works/OL15148777W",
+      "title": "How to Win Friends and Influence People / How to stop worrying and start living",
+      "authors": [
+        "Dale Carnegie"
+      ],
+      "publicationYear": 1948,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL15148777W"
+    },
+    {
+      "id": "/works/OL4320893W",
+      "title": "The Joy of Gay Sex",
+      "authors": [
+        "Charles Silverstein"
+      ],
+      "publicationYear": 1948,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL4320893W"
+    },
+    {
+      "id": "/works/OL51209W",
+      "title": "Prater Violet",
+      "authors": [
+        "Christopher Isherwood",
+        "María Belmonte Barrenechea"
+      ],
+      "publicationYear": 1945,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL51209W"
+    },
+    {
+      "id": "/works/OL51208W",
+      "title": "The Berlin Stories",
+      "authors": [
+        "Christopher Isherwood"
+      ],
+      "publicationYear": 1945,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL51208W"
+    },
+    {
+      "id": "/works/OL64463W",
+      "title": "The perennial philosophy",
+      "authors": [
+        "Aldous Huxley"
+      ],
+      "publicationYear": 1945,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL64463W"
+    },
+    {
+      "id": "/works/OL731663W",
+      "title": "The Fountainhead",
+      "authors": [
+        "Ayn Rand"
+      ],
+      "publicationYear": 1943,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL731663W"
+    },
+    {
+      "id": "/works/OL64440W",
+      "title": "Brave New World and Brave New World Revisited",
+      "authors": [
+        "Aldous Huxley"
+      ],
+      "publicationYear": 1942,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL64440W"
+    },
+    {
+      "id": "/works/OL64422W",
+      "title": "After Many a Summer",
+      "authors": [
+        "Aldous Huxley"
+      ],
+      "publicationYear": 1939,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL64422W"
+    },
+    {
+      "id": "/works/OL51210W",
+      "title": "Goodbye to Berlin",
+      "authors": [
+        "Christopher Isherwood"
+      ],
+      "publicationYear": 1939,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL51210W"
+    },
+    {
+      "id": "/works/OL51184W",
+      "title": "Lions and shadows: an education in the Twenties",
+      "authors": [
+        "Christopher Isherwood"
+      ],
+      "publicationYear": 1938,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL51184W"
+    },
+    {
+      "id": "/works/OL731737W",
+      "title": "Anthem",
+      "authors": [
+        "Ayn Rand"
+      ],
+      "publicationYear": 1936,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL731737W"
+    },
+    {
+      "id": "/works/OL1063338W",
+      "title": "How to Stop Worrying and Start Living",
+      "authors": [
+        "Dale Carnegie",
+        "Kaneiji Dale"
+      ],
+      "publicationYear": 1936,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL1063338W"
+    },
+    {
+      "id": "/works/OL731729W",
+      "title": "Night of January 16th",
+      "authors": [
+        "Ayn Rand"
+      ],
+      "publicationYear": 1936,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL731729W"
+    },
+    {
+      "id": "/works/OL266159W",
+      "title": "The Spirit of Zen",
+      "authors": [
+        "Alan Watts"
+      ],
+      "publicationYear": 1936,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL266159W"
+    },
+    {
+      "id": "/works/OL731732W",
+      "title": "We the living",
+      "authors": [
+        "Ayn Rand"
+      ],
+      "publicationYear": 1936,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL731732W"
+    },
+    {
+      "id": "/works/OL51211W",
+      "title": "Mr Norris Changes Trains",
+      "authors": [
+        "Christopher Isherwood"
+      ],
+      "publicationYear": 1935,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL51211W"
+    },
+    {
+      "id": "/works/OL1063309W",
+      "title": "Lincoln, El Desconocido/ Lincoln the Unknown (Biografias Y Testimonios)",
+      "authors": [
+        "Dale Carnegie"
+      ],
+      "publicationYear": 1932,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL1063309W"
+    },
+    {
+      "id": "/works/OL51206W",
+      "title": "The Memorial",
+      "authors": [
+        "Christopher Isherwood"
+      ],
+      "publicationYear": 1932,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL51206W"
+    },
+    {
+      "id": "/works/OL515057W",
+      "title": "The Autobiography of Charles Darwin",
+      "authors": [
+        "Charles Darwin"
+      ],
+      "publicationYear": 1929,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL515057W"
+    },
+    {
+      "id": "/works/OL51201W",
+      "title": "All the conspirators",
+      "authors": [
+        "Christopher Isherwood"
+      ],
+      "publicationYear": 1928,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL51201W"
+    },
+    {
+      "id": "/works/OL1063333W",
+      "title": "Public Speaking and Influencing Men in Business",
+      "authors": [
+        "Dale Carnegie"
+      ],
+      "publicationYear": 1926,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL1063333W"
+    },
+    {
+      "id": "/works/OL20309437W",
+      "title": "Full Black",
+      "authors": [
+        "Brad Thor"
+      ],
+      "publicationYear": 1925,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL20309437W"
+    },
+    {
+      "id": "/works/OL64391W",
+      "title": "Those barren leaves, a novel",
+      "authors": [
+        "Aldous Huxley"
+      ],
+      "publicationYear": 1925,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL64391W"
+    },
+    {
+      "id": "/works/OL64466W",
+      "title": "Antic Hay",
+      "authors": [
+        "Aldous Huxley"
+      ],
+      "publicationYear": 1923,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL64466W"
+    },
+    {
+      "id": "/works/OL64369W",
+      "title": "Crome yellow",
+      "authors": [
+        "Aldous Huxley"
+      ],
+      "publicationYear": 1921,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL64369W"
+    },
+    {
+      "id": "/works/OL1063254W",
+      "title": "The Art of Public Speaking",
+      "authors": [
+        "Dale Carnegie",
+        "Joseph Berg Esenwein"
+      ],
+      "publicationYear": 1915,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL1063254W"
+    },
+    {
+      "id": "/works/OL2465670W",
+      "title": "Accelerando",
+      "authors": [
+        "Charles Stross"
+      ],
+      "publicationYear": 1900,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL2465670W"
+    },
+    {
+      "id": "/works/OL515346W",
+      "title": "The life and letters of Charles Darwin",
+      "authors": [
+        "Charles Darwin"
+      ],
+      "publicationYear": 1887,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL515346W"
+    },
+    {
+      "id": "/works/OL515355W",
+      "title": "The different forms of flowers on plants of the same species",
+      "authors": [
+        "Charles Darwin"
+      ],
+      "publicationYear": 1877,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL515355W"
+    },
+    {
+      "id": "/works/OL515357W",
+      "title": "Insectivorous plants",
+      "authors": [
+        "Charles Darwin"
+      ],
+      "publicationYear": 1875,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL515357W"
+    },
+    {
+      "id": "/works/OL515301W",
+      "title": "The expression of emotions in man and animals",
+      "authors": [
+        "Charles Darwin"
+      ],
+      "publicationYear": 1872,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL515301W"
+    },
+    {
+      "id": "/works/OL515361W",
+      "title": "The descent of man",
+      "authors": [
+        "Charles Darwin"
+      ],
+      "publicationYear": 1871,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL515361W"
+    },
+    {
+      "id": "/works/OL15330328W",
+      "title": "The descent of man, and selection in relation to sex",
+      "authors": [
+        "Charles Darwin"
+      ],
+      "publicationYear": 1870,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL15330328W"
+    },
+    {
+      "id": "/works/OL515356W",
+      "title": "The variation of animals and plants under domestication",
+      "authors": [
+        "Charles Darwin"
+      ],
+      "publicationYear": 1868,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL515356W"
+    },
+    {
+      "id": "/works/OL515359W",
+      "title": "The structure and distribution of coral reefs",
+      "authors": [
+        "Charles Darwin"
+      ],
+      "publicationYear": 1842,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL515359W"
+    },
+    {
+      "id": "/works/OL515065W",
+      "title": "Charles Darwin's The Voyage of the Beagle:",
+      "authors": [
+        "Charles Darwin"
+      ],
+      "publicationYear": 1839,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL515065W"
+    },
+    {
+      "id": "/works/OL51205W",
+      "title": "Down There on a Visit",
+      "authors": [
+        "Christopher Isherwood"
+      ],
+      "publicationYear": 1796,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL51205W"
+    },
+    {
+      "id": "/works/OL74126W",
+      "title": "The Mother Tongue",
+      "authors": [
+        "Bill Bryson"
+      ],
+      "publicationYear": 1656,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL74126W"
+    },
+    {
+      "id": "/works/OL64465W",
+      "title": "Point Counter Point",
+      "authors": [
+        "Aldous Huxley"
+      ],
+      "publicationYear": 1642,
+      "cover": null,
+      "sourceUrl": "https://openlibrary.org/works/OL64465W"
+    }
+  ]
+}

@@ -88,3 +88,64 @@ final result: passed
 
 No blocking findings. Any further changes should be art-direction refinements
 based on Luke's review, not a new redesign of the project sections.
+
+---
+
+## Books collection — 2026-11-01
+
+final result: passed
+
+Detailed findings, comparison history, fidelity surfaces, scope changes, and
+three consecutive clean desktop/mobile browser checks:
+[design/books/qa.md](design/books/qa.md).
+
+Source visual truth: Luke's `Screenshot 2569-11-01 at 19.30.01.png` (520×373).
+Implementation: `audit-output/books/pass-3-desktop.jpg`, 1440px desktop viewport;
+mobile: `audit-output/books/pass-2-mobile.jpg`, 390×844 CSS viewport.
+Combined comparison: `audit-output/books/comparison.jpg` (aspect-ratio-preserving
+composition comparison, not a pixel-identical claim). Full-resolution captures
+were separately checked for readable labels and controls. The user's compact
+header/unified-collection corrections supersede the reference's older framing.
+Final overview: `audit-output/books/final-overview.jpg`.
+
+No actionable P0/P1/P2 findings. Catalog gaps and remaining P3 cover refinements
+are recorded in the detailed report. Lint, eight focused tests, production build,
+and whitespace check passed. Nothing pushed or deployed.
+
+
+## Books connections revision — 2026-11-01
+
+Passed: read-status UI removed, large selected/related covers, explicit author,
+series, Dune-universe and shared-subject links. All 325 entries have local covers
+(32 recovered in this revision). Three consecutive clean desktop/mobile browser
+passes cover filters, follow, Back/Forward, details, Dune dates and show-more.
+Evidence and full limitations: `design/books/qa.md`, final revision audit;
+`audit-output/books/connections-revision/`. Local only, no push or deployment.
+
+
+## Books direct navigation and Frequency metadata — 2026-11-01
+
+Removed details panel; book clicks open Connections, authors link to exact author
+lists, purchase date appears beside the selected book. Three clean desktop/mobile
+checks verified author/coauthor links and Back/Forward. Later, corrected Frequency
+from its publisher description/categories and ran another three clean checks.
+Evidence: `audit-output/books/direct-navigation/`; full audit: `design/books/qa.md`.
+All code checks pass (14 Node tests, lint, production build). Subject enrichment
+is still incomplete for 33 purchased records. Local only.
+
+## Library discovery covers and image budget — 2026-11-02
+
+- Connected downloaded local covers to catalog discoveries without losing them on refresh; reviewed editions still win. Corrected verified author-name collisions, retail displays and duplicate-edition recommendations through a persistent exclusion list.
+- 317 / 323 visible discoveries have covers. Six source-image gaps and two remaining 128px source limitations are recorded in `audit-output/books/discovery-covers/image-budget.json` and `design/books/discovery.md`.
+- WebP assets bounded to 432×648, no upscaling, 70 KiB maximum. Actual displayed-image average 23,275 bytes; maximum 69,242 bytes. Original downloads and unused replacements archived outside public. Card `sizes` matches 105px desktop and 70px mobile; lazy loading retained.
+- Three consecutive clean final browser passes: (1) 1365px desktop reload of author discoveries, publisher covers visible, Show more increases cards from 12 to 24; (2) fresh 390px mobile page, series filter produces four loaded cover images at 70px and cards remain within viewport; (3) fresh 1280px page, Saturn search displays the replacement cover, author navigation opens collected books, browser Back restores the search and cover.
+- Evidence: `audit-output/books/discovery-covers/desktop.jpg`, `mobile.jpg`, `search-and-back.jpg`.
+- `npm run lint`, all 25 `npm run books:test` checks, and final `npm test` production build passed. Added byte/dimension/format checks, retained-cover tests, and exclusion persistence tests. Updated source allowlist for previously added verified publisher URLs.
+- Lighthouse deferred to the requested post-deployment pass. Nothing pushed or deployed.
+
+## Personal library introduction copy — 2026-11-02
+
+- Used Luke's revised Books introduction, with a separate 16px footnote about Amazon purchases, remembered paperbacks and books lost to time or memory. The main introduction stays 20px desktop / 19px mobile with the existing rust rule.
+- What's Next now reads: “I built this to help me find what to read next. Let me know if you recommend any of them.” Connections copy is unchanged.
+- Three consecutive clean browser checks: desktop Books → What's Next at 1365px; fresh mobile Books → What's Next at 390px; fresh direct What's Next link → Books → browser Back at 1280px. Text wraps without clipping, the footnote appears only on Books, and Back restores the matching intro.
+- Screenshots saved under `audit-output/books/personal-introductions/`. Lint, production build and diff whitespace check passed. No push or deployment.

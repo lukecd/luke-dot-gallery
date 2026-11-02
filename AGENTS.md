@@ -151,3 +151,25 @@ npm run dev    # local Next.js server
 npm run lint   # ESLint
 npm test       # production build verification
 ```
+
+## Adding books and refreshing discoveries
+
+Whenever Luke adds a book, preserve known purchase dates and leave unknown dates
+unknown. After updating the collection and local covers, run
+`npm run books:discover -- --author "Author name"` for each affected author.
+Review series continuations against author/publisher listings and update
+`app/books/data/discovery-reviewed.json` when needed. Already-collected works are
+excluded from discoveries automatically. Run `npm run books:test` afterwards.
+See `design/books/discovery.md` for the scheduled refresh and storage setup.
+Do not publish these updates until Luke explicitly requests it.
+
+Library copy should be direct and factual. Avoid speculative caveats and defensive
+explanations. Keep real unknown dates and actionable error messages explicit.
+
+The library is a public presentation of Luke’s reading and book connections, not a
+visitor reading tracker. Do not add Save, Already read, Not interested, or other
+visitor controls for managing the collection or recommendations.
+
+Library introductions should sound like Luke speaking to friends: first-person,
+connected sentences explaining his interest in the books. Avoid slogan-like
+fragments, corporate product copy, and invented personal experiences.

@@ -1,0 +1,7 @@
+.navigation { display: flex; align-items: center; gap: 12px; font: 500 11px/1.6 var(--font-dm-mono), monospace; letter-spacing: .12em; text-transform: uppercase; white-space: nowrap; }
+.navigation a { color: inherit; text-decoration: none; padding: 4px 0; border-bottom: 1px solid transparent; }
+.navigation a[aria-current="page"] { border-bottom-color: currentColor; }
+.navigation a:hover { opacity: .75; }
+.navigation a:focus-visible { outline: 2px solid currentColor; outline-offset: 5px; }
+.navigation span { opacity: .5; }
+@media(max-width:600px) { .navigation { font-size: 10px; gap: 9px; } }

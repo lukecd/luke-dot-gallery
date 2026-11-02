@@ -1,0 +1,141 @@
+{
+  "reviewedAt": "2026-11-01",
+  "scope": "Book content, relationships and culture; no tagging based only on author identity. Targeted corrections after scanning the collection, not an exhaustive full-text classification.",
+  "books": [
+    {
+      "id": "b0ccp5rlq1",
+      "title": "The House of Hidden Meanings",
+      "addedSubjects": [
+        "LGBTQ memoir",
+        "Memoir",
+        "Identity"
+      ],
+      "source": "https://rupaul.com/product/the-house-of-hidden-meanings/",
+      "reason": "Queer childhood, drag, found family, husband and self-acceptance."
+    },
+    {
+      "id": "b0cw16vtdb",
+      "title": "How To Burn A Rainbow",
+      "addedSubjects": [
+        "LGBTQ memoir",
+        "Memoir",
+        "Gay marriage",
+        "Divorce"
+      ],
+      "source": "https://www.amazon.com/dp/B0CW16VTDB",
+      "reason": "Luke confirmed LGBTQ memoir; export subtitle explicitly describes gay marriage and divorce."
+    },
+    {
+      "id": "b0c3ml9c5y",
+      "title": "The Emperor and the Endless Palace",
+      "addedSubjects": [
+        "Gay fiction",
+        "LGBTQ romance",
+        "Fantasy"
+      ],
+      "source": "https://harlequin.com/products/the-emperor-and-the-endless-palace",
+      "reason": "Romantasy following two men in love across lifetimes; fiction, not memoir."
+    },
+    {
+      "id": "b0bpqnrqc9",
+      "title": "Raving",
+      "addedSubjects": [
+        "Queer culture",
+        "Transgender studies",
+        "Music"
+      ],
+      "source": "https://www.dukeupress.edu/raving",
+      "reason": "New York queer and trans rave culture."
+    },
+    {
+      "id": "b0cc36rt3p",
+      "title": "Funny Boy",
+      "addedSubjects": [
+        "LGBTQ biography",
+        "Biography"
+      ],
+      "source": "https://www.rutgersuniversitypress.org/templeton-press/funny-boy/9781978836730",
+      "reason": "Publisher classifies the Richard Hunt biography under LGBTQ Studies."
+    },
+    {
+      "id": "b003snjl8s",
+      "title": "By Nightfall",
+      "addedSubjects": [
+        "Gay themes",
+        "Fiction"
+      ],
+      "source": "https://us.macmillan.com/books/9780312610432/bynightfall/",
+      "reason": "A married man is attracted to his wife’s brother."
+    },
+    {
+      "id": "b00gl442su",
+      "title": "The Snow Queen",
+      "addedSubjects": [
+        "Gay fiction"
+      ],
+      "source": "https://us.macmillan.com/books/9781250067722/thesnowqueen/",
+      "reason": "Barrett’s relationships with men form part of the story."
+    },
+    {
+      "id": "b007nkk15e",
+      "title": "Land's End",
+      "addedSubjects": [
+        "LGBTQ culture"
+      ],
+      "source": "https://us.macmillan.com/books/9781250017703/landsend/",
+      "reason": "Travel writing about Provincetown includes its gay community."
+    },
+    {
+      "id": "b08191mpps",
+      "title": "The Space Between Worlds",
+      "addedSubjects": [
+        "LGBTQ science fiction",
+        "Parallel worlds"
+      ],
+      "source": "https://www.penguinrandomhouse.com/books/610612/the-space-between-worlds-by-micaiah-johnson/",
+      "reason": "Publisher page identifies queer science fiction; Cara’s attraction to Dell features in the description."
+    },
+    {
+      "id": "b07h8gcc4t",
+      "title": "Ancestral Night",
+      "addedSubjects": [
+        "Lesbian fiction",
+        "Science fiction",
+        "Space travel"
+      ],
+      "source": "https://alpennia.com/blog/lesbian-historic-motif-podcast-episode-20b-interview-elizabeth-bear",
+      "reason": "Bear describes a lesbian salvage-tug engineer as the protagonist."
+    },
+    {
+      "id": "b09cndzsyk",
+      "title": "A Half-Built Garden",
+      "addedSubjects": [
+        "LGBTQ science fiction",
+        "Science fiction",
+        "Alien contact",
+        "Climate change"
+      ],
+      "source": "https://www.futureverse.earth/p/episode-2-ruthanna-emrys",
+      "reason": "Author interview discusses queer representation, first contact and climate repair."
+    },
+    {
+      "id": "b002vhi8j0",
+      "title": "Cloud Atlas",
+      "addedSubjects": [
+        "Bisexual characters"
+      ],
+      "source": "https://www.theguardian.com/books/2013/feb/08/david-mitchell-project-great-experimenter",
+      "reason": "Frobisher’s letters to his male lover."
+    },
+    {
+      "id": "b09vbj1w9m",
+      "title": "Liarmouth",
+      "addedSubjects": [
+        "Gay themes",
+        "Fiction"
+      ],
+      "source": "https://www.thepinknews.com/2022/05/29/john-waters-liarmouth-novel-interview/",
+      "reason": "Waters discusses the novel’s gay sexual satire."
+    }
+  ]
+}
