@@ -1336,5 +1336,139 @@
         "url": "https://www.penguin.co.uk/books/440824/the-cold-start-problem-by-chen-andrew/9781847942791"
       }
     ]
+  },
+  "memory-neuromancer": {
+    "cover": "/assets/books/covers/neuromancer-publisher.webp",
+    "sources": [
+      {
+        "label": "Publisher",
+        "url": "https://www.penguinrandomhouse.com/series/C1E/sprawl-trilogy/"
+      }
+    ],
+    "subjects": [
+      "Science fiction",
+      "Cyberpunk",
+      "Artificial intelligence",
+      "Computers"
+    ]
+  },
+  "memory-count-zero": {
+    "cover": "/assets/books/covers/count-zero-publisher.webp",
+    "sources": [
+      {
+        "label": "Publisher",
+        "url": "https://www.penguinrandomhouse.com/series/C1E/sprawl-trilogy/"
+      }
+    ],
+    "subjects": [
+      "Science fiction",
+      "Cyberpunk",
+      "Artificial intelligence",
+      "Computers"
+    ]
+  },
+  "memory-mona-lisa-overdrive": {
+    "cover": "/assets/books/covers/mona-lisa-overdrive-publisher.webp",
+    "sources": [
+      {
+        "label": "Publisher",
+        "url": "https://www.penguinrandomhouse.com/series/C1E/sprawl-trilogy/"
+      }
+    ],
+    "subjects": [
+      "Science fiction",
+      "Cyberpunk",
+      "Artificial intelligence",
+      "Computers"
+    ]
+  },
+  "memory-burning-chrome": {
+    "cover": "/assets/books/covers/burning-chrome-publisher.webp",
+    "sources": [
+      {
+        "label": "Publisher",
+        "url": "https://www.orionbooks.co.uk/titles/william-gibson/burning-chrome/9781473217447/"
+      }
+    ],
+    "subjects": [
+      "Science fiction",
+      "Cyberpunk",
+      "Short stories"
+    ]
+  },
+  "memory-difference-engine": {
+    "cover": "/assets/books/covers/difference-engine-publisher.webp",
+    "sources": [
+      {
+        "label": "Publisher",
+        "url": "https://www.penguinrandomhouse.com/books/59656/the-difference-engine-by-william-gibson-and-bruce-sterling/"
+      }
+    ],
+    "subjects": [
+      "Science fiction",
+      "Alternate history",
+      "Steampunk",
+      "Computers"
+    ]
+  },
+  "memory-virtual-light": {
+    "cover": "/assets/books/covers/virtual-light-publisher.webp",
+    "sources": [
+      {
+        "label": "Publisher",
+        "url": "https://www.penguin.co.uk/books/15210/virtual-light-by-gibson-william/9780241953501"
+      }
+    ],
+    "subjects": [
+      "Science fiction",
+      "Cyberpunk",
+      "Thriller",
+      "Technology"
+    ]
+  },
+  "memory-idoru": {
+    "cover": "/assets/books/covers/idoru-publisher.webp",
+    "sources": [
+      {
+        "label": "Publisher",
+        "url": "https://www.penguin.co.uk/books/21548/idoru-by-william-gibson/9780241953525"
+      }
+    ],
+    "subjects": [
+      "Science fiction",
+      "Cyberpunk",
+      "Artificial intelligence",
+      "Japan",
+      "Music"
+    ]
+  },
+  "memory-diamond-age": {
+    "cover": "/assets/books/covers/diamond-age-publisher.webp",
+    "sources": [
+      {
+        "label": "Publisher",
+        "url": "https://www.penguinrandomhouse.com/books/172835/the-diamond-age-by-neal-stephenson/"
+      }
+    ],
+    "subjects": [
+      "Science fiction",
+      "Cyberpunk",
+      "Nanotechnology",
+      "Computers"
+    ]
+  },
+  "memory-anathem": {
+    "cover": "/assets/books/covers/anathem-publisher.webp",
+    "sources": [
+      {
+        "label": "Publisher",
+        "url": "https://subterraneanpress.com/anathem/"
+      }
+    ],
+    "subjects": [
+      "Science fiction",
+      "Philosophy",
+      "Mathematics"
+    ]
   }
 }

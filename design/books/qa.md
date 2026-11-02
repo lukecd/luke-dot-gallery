@@ -364,3 +364,13 @@ Lint, production build and whitespace checks passed. Three clean browser passes:
 Evidence: audit-output/books/navigation-recovery/desktop.jpg and mobile.jpg.
 Viewport restored and QA tab closed. Existing-tab binding returned an unavailable
 API error; checks used a fresh tab in the same in-app browser. Nothing pushed.
+
+## 2026-11-02 — Gibson and Stephenson additions
+
+- Added seven confirmed Gibson paperbacks plus The Diamond Age and Anathem (format unknown); all purchase and reading dates remain unknown.
+- Snow Crash, Cryptonomicon, Seveneves and Termination Shock were already present. Verified their original records, including purchases, are unchanged and all thirteen requested titles occur exactly once.
+- Publisher descriptions support subjects and Sprawl/Bridge ordering. Burning Chrome is the 1986 collection, not the 1982 title story. Standalone books have no series/order.
+- All nine new local WebP covers visually inspected; 12–69 KB each, at most 432×648. Source URLs are in gibson-stephenson-cover-sources.json; durable covers/subjects are in catalog-overrides.json.
+- Open Library refresh attempted for Gibson, Stephenson and Sterling; connections failed, so previous successful results/dates remain. Removed the two newly read Stephenson titles from recommendations and added publisher-verified All Tomorrow's Parties as Bridge book 3.
+- Lint, production build and 25 book tests passed. Data assertions confirmed covers, size budgets, no duplicates and exclusion of read titles from discovery.
+- Three consecutive clean browser checks: desktop Gibson list/Sprawl filter/history; 390px Stephenson list/Anathem connections/Back; desktop Bridge filter/series suggestion/author navigation. Screenshot saved locally in audit-output/books/gibson-stephenson/new-books.png in the primary checkout.
