@@ -5,11 +5,10 @@ import { normalizeSearch } from "../library";
 import type { Book } from "../types";
 import styles from "../discovery.module.css";
 
-export function BookDiscovery({books,query,author,filter,onFilter,onAuthor,onSelect,candidates,snapshot}:{candidates:DiscoveryBook[];snapshot:DiscoverySnapshot;onSelect:(id:string)=>void;books:Book[];query:string;author:string;filter:string;onFilter:(value:string)=>void;onAuthor:(name:string)=>void}) {
+export function BookDiscovery({books,author,filter,onFilter,onAuthor,onSelect,candidates,snapshot}:{candidates:DiscoveryBook[];snapshot:DiscoverySnapshot;onSelect:(id:string)=>void;books:Book[];author:string;filter:string;onFilter:(value:string)=>void;onAuthor:(name:string)=>void}) {
   const [limit,setLimit] = useState(12);
   const visible = candidates.filter(candidate => {
-    const text = normalizeSearch([candidate.title,...candidate.authors,candidate.series??""].join(" "));
-    if (!normalizeSearch(query).split(/\s+/).every(term=>text.includes(term)) || (author && !candidate.authors.some(a=>normalizeSearch(a)===normalizeSearch(author)))) return false;
+    if (author && !candidate.authors.some(a=>normalizeSearch(a)===normalizeSearch(author))) return false;
     if (filter === "series") return !!seriesStartingPoint(candidate,books);
     if (filter === "authors") return !seriesStartingPoint(candidate,books);
     return true;

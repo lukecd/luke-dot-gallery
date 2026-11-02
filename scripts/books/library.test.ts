@@ -158,3 +158,16 @@ test("Tales of the City has ten distinct ordered books with original purchase ev
   assert.deepEqual(purchased.map(b => [b.seriesOrder,firstPurchase(b)?.date]).sort((a,b) => Number(a[0])-Number(b[0])),[[7,"2014-02-18"],[8,"2014-02-21"],[9,"2014-02-25"]]);
   for (const b of memory.books ?? []) assert.equal(b.readDate,null);
 });
+
+test("search finds recommendation titles as well as owned titles", () => {
+  const discoveries = JSON.parse(readFileSync("app/books/data/discovery.json", "utf8")).candidates;
+  const rightThing = discoveries.find((book: { title: string }) => book.title === "Right Thing, Right Now");
+  assert(rightThing, "Regression fixture must exist in recommendations");
+  assert(matchesBook(rightThing, "right thing"));
+  assert(matchesBook(rightThing, "RYAN holiday"));
+  assert(!matchesBook(rightThing, "no such book xyz"));
+  assert(!library.books.some(book => matchesBook(book, "right thing")), "This recommendation is not an owned book");
+  const dune = library.memories[0].books![0];
+  assert(matchesBook(dune, "dune herbert"));
+  assert(matchesBook({title:"Another volume",authors:["Test Author"],series:"Example Trilogy"}, "example trilogy"));
+});

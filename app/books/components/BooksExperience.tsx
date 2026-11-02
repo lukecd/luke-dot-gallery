@@ -12,6 +12,7 @@ import { AuthorLinks } from "./AuthorLinks";
 import { BooksHeader } from "./BooksHeader";
 import { LibraryControls } from "./LibraryControls";
 import { PurchaseTimeline } from "./PurchaseTimeline";
+import { LibrarySearchResults } from "./LibrarySearchResults";
 import { BookDiscovery } from "./BookDiscovery";
 import { ConnectionMap } from "./ConnectionMap";
 import { useBooksNavigation } from "../hooks/useBooksNavigation";
@@ -31,7 +32,9 @@ export function BooksExperience({ initialSearch }: { initialSearch: string }) {
       previousView.current = view;
     }
   }, [view]);
-  const matches = useMemo(() => books.filter(b => matchesBook(b, query) && (!author || b.authors.some(name => normalizeSearch(name) === normalizeSearch(author)))), [query, author]);
+  const searching = !!query.trim();
+  const matchingCandidates = candidates.filter(candidate => matchesBook(candidate, query));
+  const matches = useMemo(() => books.filter(b => matchesBook(b, query) && (searching || !author || b.authors.some(name => normalizeSearch(name) === normalizeSearch(author)))), [query, author, searching]);
   const visible = matches.filter(b => year === "all" || (firstPurchase(b)?.date.slice(0,4) ?? "undated") === year);
   const focused = (recommendation ? discoveryConnectionBook(recommendation, books) : undefined) ?? matches.find(b => b.id === (focusId === "dune" ? "memory-dune-1" : focusId)) ?? matches.find(b => normalizeSearch(b.title) === normalizeSearch(query)) ?? matches[0];
   const clear = () => navigate({ query: "", author: "", year: "all" });
@@ -51,16 +54,17 @@ export function BooksExperience({ initialSearch }: { initialSearch: string }) {
   };
   const completeSearch = () => {
     finishQuery();
-    if (query.trim()) trackEvent("library_search", { ...(view === "next" ? {} : { result_count: matches.length }), library_view: view });
+    if (query.trim()) trackEvent("library_search", { result_count: matches.length + matchingCandidates.length, library_view: view });
   };
   const results = view === "timeline" ? visible : matches;
   return <main className={styles.page}><div className={styles.container}>
     <BooksHeader view={view} onHome={showAllBooks} />
     <LibraryControls query={query} onQuery={changeQuery} onQueryEnd={completeSearch} view={view} onView={view => navigate({ view, author: "", year: "all" })} sort={sort} onSort={sort => navigate({ sort })} />
-    {view !== "next" && <div className={styles.collectionSummary} role="status" aria-live="polite"><span>{results.length} {results.length === 1 ? "book" : "books"}{author && <> by <AuthorLinks authors={[author]} onAuthor={showAuthor} /></>}</span>{(query || author || year !== "all") && <button className={styles.textButton} onClick={clear}>Clear filters</button>}</div>}
-    {view === "next" && <BookDiscovery candidates={candidates} snapshot={snapshot} onSelect={showConnections} books={books} query={query} author={author} filter={discoveryFilter} onFilter={discoveryFilter => { trackEvent("library_discovery_filter", { discovery_filter: discoveryFilter }); navigate({discoveryFilter}); }} onAuthor={showAuthor} />}
-    {view === "timeline" && (visible.length ? <PurchaseTimeline books={visible} year={year} years={years} onYear={year => navigate({ year })} sort={sort} onSelect={showConnections} onAuthor={showAuthor} /> : <div className={styles.empty}><h2>No books found.</h2><p>Try another search.</p><button className={styles.primaryButton} onClick={clear}>Reset filters</button></div>)}
-    {view === "connections" && <ConnectionMap key={`${focused?.id}:${relation}`} recommendation={recommendation} relation={relation} onRelation={relation => { trackEvent("library_connection_filter", { relation }); navigate({ relation }); }} book={focused} books={books} choices={[...matches].sort((a,b) => a.title.localeCompare(b.title))} onFocus={showConnections} onAuthor={showAuthor} onHome={showAllBooks} />}
+    {!searching && view !== "next" && <div className={styles.collectionSummary} role="status" aria-live="polite"><span>{results.length} {results.length === 1 ? "book" : "books"}{author && <> by <AuthorLinks authors={[author]} onAuthor={showAuthor} /></>}</span>{(query || author || year !== "all") && <button className={styles.textButton} onClick={clear}>Clear filters</button>}</div>}
+    {searching && <LibrarySearchResults key={query} matches={matches} candidates={matchingCandidates} books={books} onSelect={showConnections} onAuthor={showAuthor} onClear={clear} />}
+    {!searching && view === "next" && <BookDiscovery candidates={candidates} snapshot={snapshot} onSelect={showConnections} books={books} author={author} filter={discoveryFilter} onFilter={discoveryFilter => { trackEvent("library_discovery_filter", { discovery_filter: discoveryFilter }); navigate({discoveryFilter}); }} onAuthor={showAuthor} />}
+    {!searching && view === "timeline" && (visible.length ? <PurchaseTimeline books={visible} year={year} years={years} onYear={year => navigate({ year })} sort={sort} onSelect={showConnections} onAuthor={showAuthor} /> : <div className={styles.empty}><h2>No books found.</h2><p>Try another search.</p><button className={styles.primaryButton} onClick={clear}>Reset filters</button></div>)}
+    {!searching && view === "connections" && <ConnectionMap key={`${focused?.id}:${relation}`} recommendation={recommendation} relation={relation} onRelation={relation => { trackEvent("library_connection_filter", { relation }); navigate({ relation }); }} book={focused} books={books} choices={[...matches].sort((a,b) => a.title.localeCompare(b.title))} onFocus={showConnections} onAuthor={showAuthor} onHome={showAllBooks} />}
     <footer className={styles.footer}><span>LUKE / BOOKS</span><p>A personal collection, still growing.</p></footer>
   </div></main>;
 }
