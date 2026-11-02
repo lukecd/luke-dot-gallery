@@ -1336,5 +1336,18 @@
         "url": "https://www.penguinrandomhouse.com/books/304602/chapterhouse-dune-by-frank-herbert/"
       }
     ]
+  },
+  "b08hz5xy7x": {
+    "cover": "/assets/books/covers/cold-start-problem-publisher.webp",
+    "sources": [
+      {
+        "label": "Open Library",
+        "url": "https://openlibrary.org/works/OL24182444W"
+      },
+      {
+        "label": "Publisher cover",
+        "url": "https://www.penguin.co.uk/books/440824/the-cold-start-problem-by-chen-andrew/9781847942791"
+      }
+    ]
   }
 }
