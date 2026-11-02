@@ -5,6 +5,17 @@ export type DiscoveryBook = {
   id: string; title: string; authors: string[]; publicationYear: number | null;
   cover: string | null; sourceUrl: string; series?: string; seriesOrder?: number;
 };
+// Recommendations can be explored without becoming purchases or read books.
+export function discoveryConnectionBook(candidate: DiscoveryBook, books: Book[]): Book {
+  return {
+    id: candidate.id, title: candidate.title,
+    authors: candidate.authors.map(author => books.flatMap(book => book.authors).find(name => sameAuthor(name, author)) ?? author),
+    cover: candidate.cover, series: candidate.series ?? null,
+    seriesOrder: candidate.seriesOrder ?? null, publicationYear: candidate.publicationYear ?? undefined,
+    originalTitles: [], identifiers: [], purchases: [], subjects: [],
+    sources: [{ label: "About this book", url: candidate.sourceUrl }], readingStatus: "not-read",
+  };
+}
 export type AuthorCheck = { attemptedAt: string; checkedAt: string | null; authorKey?: string };
 export type DiscoverySnapshot = { updatedAt: string | null; checks: Record<string, AuthorCheck>; candidates: DiscoveryBook[] };
 export type CatalogWork = { key: string; title: string; author_name?: string[]; author_key?: string[]; first_publish_year?: number; isbn?: string[]; language?: string[] };

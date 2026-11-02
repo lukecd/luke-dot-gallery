@@ -1,3 +1,4 @@
+import type { DiscoveryBook } from "../discovery";
 import { useState } from "react";
 import { bookConnections, bookTopics, selectConnections } from "../connections";
 import type { Book } from "../types";
@@ -9,7 +10,7 @@ import { AllBooksLink } from "./AllBooksLink";
 import { NoConnections } from "./NoConnections";
 import styles from "../books.module.css";
 
-export function ConnectionMap({ book, books, choices, relation, onRelation, onFocus, onAuthor, onHome }: { book: Book | undefined; books: Book[]; choices: Book[]; relation: string; onRelation: (relation: string) => void; onFocus: (id: string) => void; onAuthor: (author: string) => void; onHome: () => void }) {
+export function ConnectionMap({ book, books, choices, relation, onRelation, onFocus, onAuthor, onHome, recommendation }: { recommendation?: DiscoveryBook; book: Book | undefined; books: Book[]; choices: Book[]; relation: string; onRelation: (relation: string) => void; onFocus: (id: string) => void; onAuthor: (author: string) => void; onHome: () => void }) {
   const [limit, setLimit] = useState(6);
   if (!book) return <div className={styles.empty}><p>No books match this search.</p><AllBooksLink onHome={onHome} className={styles.connectionBrowse}>Browse all books</AllBooksLink></div>;
   const connections = bookConnections(book, books);
@@ -27,10 +28,10 @@ export function ConnectionMap({ book, books, choices, relation, onRelation, onFo
     <div className={styles.connectionWorkspace}>
       <aside className={styles.focusBook}>
         <label htmlFor="map-focus" className={styles.eyebrow}>Choose another book</label>
-        <select id="map-focus" value={book.id} onChange={e => onFocus(e.target.value)}>{choices.map(b => <option key={b.id} value={b.id}>{b.title}</option>)}</select>
+        <select id="map-focus" value={book.id} onChange={e => onFocus(e.target.value)}>{(choices.some(choice => choice.id === book.id) ? choices : [book, ...choices]).map(b => <option key={b.id} value={b.id}>{b.title}</option>)}</select>
         <div className={styles.focusCover}><BookCover book={book} large /></div>
         <h2>{book.title}</h2><p className={styles.focusAuthor}><AuthorLinks authors={book.authors} onAuthor={onAuthor} /></p>
-        <PurchaseDate book={book} className={styles.focusPurchase} />
+        {recommendation ? <p className={styles.focusPurchase}>Not in my collection{recommendation.publicationYear && <><br />Published {recommendation.publicationYear}</>}</p> : <PurchaseDate book={book} className={styles.focusPurchase} />}
         {book.series === "Legends of Dune" && <p className={styles.personalNote}>Read them. Didn’t like them.</p>}
         {!!shown.length && <p className={styles.followHint}>Follow a cover to see where it leads.</p>}
       </aside>

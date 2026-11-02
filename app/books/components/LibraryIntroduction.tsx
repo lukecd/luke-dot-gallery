@@ -11,7 +11,7 @@ export function LibraryIntroduction({ view }: { view: LibraryView }) {
   return <div className={styles.viewIntroduction}>
     <p>{introductions[view]}</p>
     {view === "timeline" && <p className={styles.introductionFootnote}>
-      <small>* Includes my Amazon book purchases and the paperbacks I remember. The rest are lost to the sands of time—or just my memory.</small>
+      <small>* Includes my Amazon book purchases and the paperbacks I remember. The rest are lost to the sands of time... or just my memory.</small>
     </p>}
   </div>;
 }
