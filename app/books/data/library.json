@@ -15311,11 +15311,15 @@
             "Frank Herbert"
           ],
           "publicationYear": 1985,
-          "cover": "/assets/books/covers/5536140.jpg",
+          "cover": "/assets/books/covers/chapterhouse-dune-publisher.webp",
           "sources": [
             {
               "label": "Open Library",
               "url": "https://openlibrary.org/works/OL893508W"
+            },
+            {
+              "label": "Publisher cover",
+              "url": "https://www.penguinrandomhouse.com/books/304602/chapterhouse-dune-by-frank-herbert/"
             }
           ],
           "readDate": null,
