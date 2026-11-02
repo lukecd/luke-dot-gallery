@@ -1,5 +1,7 @@
 "use client";
 
+import { useSyncExternalStore } from "react";
+import { useProjectAnchors } from "../hooks/useProjectAnchors";
 import { usePortfolioScroll } from "../hooks/usePortfolioScroll";
 import { CheerAmbassadorsProject } from "./CheerAmbassadorsProject";
 import { ContactScene } from "./ContactScene";
@@ -23,9 +25,14 @@ const projectScenes = [
   { id: "cheer", Component: CheerAmbassadorsProject },
   { id: "lamont", Component: LamontDesignProject },
 ] as const;
+const subscribe = () => () => {};
+const clientEnhanced = () => true;
+const serverEnhanced = () => false;
 
 function PortfolioScrollExperience() {
-  const { activeSceneId, mountedSceneIds, portfolioRef } = usePortfolioScroll();
+  useProjectAnchors();
+  const enhanced = useSyncExternalStore(subscribe, clientEnhanced, serverEnhanced);
+  const { activeSceneId, mountedSceneIds, portfolioRef, showLaunchEffects } = usePortfolioScroll();
 
   return (
     <>
@@ -35,16 +42,14 @@ function PortfolioScrollExperience() {
         aria-label="Luke personal transmission"
         data-active-scene={activeSceneId ?? "launch"}
       >
-        <HeroScene isActive={activeSceneId === null} />
+        <HeroScene isActive={activeSceneId === null} showLaunchEffects={showLaunchEffects} />
         <TravelingRocket />
-        {projectScenes.map(({ id, Component }) => mountedSceneIds.includes(id) && (
-          <div key={id} inert={activeSceneId !== id}>
-            <Component />
+        {projectScenes.map(({ id, Component }) => (
+          <div className="portfolio-project" key={id} inert={enhanced && activeSceneId !== id}>
+            <Component showMedia={mountedSceneIds.includes(id)} />
           </div>
         ))}
-        {mountedSceneIds.includes("contact") && (
-          <ContactScene isActive={activeSceneId === "contact"} />
-        )}
+        <ContactScene isActive={!enhanced || activeSceneId === "contact"} showMedia={mountedSceneIds.includes("contact")} />
       </main>
       <div className="scroll-runway" aria-hidden="true" />
     </>

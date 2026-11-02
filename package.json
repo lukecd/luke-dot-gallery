@@ -14,7 +14,8 @@
     "books:discover": "node --experimental-strip-types scripts/books/refresh-discovery.ts",
     "books:covers": "node --experimental-strip-types scripts/books/discovery-covers.ts",
     "books:optimize-covers": "node --experimental-strip-types scripts/books/optimize-discovery-covers.ts",
-    "books:test": "node --experimental-strip-types --test scripts/books/*.test.ts"
+    "books:test": "node --experimental-strip-types --test scripts/books/*.test.ts",
+    "seo:test": "node --experimental-strip-types scripts/seo/verify.ts"
   },
   "dependencies": {
     "@vercel/blob": "^2.8.2",

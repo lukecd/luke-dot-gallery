@@ -12,8 +12,7 @@ export function TravelingRocket() {
         alt=""
         width={1024}
         height={1536}
-        sizes="6vw"
-        priority
+        sizes="(max-width: 800px) 48px, (max-width: 1600px) 6vw, 96px"
       />
     </div>
   );

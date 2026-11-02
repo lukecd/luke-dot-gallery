@@ -8,11 +8,11 @@ const screens: AppScreen[] = sowScreens.map((screen, index) => ({
   video: index === 0 ? "/assets/sow/today-botanical-ceremony-web.mp4" : undefined,
 }));
 
-export function SowProject() {
+export function SowProject({ showMedia }: { showMedia: boolean }) {
   const project = projects.sow;
   return (
-    <section className="project-scene sow-scene" aria-label="Sow project">
-      <div className="visual-art-anchor"><AppScreenGallery name="Sow" screens={screens} /></div>
+    <section id="sow" className="project-scene sow-scene" aria-label="Sow project">
+      {showMedia && <div className="visual-art-anchor"><AppScreenGallery name="Sow" screens={screens} /></div>}
       <ShowcaseCard category="APPS" title={project.title} subtitle={project.tagline} description={project.description}>
         <ExternalLink {...project.link} />
       </ShowcaseCard>

@@ -1,6 +1,7 @@
 import type { ProjectSceneId } from "../data/projectScenes";
 
 export const GA_MEASUREMENT_ID = "G-Q5T874Q6XS";
+export const GA_PRODUCTION_HOST = "luke.gallery";
 
 export type AnalyticsSectionId = "launch" | ProjectSceneId;
 
@@ -13,8 +14,10 @@ declare global {
   }
 }
 
-function sendEvent(name: string, parameters: Record<string, string>) {
-  if (process.env.NODE_ENV !== "production" || typeof window === "undefined") return;
+type EventParameters = Record<string, string | number>;
+
+export function trackEvent(name: string, parameters: EventParameters = {}) {
+  if (process.env.NODE_ENV !== "production" || typeof window === "undefined" || window.location.hostname !== GA_PRODUCTION_HOST) return;
 
   const event = ["event", name, parameters];
   if (window.gtag) {
@@ -27,14 +30,14 @@ function sendEvent(name: string, parameters: Record<string, string>) {
 }
 
 export function trackSectionView(sectionId: AnalyticsSectionId) {
-  sendEvent("section_view", {
+  trackEvent("section_view", {
     section_id: sectionId,
     section_name: sectionId === "launch" ? "Launch" : sectionId,
   });
 }
 
 export function trackSectionJump(menuTarget: AnalyticsSectionId, navigationMethod: NavigationMethod) {
-  sendEvent("section_jump", {
+  trackEvent("section_jump", {
     navigation_method: navigationMethod,
     menu_target: menuTarget,
   });

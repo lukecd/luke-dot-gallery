@@ -1,0 +1,15 @@
+/* A readable version of the same portfolio when JavaScript is unavailable. */
+.hero { position: relative; width: 100%; height: auto; overflow: visible; padding: 2rem 5%; }
+.hero > .layer, .star-field, .masthead-star, .menu-toggle, .site-menu, .traveling-rocket, .scroll-runway { display: none; }
+.hero .masthead { position: relative; inset: auto; padding: 0; }
+.portfolio-opening { position: relative !important; inset: auto !important; }
+.portfolio-opening > :not(.portfolio-title) { display: none; }
+.portfolio-title { position: relative !important; inset: auto !important; margin: 3rem auto; transform: none !important; opacity: 1 !important; }
+.portfolio-title h1 { font-size: 7rem !important; margin: 1rem 0 !important; }
+.portfolio-project .project-scene { position: relative; inset: auto; margin: 4rem auto; width: 100%; }
+.portfolio-project .showcase-card { opacity: 1 !important; transform: none !important; }
+.portfolio-project .visual-art-anchor { display: none; }
+.contact-scene { position: relative; inset: auto; overflow: visible; margin-top: 3rem; }
+.contact-form-overlay { position: relative; inset: auto; width: min(100%, 44rem); margin: auto; max-height: none; opacity: 1; transform: none; }
+.contact-form label, .contact-form button, .contact-form__notice { display: none; }
+.project-scene, .showcase-card, .contact-form-overlay { pointer-events: auto; }

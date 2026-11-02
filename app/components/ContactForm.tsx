@@ -2,6 +2,7 @@
 
 import { type FormEvent, useState } from "react";
 import { LibraryInvitation } from "./LibraryInvitation";
+import { trackEvent } from "../lib/analytics";
 
 export function ContactForm() {
   const [isSending, setIsSending] = useState(false);
@@ -28,13 +29,16 @@ export function ContactForm() {
       const result = (await response.json()) as { error?: string; ok?: boolean };
 
       if (!response.ok || !result.ok) {
+        trackEvent("contact_error", { error_type: "server" });
         setNotice(result.error ?? "Your message could not be sent. Please try again.");
         return;
       }
 
       form.reset();
+      trackEvent("generate_lead", { method: "contact_form" });
       setNotice("Transmission sent. I’ll get back to you soon.");
     } catch {
+      trackEvent("contact_error", { error_type: "network" });
       setNotice("Your message could not be sent. Please try again or email luke@spstories.com.");
     } finally {
       setIsSending(false);

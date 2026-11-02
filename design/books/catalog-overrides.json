@@ -1305,5 +1305,23 @@
         "url": "https://www.panmacmillan.com/authors/blake-crouch/wayward/9781529099850"
       }
     ]
+  },
+  "b0dptpnlyl": {
+    "subjects": [
+      "Science fiction",
+      "Dystopian fiction",
+      "Climate change fiction",
+      "LGBTQ fiction"
+    ],
+    "sources": [
+      {
+        "label": "Open Library",
+        "url": "https://openlibrary.org/works/OL42433683W"
+      },
+      {
+        "label": "Publisher description and excerpt",
+        "url": "https://us.macmillan.com/books/9781250380975/saltcrop/"
+      }
+    ]
   }
 }

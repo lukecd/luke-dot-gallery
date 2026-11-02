@@ -7617,11 +7617,20 @@
         }
       ],
       "cover": "/assets/books/covers/15247552.jpg",
-      "subjects": [],
+      "subjects": [
+        "Science fiction",
+        "Dystopian fiction",
+        "Climate change fiction",
+        "LGBTQ fiction"
+      ],
       "sources": [
         {
           "label": "Open Library",
           "url": "https://openlibrary.org/works/OL42433683W"
+        },
+        {
+          "label": "Publisher description and excerpt",
+          "url": "https://us.macmillan.com/books/9781250380975/saltcrop/"
         }
       ],
       "workId": "/works/OL42433683W"

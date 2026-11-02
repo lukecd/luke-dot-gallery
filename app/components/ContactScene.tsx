@@ -72,17 +72,19 @@ function ContactGroundStage() {
  */
 type ContactSceneProps = {
   isActive: boolean;
+  showMedia: boolean;
 };
 
-export function ContactScene({ isActive }: ContactSceneProps) {
+export function ContactScene({ isActive, showMedia }: ContactSceneProps) {
   return (
     <section
       className="contact-scene"
+      id="contact"
+      inert={!isActive}
       aria-label="Contact landing scene"
       data-active={isActive}
     >
-      <ContactSkyAccents />
-      <ContactGroundStage />
+      {showMedia && <><ContactSkyAccents /><ContactGroundStage /></>}
       <ContactForm />
     </section>
   );

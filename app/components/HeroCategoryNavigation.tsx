@@ -1,6 +1,6 @@
 "use client";
 
-import { navigateToProject } from "../lib/projectNavigation";
+import { ProjectLink } from "./ProjectLink";
 
 const heroCategories = [
   { label: "APPS", projectId: "sow" },
@@ -16,9 +16,9 @@ export function HeroCategoryNavigation() {
         {heroCategories.map((category, index) => (
           <span key={category.projectId}>
             {index > 0 && <b aria-hidden="true">✱</b>}
-            <button type="button" onClick={() => navigateToProject(category.projectId, "hero_category")}>
+            <ProjectLink id={category.projectId} method="hero_category">
               {category.label}
-            </button>
+            </ProjectLink>
           </span>
         ))}
       </p>
