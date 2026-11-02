@@ -26,7 +26,7 @@ test("identifiers are unique and each local cover exists", () => {
     for (const s of b.sources) {
       const url = new URL(s.url);
       assert.equal(url.protocol, "https:");
-      assert(["openlibrary.org", "www.amazon.com", "www.audible.com", "rupaul.com", "harlequin.com", "www.dukeupress.edu", "www.rutgersuniversitypress.org", "us.macmillan.com", "www.penguinrandomhouse.com", "www.panmacmillan.com", "press.uchicago.edu", "alpennia.com", "www.futureverse.earth", "www.theguardian.com", "www.thepinknews.com", "en.wikipedia.org"].includes(url.hostname));
+      assert(["openlibrary.org", "www.amazon.com", "www.audible.com", "rupaul.com", "harlequin.com", "www.dukeupress.edu", "www.rutgersuniversitypress.org", "us.macmillan.com", "www.penguinrandomhouse.com", "www.penguin.co.uk", "www.panmacmillan.com", "press.uchicago.edu", "alpennia.com", "www.futureverse.earth", "www.theguardian.com", "www.thepinknews.com", "en.wikipedia.org"].includes(url.hostname));
     }
   }
 });
