@@ -3,7 +3,7 @@ import { bookConnections, bookTopics, selectConnections } from "../connections";
 import type { Book } from "../types";
 import { PurchaseDate } from "./PurchaseDate";
 import { AuthorLinks } from "./AuthorLinks";
-import { BookCover } from "./BookCard";
+import { BookCover } from "./BookCover";
 import { ConnectionCluster } from "./ConnectionCluster";
 import { AllBooksLink } from "./AllBooksLink";
 import { NoConnections } from "./NoConnections";

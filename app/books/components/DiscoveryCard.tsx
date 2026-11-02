@@ -13,7 +13,7 @@ export function DiscoveryCard({ candidate, books, onAuthor }: {
     const link = (event.target as HTMLElement).closest<HTMLAnchorElement>("a");
     if (link?.href === candidate.sourceUrl) trackEvent("library_recommendation_outbound", { book_id: candidate.id, link_url: candidate.sourceUrl });
   }}>
-    {candidate.cover && <a href={candidate.sourceUrl} target="_blank" rel="noreferrer" aria-label={`About ${candidate.title}`}><Image className={styles.cover} src={candidate.cover} alt={`Cover of ${candidate.title}`} width={105} height={160} sizes="(max-width: 600px) 70px, 105px" loading="lazy" /></a>}
+    {candidate.cover && <a className={styles.coverLink} href={candidate.sourceUrl} target="_blank" rel="noreferrer" aria-label={`About ${candidate.title}`}><Image className={styles.cover} src={candidate.cover} alt={`Cover of ${candidate.title}`} width={140} height={210} sizes="(max-width: 600px) 100px, 140px" loading="lazy" /></a>}
     <div className={styles.cardBody}>
       <p className={styles.reason}>{discoveryReason(candidate,books)}</p>
       <h3><a href={candidate.sourceUrl} target="_blank" rel="noreferrer">{candidate.title}</a></h3>

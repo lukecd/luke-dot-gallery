@@ -1,7 +1,7 @@
 import { connectionReason, type BookConnection } from "../connections";
 import { AuthorLinks } from "./AuthorLinks";
 import { PurchaseDate } from "./PurchaseDate";
-import { BookCover } from "./BookCard";
+import { BookCover } from "./BookCover";
 import { BookLink } from "./BookLink";
 import styles from "../books.module.css";
 

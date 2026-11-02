@@ -69,20 +69,18 @@
 .firstAmazonOrder h3 { font: 600 28px/1.1 var(--font-barlow-condensed), sans-serif; }
 .page .firstOrderIntroduction { margin: 8px 0 22px; font: 16px/1.4 Georgia, "Times New Roman", serif; }
 .firstOrderBooks { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 24px; }
-.firstOrderBooks .coverFrame { height: 150px; }
-.firstOrderBooks .coverFrame .cover { max-width: 100%; max-height: 150px; }
 @media (max-width: 600px) { .firstAmazonOrder { padding: 16px; } .firstOrderBooks { gap: 18px; } }
 .bookCard { display: flex; flex-direction: column; align-items: flex-start; text-align: left; padding: 0 0 8px; background: transparent; border: 0; min-width: 0; }
-.coverFrame { height: 195px; width: 100%; display: flex; align-items: flex-end; justify-content: flex-start; margin-bottom: 14px; transition: transform 180ms ease; }
+.coverFrame { position: relative; aspect-ratio: 2 / 3; max-height: 320px; width: 100%; display: flex; align-items: flex-end; justify-content: flex-start; margin-bottom: 14px; transition: transform 180ms ease; }
 .cover { width: auto; height: auto; max-width: 100%; max-height: 100%; object-fit: contain; display: block; }
-.coverFrame .cover { max-width: 146px; max-height: 195px; }
+.coverFrame .cover { position: absolute; inset: 0; width: 100%; height: 100%; object-position: left bottom; }
 .bookCard:hover .coverFrame { transform: translateY(-5px); }
 .bookCard:hover .bookTitle { color: var(--rust); }
 .bookTitle { font: 600 22px/1.12 var(--font-barlow-condensed), sans-serif; margin-bottom: 6px; overflow-wrap: anywhere; }
 .bookAuthor { font-size: 13px; line-height: 1.6; color: var(--muted); margin-bottom: 7px; }
 .purchaseDate { font-size: 12px; line-height: 1.5; }
 .seriesLabel { font-size: 9px; color: var(--teal); margin-top: 4px; }
-.coverUnavailable { width: 144px; height: 195px; border-top: 2px solid var(--teal); border-bottom: 1px solid var(--rule); display: flex; flex-direction: column; justify-content: space-between; padding: 16px 0; overflow: hidden; }
+.coverUnavailable { width: 100%; height: 100%; border-top: 2px solid var(--teal); border-bottom: 1px solid var(--rule); display: flex; flex-direction: column; justify-content: space-between; padding: 16px 0; overflow: hidden; }
 .coverUnavailable > span { font-size: 8px; letter-spacing: .07em; color: var(--muted); }
 .coverUnavailable strong { font: 500 24px/1.1 var(--font-barlow-condensed), sans-serif; overflow-wrap: anywhere; }
 .selectedCard { outline: 2px solid var(--rust); outline-offset: 9px; }
@@ -113,7 +111,6 @@
   .introAside { flex-basis: 190px; }
   .intro h1 { font-size: 7.2vw; }
   .bookGrid { grid-template-columns: repeat(4,minmax(0,1fr)); gap: 30px 20px; }
-  .coverFrame .cover { max-width: 100%; }
   .timelineLayout { gap: 20px; grid-template-columns: 75px minmax(0,1fr); }
 }
 @media (max-width: 800px) {
@@ -165,9 +162,7 @@
   .bookGrid { grid-template-columns: repeat(2,minmax(0,1fr)); column-gap: 25px; row-gap: 28px; }
   .yearHeading { margin-bottom: 24px; }
   .yearHeading h2 { font-size: 40px; }
-  .coverFrame { height: 185px; margin-bottom: 12px; }
-  .coverFrame .cover { max-height: 185px; max-width: min(130px,100%); }
-  .coverUnavailable { height: 185px; width: 100%; max-width: 130px; }
+  .coverFrame { margin-bottom: 12px; }
   .bookTitle { font-size: 22px; }
   .bookAuthor { font-size: 13px; }
   .purchaseDate { font-size: 12px; }
@@ -239,8 +234,8 @@
 .connectionCount { font-size: 12px; color: var(--muted); margin: 0 0 20px !important; }
 .connectionCards { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 30px 25px; }
 .connectionCard { display: flex; flex-direction: column; align-items: flex-start; min-width: 0; text-align: left; padding: 0; border: 0; background: transparent; }
-.connectionCover { display: flex; align-items: flex-end; width: 100%; height: 210px; margin-bottom: 12px; transition: transform 150ms; }
-.connectionCover .cover { width: auto; height: 210px; max-width: 100%; }
+.connectionCover { position: relative; display: flex; align-items: flex-end; width: 100%; aspect-ratio: 2 / 3; max-height: 300px; margin-bottom: 12px; transition: transform 150ms; }
+.connectionCover .cover { position: absolute; inset: 0; width: 100%; height: 100%; object-position: left bottom; }
 .connectionCard:hover .connectionCover { transform: translateY(-4px); }
 .connectionCard strong { font: 600 23px/1.1 var(--font-barlow-condensed),sans-serif; }
 .connectionAuthor { font-size: 13px; color: var(--muted); margin: 5px 0; }
@@ -259,7 +254,6 @@
   .connectionsHeading { display: block; }
   .connectionsHeading p { margin-top: 5px; }
   .connectionCards { gap: 26px 20px; }
-  .connectionCover, .connectionCover .cover { height: 185px; }
 }
 @media (max-width: 800px) {
   .connectionWorkspace { grid-template-columns: 1fr; gap: 28px; padding: 20px; }
@@ -288,7 +282,6 @@
   .connectionsHeading { display: block; }
   .connectionsHeading h2 { font-size: 29px; }
   .connectionCards { grid-template-columns: repeat(2,minmax(0,1fr)); gap: 25px 18px; }
-  .connectionCover, .connectionCover .cover { height: 175px; }
   .connectionCard strong { font-size: 21px; }
   .connectionReason { font-size: 12px; }
   .connectionFilters { gap: 6px; }
