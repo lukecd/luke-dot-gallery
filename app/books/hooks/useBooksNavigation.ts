@@ -27,7 +27,7 @@ export function useBooksNavigation(initialSearch: string) {
   function changeQuery(query: string) {
     // One history entry per editing session, never one entry per keystroke.
     const replace = searchEntry.current === window.location.search;
-    navigate({ query, year: "all" }, replace);
+    navigate({ query, author: "", year: "all" }, replace);
     searchEntry.current = window.location.search;
   }
   return { state, navigate, changeQuery, finishQuery: () => { searchEntry.current = null; } };

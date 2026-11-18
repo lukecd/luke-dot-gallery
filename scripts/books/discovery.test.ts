@@ -3,7 +3,7 @@ import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import type { Book } from "../../app/books/types";
 import type { DiscoveryBook, DiscoverySnapshot, CatalogWork } from "../../app/books/discovery";
-const { catalogCandidate, discoveryChoices, refreshDiscovery } = await import(new URL("../../app/books/discovery.ts",import.meta.url).href);
+const { catalogCandidate, discoveryChoices, discoveryConnectionBook, refreshDiscovery } = await import(new URL("../../app/books/discovery.ts",import.meta.url).href);
 const { readBooksLocation,booksLocationUrl,defaultLocation } = await import(new URL("../../app/books/navigation.ts",import.meta.url).href);
 const base = JSON.parse(readFileSync("app/books/data/library.json","utf8")).books[0] as Book;
 const owned:Book = {...base,title:"Known Book",originalTitles:[],authors:["Test Author"],identifiers:["123"],workId:"/works/OL1W"};
@@ -45,4 +45,21 @@ test("author namesakes without any known bibliography are rejected",async()=>{
 });
 test("discovery view and filter survive browser URL round trips",()=>{
  const state={...defaultLocation,view:"next",discoveryFilter:"series"};assert.deepEqual(readBooksLocation(booksLocationUrl(state).split("?")[1]),state);for (const filter of ["invalid","saved","hidden"]) assert.equal(readBooksLocation(`?view=next&discover=${filter}`).discoveryFilter,"all");
+});
+
+test("recommendation connections retain series, normalize author names, and never imply a purchase", async () => {
+ const { bookConnections } = await import(new URL("../../app/books/connections.ts", import.meta.url).href);
+ const collection = [{...owned, authors:["J. R. R. Tolkien"], series:"Middle-earth", seriesOrder:1}];
+ const next = discoveryConnectionBook({...candidate, authors:["J.R.R. Tolkien"], series:"Middle-earth", seriesOrder:2}, collection);
+ assert.equal(next.title, candidate.title);
+ assert.deepEqual(next.authors, collection[0].authors);
+ assert.deepEqual(next.purchases, []);
+ assert.equal(next.readingStatus, "not-read");
+ const connections = bookConnections(next, collection);
+ assert.equal(connections.length, 1);
+ assert.equal(connections[0].sameAuthor, true);
+ assert.equal(connections[0].sameSeries, true);
+ const state = {...defaultLocation, view:"connections", focusId:next.id};
+ assert.deepEqual(readBooksLocation(booksLocationUrl(state).split("?")[1]), state);
+ assert.equal(collection.length, 1);
 });

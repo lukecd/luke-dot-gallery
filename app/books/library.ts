@@ -3,8 +3,8 @@ import type { Book, Purchase, Library } from "./types";
 export const dateLabel = (date: string) => new Intl.DateTimeFormat("en-GB", { day: "numeric", month: "short", year: "numeric", timeZone: "UTC" }).format(new Date(`${date}T12:00:00Z`));
 export const firstPurchase = (book: Book): Purchase | undefined => [...book.purchases].sort((a,b) => a.date.localeCompare(b.date))[0];
 export const normalizeSearch = (value: string) => value.normalize("NFKD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
-export function matchesBook(book: Book, query: string) {
-  const text = normalizeSearch([book.title, ...book.originalTitles, ...book.authors, book.series ?? "", ...book.subjects].join(" "));
+export function matchesBook(book: Pick<Book, "title" | "authors"> & Partial<Pick<Book, "originalTitles" | "series" | "subjects">>, query: string) {
+  const text = normalizeSearch([book.title, ...(book.originalTitles ?? []), ...book.authors, book.series ?? "", ...(book.subjects ?? [])].join(" "));
   return normalizeSearch(query).split(/\s+/).every(word => text.includes(word));
 }
 export function purchaseLabel(purchase: Purchase) { return `${purchase.status === "preorder" ? "Preordered" : "Purchased"} ${dateLabel(purchase.date)}`; }
