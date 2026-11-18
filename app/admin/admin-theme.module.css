@@ -1,0 +1,37 @@
+@font-face { font-family: 'Apps Display'; src: url('/admin/fonts/paytone-one-400.ttf') format('truetype'); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Apps Sans'; src: url('/admin/fonts/dm-sans-400.ttf') format('truetype'); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Apps Sans'; src: url('/admin/fonts/dm-sans-500.ttf') format('truetype'); font-weight: 500; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Apps Sans'; src: url('/admin/fonts/dm-sans-600.ttf') format('truetype'); font-weight: 600; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Apps Sans'; src: url('/admin/fonts/dm-sans-700.ttf') format('truetype'); font-weight: 700; font-style: normal; font-display: swap; }
+
+.theme {
+  color-scheme: light;
+  --admin-paper: #faf7f0;
+  --admin-ink: #103747;
+  --admin-muted: #59616f;
+  --admin-coral: #ff6549;
+  --admin-accent: #cf422c;
+  --admin-brand: #e84a30;
+  --admin-teal: #009c9e;
+  --admin-lilac: #ecd0ed;
+  --admin-line: #d6d6d1;
+  --admin-tint: #f1e8f1;
+  --admin-danger: #a32f24;
+  --admin-display: 'Apps Display', 'Arial Black', sans-serif;
+  --admin-sans: 'Apps Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  /* Scope existing shared controls to this workspace, never the public site. */
+  --sow-deep-green: var(--admin-ink);
+  --sow-background: var(--admin-paper);
+  --sow-background-sunk: var(--admin-tint);
+  --sow-font-sans: var(--admin-sans);
+  --sow-font-serif: var(--admin-display);
+  font-family: var(--admin-sans);
+  color: var(--admin-ink);
+  background: var(--admin-paper);
+  font-size: 16px;
+  line-height: 1.5;
+}
+.theme :focus-visible { outline: 2px solid var(--admin-ink); outline-offset: 4px; }
+.theme button, .theme input, .theme select, .theme textarea { font-family: var(--admin-sans); }
+.theme button:not(:disabled), .theme summary { cursor: pointer; }
+.theme button:disabled { cursor: not-allowed; }

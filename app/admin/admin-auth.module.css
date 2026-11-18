@@ -1,0 +1,16 @@
+.page { min-height: 100svh; display: grid; place-items: center; padding: 60px 24px; background: var(--admin-teal); box-sizing: border-box; }
+.card { background: var(--admin-paper); color: var(--admin-ink); width: min(100%, 640px); padding: clamp(28px, 5vw, 60px); border-bottom: 12px solid var(--admin-lilac); box-shadow: 12px 12px 0 var(--admin-ink); box-sizing: border-box; }
+.eyebrow { color: var(--admin-accent); font-weight: 700; font-size: 15px; margin: 0 0 30px; }
+.card h1 { font: 400 clamp(38px, 5vw, 64px)/1.05 var(--admin-display); letter-spacing: -0.035em; margin: 0; }
+.card > p:not(.eyebrow, .success, .error) { color: var(--admin-muted); margin: 24px 0 30px; font-size: 17px; }
+.card form { display: grid; gap: 10px; }
+.card label { font-size: 15px; font-weight: 700; }
+.card input { background: white; color: var(--admin-ink); border: 1px solid var(--admin-line); border-radius: 4px; font: inherit; min-height: 48px; padding: 10px 12px; min-width: 0; width: 100%; box-sizing: border-box; }
+.card button { background: var(--admin-ink); color: var(--admin-paper); border: 0; border-radius: 5px; font: inherit; font-weight: 700; padding: 14px 20px; margin-top: 14px; justify-self: start; }
+.card button:hover { background: var(--admin-teal); }
+.card button:disabled { opacity: 0.6; }
+.success, .error { font-size: 15px; line-height: 1.5; margin: 24px 0 0; }
+.success { color: var(--admin-ink); }
+.error { color: var(--admin-danger); }
+.qrCode { display: block; width: 100%; max-width: 270px; height: auto; background: white; margin: 10px 0 20px; }
+@media (max-width: 480px) { .page { padding: 28px 20px; }.card { padding: 28px 24px; box-shadow: 6px 6px 0 var(--admin-ink); }.card h1 { font-size: 38px; }.card button { width: 100%; padding-inline: 12px; }.eyebrow { font-size: 13px; } }
