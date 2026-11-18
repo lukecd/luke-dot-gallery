@@ -16,8 +16,8 @@ export type Book = {
   readingStatus?: "read" | "not-read" | "unknown";
   publicationYear?: number;
 };
-export type RememberedBook = { subjects?: string[]; id: string; title: string; authors: string[]; publicationYear: number; cover: string | null; sources: BookSource[]; readDate: null; format: string; seriesOrder: number };
-export type ReadingMemory = { id: string; series: string; group: string; readingStatus: string; format: string | null; reportedBookCount?: number; reaction?: string; exactTitles: string[] | null; books?: RememberedBook[]; readDates: null; note: string };
+export type RememberedBook = { subjects?: string[]; id: string; title: string; authors: string[]; publicationYear: number; cover: string | null; sources: BookSource[]; readDate: null; format: string; seriesOrder: number | null };
+export type ReadingMemory = { id: string; series: string | null; group: string; readingStatus: string; format: string | null; reportedBookCount?: number; reaction?: string; exactTitles: string[] | null; books?: RememberedBook[]; readDates: null; note: string };
 export type Library = {
   updated: string;
   books: Book[];

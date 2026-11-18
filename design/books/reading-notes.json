@@ -403,6 +403,287 @@
           "format": "Unknown"
         }
       ]
+    },
+    {
+      "id": "gibson-sprawl-memory",
+      "series": "Sprawl",
+      "group": "series",
+      "readingStatus": "read",
+      "format": "paperback",
+      "exactTitles": [
+        "Neuromancer",
+        "Count Zero",
+        "Mona Lisa Overdrive"
+      ],
+      "readDates": null,
+      "note": "Luke confirmed these titles as read in paperback on 2026-11-02. Purchase and reading dates unknown.",
+      "books": [
+        {
+          "id": "memory-neuromancer",
+          "title": "Neuromancer",
+          "authors": [
+            "William Gibson"
+          ],
+          "publicationYear": 1984,
+          "seriesOrder": 1,
+          "cover": "/assets/books/covers/neuromancer-publisher.webp",
+          "sources": [
+            {
+              "label": "Publisher",
+              "url": "https://www.penguinrandomhouse.com/series/C1E/sprawl-trilogy/"
+            }
+          ],
+          "subjects": [
+            "Science fiction",
+            "Cyberpunk",
+            "Artificial intelligence",
+            "Computers"
+          ],
+          "readDate": null,
+          "format": "Paperback"
+        },
+        {
+          "id": "memory-count-zero",
+          "title": "Count Zero",
+          "authors": [
+            "William Gibson"
+          ],
+          "publicationYear": 1986,
+          "seriesOrder": 2,
+          "cover": "/assets/books/covers/count-zero-publisher.webp",
+          "sources": [
+            {
+              "label": "Publisher",
+              "url": "https://www.penguinrandomhouse.com/series/C1E/sprawl-trilogy/"
+            }
+          ],
+          "subjects": [
+            "Science fiction",
+            "Cyberpunk",
+            "Artificial intelligence",
+            "Computers"
+          ],
+          "readDate": null,
+          "format": "Paperback"
+        },
+        {
+          "id": "memory-mona-lisa-overdrive",
+          "title": "Mona Lisa Overdrive",
+          "authors": [
+            "William Gibson"
+          ],
+          "publicationYear": 1988,
+          "seriesOrder": 3,
+          "cover": "/assets/books/covers/mona-lisa-overdrive-publisher.webp",
+          "sources": [
+            {
+              "label": "Publisher",
+              "url": "https://www.penguinrandomhouse.com/series/C1E/sprawl-trilogy/"
+            }
+          ],
+          "subjects": [
+            "Science fiction",
+            "Cyberpunk",
+            "Artificial intelligence",
+            "Computers"
+          ],
+          "readDate": null,
+          "format": "Paperback"
+        }
+      ],
+      "reportedBookCount": 3
+    },
+    {
+      "id": "gibson-standalones-memory",
+      "series": null,
+      "group": "standalone books",
+      "readingStatus": "read",
+      "format": "paperback",
+      "exactTitles": [
+        "Burning Chrome",
+        "The Difference Engine"
+      ],
+      "readDates": null,
+      "note": "Luke confirmed these titles as read in paperback on 2026-11-02. Purchase and reading dates unknown.",
+      "books": [
+        {
+          "id": "memory-burning-chrome",
+          "title": "Burning Chrome",
+          "authors": [
+            "William Gibson"
+          ],
+          "publicationYear": 1986,
+          "seriesOrder": null,
+          "cover": "/assets/books/covers/burning-chrome-publisher.webp",
+          "sources": [
+            {
+              "label": "Publisher",
+              "url": "https://www.orionbooks.co.uk/titles/william-gibson/burning-chrome/9781473217447/"
+            }
+          ],
+          "subjects": [
+            "Science fiction",
+            "Cyberpunk",
+            "Short stories"
+          ],
+          "readDate": null,
+          "format": "Paperback"
+        },
+        {
+          "id": "memory-difference-engine",
+          "title": "The Difference Engine",
+          "authors": [
+            "William Gibson",
+            "Bruce Sterling"
+          ],
+          "publicationYear": 1990,
+          "seriesOrder": null,
+          "cover": "/assets/books/covers/difference-engine-publisher.webp",
+          "sources": [
+            {
+              "label": "Publisher",
+              "url": "https://www.penguinrandomhouse.com/books/59656/the-difference-engine-by-william-gibson-and-bruce-sterling/"
+            }
+          ],
+          "subjects": [
+            "Science fiction",
+            "Alternate history",
+            "Steampunk",
+            "Computers"
+          ],
+          "readDate": null,
+          "format": "Paperback"
+        }
+      ],
+      "reportedBookCount": 2
+    },
+    {
+      "id": "gibson-bridge-memory",
+      "series": "Bridge",
+      "group": "series",
+      "readingStatus": "read",
+      "format": "paperback",
+      "exactTitles": [
+        "Virtual Light",
+        "Idoru"
+      ],
+      "readDates": null,
+      "note": "Luke confirmed these titles as read in paperback on 2026-11-02. Purchase and reading dates unknown.",
+      "books": [
+        {
+          "id": "memory-virtual-light",
+          "title": "Virtual Light",
+          "authors": [
+            "William Gibson"
+          ],
+          "publicationYear": 1993,
+          "seriesOrder": 1,
+          "cover": "/assets/books/covers/virtual-light-publisher.webp",
+          "sources": [
+            {
+              "label": "Publisher",
+              "url": "https://www.penguin.co.uk/books/15210/virtual-light-by-gibson-william/9780241953501"
+            }
+          ],
+          "subjects": [
+            "Science fiction",
+            "Cyberpunk",
+            "Thriller",
+            "Technology"
+          ],
+          "readDate": null,
+          "format": "Paperback"
+        },
+        {
+          "id": "memory-idoru",
+          "title": "Idoru",
+          "authors": [
+            "William Gibson"
+          ],
+          "publicationYear": 1996,
+          "seriesOrder": 2,
+          "cover": "/assets/books/covers/idoru-publisher.webp",
+          "sources": [
+            {
+              "label": "Publisher",
+              "url": "https://www.penguin.co.uk/books/21548/idoru-by-william-gibson/9780241953525"
+            }
+          ],
+          "subjects": [
+            "Science fiction",
+            "Cyberpunk",
+            "Artificial intelligence",
+            "Japan",
+            "Music"
+          ],
+          "readDate": null,
+          "format": "Paperback"
+        }
+      ],
+      "reportedBookCount": 2
+    },
+    {
+      "id": "stephenson-standalones-memory",
+      "series": null,
+      "group": "standalone books",
+      "readingStatus": "read",
+      "format": null,
+      "exactTitles": [
+        "The Diamond Age",
+        "Anathem"
+      ],
+      "readDates": null,
+      "note": "Luke confirmed these titles as read on 2026-11-02; paperback or Kindle format unspecified. Purchase and reading dates unknown.",
+      "books": [
+        {
+          "id": "memory-diamond-age",
+          "title": "The Diamond Age",
+          "authors": [
+            "Neal Stephenson"
+          ],
+          "publicationYear": 1995,
+          "seriesOrder": null,
+          "cover": "/assets/books/covers/diamond-age-publisher.webp",
+          "sources": [
+            {
+              "label": "Publisher",
+              "url": "https://www.penguinrandomhouse.com/books/172835/the-diamond-age-by-neal-stephenson/"
+            }
+          ],
+          "subjects": [
+            "Science fiction",
+            "Cyberpunk",
+            "Nanotechnology",
+            "Computers"
+          ],
+          "readDate": null,
+          "format": "Unknown"
+        },
+        {
+          "id": "memory-anathem",
+          "title": "Anathem",
+          "authors": [
+            "Neal Stephenson"
+          ],
+          "publicationYear": 2008,
+          "seriesOrder": null,
+          "cover": "/assets/books/covers/anathem-publisher.webp",
+          "sources": [
+            {
+              "label": "Publisher",
+              "url": "https://subterraneanpress.com/anathem/"
+            }
+          ],
+          "subjects": [
+            "Science fiction",
+            "Philosophy",
+            "Mathematics"
+          ],
+          "readDate": null,
+          "format": "Unknown"
+        }
+      ],
+      "reportedBookCount": 2
     }
   ]
 }

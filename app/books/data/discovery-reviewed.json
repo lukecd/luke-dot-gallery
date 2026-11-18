@@ -56,5 +56,17 @@
     "publicationYear": 2017,
     "cover": "/assets/books/discovery/9780553448122.webp",
     "sourceUrl": "https://www.penguinrandomhouse.com/books/250305/artemis-by-andy-weir/"
+  },
+  {
+    "id": "publisher-9780241953518",
+    "title": "All Tomorrow's Parties",
+    "authors": [
+      "William Gibson"
+    ],
+    "publicationYear": 1999,
+    "cover": "/assets/books/discovery/all-tomorrows-parties.webp",
+    "sourceUrl": "https://www.penguin.co.uk/books/23649/all-tomorrows-parties-by-gibson-william/9780241953518",
+    "series": "Bridge",
+    "seriesOrder": 3
   }
 ]

@@ -24,7 +24,7 @@
     },
     "Neal Stephenson": {
       "authorKey": "OL19430A",
-      "attemptedAt": "2026-11-02T02:14:07.832Z",
+      "attemptedAt": "2026-11-02T09:06:23.642Z",
       "checkedAt": "2026-11-02T02:14:07.832Z"
     },
     "David Mitchell": {
@@ -393,6 +393,14 @@
     },
     "Dan Lyons": {
       "attemptedAt": "2026-11-02T02:14:07.832Z",
+      "checkedAt": null
+    },
+    "William Gibson": {
+      "attemptedAt": "2026-11-02T09:06:22.406Z",
+      "checkedAt": null
+    },
+    "Bruce Sterling": {
+      "attemptedAt": "2026-11-02T09:06:24.727Z",
       "checkedAt": null
     }
   },
@@ -1663,16 +1671,6 @@
       "sourceUrl": "https://openlibrary.org/works/OL14991884W"
     },
     {
-      "id": "/works/OL14911626W",
-      "title": "Anathem",
-      "authors": [
-        "Neal Stephenson"
-      ],
-      "publicationYear": 2008,
-      "cover": null,
-      "sourceUrl": "https://openlibrary.org/works/OL14911626W"
-    },
-    {
       "id": "/works/OL15026874W",
       "title": "Empire in black and gold",
       "authors": [
@@ -2674,16 +2672,6 @@
       "publicationYear": 1995,
       "cover": null,
       "sourceUrl": "https://openlibrary.org/works/OL74129W"
-    },
-    {
-      "id": "/works/OL38499W",
-      "title": "The Diamond Age",
-      "authors": [
-        "Neal Stephenson"
-      ],
-      "publicationYear": 1995,
-      "cover": null,
-      "sourceUrl": "https://openlibrary.org/works/OL38499W"
     },
     {
       "id": "/works/OL2695939W",

@@ -1,0 +1,65 @@
+[
+  {
+    "id": "memory-neuromancer",
+    "title": "Neuromancer",
+    "url": "https://www.penguinrandomhouse.com/series/C1E/sprawl-trilogy/",
+    "imageUrl": "https://images4.penguinrandomhouse.com/cover/9780441007462",
+    "bytes": 30280
+  },
+  {
+    "id": "memory-count-zero",
+    "title": "Count Zero",
+    "url": "https://www.penguinrandomhouse.com/series/C1E/sprawl-trilogy/",
+    "imageUrl": "https://images2.penguinrandomhouse.com/cover/9780441013678",
+    "bytes": 21960
+  },
+  {
+    "id": "memory-mona-lisa-overdrive",
+    "title": "Mona Lisa Overdrive",
+    "url": "https://www.penguinrandomhouse.com/series/C1E/sprawl-trilogy/",
+    "imageUrl": "https://images3.penguinrandomhouse.com/cover/9798217093960",
+    "bytes": 12114
+  },
+  {
+    "id": "memory-burning-chrome",
+    "title": "Burning Chrome",
+    "url": "https://www.orionbooks.co.uk/titles/william-gibson/burning-chrome/9781473217447/",
+    "imageUrl": "https://www.orionbooks.co.uk/wp-content/uploads/2018/07/hbg-title-burning-chrome-259.jpg",
+    "bytes": 69044
+  },
+  {
+    "id": "memory-difference-engine",
+    "title": "The Difference Engine",
+    "url": "https://www.penguinrandomhouse.com/books/59656/the-difference-engine-by-william-gibson-and-bruce-sterling/",
+    "imageUrl": "https://images4.penguinrandomhouse.com/cover/9780440423621",
+    "bytes": 31900
+  },
+  {
+    "id": "memory-virtual-light",
+    "title": "Virtual Light",
+    "url": "https://www.penguin.co.uk/books/15210/virtual-light-by-gibson-william/9780241953501",
+    "imageUrl": "https://cdn.penguin.co.uk/dam-assets/books/9780241953501/9780241953501-jacket-large.jpg",
+    "bytes": 15706
+  },
+  {
+    "id": "memory-idoru",
+    "title": "Idoru",
+    "url": "https://www.penguin.co.uk/books/21548/idoru-by-william-gibson/9780241953525",
+    "imageUrl": "https://cdn.penguin.co.uk/dam-assets/books/9780241953525/9780241953525-jacket-large.jpg",
+    "bytes": 16124
+  },
+  {
+    "id": "memory-diamond-age",
+    "title": "The Diamond Age",
+    "url": "https://www.penguinrandomhouse.com/books/172835/the-diamond-age-by-neal-stephenson/",
+    "imageUrl": "https://images1.penguinrandomhouse.com/cover/9780553380965",
+    "bytes": 32748
+  },
+  {
+    "id": "memory-anathem",
+    "title": "Anathem",
+    "url": "https://subterraneanpress.com/anathem/",
+    "imageUrl": "https://cdn11.bigcommerce.com/s-65f8qukrjx/products/6831/images/17237/Stepehnson_Anathem_covrr__93013.1687451124.386.513.jpg?c=1",
+    "bytes": 66232
+  }
+]
