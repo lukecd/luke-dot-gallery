@@ -46,6 +46,7 @@ export async function POST(request: Request) {
   const from = process.env.CONTACT_FROM_EMAIL;
   const replyTo = process.env.CONTACT_REPLY_TO?.trim();
   if (!apiKey || !from) {
+    console.error("Admin sign-in email configuration is missing.");
     return NextResponse.json({ ok: false }, { status: 500 });
   }
 
@@ -59,6 +60,7 @@ export async function POST(request: Request) {
   });
 
   if (error || !data) {
+    console.error("Admin sign-in link generation failed.", { status: error?.status, code: error?.code });
     return NextResponse.json({ ok: false }, { status: 500 });
   }
 
@@ -68,7 +70,9 @@ export async function POST(request: Request) {
   callbackUrl.searchParams.set("type", data.properties.verification_type);
   const message = signInEmail({ callbackUrl: callbackUrl.toString() });
 
-  const response = await fetch("https://api.resend.com/emails", {
+  let response: Response;
+  try {
+    response = await fetch("https://api.resend.com/emails", {
     method: "POST",
     headers: { Authorization: `Bearer ${apiKey}`, "Content-Type": "application/json" },
     body: JSON.stringify({
@@ -77,9 +81,14 @@ export async function POST(request: Request) {
       ...(replyTo ? { reply_to: replyTo } : {}),
       ...message,
     }),
-  });
+    });
+  } catch {
+    console.error("Admin sign-in email provider could not be reached.");
+    return NextResponse.json({ ok: false }, { status: 500 });
+  }
 
   if (!response.ok) {
+    console.error("Admin sign-in email provider rejected the request.", { status: response.status });
     return NextResponse.json({ ok: false }, { status: 500 });
   }
 
