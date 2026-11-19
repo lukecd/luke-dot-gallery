@@ -7,7 +7,7 @@ import OpenAI, { toFile } from "openai";
 
 import { createSupabaseServiceClient } from "@/admin-lib/supabase/service";
 
-const MODEL = "gpt-image-1";
+const MODEL = "gpt-image-2.5-sunburst";
 const BUCKET = "garden-desk-generated";
 
 const CONTAINER_DESCRIPTIONS: Record<string, string> = {
@@ -67,7 +67,7 @@ export async function generatePlantCandidate(jobId: string, actorId: string | nu
       size: "1024x1024",
       quality: "high",
       background: "transparent",
-      input_fidelity: "high",
+      output_format: "png",
     });
     const encoded = response.data?.[0]?.b64_json;
     if (!encoded) throw new Error("OpenAI returned no image data.");
