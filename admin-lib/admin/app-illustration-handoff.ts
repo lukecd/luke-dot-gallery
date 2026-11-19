@@ -2,6 +2,7 @@ import "server-only";
 
 import { createSupabaseServiceClient } from "@/admin-lib/supabase/service";
 import { buildIllustrationAssetPayload } from "@/admin-lib/admin/app-illustration-assets";
+import { canCreateHandoffBranch, illustrationBatchBranch, illustrationBranch } from "@/admin-lib/admin/app-illustration-branches";
 
 const APP_REPOSITORY = process.env.SOW_APP_GITHUB_REPOSITORY?.trim() || "lukecd/sow.garden-app";
 const APP_BASE_BRANCH = process.env.SOW_APP_GITHUB_BASE_BRANCH?.trim() || "main";
@@ -98,6 +99,7 @@ async function ensureBranch(branch: string) {
   } catch (error) {
     if (!(error instanceof Error) || !error.message.includes("Not Found")) throw error;
   }
+  if (!canCreateHandoffBranch(branch)) throw new Error("The saved app handoff branch no longer exists and does not use the required feat/ or fix/ prefix.");
   const base = await github<GitHubRef>(`/repos/${APP_REPOSITORY}/git/ref/heads/${encodeURIComponent(APP_BASE_BRANCH)}`);
   const sha = base.object?.sha;
   if (!sha) throw new Error("Could not find the app repository base branch.");
@@ -196,7 +198,7 @@ export async function createAppIllustrationBatchPullRequest(items: AppIllustrati
     const hasNewJobs = existingJobs.some((job) => job.app_handoff_batch_id !== handoffBatchId);
     if (batch.pr_url && !hasNewJobs) return { url: batch.pr_url, created: false, batchId: handoffBatchId };
 
-    const handoffBranch = batch.branch || `garden-desk/batch-${handoffBatchId.slice(0, 8)}`;
+    const handoffBranch = batch.branch || illustrationBatchBranch(handoffBatchId);
     branch = handoffBranch;
     await ensureBranch(handoffBranch);
     const [{ error: batchUpdateError }, { error: jobsUpdateError }] = await Promise.all([
@@ -276,7 +278,7 @@ export async function createAppIllustrationPullRequest(jobId: string, plant: Can
   if (assetError || !asset) throw new Error("The approved image could not be found.");
 
   const assetName = assetNameFor(canonicalKey);
-  const branch = job.app_pr_branch || `garden-desk/${canonicalKey}-${job.id.slice(0, 8)}`;
+  const branch = job.app_pr_branch || illustrationBranch(canonicalKey, job.id);
   try {
     await ensureBranch(branch);
     await service.from("desk_plant_generation_jobs").update({ canonical_name: canonicalName, canonical_key: canonicalKey, canonical_aliases: aliases, app_asset_name: assetName, app_pr_branch: branch, app_pr_error: null }).eq("id", jobId);
