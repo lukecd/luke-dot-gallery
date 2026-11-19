@@ -1,6 +1,7 @@
 import type { ProjectSceneId } from "../data/projectScenes";
 
-export const GA_MEASUREMENT_ID = "G-Q5T874Q6XS";
+const measurementId = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID?.trim() ?? "";
+export const GA_MEASUREMENT_ID = /^G-[A-Z0-9]+$/i.test(measurementId) ? measurementId : "";
 export const GA_PRODUCTION_HOST = "luke.gallery";
 
 export type AnalyticsSectionId = "launch" | ProjectSceneId;
@@ -17,7 +18,7 @@ declare global {
 type EventParameters = Record<string, string | number>;
 
 export function trackEvent(name: string, parameters: EventParameters = {}) {
-  if (process.env.NODE_ENV !== "production" || typeof window === "undefined" || window.location.hostname !== GA_PRODUCTION_HOST) return;
+  if (!GA_MEASUREMENT_ID || process.env.NODE_ENV !== "production" || typeof window === "undefined" || window.location.hostname !== GA_PRODUCTION_HOST) return;
 
   const event = ["event", name, parameters];
   if (window.gtag) {

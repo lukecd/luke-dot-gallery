@@ -1,4 +1,5 @@
 import { NextResponse } from "next/server";
+import { handleSowContact } from "@/admin-lib/sow-contact-handler";
 
 const CONTACT_RECIPIENT = "luke@spstories.com";
 const MAX_NAME_LENGTH = 120;
@@ -25,6 +26,9 @@ function invalidRequest(message: string) {
 }
 
 export async function POST(request: Request) {
+  if (request.headers.get("content-type")?.toLowerCase().startsWith("multipart/form-data")) {
+    return handleSowContact(request);
+  }
   let body: ContactRequest;
 
   try {

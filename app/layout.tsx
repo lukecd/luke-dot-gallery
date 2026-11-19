@@ -61,11 +61,11 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
           { "@type": "WebSite", "@id": `${site.url}/#website`, name: site.name, url: `${site.url}/`, author: { "@id": `${site.url}/#person` } },
         ] }} />
         {children}
-        {isProduction && (
+        {isProduction && GA_MEASUREMENT_ID && (
           <>
             <Script src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`} strategy="lazyOnload" />
             <Script id="google-analytics" strategy="lazyOnload">
-              {`if (window.location.hostname === '${GA_PRODUCTION_HOST}') { window.dataLayer = window.dataLayer || []; function gtag(){window.dataLayer.push(arguments);} window.gtag = gtag; gtag('js', new Date()); gtag('config', '${GA_MEASUREMENT_ID}'); }`}
+              {`if (window.location.hostname === '${GA_PRODUCTION_HOST}' && !['admin', 'lab', 'updates'].includes(window.location.pathname.split('/')[1])) { window.dataLayer = window.dataLayer || []; function gtag(){window.dataLayer.push(arguments);} window.gtag = gtag; gtag('js', new Date()); gtag('config', '${GA_MEASUREMENT_ID}'); }`}
             </Script>
           </>
         )}
