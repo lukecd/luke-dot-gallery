@@ -3,6 +3,8 @@ import { NextResponse } from "next/server";
 import { GardenDeskAccessError, requireGardenDeskApiAdmin } from "@/admin-lib/admin/auth";
 import { approvePlantIllustrations, deletePlantGenerationJob, queuePlantGeneration, retryPlantAppHandoff, reviewPlantCandidate, sendApprovedPlantIllustration } from "@/admin-lib/admin/workflows";
 
+export const maxDuration = 300;
+
 export async function POST(request: Request, context: { params: Promise<{ id: string }> }) {
   const { id } = await context.params;
   let body: { action?: unknown; assetId?: unknown; canonicalName?: unknown; aliases?: unknown };
