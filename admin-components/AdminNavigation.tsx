@@ -89,6 +89,7 @@ export function AdminNavigation({ children, apps, app }: { children: React.React
           const active = view ? pathname !== "/admin/analytics" && activeView === view : pathname === href;
           return <Link aria-current={active ? "page" : undefined} className={active ? styles.activeNavItem : undefined} href={view ? appAdminHref(app, view) : href!} key={label}><Icon aria-hidden="true" className={styles.navGlyph} /><span>{label}</span></Link>;
         })}</nav>}
+        {app.slug === "ramble-patch" && hasFeature(app, "feedback") && <nav className={styles.sideNav} aria-label="Ramble Patch tools"><p>Ramble Patch tools</p><Link href={appAdminHref(app, "messages")} aria-current={activeView === "messages" ? "page" : undefined} className={activeView === "messages" ? styles.activeNavItem : undefined}><PiTrayArrowDownDuotone aria-hidden="true" /><span>Messages</span></Link></nav>}
         <p className={styles.sidebarFooter}>Luke’s private workspace.</p>
       </aside>
       <div id="admin-content" tabIndex={-1} className={styles.contentColumn}>

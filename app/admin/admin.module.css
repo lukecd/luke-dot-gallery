@@ -453,3 +453,10 @@
 .submissionCreateImage { display: grid; gap: 0.5rem; }
 .submissionCreateImage label span { color: var(--admin-muted); font-weight: 400; }
 .submissionCreateImage img { display: block; max-width: 100%; max-height: 12rem; object-fit: contain; }
+
+.appMessageList { margin-top: 1.5rem; border-top: 1px solid var(--admin-line); }
+.appMessage { padding: 1.25rem 0; border-bottom: 1px solid var(--admin-line); }
+.appMessage header { display: flex; justify-content: space-between; gap: 1rem; }
+.appMessage time { color: var(--admin-muted); font-size: .8rem; }
+.appMessage a { color: var(--admin-ink); overflow-wrap: anywhere; }
+.appMessage p { white-space: pre-wrap; overflow-wrap: anywhere; margin: .75rem 0 0; }
