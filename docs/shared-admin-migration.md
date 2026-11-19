@@ -33,7 +33,7 @@ The shared mailing signup endpoint is `/api/mailing-lists/[app]/[list]/subscribe
 
 Ramble Patch has a contact endpoint at `/api/contact/ramble-patch` and an admin messages view. Its registration, message storage, and creator-wide consent are in `supabase/migrations/20261119012845_ramble_patch_registration.sql`; that migration was tested locally but was not applied to production as part of the transfer. After the migration and deployed endpoints are verified, configure its website with `NEXT_PUBLIC_SIGNUP_URL=https://luke.gallery/api/mailing-lists/ramble-patch/updates/subscribe` and `NEXT_PUBLIC_CONTACT_URL=https://luke.gallery/api/contact/ramble-patch`. For local integration testing, the Ramble website may run on port 3001 with the backend on port 3000; the local origin is allowed only in development.
 
-Before switching the worker, configure `/api/internal/plant-generation`, disable its old schedule, then enable exactly one schedule in the new deployment and verify it.
+The plant worker endpoint uses `CRON_SECRET` and the service credentials listed above. To move the worker without overlap, disable cron jobs in the old `sow-garden-web` Vercel project's settings immediately before deploying the Luke.gallery schedule. The old project has only the plant cron; disabling it does not take down the site. Merge and deploy the Luke.gallery schedule promptly, then verify the old project's cron is disabled, the new project's plant cron is enabled, and the scheduled requests succeed. Keep the existing books cron enabled. If the new deployment fails, re-enable the old project's cron until the issue is resolved.
 
 ## Before retiring the old repository
 
