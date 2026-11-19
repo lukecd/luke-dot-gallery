@@ -3,6 +3,8 @@ import { NextResponse } from "next/server";
 import { GardenDeskAccessError, requireGardenDeskApiAdmin } from "@/admin-lib/admin/auth";
 import { approvePlantIllustrations } from "@/admin-lib/admin/workflows";
 
+export const maxDuration = 300;
+
 export async function POST(request: Request) {
   try {
     const body = await request.json() as { jobIds?: unknown };
