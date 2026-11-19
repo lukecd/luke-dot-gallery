@@ -10,6 +10,9 @@ export async function GET(request: Request) {
   if (!secret || request.headers.get("authorization") !== `Bearer ${secret}`) {
     return NextResponse.json({ error: "Unauthorized." }, { status: 401 });
   }
+  if (process.env.PLANT_WORKER_ENABLED !== "true") {
+    return NextResponse.json({ processed: false, enabled: false });
+  }
   try {
     return NextResponse.json(await runNextPlantGeneration());
   } catch (error) {
