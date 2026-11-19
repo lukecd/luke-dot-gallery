@@ -5,6 +5,7 @@ import Link from "next/link";
 
 import styles from "@/app/admin/admin.module.css";
 import { AdminDataState } from "@/admin-components/AdminDataState";
+import { AppMessages } from "@/admin-components/AppMessages";
 import { CategoriesList } from "@/admin-components/CategoriesList";
 import { MailingListSubscribers } from "@/admin-components/MailingListSubscribers";
 import { MailingListSettings } from "@/admin-components/MailingListSettings";
@@ -15,10 +16,10 @@ import { SubmissionBoard } from "@/admin-components/SubmissionBoard";
 import { SubmissionInbox } from "@/admin-components/SubmissionInbox";
 import { BetaWorkflowQueue, PlantWorkflowQueue } from "@/admin-components/WorkflowQueues";
 
-type DeskView = "overview" | "inbox" | "features" | "bugs" | "plants" | "people" | "letters" | "emails" | "beta" | "categories" | "settings";
+type DeskView = "overview" | "inbox" | "messages" | "features" | "bugs" | "plants" | "people" | "letters" | "emails" | "beta" | "categories" | "settings";
 type DeskSummary = Record<"features" | "bugs" | "illustrationsQueued" | "illustrationsReady" | "illustrationsGenerating" | "illustrationsGenerated" | "illustrationsSent" | "letters" | "beta", number>;
 
-const viewCopy: Record<Exclude<DeskView, "overview" | "beta" | "plants" | "settings">, { eyebrow: string; title: string; description: string }> = {
+const viewCopy: Record<Exclude<DeskView, "overview" | "beta" | "plants" | "settings" | "messages">, { eyebrow: string; title: string; description: string }> = {
   inbox: { eyebrow: "Intake", title: "Incoming notes", description: "Feedback, requests, and reports will appear here as gardeners submit them." },
   features: { eyebrow: "Feature requests", title: "What gardeners want next", description: "Feature requests will collect here for review." },
   bugs: { eyebrow: "Bug reports", title: "Reports to investigate", description: "Bug reports will appear here for investigation." },
@@ -29,18 +30,19 @@ const viewCopy: Record<Exclude<DeskView, "overview" | "beta" | "plants" | "setti
 };
 
 function isDeskView(value: string | undefined): value is DeskView {
-  return ["overview", "inbox", "features", "bugs", "plants", "people", "letters", "emails", "beta", "categories", "settings"].includes(value ?? "");
+  return ["overview", "inbox", "messages", "features", "bugs", "plants", "people", "letters", "emails", "beta", "categories", "settings"].includes(value ?? "");
 }
 
 const viewFeatures: Partial<Record<DeskView, AdminFeature>> = {
   letters: "mailing_lists", settings: "mailing_lists", plants: "plant_illustrations", beta: "testflight",
   inbox: "feedback", features: "feedback", bugs: "feedback", categories: "feedback",
+  messages: "feedback",
 };
 
 export function GardenDesk({ initialView, app }: { initialView?: string; app: AdminApp }) {
   const view: DeskView = isDeskView(initialView) ? initialView : defaultAdminView(app);
   const feature = viewFeatures[view];
-  const available = (!feature || hasFeature(app, feature)) && (view !== "emails" || hasFeature(app, "testflight") || hasFeature(app, "plant_illustrations")) && (app.slug === "sow" || ["letters", "settings", "people"].includes(view));
+  const available = (!feature || hasFeature(app, feature)) && (view !== "emails" || hasFeature(app, "testflight") || hasFeature(app, "plant_illustrations")) && (app.slug === "sow" ? view !== "messages" : ["letters", "settings", "people"].includes(view) || (app.slug === "ramble-patch" && view === "messages"));
   const [summary, setSummary] = useState<DeskSummary | null>(null);
   const [summaryError, setSummaryError] = useState(false);
   const [toast, setToast] = useState<string | null>(null);
@@ -63,6 +65,7 @@ export function GardenDesk({ initialView, app }: { initialView?: string; app: Ad
     {view === "beta" ? <BetaWorkflowQueue onToast={setToast} /> : null}
     {view === "plants" ? <PlantWorkflowQueue onToast={setToast} /> : null}
     {view === "inbox" ? <SubmissionInbox onToast={setToast} /> : null}
+    {view === "messages" ? <AppMessages app={app} /> : null}
     {view === "features" ? <SubmissionWorkflow type="feature_request" onToast={setToast} /> : null}
     {view === "bugs" ? <SubmissionWorkflow type="bug_report" onToast={setToast} /> : null}
     {view === "letters" ? <MailingListSubscribers key={app.id} app={app} /> : null}
@@ -70,7 +73,7 @@ export function GardenDesk({ initialView, app }: { initialView?: string; app: Ad
     {view === "emails" ? <EmailTemplates onToast={setToast} /> : null}
     {view === "people" ? <PeopleDirectory /> : null}
     {view === "categories" ? <CategoriesList /> : null}
-    {view !== "overview" && view !== "beta" && view !== "plants" && view !== "inbox" && view !== "features" && view !== "bugs" && view !== "letters" && view !== "emails" && view !== "people" && view !== "categories" && view !== "settings" ? <EmptyWorkspace view={view} /> : null}
+    {view !== "overview" && view !== "beta" && view !== "plants" && view !== "inbox" && view !== "messages" && view !== "features" && view !== "bugs" && view !== "letters" && view !== "emails" && view !== "people" && view !== "categories" && view !== "settings" ? <EmptyWorkspace view={view} /> : null}
     {toast && <button type="button" className={styles.toast} onClick={() => setToast(null)}>{toast} <span>×</span></button>}
   </section>;
 }
@@ -119,7 +122,7 @@ function OverviewLedger({ title, description, rows }: { title: string; descripti
   </section>;
 }
 
-function EmptyWorkspace({ view }: { view: Exclude<DeskView, "overview" | "beta" | "plants" | "settings"> }) {
+function EmptyWorkspace({ view }: { view: Exclude<DeskView, "overview" | "beta" | "plants" | "settings" | "messages"> }) {
   const copy = viewCopy[view];
   return <>
     <header className={styles.compactHeader}><div><p className={styles.eyebrow}>{copy.eyebrow}</p><h1>{copy.title}</h1><span>{copy.description}</span></div></header>

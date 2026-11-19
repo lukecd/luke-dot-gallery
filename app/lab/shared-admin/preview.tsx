@@ -14,13 +14,14 @@ import type { MailingList, Subscriber } from "@/admin-lib/admin/subscriber-model
 const apps: AdminApp[] = [
   { id: "sow", slug: "sow", name: "Sow", features: ["mailing_lists", "feedback", "testflight", "plant_illustrations", "analytics"] },
   { id: "relaxation-station", slug: "relaxation-station", name: "Relaxation Station", features: ["mailing_lists"] },
+  { id: "ramble-patch", slug: "ramble-patch", name: "Ramble Patch", features: ["mailing_lists", "feedback"] },
   { id: "sp-stories", slug: "sp-stories", name: "Luke’s app updates", features: ["mailing_lists"] },
 ];
 function consent(app: AdminApp) {
   return CREATOR_UPDATES_CONSENT[app.slug as keyof typeof CREATOR_UPDATES_CONSENT];
 }
 function mailingList(app: AdminApp): MailingList {
-  return { id: app.id, slug: "updates", name: app.slug === "sow" ? "Garden Letter" : app.slug === "sp-stories" ? "All app updates" : "Relaxation Station updates", signup_enabled: true,
+  return { id: app.id, slug: "updates", name: app.slug === "sow" ? "Garden Letter" : app.slug === "sp-stories" ? "All app updates" : `${app.name} updates`, signup_enabled: true,
     consent_text: consent(app).text,
     consent_copy_version: consent(app).version };
 }
@@ -33,7 +34,7 @@ function sampleRows(app: AdminApp): Subscriber[] {
 export function SharedAdminPreview() {
   const params = useSearchParams();
   const router = useRouter();
-  const app = apps.find((item) => item.slug === params.get("app")) ?? apps[2];
+  const app = apps.find((item) => item.slug === params.get("app")) ?? apps[3];
   const view = params.get("view") ?? "letters";
   const state = params.get("state") ?? "populated";
   const fixtureKey = `${app.slug}-${view}-${state}`;
@@ -62,6 +63,7 @@ export function SharedAdminPreview() {
         return Response.json({ list: mailingList(selectedApp), lists: [mailingList(selectedApp)], page, total: filtered.length, activeCount: all.filter((row) => row.status === "subscribed").length, subscribers: filtered.slice((page - 1) * 25, page * 25) });
       }
       if (!init?.method || init.method === "GET") {
+        if (url.pathname === "/api/admin/app-messages") return Response.json({ messages: state === "empty" ? [] : [{ id: "example-message", message: "I enjoyed seeing the garden grow after my walk.", received_at: "2026-11-18T10:00:00Z", status: "new", desk_people: { display_name: "Alex Rivera", email: "alex@example.com" } }] });
         if (url.pathname === "/api/admin/summary") return Response.json({ features: 3, bugs: 1, illustrationsQueued: 0, illustrationsReady: 0, illustrationsGenerating: 0, illustrationsGenerated: 0, illustrationsSent: 0, letters: 6, beta: 0 });
         if (url.pathname === "/api/admin/people") return Response.json({ people: (state === "empty" ? [] : sampleRows(app)).map((row) => ({ id: row.id, displayName: row.person.display_name, email: row.person.email, firstSeenAt: row.consentedAt, lastSeenAt: row.consentedAt, submissionKinds: [], subscribed: row.status === "subscribed" })) });
         if (url.pathname === "/api/admin/submissions") return Response.json({ submissions: [] });
