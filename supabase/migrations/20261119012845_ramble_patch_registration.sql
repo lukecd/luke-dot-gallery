@@ -1,6 +1,3 @@
--- PROPOSAL ONLY: promote through the existing canonical Supabase migration
--- history in sow.garden-web after reviewing the linked database and testing.
--- This file is not a migration and must not be applied independently.
 begin;
 set local lock_timeout = '5s';
 
