@@ -39,6 +39,10 @@ test('signup origins are scoped to their app and exact HTTPS website', async () 
   }
   assert.equal(mailingSignupCorsHeaders(request('https://relaxation-station.xyz'), 'sow', 'production'), null);
   assert.equal(mailingSignupCorsHeaders(request('https://relaxation-station.xyz'), 'unknown-app', 'production'), null);
+  assert.ok(mailingSignupCorsHeaders(request('https://www.ramblepatch.com'), 'ramble-patch', 'production'));
+  assert.ok(mailingSignupCorsHeaders(request('https://ramblepatch.com'), 'ramble-patch', 'production'));
+  assert.equal(mailingSignupCorsHeaders(request('https://www.ramblepatch.com'), 'sow', 'production'), null);
+  assert.equal(mailingSignupCorsHeaders(request('https://www.ramblepatch.com.evil.test'), 'ramble-patch', 'production'), null);
   assert.ok(mailingSignupCorsHeaders(request('https://sow.garden'), 'sow', 'production'));
   assert.ok(mailingSignupCorsHeaders(request('http://127.0.0.1:3000'), 'relaxation-station', 'development'));
   assert.equal(mailingSignupCorsHeaders(request('http://127.0.0.1:3000'), 'sow', 'development'), null);

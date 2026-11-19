@@ -2,6 +2,7 @@
 // Add each app's exact website origins here when connecting another website.
 const websiteOrigins: Record<string, readonly string[]> = {
   "relaxation-station": ["https://relaxation-station.xyz", "https://www.relaxation-station.xyz"],
+  "ramble-patch": ["https://ramblepatch.com", "https://www.ramblepatch.com"],
 };
 
 export function mailingSignupCorsHeaders(request: Request, app: string, environment: string | undefined): Headers | null {
