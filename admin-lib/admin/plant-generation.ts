@@ -29,7 +29,7 @@ function buildPrompt(name: string, container: string) {
 }
 
 function referencePath() {
-  return path.join(process.cwd(), "src", "lib", "plant-illustrations", "rosemary.png");
+  return path.join(process.cwd(), "admin-lib", "plant-illustrations", "rosemary.png");
 }
 
 export async function generatePlantCandidate(jobId: string, actorId: string | null = null) {
