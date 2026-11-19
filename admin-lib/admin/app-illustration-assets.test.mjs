@@ -15,8 +15,8 @@ test("creates an unchanged archival master and a 768px paletted app copy with al
   const output = await sharp(payload.delivery).metadata();
 
   assert.deepEqual(payload.master, master);
-  assert.equal(payload.archiveDirectory, "Artwork/Plant Illustration Originals/GerberaJamesonii.imageset");
-  assert.equal(payload.appAssetDirectory, "Sow/Resources/Assets.xcassets/Plants/GerberaJamesonii.imageset");
+  assert.equal(payload.archiveDirectory, "shared/artwork/plants/GerberaJamesonii.imageset");
+  assert.equal(payload.appAssetDirectory, "apps/ios/Sow/Resources/Assets.xcassets/Plants/GerberaJamesonii.imageset");
   assert.equal(payload.fileName, "GerberaJamesonii.png");
   assert.equal(output.format, "png");
   assert.equal(output.width, 768);

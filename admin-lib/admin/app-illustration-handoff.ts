@@ -5,6 +5,7 @@ import { buildIllustrationAssetPayload } from "@/admin-lib/admin/app-illustratio
 
 const APP_REPOSITORY = process.env.SOW_APP_GITHUB_REPOSITORY?.trim() || "lukecd/sow.garden-app";
 const APP_BASE_BRANCH = process.env.SOW_APP_GITHUB_BASE_BRANCH?.trim() || "main";
+const APP_MAPPING_PATH = "apps/ios/Sow/Services/DefaultImageLibrary.swift";
 
 type GitHubContent = { content: string; sha: string };
 type GitHubRef = { object?: { sha?: string } };
@@ -204,7 +205,7 @@ export async function createAppIllustrationBatchPullRequest(items: AppIllustrati
     ]);
     if (batchUpdateError || jobsUpdateError) throw new Error("Could not record the app handoff attempt.");
 
-    const mappingPath = "Sow/Services/DefaultImageLibrary.swift";
+    const mappingPath = APP_MAPPING_PATH;
     const mapping = await readRepositoryFile(mappingPath, handoffBranch);
     let mappingSource = decodeContent(mapping.content);
     const names: string[] = [];
@@ -282,7 +283,7 @@ export async function createAppIllustrationPullRequest(jobId: string, plant: Can
 
     const { data: image, error: imageError } = await service.storage.from(asset.bucket_id).download(asset.storage_path);
     if (imageError || !image) throw new Error("Could not retrieve the approved image for the app handoff.");
-    const mappingPath = "Sow/Services/DefaultImageLibrary.swift";
+    const mappingPath = APP_MAPPING_PATH;
     const mapping = await readRepositoryFile(mappingPath, branch);
     const updatedMapping = patchDefaultImageLibrary(decodeContent(mapping.content), canonicalKey, assetName, [...new Set([normalizedAlias(job.requested_plant_name), ...aliases])]);
     await putIllustrationAssets(assetName, Buffer.from(await image.arrayBuffer()), branch, canonicalName);

@@ -1,7 +1,7 @@
 import sharp from "sharp";
 
-const ARCHIVE_ROOT = "Artwork/Plant Illustration Originals";
-const APP_ASSETS_ROOT = "Sow/Resources/Assets.xcassets/Plants";
+const ARCHIVE_ROOT = "shared/artwork/plants";
+const APP_ASSETS_ROOT = "apps/ios/Sow/Resources/Assets.xcassets/Plants";
 
 export type IllustrationAssetPayload = {
   archiveDirectory: string;
