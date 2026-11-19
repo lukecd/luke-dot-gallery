@@ -17,7 +17,7 @@ The admin is being moved from `sow.garden-web`; the existing service remains the
 | `OPENAI_API_KEY` | Plant illustration generation | Required only for plant generation |
 | `SOW_APP_GITHUB_TOKEN` | Creates illustration handoff PRs in the Sow app | Required only for handoff; verify expiry and regenerate if needed, with access limited to that repository |
 | `CRON_SECRET` | Authorizes scheduled jobs; shared with the existing books refresh | Required to run scheduled jobs; ensure the same secret reaches both endpoints |
-| `NEXT_PUBLIC_GA_MEASUREMENT_ID` | Used by the old Sow public site, not the imported admin | Not needed for the admin; this portfolio has its own analytics configuration |
+| `NEXT_PUBLIC_GA_MEASUREMENT_ID` | Luke.gallery's Google Analytics measurement ID, not an admin setting | Configure the Luke.gallery ID for Production; the Sow site's ID belongs to its own deployment |
 
 Optional `SOW_APP_GITHUB_REPOSITORY` and `SOW_APP_GITHUB_BASE_BRANCH` override defaults (`lukecd/sow.garden-app` and `main`). `BLOB_READ_WRITE_TOKEN` is an existing portfolio requirement for hosted book discovery refreshes; it is not part of the Sow screenshot. Vercel-provided system variables are supplied by the platform. `ADMIN_SECRET`, `SUPABASE_ACCESS_TOKEN`, `SUPABASE_PROJECT_REF`, and `NEXT_PUBLIC_APP_STORE_URL` from the old example file are not required for this imported admin's runtime.
 

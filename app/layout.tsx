@@ -61,7 +61,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
           { "@type": "WebSite", "@id": `${site.url}/#website`, name: site.name, url: `${site.url}/`, author: { "@id": `${site.url}/#person` } },
         ] }} />
         {children}
-        {isProduction && (
+        {isProduction && GA_MEASUREMENT_ID && (
           <>
             <Script src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`} strategy="lazyOnload" />
             <Script id="google-analytics" strategy="lazyOnload">
